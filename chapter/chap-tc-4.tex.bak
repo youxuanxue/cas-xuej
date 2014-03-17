@@ -1,0 +1,389 @@
+\chapter{业务流量隔离控制}
+\section{引言}
+1.简要介绍大背景
+在传统的TCP/IP网络的路由器中，所有的IP数据包的传输都是采用FIFO（先进先出），尽最大努力传输的处理机制。在早期网络数据量和关键业务数据不多的时候，并没有体现出非常大的缺点，路由器简单的把数据报丢弃来处理拥塞。但是随着计算机网络的发展， 数据量的急剧增长，以及多媒体，VOIP数据等对延时要求高的应用的增加。路由器简单丢弃数据包的处理方法已经不再适合当前的网络。单纯的增加网络带宽也不能从根本上解决问题。所以网络的开发者们提出了服务质量的概念。概括的说：就是针对各种不同需求，提供不同服务质量的网络服务功能。提供QoS能力将是对未来IP网络的基本要求。
+2.简要介绍本部分内容
+\section{流量控制原理}
+\subsection{Linux TC}
+%http://bbs.chinaunix.net/thread-16110-1-1.htmlTC简介
+%https://www.ibm.com/developerworks/cn/linux/kernel/l-qos/详细过程
+%http://linux-ip.net/articles/Traffic-Control-HOWTO/overview.html
+Linux TC，即Linux Traffic Control，是Linux操作系统中的流量控制器，Linux内核网络协议栈从2.2.x开始提供该流量控制器模块。Linux TC 利用队列规定建立处理数据包的队列，并定义队列中的数据包被发送的方式，从而实现对出口流量的控制。根据Internet的工作方式，我们无法直接控制别人向我们发送什么数据。因此，TC流量控制是针对出口的流量展开的。
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{tc-yuanli.eps}
+\caption{Linux TC流量控制模块原理示意图}
+\label{fig:tc-yuanli}
+\end{figure}
+如图\ref{fig:tc-yuanli}所示，接收包从输入接口（Input Interface）进来后，经过入口流量监控（Ingress Policing）丢弃不符合规定的数据包，由输入多路分配器（Input De-Multiplexing）进行判断选择：
+\par
+1）如果接收包的目的IP是本主机，那么将该包送给上层处理；
+\par
+2）否则，将接收包交到转发块（Forwarding Block）进行转发处理。
+\par
+另外，本主机上层（TCP、UDP等）产生的包也通过转发块进行向外传输。转发块通过查看路由表，决定所处理包的下一跳。然后，对包进行排队（Output Queuing）并传送到输出接口（Output Interface）。
+\par
+由于Internet的工作方式，我们只能限制从网卡发送出去的数据包，不能限制从网卡接收进来的数据包。因此，我们可以通过改变发送次序来控制传输速率。Linux 流量控制主要是在输出接口排列时进行处理和实现的。如图\ref{fig:tc-yuanli}所示，TC流量控制模块包括入口流量限制（Ingress Policing）和输出排队（Output Queuing）子模块。
+\par
+TC流量控制模块进行流量控制的方式包括以下几种：
+\par
+\textbf{1）SHAPING}
+\par
+SHAPING，即流量整形，是一种主动调整流量输出速率的措施。流量整形通过限制流出某一网络的某一连接的流量，有效地控制其传输速率，使得这类报文以比较均匀的速度向外发送。流量整形可以很好地平滑突发数据流量，使网络更加稳定。它通常利用缓冲区和令牌桶来完成流量整形：当报文的发送速度过快时，首先在缓冲区中进行缓存，在令牌桶的控制下再均匀地发送这些被缓冲的报文。流量整形的缓存能够对数据包流量的完整性有较好的保存，但缓存也引入了延迟。一般而言，SHAPING流量整形只适用于向外的流量。
+\par
+\textbf{2）SCHEDULING}
+\par
+SCHEDULING，即流量调度，SCHEDULING通过在输入和输出之间设定一个队列，让数据包在队列中排队，并重新安排数据包被发送的方式和顺序。通过调度数据包的传输，可以在带宽范围内，按照优先级分配带宽。常见的调度策略是FIFO先进先出，几乎不用对数据包做任何处理，数据包按照它们到达的顺序依次发送。SCHEDULING只适于向外的流量。
+\par
+\textbf{3）POLICING}
+\par
+POLICING，即流量监管，类似于SHAPING，流量监管不仅可以限制从网络中流出的流量，而且可以限制流入网络中的流量。流量监控的控制策略主要是丢包和重新标记，它不存在缓冲区或队列。当某个连接的报文流量过大时，流量监管通常是直接丢弃超额流量或是将超额流量标记为低优先级。因此，流量整形和流量监管的重要区别是，流量整形可能会因为对数据包流量的缓存而增加延迟，而监管则几乎不引入额外的延迟。
+\par
+\textbf{4）DROPPING}
+\par
+DROPPING通过丢弃包、流量或分类来实现对流量的控制，通常在流量超过某个设定的带宽时就会采取丢弃措施。DROPPING不仅可以对从网络中流出去的流量实施管理，还可以丢弃流入网络中的流量，从而实现网络流量的控制和平滑等。
+\par
+\par
+在Linux TC流量控制模块中，主要的组件对象包括：
+\par
+\textbf{1）QDisc}
+\par
+\textbf{2）Class}
+\par
+\textbf{3）Filter}
+\par
+其中，QDisc即Queuing Discipline，它通过利用队列并决定数据被发送的方式，从而实现流量的控制和管理。QDisc是典型的流量调度器，只适用于向外的流量，通过让数据包在队列中排队，并制定数据包被发送的方式和规则。QDisc分为Classless QDisc和Classful QDisc，即无类别QDisc 和分类QDisc。
+\par
+在分类QDisc中存在Class，即类别。一个类别可以是内部类别，也可以是叶子类别。内部类别包括很多子类别，而叶子类别不能有任何的子类别，而且必须包含一个QDisc。Filter过滤器是Linux TC流量控制模块中最复杂的组件，它能够很方便地粘合流量控制中的关键组件要素。
+\par
+过滤器可以被附加到分类QDisc或Class中，但是数据包会首先进入到队列的根QDisc 中，当根QDisc的过滤器被遍历后，数据包会被引导流入到某一个子类中，该子类可以有自己的过滤器规则，因此，数据包可能会被进一步的细分过滤，直到数据包被发送出去。
+
+\subsection{QDisc}
+QDisc，Queuing Discipline即队列规定，它是TC流量控制模块的关键组件。无论什么时候，内核如果需要通过某个网络接口发送数据包，它都需要按照为这个接口配置的QDisc队列规定把数据包加入队列。然后，内核会尽可能多地从队列里面取出数据包，把它们交给网络适配器的驱动模块，从而将数据包发送出去。Linux TC中主要使用以下两种队列规定实现流量控制功能：
+\par
+\textbf{1）无类别队列规定（Classless QDisc）}
+\par
+\textbf{2）分类队列规定（Classful QDisc）}
+\par
+无类别队列规定是对进入网络设备的数据流不加区分、统一对待的队列规定。使用无类别队列规定形成的队列可以接受、重新编排、延迟或丢弃数据包。这类队列规定形成的队列可以对整个网络设备的流量进行整形，但不能细分各种情况。无类别队列主要包括以下几种：
+\par
+\textbf{（1）FIFO}
+\par
+FIFO，First-In First-Out，即先进先出，是最简单的无类别QDisc。FIFO对进入的数据包不做任何处理，数据包按照先进先出的方式通过队列。FIFO的队列有一定的容量大小，可以暂时保存网络接口一时无法处理的数据包。\par
+FIFO可分为三种子类型：pfifo 以数据包为单位区分不同的流量并进行排队处理；bfifo 以字节为单位区分不同的流量并进行排队处理；pfifo\_fast 是系统默认的无类别队列规定，它包括三个不同优先级的波段band，band 0的优先级最高，band 2 的最低。在每个波段里面，使用先进先出规则。如果band 0 里面有数据包，系统就不会处理band 1 里面的数据包，band 1和band 2 之间的关系也是如此。内核遵照数据包的TOS 标记，把不同的数据包分配到三个不同的波段里面。
+\par
+TOS，Type of Service，即服务类型，它包含4个bit。TOS字段的字节定义如表\ref{tab:tos}所示。
+\begin{table}
+\centering
+\begin{tabular}{c|c|l}
+二进制 & 十进制 & 含义 \\\hline
+1000  & 8 & 最小延迟 Minimum Delay \\
+0100  & 4 & 最大吞吐量 Maximum Throughout \\
+0010  & 2 & 最大可靠性 Maximum Reliability \\
+0001  & 1 & 最小成本 Minimum Costing \\
+0000  & 0 & 正常服务\\\hline
+\end{tabular}
+\caption{TOS字段的bit定义}
+\label{tab:tos}
+\end{table}
+\par
+\textbf{（2）RED}\par
+RED，Random Early Detection，即随机早期探测，它通过监测队列的平均大小，基于统计概率随机地丢弃数据包。如图\ref{fig:red}所示，当带宽的占用接近于规定的带宽时，系统会随机地丢弃一些数据包。当缓冲区或队列为空时，所有传入的数据包都会被接受。随着缓冲区或队列被数据包填充，其平均长度也随之增加，导致新传入的数据包被丢弃的概率也增加。当缓冲区或队列满的时候，任何新传入的数据包都将被丢弃。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{red.eps}
+\caption{RED的排队规则示意图}
+\label{fig:red}
+\end{figure}
+\par
+RED通常用来防止网络拥塞，是端到端的TCP拥塞控制的补充。它通过预测网络的拥塞，并提前采取丢包动作，而不是等到网络实际拥塞了以后再采取措施。
+\par
+\textbf{（3）SFQ}
+\par
+SFQ，Stochastic Fairness Queuing，即随机公平队列，SFQ的关键是“会话”或者“流”，它主要针对一个TCP会话或者UDP流。流量被分成相当多数量的FIFO队列中，每个队列对应一个会话。数据按照简单轮转的方式发送，每个会话都按顺序得到发送机会。因此，SFQ非常公平，它保证了每一个会话都不会没其它会话所淹没。SFQ之所以被称为“随机”，是因为它并不是真的为每一个会话创建一个队列，而是使用一个散列算法，把所有的会话映射到有限的几个队列中去。因为使用了散列，所以可能多个会话分配在同一个队列里，从而需要共享发包的机会，也就是共享带宽。为了不让这种效应太明显，SFQ 会频繁地改变散列算法，以便把这种效应控制在几秒钟之内。
+\par
+在SFQ队列中，只有当出口网卡确实已经挤满了的时候，它才会起作用。否则，机器中根本就不会有队列，SFQ也就不会起作用。
+\par
+\textbf{（4）TBF}
+\par
+TBF，Token Bucket Filter，即令牌桶过滤器。TBF只允许以不超过事先设定的速率到来的数据包通过，但可能允许短暂突发流量超过设定值。
+\par
+TBF的实现在于一个缓冲器，也就是令牌桶。它不断地被“令牌”以特定速率填充。令牌桶最重要的参数就是它的大小，代表了它能够存储的令牌数量。每个到来的令牌从数据队列中收集一个数据包，然后从桶中被删除。在TBF中，令牌流和数据流的速率的不同组合产生不同的情景：
+ \par
+ 1）数据流的速率==令牌流的速率。这种情况下，每个到来的数据包都能对应一个令牌，然后无延迟地通过队列。
+\par
+2）数据流的速率 $<$ 令牌流的速率。通过队列的数据包只消耗了一部分令牌，剩下的令牌会在桶里积累下来，直到桶被装满。剩下的令牌可以在需要以高于令牌流速率发送数据流的时候消耗掉，这种情况下会发生突发传输。
+\par
+3）数据流的速率 $>$ 令牌流的速率。这意味着桶里的令牌很快就会被耗尽。导致TBF中断一段时间，称为“越限”。如果数据包持续到来，将发
+生丢包。
+\par
+最后一种情景非常重要，因为它可以用来对数据通过过滤器的速率进行整形。令牌的积累可以导致越限的数据进行短时间的突发传输而不必丢包，但是持续越限的话会导致传输延迟直至丢包。通常，实际的实现是针对数据的字节数而不是数据包进行的。
+\par
+以上介绍的是常见的无类别队列规定，下面将介绍常见的分类队列规定。
+\par
+分类队列规定是对进入网络设备的数据包根据不同的需求以分类的方式区分对待的队列规定。数据包进入一个分类的队列后，它就需要被送到某一个类中，也就是说数据包需要进行分类处理。对数据包进行分类的工具是过滤器，过滤器通过检测数据包的基本信息并返回一个决定，队列规定就根据这个决定把数据包送入相应的类或丢弃。在每个子类中，可以继续使用过滤器对数据包进行进一步细致的分类。最终，当数据包进入到叶子类时，数据包就不会再被过滤器分析，也不会被分类。此时，数据包根据叶子类的无类别队列规定进行排队并发送。分类队列主要包括以下几种：
+\par
+\textbf{（1）CBQ}
+\par
+CBQ，Class Based Queuing，基于分类的队列。CBQ是一种用于网络调度器的队列技术，它不仅可以用来分类，它本身可以实现流量整形。CBQ的分类可以基于不同的参数，比如优先级、接口、应用程序（端口）等。它允许流量在被按类分组后均衡分享带宽，既有限制带宽的能力，也具有带宽优先级管理的能力。带宽限制，也就是流量整形，是通过计算连接的空闲时间完成的，例如：如果试图把一个10Mbps的连接整形成1Mbps的速率，就应该让链路90\%的时间处于闲置状态。然而，闲置时间的测量非常困难，CBQ 采用的是近似值：两个传输请求之间的毫秒数，这个参数可以近似地表征链路的繁忙程度。
+\par
+\textbf{（2）HTB}
+\par
+HTB，Hierarchy Token Bucket，分层的令牌桶。HTB基于令牌和桶，实现了一个复杂而又精细的流量控制方法。它允许用户创建一系列具有不同参数的令牌桶，并按需要将这些令牌桶归类，并实现细粒度的流量控制。HTB 最常用的功能就是流量整形，限制出口带宽速率。另外，HTB的一个重要的特性就是租借模型。当子类的流量超过了设定的速率后，它可以向父类借用令牌，直到子类的可用令牌数量使得它达到其最大速率为止。因此，HTB不仅可以保证每个类别的带宽，还可以允许特定的类可以突破带宽上限，占用别的类的带宽。
+\par
+\textbf{（3）PRIO}
+\par
+PRIO队列规定，不能限制带宽，从而不能实现流量整形。它仅仅根据事先配置的过滤器把流量进一步细分。PRIO队列规定可以视为pfifo\_fast的衍生物，区别在于pfifo\_fast的每个波段在PRIO队列规定中都是一个单独的类，而不是简单的FIFO。同时，pfifo\_fast不能使用TC配置命令进行自定义配置，而PRIO则可以由用户根据自己的需要进行自定义配置和修改。PRIO不对流量进行整形，因为属于不同类别的数据包是顺序离队的。但PRIO可以很容易对流量进行优先级管理，只有属于高优先级类别的数据包全部发送完毕，才会发送属于低优先级类别的数据包。
+
+\subsection{配置管理}
+在Linux TC中，所有的队列规则、类和过滤器都有标识符ID，可以手工设置，也可以由内核自动分配。ID由一个主序列号$MajorID$和一个从序列号$MinorID$组成，两个数字用一个冒号分开，其基本格式如公式\ref{eq:ID} 所示。
+\begin{equation}
+MajorID:MinorID
+\label{eq:ID}
+\end{equation}
+\par
+队列规则的主序列号，也可以称作句柄$handle$，队列规则的从序列号是类的命名空间。句柄采用象$MajorID:$一样的表达方式。习惯上，需要为有子类的队列规则显式地分配一个句柄。
+\par
+在同一个队列规则里面的类共享这个队列规则的主序列号，但是每个类都有自己的从序列号，即类识别符$ClassID$。类识别符只与父队列规则有关，和父类无关。类的命名习惯和队列规则的相同。
+\par
+过滤器的ID有三部分，只有在对过滤器进行散列组织才会用到。
+\par
+如表\ref{tab:tccommand}所示，可以通过使用Linux TC的基本操作命令对QDisc、Class 和Filter进行配置和操作。
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|p{0.55\textwidth}}
+\hline
+命令 & 适用范围 & 描述 \\\hline
+add  & QDisc, Class, Filter & 在一个节点里加入一个QDisc、类或者过滤器。添加时，需要传递一个祖先作为参数，传递参数时既可以使用ID 也可以直接传递设备的根。如果要建立一个QDisc或者过滤器，可以使用句柄来命名；如果要建立一个类，可以使用类识别符来命名\\\hline
+remove & QDisc & 删除某个句柄指定的QDisc，根QDisc也可以删除。被删除QDisc上的所有子类以及附属于各个类的过滤器都会被自动删除
+\\\hline
+change & QDisc, Class, Filter & 以替代的方式修改条目。handle和parent不能修改，不能移除任何节点 \\\hline
+replace &  QDisc, Class, Filter & 添加或删除一个节点，是原子操作。如果节点不存在，则建立节点 \\\hline
+link & QDisc & 替代一个存在的节点 \\\hline
+\end{tabular}
+\caption{TC的基本操作命令}
+\label{tab:tccommand}
+\end{table}
+
+\section{业务流量隔离方案}
+本节将详细介绍流量控制方案的设计，包括整体架构、设计原则以及功能接口。
+
+\subsection{整体架构}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{tc.eps}
+\caption{流量隔离模块整体框架}
+\label{fig:tc}
+\end{figure}
+流量控制模块的整体架构如图\ref{fig:tc}所示。所有的Class组成一颗流量层次树，每个Class都只有一个父Class，而一个Class可以有多个孩子Class。某些QDisc，如CBQ和HTB，允许在运行时动态添加Class，而其它的QDisc，如PRIO，不允许动态建立Class。允许动态添加Class的QDisc 可以有零个或者多个孩子Class，由它们为数据包排队。在流量层次树的叶子类中，必须配置相应的无类别叶子QDisc。默认情况下，系统的叶子QDisc是pfifo\_fast，它采用三个不同优先级的波段采用先进先出的方式进行排队，当然，用户也可以配置使用其它类型的QDisc。
+在我们的业务流量控制模块中，根队列是分类队列规定，目前支持CBQ和HTB 这两种最常用的分类队列规定。根队列的标识符或句柄是$1:$，根队列下的根类的标识符为$1:0$。为了隔离不同的用户业务，避免流量抢占引起的业务干扰，我们为每个用户分配一定的流量，并提供独立的分类和队列规定，通过开放控制接口以方便用户对其业务实现精细控制。对于每个用户，我们整体上将其流量分为内部业务流量和外部服务流量。内部业务流量主要包括用户的业务不同板块之间的内部通信流量，这部分流量不会通过外网。而外部服务流量主要是指为终端用户提供服务而产生的流量。对于一个业务而言，最重要的是为终端用户提供有QoS保证的服务，因此，我们为外部服务流量设置了5个不同的分类。用户可根据自己的业务需求，选择性地配置其中的若干个分类和相应的QDisc排队规则。
+\subsection{设计细则}
+对于业务流量隔离模块，我们的动机主要包括以下两个方面：
+\par
+\textbf{1）隔离不同用户之间的业务}
+\par
+\textbf{2）隔离同一用户的不同流量}
+\par
+因此，我们采用了层次设计，从上而下细分流量并进行隔离控制以保证较好的QoS。从最顶层，对进入到物理网卡的流量，根据其vlan标签标识不同的用户，并将该流量导向正确的用户Class。对于每个用户而言，我们将其流量分为inner流量和outer流量。其中，inner流量是指业务内部的流量，而outer流量是外部Internet对用户业务的访问流量。根据outer外部流量的数据包特征，我们又进一步细分了5个孩子Class，区分5个不同优先级的流量并提供用户自定义分类规则。通常，用户对自己的业务具有绝对的知悉和掌握，他可以很准确地区分不同流量的重要性和优先级。因此，给用户一定的自由度去定制分类规则是有必要的。
+\par
+我们的业务流量控制方案主要遵循了如下设计原则：
+\par
+\textbf{（1）层次性}
+\par
+层次性主要体现在自上而下的分层设计以及不同粒度的流量隔离。这种层次性设计的优势在于系统框架直观，不仅简化了系统的设计，更减轻了系统的工程开发，同时，层次设计大大提高了其横向扩展能力。
+\par
+\textbf{（2）封装性}
+\par
+封装性是指整个系统封装了基本的TC命令行操作，如add，remove，change等，开放了统一的功能接口和控制接口，并隐藏了所有TC命令行操作的细节。由于TC流量控制的队列规则、分类规则以及过滤规则的参数众多，如果完全由用户分别输入，其用户体验将非常糟糕。另外，TC流量控制的众多参数使得它非常灵活，可塑性很强。但对于业务流量隔离控制而言，我们并不需要太过复杂和花哨的细致调节。因此，我们通过封装流量隔离控制模块，改善用户的操作方式，并将开放给用户的配置参数进行一定的精简，从而简化了系统的设计和开发，以提高用户体验。
+\par
+\textbf{（3）开放性}
+\par
+开放性是指系统中各个分类的规则以及排队的规则都是可以由用户自定义的，给用户一定的自由度。通常，用户是对其业务最熟悉的人，他明确地知道自己的不同业务流量之间的重要性和优先级。
+\par
+
+\subsection{功能接口}
+Linux TC流量控制器作为Linux内核的一个模块，功能非常强大，也非常灵活。其可配置和可调节的参数众多，可塑性很强。在我们的应用场景下，我们最关心的是带宽限制。我们希望不同的用户在其可“活动”的带宽范围内发送数据包，运转业务并提供服务。
+
+目前，我们开放给用户的功能接口主要包括：
+\begin{itemize}
+\item{\textbf{euca-setup-trafficcontrol}——启动}
+\item{\textbf{euca-config-trafficcontrol}——配置}
+\item{\textbf{euca-describe-trafficcontrol}——查询}
+\item{\textbf{euca-stop-trafficcontrol}——终止}
+\end{itemize}
+\par
+下面，我们将详细地介绍这些功能接口。
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+参数 & 缩写 & 描述 & 默认值 \\\hline
+device & d  & 需要进行流量控制的网卡设备，如eth0，eth1等 & eth0 \\\hline
+qdisc & q  & TC的根队列类型，支持cbq和htb & cbq \\\hline
+useree & u & 将要启动流量控制的用户即该用户的vlan网络 & 当前登录用户\\\hline
+实例 & \multicolumn{3}{|c|}{euca-setup-trafficcontrol}\\\hline
+\end{tabular}
+\caption{euca-setup-trafficcontrol的详细参数说明}
+\label{tab:setup}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|p{0.755\textwidth}|}
+\hline
+参数 & 缩写 & 描述  \\\hline
+device & d  & 需要进行流量控制的网卡设备，如eth0，eth1等，默认是eth0  \\\hline
+level & l & 所配置的类别，取值为vlanroot，inner，outer，prio1，prio2，prio3，prio4，prio5  \\\hline
+qdisc & q  & 叶子qdisc类型，支持sfq和tbf，须指定level \\\hline
+useree & u & 将要启动流量控制的用户即该用户的vlan网络，默认是当前登录用户\\\hline
+bandwidth & b & class的带宽和速率，须指定level参数  \\\hline
+prio & p & 类别的优先级，须指定level参数  \\\hline
+limit & & tbf队列的参数limit，须指定level且qdisc为tbf  \\\hline
+latency  & & tbf队列的参数latency，须指定level且qdisc为tbf  \\\hline
+burst & & tbf队列的参数burst，须指定level和qdisc为tbf  \\\hline
+perturb & & sfq队列的参数perturb，须指定level且qdisc为sfq  \\\hline
+quantum & & sfq队列的参数quantum，须指定level和qdisc为sfq \\\hline
+addfilter && 增加过滤规则，必须指定level  \\\hline
+rmfilter && 删除过滤规则，必须指定level  \\\hline
+\end{tabular}
+\caption{euca-config-trafficcontrol的详细参数说明}
+\label{tab:config}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+参数 & 缩写 & 描述 & 默认值 \\\hline
+device & d  & 需要查询流量控制的网卡设备，如eth0，eth1等 & eth0 \\\hline
+useree & u & 要查询流量控制的用户即该用户的vlan网络 & 当前登录用户\\\hline
+实例 & \multicolumn{3}{|c|}{euca-describe-trafficcontrol}\\\hline
+\end{tabular}
+\caption{euca-describe-trafficcontrol的详细参数说明}
+\label{tab:describe}
+\end{table}
+
+\textbf{1）euca-setup-trafficcontrol}
+\par
+该接口用于启动默认配置的流量隔离控制模块，完整的接口形式如下：
+\par
+euca-setup-trafficcontrol [-d --device] [-q --qdisc] [-u --useree]
+\par
+该接口的具体的参数说明如表\ref{tab:setup}所示。
+\par
+\textbf{2）euca-config-trafficcontrol}
+\par
+该接口用于配置已启动的流量隔离控制模块，完整的接口形式如下：
+\par
+euca-config-trafficcontrol [-d --device] [-l --level] [-q --qdisc] [-b --bandwidth] [-p --prio] [--limit] [--latency] [--perturb] [--quantum] [--burst] [--addfilter] [--rmfilter] [--bandwidth-list] [--qdisc-list] [-u --useree]
+\par
+该接口的具体参数说明如表\ref{tab:config}所示。
+\par
+实例：
+\par
+1）修改inner叶子分类的带宽为30mbit
+\par
+euca-config-trafficcontrol -l inner -b 30mbit
+\par
+2）修改inner叶子分类的无类简单队列为tbf，并指定参数latency和burst
+\par
+euca-config-trafficcontrol -l inner -q tbf --latency 50ms --burst 5kb
+\par
+3）修改inner叶子分类的无类简单队列为sfq，并指定参数perturb和quantum
+\par
+euca-config-trafficcontrol -l inner -q sfq --perturb 8 --quantum 1514
+\par
+4）移除inner分类的过滤规则"match u8 0x40 0xf0 at 0"
+\par
+euca-config-trafficcontrol -l prio5 --rmfilter "match u8 0x40 0xf0 at 0"
+\par
+5）为inner分类添加过滤规则"match u8 0x40 0xf0 at 0"
+\par
+euca-config-trafficcontrol -l prio5 --addfilter "match u8 0x40 0xf0 at 0"
+\par
+\textbf{3）euca-describe-trafficcontrol}
+\par
+该接口用于查询显示已启动的流量控制模块，完整的接口形式如下：
+\par
+euca-describe-trafficcontrol [-d --device] [-u --useree]
+\par
+该接口具体的参数说明如表\ref{tab:describe}所示。
+\par
+\textbf{4）euca-stop-trafficcontrol}
+\par
+该接口用于停止已启动的流量控制模块TC，完整的接口形式如下：
+\par
+euca-stop-trafficcontrol [-d --device] [-u --useree]
+\par
+该接口的具体的参数说明如表\ref{tab:stop}所示。
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+参数 & 缩写 & 描述 & 默认值 \\\hline
+device & d  & 需要终止流量控制的网卡设备，如eth0，eth1等 & eth0 \\\hline
+useree & u & 要终止流量控制的用户即该用户的vlan网络 & 当前登录用户\\\hline
+实例 & \multicolumn{3}{|c|}{euca-stop-trafficcontrol}\\\hline
+\end{tabular}
+\caption{euca-stop-trafficcontrol的详细参数说明}
+\label{tab:stop}
+\end{table}
+
+\section{实验验证}
+为了测试业务流量隔离控制模块的性能，我们设计了实验进行测试。
+\subsection{实验环境}
+网络问题时非常复杂的问题，尤其是Internet互联网。为了有效地测试和验证业务流量隔离模块的性能，我们必须选择合适的网络结构。在实验中，我们设计了相对封闭的网络结构，如图\ref{fig:tcjiagou}所示。其中，两台主机位于同一个局域网络中，使得互联网的复杂性和不确定性大大减小。主机192.168.155.52（简称52主机）和主机192.168.155.218（简称218主机）通过交换机相连接。
+\begin{figure}
+\includegraphics[width=\textwidth]{tcjiagou.eps}
+\caption{流量隔离控制实验框架示意图}
+\label{fig:tcjiagou}
+\end{figure}
+\textbf{1）链路带宽速率测量}
+即便是如此简单的设计，也不能完全排除网络自身特征中的复杂性和不确定性。52主机和218主机之间的链路带宽不仅与交换机有关，还与链路网线、主机网卡等众多因素相关。因此，我们设计实验测量52主机和218主机之间的链路带宽。我们采用了如图\ref{fig:tcbandjiagou}所示的网络架构进行链路带宽的测量。
+\par
+\begin{figure}
+\includegraphics[width=\textwidth]{tcbandjiagou.eps}
+\caption{测量链路带宽的实验架构示意图}
+\label{fig:tcbandjiagou}
+\end{figure}
+
+\par
+2）链路业务之间的扰动
+\begin{figure}
+\includegraphics[width=\textwidth]{tcraojiagou.eps}
+\caption{测量链路上业务之间扰动的实验架构示意图}
+\label{fig:tcraojiagou}
+\end{figure}
+
+\par
+3）流量隔离控制性能
+\begin{figure}
+\includegraphics[width=\textwidth]{tcresjiagou.eps}
+\caption{流量隔离控制性能的实验架构示意图}
+\label{fig:tcresjiagou}
+\end{figure}
+\par
+
+\subsection{性能分析}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{bandexp}
+\caption{链路带宽速率测量结果}
+\label{fig:bandexp}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{notcexp}
+\caption{在无流量隔离控制时，业务之间存在干扰}
+\label{fig:notcexp}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{tcexp}
+\caption{在流量隔离控制下，业务的隔离情况}
+\label{fig:tcexp}
+\end{figure}
+1）流量控制效果
+2）规则计算复杂度
+
+\section{小结}

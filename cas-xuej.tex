@@ -1,0 +1,135 @@
+%% Thesis Template of Chinese Academy of Sciences
+%%   for using CASthesis package with LaTeX2e
+%%
+%% Created by Ling-Yun Wu <aloft@ctex.org>
+%%
+%% $Id: template.tex,v 1.10 2007/01/09 05:10:46 aloft Exp $
+
+
+\documentclass[dvipdfm]{CASthesis}
+% 可选参数：
+% notypeinfo 取消扉页的LaTeX版本信息
+%
+% 下面三个选一个：
+% dvipdfm 使用 dvipdfm(x) 生成最终的 PDF 文档 (缺省设置）
+% dvips 使用 dvips 生成最终的 PS 文档
+% pdftex 使用 pdfLaTeX 生成最终的 PDF 文档
+
+
+% 设置图形文件的搜索路径
+\graphicspath{{chapter/}{figures/}}
+
+% 取消链接的颜色（黑白打印时）
+%\hypersetup{colorlinks=false}
+
+% 小节标题靠左对齐
+%\CTEXsetup[format+={\flushleft}]{section}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  % 中文封面内容
+  \classification{}
+  \confidential{}
+  \UDC{}
+  \serialnumber{}
+  \title{面向媒体业务的虚拟化网络服务设计与开发}
+  \author{薛娇}
+  \advisor{邓峰~研究员}
+  \advisorinstitute{中国科学院声学研究院}
+  \degree{硕士}
+  \major{电子与通信工程}
+  \submitdate{2014年6月}
+  \defenddate{2014年6月}
+  \institute{中国科学院声学研究院}
+  \school{中国科学院大学}
+  \chairman{}
+
+  % 英文封面内容
+  \englishtitle{Multimedia Service Oriented Virtualization of Network Service Design and Development}
+  \englishauthor{Jiao Xue}
+  \englishadvisor{Prof. Feng Deng}
+  \englishinstitute{Institute of Acoustic \\
+    Academy of Mathematics and Systems Science \\
+    Chinese Academy of Sciences}
+  \englishdegree{Master}
+  \englishmajor{Electronics and Communication Engineering}
+
+
+  % 封面
+  \maketitle
+
+  % 英文封面
+  \makeenglishtitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前言部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+  % 摘要
+  \include{chapter/abstract}
+  %xuej 缩略语
+  \include{chapter/chap-abb}
+
+  % 目录
+  \tableofcontents
+  % 表格目录
+  \listoftables
+  % 插图目录
+  \listoffigures
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+  \include{chapter/chap-intro-1}
+  \include{chapter/chap-relate-2}
+  \include{chapter/chap-vne-3}
+  \include{chapter/chap-tc-4}
+  \include{chapter/chap-supernova-5}
+  \include{chapter/chap-conclude-6}
+  %\include{chapter/chap-math}
+  %\include{chapter/chap-tabfig}
+  %\include{chapter/chap-faq}
+
+  % 附录
+  %\appendix
+
+  %\include{chapter/chap-req}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 附件部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+  % 参考文献
+  % 使用 BibTeX
+  \bibliography{bib/tex}
+  \nocite{*}
+  % 不使用 BibTeX
+  % \include{chapter/bib}
+
+  % 发表文章目录
+  \include{chapter/pub}
+
+  %xuej 申请专利目录
+  \include{chapter/patents}
+
+  % 个人简历
+  %\include{chapter/resume}
+
+  % 致谢
+  \include{chapter/thanks}
+
+
+\end{document}

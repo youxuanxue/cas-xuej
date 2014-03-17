@@ -1,0 +1,252 @@
+\chapter{SuperNova系统工程开发}
+\section{引言}
+1.简要介绍大背景
+2.简要介绍本部分内容
+\section{SuperNova}
+\subsection{系统架构}
+SuperNova是一个多层的服务虚拟化平台，图\ref{fig:supernova-jiagou}是其系统架构示意图。
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{supernova-jiagou.eps}
+\caption{SuperNova系统架构示意图}
+\label{fig:supernova-jiagou}
+\end{figure}
+\par
+其中，物理设备层是众多物理设备的集合，如RSPE，服务器等。在SuperNova 中，物理设备层统一向上层提供以节点为单位的信息，包括每个节点可承载的不同服务能力单元及其能力状态；服务和应用层是指业务系统的集合，由统一的服务虚拟、控制和支撑层向其提供服务能力；全局认知管理平台具有全局监控、优化和反馈驱动的功能，可以有效动态提高系统性能。在SuperNova中，统一的服务虚拟、控制和支撑层以及全局认知管理平台是研究重点。
+\par
+服务虚拟化平台的设计目标是将硬件设备进行屏蔽，以接口的方式向服务和应用层提供所需服务。应用无需了解网络细节和硬件情况，可根据需求获得弹性服务。下面将详细介绍各个部分。
+\subsubsection{物理设备层}
+物理设备层通过对物理设备进行管理和抽象，生成并实现不同的服务类型，并向统一的服务虚拟、控制和支撑层提供具有不同能力的节点信息，作为虚拟化平台的输入，虚拟化平台将这些节点组织为一个可针对不同服务类型进行扩展的虚拟服务网。
+\subsubsection{统一的服务虚拟、控制和支持层}
+该层的主要任务是组织物理设备层提供的大量节点，以便为不同的应用类型提供服务虚拟化。该层是一个含四个子层的结构，包括虚拟连接层、虚拟独立服务单元层、服务协作层和服务控制层，各层功能详述如下：
+\par
+\textbf{1）虚拟连接层}\par
+该层主要对物理设备层提供的所有节点进行组网，使其成为一个全局可路由、可快速定位、高扩展性的自组织网络，并在物理资源之间安全交换数据。
+\par
+虚拟连接层采用一种基于地理位置信息编码的网络结构，包括两层：局域管理层和连接层。局域管理层主要负责不同地理区域（也可能是根据链路状态组成的区域）节点的检索、管理和索引等工作；虚拟连接层中所有节点通过结构化P2P方式（DHT）进行组织，主要负责物理设备层所提供的节点的路由和查询，同时，地理位置信息的引入，保证了P2P网络中节点的区域聚集性；另外， P2P技术的应用，便于该层的扩展，降低了管理服务器的负载，提升了用户体验。其中，局域管理服务器由虚拟层中的某个节点担任。该虚拟连接层的结构如图\ref{fig:linklayer}所示。
+\par
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-linklayer.eps}
+\caption{虚拟连接层的结构示意图}
+\label{fig:linklayer}
+\end{figure}
+\par
+该结构中，全局管理服务器（Global Manager，GM）是一个全局设备，每个加入虚拟化平台的节点都首先在全局监管服务器上注册，将其IP地址、地理位置信息以及相应的能力信息进行报告，如存储空间、可支持流化路数等。如果虚拟连接层中没有节点，则该节点为虚拟连接层的第一个节点，同时，该节点也被选为所在区域的局域管理服务器。如果虚拟连接层中已有节点，GM则为节点返回一些节点信息，帮助该节点加入虚拟连接层。另外，在同一个区域中，如果某个节点能力在一个较长时间内远大于局域管理服务器，则将区域管理服务器中的内容同步到该节点上，并由该节点替换原局域管理服务器，保证局域管理的高效性。
+\par
+这里，也提出一种基于地理位置信息的服务单元自动聚类的管理层次划分方法。在区域划分标准上，具有强制与自动两种划分指标。所有服务单元首先按照强制标准进行区域划分，当一个原有区域内的服务单元数量达到一定限度后，按照基于地理位置信息的聚类/分类方法，将原区域进行拆分，拆分后的每个子区域中选出该新区域的区域管理服务器。当区域过小时，相近区域进行合并。这样形成多层次的区域划分结构。该方法可避免某区域过大时区域管理服务器的负载过重，以及区域过小时的管理资源浪费问题。
+\par
+当有服务请求时，根据服务的目标地理区域信息和全局，任意一个节点可以路由到所有区域的节点，进而知道该区域的局域服务器地址，向局域服务器发起查询请求，局域服务器对任务进行分析，计算出服务方式，为所请求的服务返回合适的入口节点。如果局域服务器不可用，通过DHT的路由机制，也可以将该请求递交给对应区域的某个节点，这个节点为该请求进行服务需求计算执行。
+\par
+节点周期性查询自身可提供的服务能力状况，同时，通过带宽和延迟探测方法探测网络中链路状况，向区域管理服务器报告，区域管理服务器也向全局管理服务器报告，由全局管理服务器进行分析整合，将分析结果返回给局域管理服务器，便于其进行服务分配计算时的决策。节点依据一定的算法从系统中所有节点中选择一部分节点作为本节点的优先邻居节点，并且彼此间定时的交换邻居信息。
+
+\textbf{2）虚拟独立服务单元层}\par
+该层通过对物理资源、服务能力进行封装，使其成为最小粒度服务单位，利用虚拟连接层提供的接口进行通信，并对上层开放管理接口。
+\par
+在这一层，我们提出了一个基于服务单元的属性封装模型，将单节点提供的服务虚拟为多个具有不同属性的服务单元。服务单元属性封装模型隐藏了不同硬件设备之间的差异，提取出这些设备之间的共同特征并进行抽象，为上层提供统一的调用方式。这些基本服务单元只提供单一的功能，如存储、流化、计算能力等。
+\par
+\textbf{3）服务协作层}\par
+通过虚拟独立服务单元层的处理，所有的服务单元相关能力和属性都封装其中，每个服务单元除了保证DHT正常运行的路由表外，还需维护一个在网络上可以优先协作的服务单元列表，包括这些服务单元所在节点、以及相关链路信息。因此，在服务协作层，我们要将根据不同的服务类型和应用特征，对服务单元进行组织并协作。该层可以根据用户需求，提供具有弹性能力的网络服务，同时屏蔽底层细节。服务协作层的主要功能包括：
+1)	索引服务：维护服务单元的占用和回收信息，同时提供查询已注册服务单元的功能；
+2)	分池和调度：将服务单元按特定的用途聚合起来，并提供不同任务之间的调度功能；
+3)	监视和诊断：监视虚拟硬件，包括功能性损失、入侵检测、过载检测等；
+4)	能力监控：管理数据、内存和存储，最大化访问性能(例如响应时间、可靠性、冗余、成本等)。
+\par
+在该层中，根据不同服务单元的特征，充分考虑底层网络特征，进行不同的服务协作同时，使能力结构符合实际硬件分布状况，并兼顾系统容错和负载均衡多个指标，有效提高系统服务性能。
+
+\textbf{4）服务控制层}\par
+提供给终端用户的最后一层，对服务协作层进行屏蔽，用户不需知道服务协作层的实现细节，仅通过这一层定义的服务接口即可提出需求，并获得服务。其功能包括：
+1)	服务调度：根据用户需求调度所需服务；
+2)	隐私保护：构建一个隐私框架，来保护终端用户的隐私、数据机密性和完整性；
+3)	交换和优化支持：在终端用户和服务拥有者之间充当仲裁者的身份，在服务拥有者尽力而为的情况下，保证终端用户的需求。
+
+\subsubsection{全局认知管理层}
+在上述的结构中，受限于层次协议结构，各层很少了解其他层的信息，服务单元的调度和控制只能得到次优的结果。因此引入了全局认知管理平台(Global Cognitive Management Plane)，其目的为：承担网络服务管理器的功能，通过不断的观察学习，以达到更好的实施结果；另外，也使虚拟化平台更好的理解和符合用户需求。
+\par
+1)	全局多目标优化：融合各个层次信息，使系统达到全局优化；
+2)	信息采集和模型决策：收集物理资源的状态和信息、用户目的和用户模式，通过训练一个感知引擎模型组件，对运行计划进行决策，并根据做出的决定指导资源共享层。
+3)	感知引擎模型学习和更新：需要有人工智能的方法进行自学习，如通过神经网络、进化规划等；并不断的通过环境数据库、先验行为和他们的反馈来调整自己的行为。
+\par
+该层可以通过一个单独的服务器进行实现。各层系间通过接口向该层告知当前状态、用户访问情况以及硬件设备情况等信息。认知平台周期性根据所搜集的信息计算不同用户账号下的文件访问情况和趋势、用户行为变化函数、硬件使用规则等行为特征，并反馈给服务协作层，使不同应用可以根据这个信息调整和优化其网络结构，均衡负载。另外，为每个物理设备建立马尔科夫模型，估计其在时域上的负载和能力变化状态，将该信息通知服务协作层，促进该层优化。
+\subsubsection{服务和应用层}
+对应用提出的任务调用“统一的服务虚拟、控制和支撑层”的接口并执行。
+
+\par
+在服务虚拟化平台SuperNova中，统一的服务虚拟、控制和支撑层是系统的研究重点，而本文的开发工作主要集中在该层的服务控制层子层，以及全局认知管理层。
+
+\subsection{编程架构}
+在上一节，我们介绍了服务虚拟化平台的系统层次架构，详细介绍了系统的层次组成以及各层的功能。系统架构对我们认识系统、理解系统等有很大的帮助，但是在进行实际开发工作时，需要更深入地理解系统的编程架构。本节将详细介绍服务虚拟化平台的编程架构。
+\par
+如图\ref{fig:supernova-biancheng}所示，SuperNova服务虚拟化平台的编程架构主要分为两个部分：全局管理服务器编程和局域管理服务器编程。全局管理服务器是面向用户的，在该层，用户通过命令行客户端或Web Service网页与系统进行交互，提出消息请求，然后经由Mule ESB消息框架进行相关的处理。如果用户的消息请求需交由局域管理服务器处理，则通过Netty异步通信机制与局域管理服务器通信，由局域管理服务器完成相应的请求，实现功能。下面将详细介绍服务虚拟化平台中涉及的组件。
+\par
+\begin{figure}
+\centering
+\includegraphics[height=\textheight]{supernova-biancheng.eps}
+\caption{SuperNova服务虚拟化平台编程架构示意图}
+\label{fig:supernova-biancheng}
+\end{figure}
+\par
+\subsubsection{Boto}
+Boto是一个Python包，它提供了访问AWS（Amazon Web Service）服务的接口，包括Amazon S3、Amazon EC2、Amazon DynamoDB等AWS服务。Boto库通过提供Python API，降低了代码编程复杂性，提高了代码复用率。其特点如下：
+\par\textbf{1）Python语言}\par
+基于Python语言编写，简洁
+\par\textbf{2）一致的服务接口}\par
+所有的服务客户端都采用相同的接口，以便在所有支持的服务上都提供一致的访问体验。
+\par\textbf{3）简化代码复杂性}\par
+封装代码细节，提供简洁的接口，大大简化了代码的编写，降低了编程复杂性。
+\par
+在SuperNova的工程开发工作中，我们使用Boto Python API的主要工作包括与AWS EC2建立连接、发送HTTP请求并获取响应。
+
+\subsubsection{GWT}
+Ajax，Asynchronous JavaScript and XML，是由XHTML、CSS、JavaScript、XMLHttpRequest、XML等技术组合而成，是当前Web应用开发领域的热门技术，用于创建更加动态和交互性更好的Web应用程序，提升用户的浏览体验。然而，Ajax应用的开发和调试是非常繁复的，由于没有合适的开发工具以辅助支持Ajax应用的开发和调试，即使开发者对于Ajax技术非常熟悉，其开发和调试过程也很困难。与此相反，Java语言作为企业应用开发的主流语言，有各种各样开发工具的支持，如Eclipse、NetBeans等，其开发和调试过程变得非常简单。
+\par
+GWT，Google Web Toolkit，是Google推出的Ajax应用开发包，它支持开发者使用Java语言开发Ajax应用。GWT解决了Ajax应用开发中开发工具缺失的难题，开发者可以充分利用Java语言的开发优势，降低Ajax应用开发的难度，加快Ajax 应用的开发速度，为Ajax大规模应用创造可能。另一方面，又可以充分发挥Ajax 技术的优势，创建更加动态和交互性更好的Web应用程序，提升用户的浏览体验。使用GWT开发的Java应用将由GWT开发包提供的编译工具编译后生成对应的、应用了Ajax技术的Web应用，Java应用中和服务器之间的交互动作也被自动生成的异步调用代码所代替。
+\par
+GWT支持将Java语言开发的应用转化为Ajax应用，并提供了更多的高级特性：
+\par\textbf{1）GWT编译器}\par
+GWT编译器是GWT的核心，负责将Java代码翻译成Ajax内容。GWT编译器能够翻译Java语言的大部分特性，包括支持Java语言中的基本类型，支持java.lang包和java.util包中的大部分类和接口，支持正则表达式和序列化。
+\par\textbf{2）跨平台支持}\par
+GWT提供了很多的组件元素，如Button，VerticalPannel等，GWT编译器能够将这些组件翻译成浏览器内置的类型，使得由GWT编译生成的Ajax应用能够支持大部分的浏览器和操作系统，如Internet Explorer、Firefox等浏览器和Linux、Windows等操作系统。
+\par\textbf{3）宿主模式}\par
+宿主模式是指我们和GWT应用交互的状态。当我们开发和调试时，我们就处于宿主模式下。此时，Java虚拟机使用GWT内置的浏览器运行GWT应用编译后的class内容，因此能够提供“编码、测试、调试”过程的最佳速度。
+\par\textbf{3）Web模式}\par
+Web模式是指我们和成功转换的Ajax应用的交互状态。此时，GWT应用已经成功编译转换为Ajax应用了，我们可以使用Web方式来访问Ajax应用了，因此，不再需要GWT工具包或者JVM虚拟机的支持了。
+
+
+\subsubsection{Jetty}
+Jetty 是一个开源的servlet容器，它为基于Java的web内容，例如~JSP~和~ servlet~提供运行环境。Jetty是使用Java语言编写的，它的API以一组JAR包的形式发布。开发人员可以将Jetty容器实例化成一个对象，可以迅速为一些独立运行的Java应用提供网络和Web连接。通常，Jetty可通过XML或者API来对进行配置，同时，Jetty可作为嵌入式服务器。
+
+\subsubsection{Mule}
+Mule是一种Mulesoft推出的开源轻量级的ESB消息框架。Mule的核心概念是SEDA （Staged Event-driven Architecture），即分阶段和事件驱动。分阶段指的是将一个复杂的处理过程分解成几个不同的阶段，可以由不同的线程分别进行处理；事件驱动意味着所有的处理过程都是事件驱动的，采用异步通信模式。
+\subsubsection{JiBX}
+\subsubsection{JDBC}
+\subsubsection{Netty}
+Netty是由JBOSS提供的一个Java开源框架。Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能、高可靠性的网络服务器和客户端程序。也就是说，Netty 是一个基于NIO的客户、服务器端编程框架，使用Netty 可以确保快速和简单的开发出一个网络应用，例如实现了某种协议的客户、服务端应用。Netty相当简化和流线化了网络应用的编程开发过程，例如TCP和UDP的socket服务开发。
+
+\subsubsection{Axis2C}
+\subsubsection{WSDL2C}
+
+\section{流量控制模块}
+\subsection{简介}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-tc.eps}
+\caption{SuperNova中的流量控制模块}
+\label{fig:supernova-tc}
+\end{figure}
+\par
+如图\ref{fig:tc}和图\ref{fig:supernova-tc}所示，~SuperNova~中的流量控制主要应用在局域管理服务器上，并将流经局域管理服务器的流量划分为~outer~和~inner~两大部分。事实上，对于不同用户而言，流量控制模块隔离了他们之间的流量，屏蔽了不同用户的流量之间的相互干扰。~inner~流量是指用户部署的业务内部之间的相互通信带来的流量，而~outer~流量是外部~Internet~ 对该业务的访问流量。根据~outer~外部流量中数据包的特征，我们又进一步细分了~5~个孩子Class，以区分~5~个不同优先级的流量并提供用户自定义分类规则。
+\subsection{编程架构}
+\par
+\begin{figure}
+\centering
+\includegraphics[height=\textheight]{tc-biancheng.eps}
+\caption{SuperNova中流量控制模块编程架构示意图}
+\label{fig:tc-biancheng}
+\end{figure}
+\par
+如图\ref{fig:tc-biancheng}所示，SuperNova中流量控制模块编程架构示意图，图中自上而下展示了整个开发过程，并明确标出了需要添加或修改的文件。首先，用户提出请求“我想启动流量控制模块”。请求的方式包括命令行工具和~Web Service~两种。在命令行工具下，需要编写~Python~代码~setuptrafficcontrol.py~，调用~Boto~库与~EC2~建立连接，并发送请求消息。在~Web~方式下，编写GWT Java代码，包括用户界面~EucalyptusWebInterface.java~文件，异步调用代码~EucalyptusWebBackend.java~，~EucalyptusWebBackendAsync.java~，
+~EucalyptusWebBackendImpl.java~，以及功能实现TrafficController.java等文件。
+\par
+进入到Mule中的消息，根据其消息类型，经由不同的Mule component组件处理。对于流量隔离控制模块，主要的~Mule component~是~TrafficControlEndpoint.java~组件，根据 msgs-binding.xml 中的配置定义，该组件接受所有关于流量隔离控制的消息，包括SetupTrafficControlType，StopTrafficControlType，~ConfigTrafficControlType~等消息。在Mule组件TrafficControlEndpoint中，还存在与内存数据库表的交互。内存数据库表的数据是在系统空闲时，全局管理服务器从所有局域管理服务器收集的缓存数据，具有快速访问获取的特点。
+\par
+如果用户的请求需要局域管理服务器来进行处理，则通过Netty框架实现全局管理服务器和局域管理服务器的异步通信。在局域管理服务器中，通过WSDL文件定义数据类型以及操作类型，如supernova-cc.wsdl，再通过WSDL2C将其转换为C语言定义的代码。Axis2C能够将接受到的SOAP消息转换以调用C程序代码。
+\par
+\subsection{功能和实现}
+下面将详细介绍流量隔离控制的各个功能定义。
+\subsubsection{启动流量控制}
+启动流量隔离控制模块的方式有两种：
+\par\textbf{1）命令行工具}\par
+直接在终端输入命令：euca-setup-trafficcontrol，即可启动流量隔离控制模块。
+\par\textbf{2）Web 方式}\par
+如图\ref{fig:euca-setup}所示，点击勾选checkbox，即可启动流量隔离控制模块。
+\par
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{euca-setup.eps}
+\caption{Web方式启动流量控制}
+\label{fig:euca-setup}
+\end{figure}
+\par
+不管是采用命令行工具，还是采用Web方式，都可以很容易地启动流量控制模块。事实上，如果系统从来没有启动过流量控制，则流量控制模块会从配置文件中读取默认的流量控制参数，以实现如图\ref{fig:tc}所示的流量控制架构。另一方面，如果系统曾经启动过流量控制模块，并重新进行相应的配置和规则修改，这些新的规则都会被保存下来。所以，当用户再次启动流量控制时，会自动恢复到用户的最新规则。这种设计方式更加符合用户的行为习惯，能够减轻用户繁复的配置操作，提高用户体验。
+
+\subsubsection{查询流量控制规则}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{euca-describe.eps}
+\caption{查询流量控制规则}
+\label{fig:euca-describe}
+\end{figure}
+\par
+查询流量控制及其规则可通过命令euca-describe-trafficcontrol进行，如图\ref{fig:euca-describe}所示。实际上，查询操作是直接在全局管理服务器上开展的。在~SuperNova~流量控制模块编程架构\ref{fig:tc-biancheng}中，查询消息在Mule结束后便终止传递了。由于在SuperNova系统的全局管理服务器中，存在内存数据库表，其中存储了相关的流量控制规则。因此，流量控制规则的查询无需向局域管理服务器发出请求。这种设计是典型的以空间换取时间。
+\subsubsection{配置流量控制规则}
+配置流量控制规则可通过命令进行~euca-config-trafficcontrol~进行，该命令功能强大，有众多参数可配置选择，如表\ref{tab:config}所示。在配置流量规则的时候，一方面，要修改全局管理服务器的内存数据库表信息以保持一致性；另一方面，要将配置消息传递到局域管理服务器以执行真正的修改配置。
+
+\subsubsection{取消流量控制}
+取消流量控制可以通过以下两种方式：
+\par\textbf{1）命令行}\par
+直接在终端命令行工具输入命令：euca-stop-trafficcontrol，即可取消并停止流量控制。
+\par\textbf{2）Web方式}\par
+如图\ref{fig:euca-stop}所示，取消Web页面中的checkbox勾选，即可取消并停止流量控制。
+\par
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{euca-stop.eps}
+\caption{取消流量控制}
+\label{fig:euca-stop}
+\end{figure}
+\section{虚拟网络嵌入模块}
+SuperNova服务虚拟化平台上的虚拟网络嵌入模块是基于第\ref{chap:vne}章所述的MSO-VNE算法，进行工程简化和实施。下面将详细描述虚拟网络嵌入模块在SuperNova上的工程实现。
+\subsection{工程设计}
+\subsubsection{算法简化}
+在第\ref{chap:vne}章所述的MSO-VNE算法中，我们做了如下假设：
+\par 1）链路的特征是可测量的\par
+\par 2）Internet链路带宽是无限的\par
+然而，这两条假设在实际生活中都是不成立的。首先，网络是非常复杂的，它受各种各样的因素影响，包括线路材质、温度等气候条件。不仅如此，任何因素的微小变化都会使链路特征发生质的变化。因此，网络链路充满了不确定性，链路特征是很难测量的，尤其是延迟、延迟抖动等参数。正是由于网络的复杂性和不确定性，任何涉及到网络链路的特征的假设都是不符合实际的。对于Internet 而言，其庞大的规模更是加重了这种不确定性和复杂性。所以，上述两条假设在现实生活中都是不成立的。
+\par
+工程开发实现与理论算法研究不同，它必须在准确性和可实现性上作出折衷，可以视实际情况牺牲一方而加强另一方。在SuperNova的虚拟网络嵌入模块中，我们牺牲准确性以获得较高的可实现性。在进行实际的VNE匹配计算时，我们只考虑节点的属性特征，而忽略链路的属性特征匹配。一方面，这种简化使得工程开发较容易实现；另一方面，这种简化使得系统能快速响应用户的服务部署请求。
+
+\subsubsection{编程简化}
+如图\ref{fig:supernova-vne}所示，SuperNova中的虚拟网络嵌入模块进行了编程简化，主要通过构建开发独立于SuperNova服务虚拟化平台的虚拟网络嵌入模块实现。该模块接受用户的请求，通过开放的API从SuperNova服务虚拟化平台获取可用的资源信息，在模块中进行VNE匹配计算，如果成功映射，则使用开放API将用户的请求部署到SuperNova虚拟化平台中。
+\par
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{supernova-vne.eps}
+\caption{SuperNova中虚拟网络嵌入模块结构}
+\label{fig:supernova-vne}
+\end{figure}
+\par
+SuperNova中虚拟网络嵌入模块的编程实现不同于流量控制模块的编程实现，对比图\ref{fig:supernova-vne}和图\ref{fig:tc-biancheng}流量控制模块的编程架构，虚拟网络嵌入模块的编程实现要简单容易得多，其开发流程也非常简洁明了，可扩展性很强。如果我们提出了新的虚拟网络嵌入算法，只需要修改图\ref{fig:supernova-vne}中的虚拟网络嵌入模块，而无需改动SuperNova平台中的一行代码。
+\par
+与流量控制模块不同，SuperNova中的虚拟网络嵌入模块是独立于SuperNova系统的，它通过SuperNova服务虚拟化平台开放的API接口从系统获取必要的信息、与系统进行必要的交互并反馈处理结果。这里涉及到的API主要包括：
+\par\textbf{1）euca-describe-availability-zones \textit{verbose}}\par
+euca2ools命令euca-describe-availability-zones \textit{verbose}用于获取~SuperNova~系统的资源信息，包括cpu的最大值（max），cpu的可用值（free），ram的最大值（max），ram的可用值（free），以及disk，cluster zone信息，如图\ref{fig:verbose}所示。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{verbose.eps}
+\caption{由API查询的系统信息}
+\label{fig:verbose}
+\end{figure}
+\par
+SuperNova的流量控制模块将该命令获取的系统资源信息和用户的请求进行匹配计算。若系统有丰富的资源，足以支撑部署用户的请求和业务，便通过下一个API在SuperNova系统中部署业务。
+
+\par\textbf{2）euca-run-instances \textit{param}}\par
+euca2ools命令euca-run-instances \textit{param}用于部署业务。用户提出虚拟网络请求后，如果SuperNova系统有丰富的资源，足以支持用户的请求在系统中部署，则虚拟网络请求会成功映射，即虚拟网络请求中每个虚拟节点和虚拟链路都能匹配映射到实际的物理节点和物理链路上。成功映射后，可使用~euca-run-instance~接口进行真正的业务部署，以分配实际的物理资源。
+\subsection{功能接口}
+SuperNova服务虚拟化平台中，虚拟网络映射的接口API为：
+\par
+euca-vne-deploy \textit{params}\par
+其具体的参数如表所示。
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+参数 & 缩写 & 描述\\\hline
+node\_num & n & 虚拟节点的数量 \\\hline
+\end{tabular}
+\caption{euca-deploy-vne的参数说明}
+\label{tab:deploy-vne}
+\end{table}
+
+\section{其他功能完善}
+\subsection{Portal设计}
+\subsection{实例管理}
