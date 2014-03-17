@@ -126,7 +126,7 @@ NettyÊÇÓÉJBOSSÌá¹©µÄÒ»¸öJava¿ªÔ´¿ò¼Ü¡£NettyÌá¹©Òì²½µÄ¡¢ÊÂ¼şÇı¶¯µÄÍøÂçÓ¦ÓÃ³ÌĞò¿ò¼
 \subsubsection{WSDL2C}
 
 \section{Á÷Á¿¿ØÖÆÄ£¿é}
-\subsection{¼ò½é}
+\subsection{Á÷Á¿¿ØÖÆ¼ò½é}
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-tc.eps}
@@ -210,7 +210,7 @@ SuperNova·şÎñĞéÄâ»¯Æ½Ì¨ÉÏµÄĞéÄâÍøÂçÇ¶ÈëÄ£¿éÊÇ»ùÓÚµÚ\ref{chap:vne}ÕÂËùÊöµÄMSO-VNE
 \par
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{supernova-vne-new.eps}
+\includegraphics[width=0.7\textwidth]{supernova-vne-new.eps}
 \caption{SuperNovaÖĞĞéÄâÍøÂçÇ¶ÈëÄ£¿é½á¹¹}
 \label{fig:supernova-vne-new}
 \end{figure}
@@ -234,7 +234,7 @@ euca2oolsÃüÁîeuca-run-instances \textit{param}ÓÃÓÚ²¿ÊğÒµÎñ¡£ÓÃ»§Ìá³öĞéÄâÍøÂçÇëÇó
 \subsection{¿ª·¢ÊµÏÖ}
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{vne-liucheng.eps}
+\includegraphics[width=0.7\textwidth]{vne-liucheng.eps}
 \caption{SuperNovaÖĞĞéÄâÍøÂçÓ³ÉäÄ£¿éµÄÊµÏÖÁ÷³Ì}
 \label{fig:vne-liucheng}
 \end{figure}
@@ -251,7 +251,7 @@ SuperNova·şÎñĞéÄâ»¯Æ½Ì¨ÖĞ£¬ĞéÄâÍøÂçÓ³ÉäµÄ²¿Êğ½Ó¿ÚAPIÎª£º
 \par
 euca-vne-deploy \textit{params}\par
 ¸Ãeuca2oolsÃüÁîÍ¨¹ıµ÷ÓÃBoto¿â½Ó¿ÚÓëEC2½¨Á¢Á¬½Ó£¬½øĞĞÓÃ»§ÈÏÖ¤£¬¸ù¾İÓÃ»§µÄÇëÇó£¬½áºÏÏµÍ³¿ÉÓÃµÄ×ÊÔ´½øĞĞVNEÆ¥Åä¼ÆËãºÍÓ³Éä´¦Àí£¬³É¹¦Ó³ÉäµÄĞéÄâÍøÂçÇëÇó»á±»·ÖÅäÊµ¼ÊµÄÎïÀí×ÊÔ´£¬´Ó¶øÎªÖÕ¶ËÓÃ»§Ìá¹©·şÎñ¡£¸ÃÃüÁîµÄ¾ßÌå²ÎÊıÈç±í\ref{tab:deploy-vne}ËùÊ¾¡£
-\begin{table}
+\begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
@@ -269,6 +269,83 @@ example & \multicolumn{2}{|c|}{euca-vne-deploy -n 1 -l 2 -c 1 -r 128 -d 5 -p 1}\
 \label{tab:deploy-vne}
 \end{table}
 
-\section{ÆäËû¹¦ÄÜÍêÉÆ}
-\subsection{PortalÉè¼Æ}
-\subsection{ÊµÀı¹ÜÀí}
+\section{ÔÆ¿ØÖÆÆ÷Ä£¿é}
+\subsection{ÔÆ¿ØÖÆÆ÷¼ò½é}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-quanju.eps}
+\caption{ÔÆ¿ØÖÆÆ÷ÔÚSuperNovaÖĞµÄÎ»ÖÃ}
+\label{fig:supernova-quanju}
+\end{figure}
+ÈçÍ¼\ref{fig:supernova-quanju}ËùÊ¾£¬ÔÆ¿ØÖÆÆ÷Á¥ÊôÓÚSuperNova·şÎñĞéÄâ»¯Æ½Ì¨µÄÈ«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨£¬ÊÇÓÃ»§¶ÔÆä²¿ÊğÔÚSuperNovaÆ½Ì¨ÉÏµÄ·şÎñµÄ¹ÜÀíÈë¿Ú¡£Í¨¹ıÔÆ¿ØÖÆÆ÷£¬ÓÃ»§¿É²éÑ¯ÒÑ²¿ÊğµÄÒµÎñ£¬Ò²¿ÉÒÔ²ûÊöÒµÎñĞèÇó£¬²¢ÇëÇóÏµÍ³Ìá¹©·şÎñ£¬»¹¿ÉÒÔ¹ÜÀíÒÑ²¿ÊğµÄÒµÎñ£¬°üÀ¨ĞéÄâÊµÀı¡¢´æ´¢×é¼ş¡¢°²È«×éµÈµÄ¹ÜÀí¡£
+\subsection{¹¦ÄÜÍêÉÆ}
+¹¦ÄÜÍêÉÆ¹¤×÷Ö÷ÒªÊÇÔÚÒÑÓĞµÄEuca2ools¿Í»§¶Ë»ù´¡ÉÏ£¬¶ÔÒÑÓĞµÄ¹ÜÀí²Ù×÷½øĞĞÖØ±àÂë£¬ÌŞ³ıeuca2ools¿âÖĞ¶Ô¿Í»§¶ËÃüÁîµÄ½âÎö²¢×ª»»ÎªWeb ServiceµÄ¹ı³Ì¡£ÕâÑù×öµÄºÃ´¦ÓĞÒÔÏÂÁ½µã£º\par
+1£©¼ò»¯´úÂë´¦ÀíÁ÷³Ì¡£\par
+Ô­À´µÄ´úÂë´¦ÀíÁ÷³ÌĞèÒª¾­¹ıeuca2oolsµÄ½âÎö£¬½«Í¨¹ıÖÕ¶ËÃüÁîĞĞ¹¤¾ßÊäÈëµÄÃüÁî½âÎö²¢×ª»»ÎªWeb ServiceµÄÕâ¸ö¹ı³ÌÊ¡È¥ÁË£¬Ö±½ÓÍ¨¹ıGWT¹¤¾ß¿â¹¹½¨WebÒ³Ãæ£¬´Ó¶øÉú³ÉWeb Service¡£\par
+2£©Ìá¸ßÓÃ»§ÌåÑé\par
+¶ÔÓÚÓÃ»§À´Ëµ£¬×î´óµÄ¸Ä½ø¾ÍÊÇ²»ÔÚĞèÒªÃæ¶Ô·Ç³£²»ÈËĞÔ»¯µÄÖÕ¶ËÆÁÄ»£¬Ò²²»ÓÃÊäÈë·±¸´Ò×´íµÄÃüÁî¡£Í¨¹ıÔÚWebÒ³ÃæÉÏ½øĞĞÖ±¹ÛµÄµãÑ¡²Ù×÷¾Í¿ÉÒÔÍê³ÉÍ¬ÑùµÄ¹¦ÄÜ£¬ÊÇ¶ÔÓÃ»§²Ù×÷µÄÒ»ÖÖÈËĞÔ»¯Éè¼Æ£¬¿ÉºÜºÃµØÌá¸ßÓÃ»§ÌåÑé¡£
+\subsubsection{ÊµÀı¹ÜÀí}
+ÔÚSuperNova·şÎñĞéÄâ»¯Æ½Ì¨ÖĞ£¬ĞéÄâÊµÀıµÄ¹ÜÀí°üÀ¨²éÑ¯ÒÑ¾­´´½¨µÄĞéÄâÊµÀı£¬¶ÔÒÑ´æÔÚµÄĞéÄâÊµÀı½øĞĞÖØÆô¡¢ÖÕÖ¹²Ù×÷£¬ÒÔ¼°ÖØĞÂ´´½¨²¢Æô¶¯ĞÂµÄÊµÀı¡£ÈçÍ¼\ref{fig:describe-instance}ËùÊ¾£¬ÔÚWebÒ³ÃæµÄInstance Ñ¡Ïî¿¨ÏÂµÄ~Available Instances~ÏÔÊ¾µ±Ç°ÓÃ»§Ëù´´½¨µÄÊµÀı£¬ÓÃ»§¿É¶ÔËûÃÇ½øĞĞÏàÓ¦µÄ²Ù×÷£¬°üÀ¨~Terminate~ºÍ~Reboot~¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{describe-instance}
+\caption{Available Instance}
+\label{fig:describe-instance}
+\end{figure}
+\par
+ÈçÍ¼\ref{fig:run-instance}ËùÊ¾£¬InstanceÑ¡Ïî¿¨ÏÂµÄRun InstanceÔÊĞíÓÃ»§Ö¸¶¨ÏàÓ¦µÄ²ÎÊıÒÔ´´½¨ÓÃ»§Ï£ÍûµÄĞéÄâÊµÀı¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{run-instance}
+\caption{Run Instance}
+\label{fig:run-instance}
+\end{figure}
+\par
+ÆäÖĞµÄ²ÎÊıº¬ÒåÈç±í\ref{tab:run-instance}ËùÊ¾¡£
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c}
+\hline
+²ÎÊı & ÃèÊö \\\hline
+count & ĞèÒª´´½¨µÄĞéÄâÊµÀıµÄÊıÁ¿£¬Ä¬ÈÏÊÇ1 \\\hline
+security group & ĞéÄâÊµÀıËùÊôµÄ°²È«×é£¬Ä¬ÈÏÊÇdefault \\\hline
+key & ¹«Ô¿Ãû³Æ \\\hline
+address & ĞéÄâÊµÀıµÄµØÖ·£¨¿ÉÑ¡£©\\\hline
+instanceType & ĞéÄâÊµÀıµÄÀàĞÍ\\\hline
+zone & ĞéÄâÊµÀıËùÊôµÄ¾ÖÓò¹ÜÀí·şÎñÆ÷ \\\hline
+kernel & kernelÄÚºË¾µÏñ\\\hline
+ramdisk & ramdisk¾µÏñ\\\hline
+imagId & ¾µÏñId\\\hline
+\end{tabular}
+\caption{´´½¨ĞéÄâÊµÀıµÄ²ÎÊıËµÃ÷}
+\label{tab:run-instance}
+\end{table}
+
+\subsubsection{´æ´¢¹ÜÀí}
+ÔÚSuperNova·şÎñĞéÄâ»¯Æ½Ì¨ÖĞ£¬´æ´¢×é¼ş°üÀ¨¾µÏñ£¨Images£©£¬´æ´¢¾í£¨Volume£©ºÍ´æ´¢¾í¿ìÕÕ£¨Snapshot£©¡£Òò´Ë£¬´æ´¢¹ÜÀí¼´ÊÇ¶ÔÏà¹Ø×é¼şµÄ¹ÜÀí¡£¶ÔÓÚ¾µÏñImagesµÄ¹ÜÀí£¬ÆäWeb½çÃæÈçÍ¼\ref{fig:supernova-image} ËùÊ¾¡£StorageÏÂµÄImagesÑ¡Ïî¿¨Õ¹Ê¾ÁË¿ÉÓÃµÄImagesÒÔ¼°Ïà¹ØµÄ²Ù×÷£¬°üÀ¨Disable»òEnable¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-image.eps}
+\caption{SuperNova·şÎñĞéÄâ»¯Æ½Ì¨µÄImages}
+\label{fig:supernova-image}
+\end{figure}
+\par
+ÈçÍ¼\ref{fig:supernova-volume}ËùÊ¾£¬StorageÏÂµÄVolumesÑ¡ÏîÕ¹Ê¾ÁË¿ÉÓÃµÄVolumeºÍÏàÓ¦µÄ¹ÒÔØºÍĞ¶ÔØÇé¿öÒÔ¼°¶ÔÓ¦µÄ²Ù×÷£¬°üÀ¨É¾³ı¡¢Ğ¶ÔØ¡¢¹ÒÔØ¡£Í¬Ê±£¬ÓÃ»§¿ÉÒÔÍ¨¹ıÖ¸¶¨Volume µÄ¿Õ¼ä´óĞ¡£¬¿ìÕÕIdºÍ¼¯Èº¹ÜÀíÆ÷ÒÔ´´½¨ĞÂµÄVolume£»Ò²¿ÉÒÔ°Ñ´æÔÚµÄ´æ´¢¾íºÍĞéÄâÊµÀı¹ØÁªÆğÀ´£¬¼´´æ´¢¾íµÄ¹ÒÔØ¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-volume.eps}
+\caption{SuperNova·şÎñĞéÄâ»¯Æ½Ì¨µÄVolumes}
+\label{fig:supernova-volume}
+\end{figure}
+\par
+ÈçÍ¼\ref{supernova-snapshot}ËùÊ¾£¬StorageÏÂµÄSnapshotsÊÇ¶Ô´æ´¢¾íVolume½øĞĞÏàÓ¦µÄ±¸·İ¿ìÕÕ¡£ÓëSnapshotÏà¹ØµÄ²Ù×÷°üÀ¨´´½¨Ö¸¶¨VolumeµÄsnapshotÒÔ¼°É¾³ıÖ¸¶¨µÄsnapshot¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-snapshot.eps}
+\caption{SuperNova·şÎñĞéÄâ»¯Æ½Ì¨µÄSnapshots}
+\label{fig:supernova-snapshot}
+\end{figure}
+\subsubsection{°²È«×é¹ÜÀí}
+
+
+\section{Ğ¡½á}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.7.2)  17 MAR 2014 13:53
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.7.2)  17 MAR 2014 16:45
 entering extended mode
 **cas-xuej.tex
 (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.tex
@@ -1018,44 +1018,61 @@ T1/cmr/m/n/12.05 SuperNova\C19/rm/m/n/12.05/64 � \C19/rm/m/n/12.05/40  \C19/rm
  []
 
 File: figures/verbose.eps Graphic file (type eps)
-<figures/verbose.eps> [56]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+<figures/verbose.eps> [56] [57]
 File: figures/vne-liucheng.eps Graphic file (type eps)
-<figures/vne-liucheng.eps>
-Underfull \vbox (badness 2951) has occurred while \output is active []
+ <figures/vne-liucheng.eps> [58]
+File: figures/supernova-quanju.eps Graphic file (type eps)
 
- [57]
+<figures/supernova-quanju.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
-Underfull \vbox (badness 2261) has occurred while \output is active []
+[59]
+File: figures/describe-instance.eps Graphic file (type eps)
+ <figures/describe-instance.eps> [60]
+File: figures/run-instance.eps Graphic file (type eps)
+ <figures/run-instance.eps>
 
- [58]
-[59] [60] (E:\Info\毕业\xuej\终期\cas-template\chapter/chap-conclude-6.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/supernova-image.eps Graphic file (type eps)
+<figures/supernova-image.eps> [61]
+File: figures/supernova-volume.eps Graphic file (type eps)
+ <figures/supernova-volume.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `supernova-snapshot' on page 62 undefined on input lin
+e 341.
+
+File: figures/supernova-snapshot.eps Graphic file (type eps)
+<figures/supernova-snapshot.eps> [62])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+[64] (E:\Info\毕业\xuej\终期\cas-template\chapter/chap-conclude-6.tex
 ������
-) [61
+) [65
 
 
 
-] [62
+] [66
 
 
-] (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.bbl) [63
+] (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.bbl) [67
 
 ]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/pub.tex [64
+(E:\Info\毕业\xuej\终期\cas-template\chapter/pub.tex [68
 
 
-]) [65]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/patents.tex [66
+]) [69]
+(E:\Info\毕业\xuej\终期\cas-template\chapter/patents.tex [70
 
 
 
-]) [67]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/thanks.tex [68
+]) [71]
+(E:\Info\毕业\xuej\终期\cas-template\chapter/thanks.tex [72
 
 
 
@@ -1070,7 +1087,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.05pt
 (hyperref)                replaced by space on input line 2.
 
-) [69]
+) [73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.aux
@@ -1094,16 +1111,19 @@ Package rerunfilecheck Warning: File `cas-xuej.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `cas-xuej.out':
-(rerunfilecheck)             Before: 8EFE0A02357FDA83E73CF53C4D518F00;10450
-(rerunfilecheck)             After:  A664E1F49F06CD2FB28FA2E0B2755826;4914.
+(rerunfilecheck)             Before: C114E1F53C51736DE5A1A4DDF4D68568;10570
+(rerunfilecheck)             After:  2388609C16B0D68B0BC2843FBCBD161E;4980.
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15678 strings out of 495355
- 254164 string characters out of 3183883
- 316611 words of memory out of 3000000
- 18336 multiletter control sequences out of 15000+200000
- 87998 words of font info for 311 fonts, out of 3000000 for 9000
+ 15711 strings out of 495355
+ 254869 string characters out of 3183883
+ 317120 words of memory out of 3000000
+ 18363 multiletter control sequences out of 15000+200000
+ 88296 words of font info for 312 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  47i,13n,51p,3625b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on cas-xuej.dvi (87 pages, 372216 bytes).
+Output written on cas-xuej.dvi (91 pages, 389064 bytes).

@@ -32,8 +32,14 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces 查询流量控制规则}}{54}{figure.5.7}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces 取消流量控制}}{55}{figure.5.8}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces SuperNova中虚拟网络嵌入模块结构}}{57}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces 由API查询的系统信息}}{58}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces SuperNova中虚拟网络映射模块的实现流程}}{59}{figure.5.11}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces 由API查询的系统信息}}{57}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces SuperNova中虚拟网络映射模块的实现流程}}{58}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces 云控制器在SuperNova中的位置}}{60}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Available Instance}}{61}{figure.5.13}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Run Instance}}{61}{figure.5.14}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces SuperNova服务虚拟化平台的Images}}{62}{figure.5.15}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces SuperNova服务虚拟化平台的Volumes}}{63}{figure.5.16}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces SuperNova服务虚拟化平台的Snapshots}}{63}{figure.5.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

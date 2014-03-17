@@ -57,20 +57,21 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 系统架构}{section.5.2}% 57
 \BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 编程架构}{section.5.2}% 58
 \BOOKMARK [1][-]{section.5.3}{5.3 流量控制模块}{chapter.5}% 59
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 简介}{section.5.3}% 60
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 流量控制简介}{section.5.3}% 60
 \BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 编程架构}{section.5.3}% 61
 \BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 功能和实现}{section.5.3}% 62
 \BOOKMARK [1][-]{section.5.4}{5.4 虚拟网络嵌入模块}{chapter.5}% 63
 \BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 工程设计}{section.5.4}% 64
 \BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 开发实现}{section.5.4}% 65
 \BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 功能接口}{section.5.4}% 66
-\BOOKMARK [1][-]{section.5.5}{5.5 其他功能完善}{chapter.5}% 67
-\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Portal设计}{section.5.5}% 68
-\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 实例管理}{section.5.5}% 69
-\BOOKMARK [0][-]{chapter.6}{第六章 \040总结和展望}{}% 70
-\BOOKMARK [1][-]{section.6.1}{6.1 工作总结}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.2}{6.2 今后工作展望}{chapter.6}% 72
-\BOOKMARK [0][-]{chapter*.7}{参考文献}{}% 73
-\BOOKMARK [0][-]{chapter*.8}{发表文章目录}{}% 74
-\BOOKMARK [0][-]{chapter*.9}{申请专利目录}{}% 75
-\BOOKMARK [0][-]{chapter*.10}{致 \040谢}{}% 76
+\BOOKMARK [1][-]{section.5.5}{5.5 云控制器模块}{chapter.5}% 67
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 云控制器简介}{section.5.5}% 68
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 功能完善}{section.5.5}% 69
+\BOOKMARK [1][-]{section.5.6}{5.6 小结}{chapter.5}% 70
+\BOOKMARK [0][-]{chapter.6}{第六章 \040总结和展望}{}% 71
+\BOOKMARK [1][-]{section.6.1}{6.1 工作总结}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.2}{6.2 今后工作展望}{chapter.6}% 73
+\BOOKMARK [0][-]{chapter*.7}{参考文献}{}% 74
+\BOOKMARK [0][-]{chapter*.8}{发表文章目录}{}% 75
+\BOOKMARK [0][-]{chapter*.9}{申请专利目录}{}% 76
+\BOOKMARK [0][-]{chapter*.10}{致 \040谢}{}% 77
