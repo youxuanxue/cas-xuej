@@ -338,7 +338,7 @@ imagId & 镜像Id\\\hline
 \label{fig:supernova-volume}
 \end{figure}
 \par
-如图\ref{supernova-snapshot}所示，Storage下的Snapshots是对存储卷Volume进行相应的备份快照。与Snapshot相关的操作包括创建指定Volume的snapshot以及删除指定的snapshot。
+如图\ref{fig:supernova-snapshot}所示，Storage下的Snapshots是对存储卷Volume进行相应的备份快照。与Snapshot相关的操作包括创建指定Volume 的snapshot以及删除指定的snapshot。
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-snapshot.eps}
@@ -346,6 +346,33 @@ imagId & 镜像Id\\\hline
 \label{fig:supernova-snapshot}
 \end{figure}
 \subsubsection{安全组管理}
-
+Security Groups，网络安全组，相对于防火墙，它对流入实例的流量进行控制和管理。一个安全组可以有多个实例与之关联，同样，一个实例可以关联到多个安全组。通过安全组的规则可以控制到达实例的入境流量，只有符合实例关联的安全组的规则的入境流量才能进入到实例中，其他的任何入境流量都将被丢弃。安全组的规则可以在任何时刻对其进行修改，修改之后，新的安全组规则将自动地应用到与安全组相关联的所有实例中。
+\par
+在SuperNova中，有默认的安全组default。在启动实例时，可以显式地为实例指定安全组，否则该实例将关联到默认的安全组。默认安全组的初始设置如下：\par
+1）不允许入境流量；\par
+2）允许所有的出境流量；\par
+3）允许关联到安全组的实例之间相互通信。\par
+用户可以使用如表\ref{tab:security}所示的euca2ools命令来创建新的安全组，或修改安全组的规则，或删除安全组等。
+\begin{table}[h]
+\begin{tabular}{c|c|c}
+\\\hline
+操作类型 & euca2ools命令 & 描述 \\\hline
+创建安全组 & ec2-create-group & 用当前账户创建新的安全组 \\\hline
+描述安全组 & ec2-describe-group & 描述与账户相关的安全组信息\\\hline
+添加安全组规则 & ec2-authorize & 向指定安全组添加一个或多个规则\\\hline
+移除安全组规则 & ec2-revoke & 从指定安全组中移除一个或多个规则\\\hline
+删除安全组 & ec2-delete-group & 删除和账户关联的安全组\\\hline
+\end{tabular}
+\caption{安全组相关的操作和euca2ools命令}
+\label{tab:security}
+\end{table}
+\par
+在SuperNova服务虚拟化平台中，安全组相关的Web界面如图\ref{fig:security} 所示。在~SecurityGroups~选项卡中，我们可以使用~ Add a new Group ~创建新的安全组，对已经存在的安全组，可以使用点击~Authorize~添加安全组规则，或通过~Revoke~移除安全组规则，或通过~Delete~完全删除安全组。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{security.eps}
+\caption{SuperNova中的安全组}
+\label{fig:security}
+\end{figure}
 
 \section{小结}

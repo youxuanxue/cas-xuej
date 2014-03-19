@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.7.2)  17 MAR 2014 16:45
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.7.2)  19 MAR 2014 13:10
 entering extended mode
 **cas-xuej.tex
 (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.tex
@@ -785,14 +785,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.05pt
 (hyperref)                replaced by space on input line 82.
 
-(E:\Info\毕业\xuej\终期\cas-template\cas-xuej.toc [7] [8] [9])
+(E:\Info\毕业\xuej\终期\cas-template\cas-xuej.toc [7] [8])
 \tf@toc=\write4
- [10]
+ [9] [10
+
+]
 (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.lot)
 \tf@lot=\write5
- [11
-
-] [12
+ [11] [12
 
 ]
 (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.lof [13])
@@ -818,44 +818,43 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 ������
 File: figures/procedure.eps Graphic file (type eps)
-<figures/procedure.eps> [5] [6] [7] [8] [9] [10]
-Overfull \hbox (1.09473pt too wide) in paragraph at lines 160--171
+<figures/procedure.eps> [5]
+Underfull \vbox (badness 1552) has occurred while \output is active []
+
+ [6]
+[7] [8] [9] [10] [11]
+Overfull \hbox (1.09473pt too wide) in paragraph at lines 159--170
  [][][] 
  []
 
-[11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
+[12] [13] [14]
 File: figures/nb.eps Graphic file (type eps)
-
-<figures/nb.eps>
+ <figures/nb.eps>
 File: figures/eb.eps Graphic file (type eps)
- <figures/eb.eps> [13]
+ <figures/eb.eps> [15]
 File: figures/rcr.eps Graphic file (type eps)
  <figures/rcr.eps>
 File: figures/accept.eps Graphic file (type eps)
- <figures/accept.eps>
-[14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 231.
+
+<figures/accept.eps> [16] [17]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 261.
 
  (d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12.05> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 231.
- [15]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 261.
 File: figures/framework.eps Graphic file (type eps)
- <figures/framework.eps>
-[16] [17] [18]) [19]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/chap-tc-4.tex [20
+
+<figures/framework.eps> [18] [19] [20]) [21]
+(E:\Info\毕业\xuej\终期\cas-template\chapter/chap-tc-4.tex [22
 
 
 
 ]
 ������
 File: figures/tc-yuanli.eps Graphic file (type eps)
-<figures/tc-yuanli.eps> [21] [22] [23]
+<figures/tc-yuanli.eps> [23] [24] [25]
 Overfull \hbox (3.22537pt too wide) in paragraph at lines 72--72
 [][]\OT1/cmr/m/n/12.05 FIFO|\C19/rm/m/n/12.05/26 �| \OT1/cmr/m/n/12.05 First-In
  First-Out|\C19/rm/m/n/12.05/26 �| \C19/rm/m/n/12.05/45 = \C19/rm/m/n/12.05/59 
@@ -867,7 +866,7 @@ m/n/12.05/26 �| \C19/rm/m/n/12.05/55 � \C19/rm/m/n/12.05/65 � \C19/rm/m/n/12.05
  []
 
 File: figures/red.eps Graphic file (type eps)
-<figures/red.eps> [24] [25] [26] [27]
+<figures/red.eps> [26] [27] [28] [29]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -876,16 +875,16 @@ File: figures/tc.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28]
+[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
-[30]
+ [31]
+[32]
 Overfull \hbox (13.05011pt too wide) in paragraph at lines 218--226
  [][][] 
  []
 
-[31]
+[33]
 Overfull \hbox (14.08478pt too wide) in paragraph at lines 232--249
  [][][] 
  []
@@ -913,16 +912,16 @@ T1/cmr/m/n/12.05 sfq|\C19/rm/m/n/12.05/26 �| \C19/rm/m/n/12.05/37 � \C19/rm/m/n
 �\OT1/cmr/m/n/12.05 perturb\C19/rm/m/n/12.05/43 �\OT1/cmr/m/n/12.05 quantum 
  []
 
-[32]
+[34]
 Overfull \hbox (13.05011pt too wide) in paragraph at lines 321--328
  [][][] 
  []
 
-[33]
+[35]
 File: figures/tcjiagou.eps Graphic file (type eps)
  <figures/tcjiagou.eps>
 File: figures/tcbandjiagou.eps Graphic file (type eps)
- <figures/tcbandjiagou.eps> [34] [35]
+ <figures/tcbandjiagou.eps> [36] [37]
 File: figures/tcraojiagou.eps Graphic file (type eps)
 
 <figures/tcraojiagou.eps>
@@ -932,12 +931,12 @@ File: figures/bandexp.eps Graphic file (type eps)
  <figures/bandexp.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [38]
 File: figures/notcexp.eps Graphic file (type eps)
 
-<figures/notcexp.eps> [37]
+<figures/notcexp.eps> [39]
 File: figures/tcexp.eps Graphic file (type eps)
- <figures/tcexp.eps>) [38] [39] [40]
+ <figures/tcexp.eps>) [40] [41] [42]
 (E:\Info\毕业\xuej\终期\cas-template\chapter/chap-supernova-5.tex
 ������
 File: figures/supernova-jiagou.eps Graphic file (type eps)
@@ -954,7 +953,7 @@ m/n/12.05 RSPE|\C19/rm/m/n/12.05/26 �| \C19/rm/m/n/12.05/41 � \C19/rm/m/n/12.05
 9/rm/m/n/12.05/63 3\OT1/cmr/m/n/12.05 SuperNova
  []
 
-[41
+[43
 
 
 
@@ -964,7 +963,7 @@ File: figures/supernova-linklayer.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42] [43] [44] [45]
+[44] [45] [46] [47]
 File: figures/supernova-biancheng.eps Graphic file (type eps)
  <figures/supernova-biancheng.eps>
 
@@ -979,17 +978,17 @@ m/m/n/12.05/62 d\OT1/cmr/m/n/12.05 XHTML|\C19/rm/m/n/12.05/25 !| \OT1/cmr/m/n/1
 5/25 !|
  []
 
-[46] [47] [48]
+[48] [49] [50]
 File: figures/supernova-tc.eps Graphic file (type eps)
- <figures/supernova-tc.eps> [49] [50]
+ <figures/supernova-tc.eps> [51] [52]
 File: figures/tc-biancheng.eps Graphic file (type eps)
  <figures/tc-biancheng.eps>
 
 LaTeX Warning: Float too large for page by 31.12807pt on input line 145.
 
-[51] [52]
+[53] [54]
 File: figures/euca-setup.eps Graphic file (type eps)
- <figures/euca-setup.eps> [53]
+ <figures/euca-setup.eps> [55]
 File: figures/euca-describe.eps Graphic file (type eps)
  <figures/euca-describe.eps>
 File: figures/euca-stop.eps Graphic file (type eps)
@@ -998,7 +997,7 @@ File: figures/euca-stop.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54] [55]
+[56] [57]
 File: figures/supernova-vne-new.eps Graphic file (type eps)
  <figures/supernova-vne-new.eps>
 
@@ -1018,61 +1017,64 @@ T1/cmr/m/n/12.05 SuperNova\C19/rm/m/n/12.05/64 � \C19/rm/m/n/12.05/40  \C19/rm
  []
 
 File: figures/verbose.eps Graphic file (type eps)
-<figures/verbose.eps> [56] [57]
+<figures/verbose.eps> [58] [59]
 File: figures/vne-liucheng.eps Graphic file (type eps)
- <figures/vne-liucheng.eps> [58]
+ <figures/vne-liucheng.eps> [60]
 File: figures/supernova-quanju.eps Graphic file (type eps)
 
 <figures/supernova-quanju.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59]
+[61]
 File: figures/describe-instance.eps Graphic file (type eps)
- <figures/describe-instance.eps> [60]
+ <figures/describe-instance.eps> [62]
 File: figures/run-instance.eps Graphic file (type eps)
  <figures/run-instance.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: figures/supernova-image.eps Graphic file (type eps)
-<figures/supernova-image.eps> [61]
+<figures/supernova-image.eps> [63]
 File: figures/supernova-volume.eps Graphic file (type eps)
  <figures/supernova-volume.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `supernova-snapshot' on page 62 undefined on input lin
-e 341.
-
 File: figures/supernova-snapshot.eps Graphic file (type eps)
-<figures/supernova-snapshot.eps> [62])
+<figures/supernova-snapshot.eps> [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-[64] (E:\Info\毕业\xuej\终期\cas-template\chapter/chap-conclude-6.tex
+ [65]
+File: figures/security.eps Graphic file (type eps)
+
+<figures/security.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [66] [67]
+(E:\Info\毕业\xuej\终期\cas-template\chapter/chap-conclude-6.tex [68
+
+
+
+]
 ������
-) [65
+) [69] [70
 
 
-
-] [66
-
-
-] (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.bbl) [67
+] (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.bbl) [71
 
 ]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/pub.tex [68
+(E:\Info\毕业\xuej\终期\cas-template\chapter/pub.tex [72
 
 
-]) [69]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/patents.tex [70
+]) [73]
+(E:\Info\毕业\xuej\终期\cas-template\chapter/patents.tex [74
 
 
 
-]) [71]
-(E:\Info\毕业\xuej\终期\cas-template\chapter/thanks.tex [72
+]) [75]
+(E:\Info\毕业\xuej\终期\cas-template\chapter/thanks.tex [76
 
 
 
@@ -1087,7 +1089,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.05pt
 (hyperref)                replaced by space on input line 2.
 
-) [73]
+) [77]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (E:\Info\毕业\xuej\终期\cas-template\cas-xuej.aux
@@ -1111,19 +1113,16 @@ Package rerunfilecheck Warning: File `cas-xuej.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `cas-xuej.out':
-(rerunfilecheck)             Before: C114E1F53C51736DE5A1A4DDF4D68568;10570
-(rerunfilecheck)             After:  2388609C16B0D68B0BC2843FBCBD161E;4980.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 9CF3EC7F08B2C2EC9DC44453D001F25C;10228
+(rerunfilecheck)             After:  5493DB2400DD4BF93303D95FBFBD1C5C;4828.
  ) 
 Here is how much of TeX's memory you used:
- 15711 strings out of 495355
- 254869 string characters out of 3183883
- 317120 words of memory out of 3000000
- 18363 multiletter control sequences out of 15000+200000
+ 15723 strings out of 495355
+ 255075 string characters out of 3183883
+ 316877 words of memory out of 3000000
+ 18374 multiletter control sequences out of 15000+200000
  88296 words of font info for 312 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,13n,51p,3625b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,13n,52p,3625b,978s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on cas-xuej.dvi (91 pages, 389064 bytes).
+Output written on cas-xuej.dvi (95 pages, 405896 bytes).

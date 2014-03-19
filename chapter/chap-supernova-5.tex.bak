@@ -210,7 +210,7 @@ SuperNova服务虚拟化平台上的虚拟网络嵌入模块是基于第\ref{chap:vne}章所述的MSO-VNE
 \par
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{supernova-vne-new.eps}
+\includegraphics[width=0.7\textwidth]{supernova-vne-new.eps}
 \caption{SuperNova中虚拟网络嵌入模块结构}
 \label{fig:supernova-vne-new}
 \end{figure}
@@ -234,7 +234,7 @@ euca2ools命令euca-run-instances \textit{param}用于部署业务。用户提出虚拟网络请求
 \subsection{开发实现}
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{vne-liucheng.eps}
+\includegraphics[width=0.7\textwidth]{vne-liucheng.eps}
 \caption{SuperNova中虚拟网络映射模块的实现流程}
 \label{fig:vne-liucheng}
 \end{figure}
@@ -251,7 +251,7 @@ SuperNova服务虚拟化平台中，虚拟网络映射的部署接口API为：
 \par
 euca-vne-deploy \textit{params}\par
 该euca2ools命令通过调用Boto库接口与EC2建立连接，进行用户认证，根据用户的请求，结合系统可用的资源进行VNE匹配计算和映射处理，成功映射的虚拟网络请求会被分配实际的物理资源，从而为终端用户提供服务。该命令的具体参数如表\ref{tab:deploy-vne}所示。
-\begin{table}
+\begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
@@ -271,7 +271,88 @@ example & \multicolumn{2}{|c|}{euca-vne-deploy -n 1 -l 2 -c 1 -r 128 -d 5 -p 1}\
 
 \section{云控制器模块}
 \subsection{云控制器简介}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-quanju.eps}
+\caption{云控制器在SuperNova中的位置}
+\label{fig:supernova-quanju}
+\end{figure}
+如图\ref{fig:supernova-quanju}所示，云控制器隶属于SuperNova服务虚拟化平台的全局认知管理平台，是用户对其部署在SuperNova平台上的服务的管理入口。通过云控制器，用户可查询已部署的业务，也可以阐述业务需求，并请求系统提供服务，还可以管理已部署的业务，包括虚拟实例、存储组件、安全组等的管理。
 \subsection{功能完善}
+功能完善工作主要是在已有的Euca2ools客户端基础上，对已有的管理操作进行重编码，剔除euca2ools库中对客户端命令的解析并转换为Web Service的过程。这样做的好处有以下两点：\par
+1）简化代码处理流程。\par
+原来的代码处理流程需要经过euca2ools的解析，将通过终端命令行工具输入的命令解析并转换为Web Service的这个过程省去了，直接通过GWT工具库构建Web页面，从而生成Web Service。\par
+2）提高用户体验\par
+对于用户来说，最大的改进就是不在需要面对非常不人性化的终端屏幕，也不用输入繁复易错的命令。通过在Web页面上进行直观的点选操作就可以完成同样的功能，是对用户操作的一种人性化设计，可很好地提高用户体验。
 \subsubsection{实例管理}
+在SuperNova服务虚拟化平台中，虚拟实例的管理包括查询已经创建的虚拟实例，对已存在的虚拟实例进行重启、终止操作，以及重新创建并启动新的实例。如图\ref{fig:describe-instance}所示，在Web页面的Instance 选项卡下的~Available Instances~显示当前用户所创建的实例，用户可对他们进行相应的操作，包括~Terminate~和~Reboot~。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{describe-instance}
+\caption{Available Instance}
+\label{fig:describe-instance}
+\end{figure}
+\par
+如图\ref{fig:run-instance}所示，Instance选项卡下的Run Instance允许用户指定相应的参数以创建用户希望的虚拟实例。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{run-instance}
+\caption{Run Instance}
+\label{fig:run-instance}
+\end{figure}
+\par
+其中的参数含义如表\ref{tab:run-instance}所示。
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c}
+\hline
+参数 & 描述 \\\hline
+count & 需要创建的虚拟实例的数量，默认是1 \\\hline
+security group & 虚拟实例所属的安全组，默认是default \\\hline
+key & 公钥名称 \\\hline
+address & 虚拟实例的地址（可选）\\\hline
+instanceType & 虚拟实例的类型\\\hline
+zone & 虚拟实例所属的局域管理服务器 \\\hline
+kernel & kernel内核镜像\\\hline
+ramdisk & ramdisk镜像\\\hline
+imagId & 镜像Id\\\hline
+\end{tabular}
+\caption{创建虚拟实例的参数说明}
+\label{tab:run-instance}
+\end{table}
+
 \subsubsection{存储管理}
+在SuperNova服务虚拟化平台中，存储组件包括镜像（Images），存储卷（Volume）和存储卷快照（Snapshot）。因此，存储管理即是对相关组件的管理。对于镜像Images的管理，其Web界面如图\ref{fig:supernova-image} 所示。Storage下的Images选项卡展示了可用的Images以及相关的操作，包括Disable或Enable。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-image.eps}
+\caption{SuperNova服务虚拟化平台的Images}
+\label{fig:supernova-image}
+\end{figure}
+\par
+如图\ref{fig:supernova-volume}所示，Storage下的Volumes选项展示了可用的Volume和相应的挂载和卸载情况以及对应的操作，包括删除、卸载、挂载。同时，用户可以通过指定Volume 的空间大小，快照Id和集群管理器以创建新的Volume；也可以把存在的存储卷和虚拟实例关联起来，即存储卷的挂载。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-volume.eps}
+\caption{SuperNova服务虚拟化平台的Volumes}
+\label{fig:supernova-volume}
+\end{figure}
+\par
+如图\ref{supernova-snapshot}所示，Storage下的Snapshots是对存储卷Volume进行相应的备份快照。与Snapshot相关的操作包括创建指定Volume的snapshot以及删除指定的snapshot。
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-snapshot.eps}
+\caption{SuperNova服务虚拟化平台的Snapshots}
+\label{fig:supernova-snapshot}
+\end{figure}
 \subsubsection{安全组管理}
+Security Groups，网络安全组，相对于防火墙，它对流入实例的流量进行控制和管理。一个安全组可以有多个实例与之关联，同样，一个实例可以关联到多个安全组。通过安全组的规则可以控制到达实例的入境流量，只有符合实例关联的安全组的规则的入境流量才能进入到实例中，其他的任何入境流量都将被丢弃。安全组的规则可以在任何时刻对其进行修改，修改之后，新的安全组规则将自动地应用到与安全组相关联的所有实例中。
+\par
+在SuperNova中，有默认的安全组default。在启动实例时，可以显式地为实例指定安全组，否则该实例将关联到默认的安全组。默认安全组的初始设置如下：\par
+1）不允许入境流量；\par
+2）允许所有的出境流量；\par
+3）允许关联到安全组的实例之间相互通信。\par
+用户可以创建新的安全组，或修改安全组的规则，或删除安全组。
+
+
+\section{小结}
