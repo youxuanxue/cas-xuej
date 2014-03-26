@@ -25,7 +25,6 @@
 % 小节标题靠左对齐
 %\CTEXsetup[format+={\flushleft}]{section}
 
-
 \begin{document}
 
 
@@ -95,7 +94,7 @@
   \include{chapter/chap-relate-2}
   \include{chapter/chap-vne-3}
   \include{chapter/chap-tc-4}
-  %\include{chapter/chap-supernova-5}
+  \include{chapter/chap-supernova-5}
   \include{chapter/chap-conclude-6}
   %\include{chapter/chap-math}
   %\include{chapter/chap-tabfig}
@@ -114,8 +113,10 @@
 
   % 参考文献
   % 使用 BibTeX
+  \bibliographystyle{unsrt}
+  \bibliographystyle{plain}
   \bibliography{bib/tex}
-  \nocite{*}
+  %\nocite{*}
   % 不使用 BibTeX
   % \include{chapter/bib}
 

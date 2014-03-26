@@ -12,7 +12,52 @@ A level-1 auxiliary file: chapter/pub.aux
 A level-1 auxiliary file: chapter/patents.aux
 A level-1 auxiliary file: chapter/thanks.aux
 Database file #1: bib/tex.bib
-Warning--empty publisher in wang:00a
-Warning--empty publisher in zhang:03a
-Warning--empty publisher in lshort-cn
-(There were 3 warnings)
+Too many commas in name 1 of "S. Zhang, Z. Qian, J. Wu, S. Lu and L. Epstein" for entry opportunity
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "A. Fischer, J. Botero, M. Beck, H. De Meer and X. Hesselbach" for entry vne-survey
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Z. Cai, F. Liu, N. Xiao, Q. Liu and Z. Wang" for entry snchange
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "M. Bienkowski, A. Feldmann, D. Jurca, W. Kellerer, G. Schaffrath, S. Schmid and J. Widmer" for entry poschange
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "M. Bienkowski, A. Feldmann, D. Jurca, W. Kellerer, G. Schaffrath, S. Schmid and J. Widmer" for entry poschange
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "M. Bienkowski, A. Feldmann, D. Jurca, W. Kellerer, G. Schaffrath, S. Schmid and J. Widmer" for entry poschange
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Y. Xin, I. Baldine, A. Mandal, C. Heermann, J. Chase and A. Yumerefendi" for entry interinp1
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Y. Xin, I. Baldine, A. Mandal, C. Heermann, J. Chase and A. Yumerefendi" for entry interinp1
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "B. Lv, Z. Wang, T. Huang, J. Chen and Y. Liu" for entry interinp2
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "X. Cheng, S. Su, Z. Zhang, H. Wang, F. Yang, Y. Luo and J. Wang" for entry onestage
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "X. Cheng, S. Su, Z. Zhang, H. Wang, F. Yang, Y. Luo and J. Wang" for entry onestage
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "X. Cheng, S. Su, Z. Zhang, H. Wang, F. Yang, Y. Luo and J. Wang" for entry onestage
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "A. Fischer, J. Botero, M. Beck, H. De Meer and X. Hesselbach" for entry vne-survey
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "B. Lv, Z. Wang, T. Huang, J. Chen and Y. Liu" for entry interinp2
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "M. Bienkowski, A. Feldmann, D. Jurca, W. Kellerer, G. Schaffrath, S. Schmid and J. Widmer" for entry poschange
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "M. Bienkowski, A. Feldmann, D. Jurca, W. Kellerer, G. Schaffrath, S. Schmid and J. Widmer" for entry poschange
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "M. Bienkowski, A. Feldmann, D. Jurca, W. Kellerer, G. Schaffrath, S. Schmid and J. Widmer" for entry poschange
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "S. Zhang, Z. Qian, J. Wu, S. Lu and L. Epstein" for entry opportunity
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "X. Cheng, S. Su, Z. Zhang, H. Wang, F. Yang, Y. Luo and J. Wang" for entry onestage
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "X. Cheng, S. Su, Z. Zhang, H. Wang, F. Yang, Y. Luo and J. Wang" for entry onestage
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "X. Cheng, S. Su, Z. Zhang, H. Wang, F. Yang, Y. Luo and J. Wang" for entry onestage
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Y. Xin, I. Baldine, A. Mandal, C. Heermann, J. Chase and A. Yumerefendi" for entry interinp1
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Y. Xin, I. Baldine, A. Mandal, C. Heermann, J. Chase and A. Yumerefendi" for entry interinp1
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Z. Cai, F. Liu, N. Xiao, Q. Liu and Z. Wang" for entry snchange
+while executing---line 1090 of file plain.bst
+(There were 24 error messages)
