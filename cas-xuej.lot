@@ -5,21 +5,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces 虚拟网络请求的需求限制}}{12}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces 底层物理网络的资源限制}}{12}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces 动态服务均衡算法}}{16}{table.3.3}
-\contentsline {table}{\numberline {3.4}{\ignorespaces 虚拟网络嵌入的局部嵌入算法}}{17}{table.3.4}
+\contentsline {table}{\numberline {3.1}{\ignorespaces 虚拟网络请求的需求限制}}{26}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces 底层物理网络的资源限制}}{26}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces 动态服务均衡算法}}{30}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces 虚拟网络嵌入的局部嵌入算法}}{31}{table.3.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces TOS字段的bit定义}}{36}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces TC的基本操作命令}}{41}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces euca-setup-trafficcontrol的详细参数说明}}{44}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces euca-config-trafficcontrol的详细参数说明}}{45}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces euca-describe-trafficcontrol的详细参数说明}}{46}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces euca-stop-trafficcontrol的详细参数说明}}{46}{table.4.6}
+\contentsline {table}{\numberline {4.1}{\ignorespaces TOS字段的bit定义}}{50}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces TC的基本操作命令}}{55}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces euca-setup-trafficcontrol的详细参数说明}}{58}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces euca-config-trafficcontrol的详细参数说明}}{59}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces euca-describe-trafficcontrol的详细参数说明}}{60}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces euca-stop-trafficcontrol的详细参数说明}}{60}{table.4.6}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces euca-deploy-vne的参数说明}}{71}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces 创建虚拟实例的参数说明}}{74}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces 安全组相关的操作和euca2ools命令}}{76}{table.5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces euca-deploy-vne的参数说明}}{85}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces 创建虚拟实例的参数说明}}{88}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces 安全组相关的操作和euca2ools命令}}{90}{table.5.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -11,6 +11,12 @@ C.~Papagianni A.~Leivadeas and S.~Papavassiliou.
   iterated local search based request partitioning.
 \newblock {\em IEEE Trans. Parallel Distrib. Syst.}, PP(99):1, 2012.
 
+\bibitem{cas-cloud}
+Cloud~Security Alliance.
+\newblock Security guidance for critical areas of focus in cloud computing
+  v3.0, 2011.
+\newblock http://www.cloudsecurityalliance.org/guidance/csaguide.v3.0.pdf.
+
 \bibitem{multi-way}
 D.~G. Andersen.
 \newblock Theroretical approaches to node assignment.
@@ -72,6 +78,13 @@ S.~Kolliopoulos and C.~Stein.
 \newblock In {\em Proc. Foundations of Computer Science, IEEE}, pages 426--436,
   1997.
 
+\bibitem{cloud2}
+R.~Griffith A. D. Joseph R. Katz A. Konwinski G. Lee D. Patterson A. Rabkin
+  I.~Stoica M.~Armbrust, A.~Fox and M.~Zaharia.
+\newblock Above the clouds: A berkeley view of cloud computing.
+\newblock EECS Dept., Univ. California, Berkeley, No. UCB/EECS-2009-28
+  [Online]. Available: https://radlab.cs.berkeley.edu/.
+
 \bibitem{poschange}
 D.~Jurca W. Kellerer G. Schaffrath S.~Schmid M.~Bienkowski, A.~Feldmann and
   J.~Widmer.
@@ -101,6 +114,18 @@ M.~R.~Rahman N.~M. M. K.~Chowdhury and R.~Boutaba.
 M.~R.~Rahman N.~M. M. K.~Chowdhury and R.~Boutaba.
 \newblock Virtual network embedding with coordinated node and link mapping.
 \newblock In {\em IEEE INFOCOM. IEEE Infocom}, Apr 2009.
+
+\bibitem{nist-cloud}
+U.S. National~Institute of~Standards and Technology.
+\newblock Nist working definition of cloud computing/nist 800-145, 2011.
+\newblock http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf.
+
+\bibitem{cloud1}
+C.~S.~Yeo R.~Buyya and S.~Venugopal.
+\newblock Market-oriented cloud computing: Vision, hype, and reality for
+  delivering it services as computing utilities.
+\newblock In {\em Proc. 10th IEEE Int. Conf. High Performance Computing and
+  Communications}, pages 5--13, 2008.
 
 \bibitem{svrvivable}
 M.~Rahman and R.~Boutaba.

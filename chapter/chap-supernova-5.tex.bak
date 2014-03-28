@@ -24,13 +24,7 @@ SuperNovaÊÇÒ»¸ö¶à²ãµÄ·þÎñÐéÄâ»¯Æ½Ì¨£¬Í¼\ref{fig:supernova-jiagou}ÊÇÆäÏµÍ³¼Ü¹¹Ê¾Ò
 \par
 ÐéÄâÁ¬½Ó²ã²ÉÓÃÒ»ÖÖ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢±àÂëµÄÍøÂç½á¹¹£¬°üÀ¨Á½²ã£º¾ÖÓò¹ÜÀí²ãºÍÁ¬½Ó²ã¡£¾ÖÓò¹ÜÀí²ãÖ÷Òª¸ºÔð²»Í¬µØÀíÇøÓò£¨Ò²¿ÉÄÜÊÇ¸ù¾ÝÁ´Â·×´Ì¬×é³ÉµÄÇøÓò£©½ÚµãµÄ¼ìË÷¡¢¹ÜÀíºÍË÷ÒýµÈ¹¤×÷£»ÐéÄâÁ¬½Ó²ãÖÐËùÓÐ½ÚµãÍ¨¹ý½á¹¹»¯P2P·½Ê½£¨DHT£©½øÐÐ×éÖ¯£¬Ö÷Òª¸ºÔðÎïÀíÉè±¸²ãËùÌá¹©µÄ½ÚµãµÄÂ·ÓÉºÍ²éÑ¯£¬Í¬Ê±£¬µØÀíÎ»ÖÃÐÅÏ¢µÄÒýÈë£¬±£Ö¤ÁËP2PÍøÂçÖÐ½ÚµãµÄÇøÓò¾Û¼¯ÐÔ£»ÁíÍâ£¬ P2P¼¼ÊõµÄÓ¦ÓÃ£¬±ãÓÚ¸Ã²ãµÄÀ©Õ¹£¬½µµÍÁË¹ÜÀí·þÎñÆ÷µÄ¸ºÔØ£¬ÌáÉýÁËÓÃ»§ÌåÑé¡£ÆäÖÐ£¬¾ÖÓò¹ÜÀí·þÎñÆ÷ÓÉÐéÄâ²ãÖÐµÄÄ³¸ö½Úµãµ£ÈÎ¡£¸ÃÐéÄâÁ¬½Ó²ãµÄ½á¹¹ÈçÍ¼\ref{fig:linklayer}ËùÊ¾¡£
 \par
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{supernova-linklayer.eps}
-\caption{ÐéÄâÁ¬½Ó²ãµÄ½á¹¹Ê¾ÒâÍ¼}
-\label{fig:linklayer}
-\end{figure}
-\par
+
 ¸Ã½á¹¹ÖÐ£¬È«¾Ö¹ÜÀí·þÎñÆ÷£¨Global Manager£¬GM£©ÊÇÒ»¸öÈ«¾ÖÉè±¸£¬Ã¿¸ö¼ÓÈëÐéÄâ»¯Æ½Ì¨µÄ½Úµã¶¼Ê×ÏÈÔÚÈ«¾Ö¼à¹Ü·þÎñÆ÷ÉÏ×¢²á£¬½«ÆäIPµØÖ·¡¢µØÀíÎ»ÖÃÐÅÏ¢ÒÔ¼°ÏàÓ¦µÄÄÜÁ¦ÐÅÏ¢½øÐÐ±¨¸æ£¬Èç´æ´¢¿Õ¼ä¡¢¿ÉÖ§³ÖÁ÷»¯Â·ÊýµÈ¡£Èç¹ûÐéÄâÁ¬½Ó²ãÖÐÃ»ÓÐ½Úµã£¬Ôò¸Ã½ÚµãÎªÐéÄâÁ¬½Ó²ãµÄµÚÒ»¸ö½Úµã£¬Í¬Ê±£¬¸Ã½ÚµãÒ²±»Ñ¡ÎªËùÔÚÇøÓòµÄ¾ÖÓò¹ÜÀí·þÎñÆ÷¡£Èç¹ûÐéÄâÁ¬½Ó²ãÖÐÒÑÓÐ½Úµã£¬GMÔòÎª½Úµã·µ»ØÒ»Ð©½ÚµãÐÅÏ¢£¬°ïÖú¸Ã½Úµã¼ÓÈëÐéÄâÁ¬½Ó²ã¡£ÁíÍâ£¬ÔÚÍ¬Ò»¸öÇøÓòÖÐ£¬Èç¹ûÄ³¸ö½ÚµãÄÜÁ¦ÔÚÒ»¸ö½Ï³¤Ê±¼äÄÚÔ¶´óÓÚ¾ÖÓò¹ÜÀí·þÎñÆ÷£¬Ôò½«ÇøÓò¹ÜÀí·þÎñÆ÷ÖÐµÄÄÚÈÝÍ¬²½µ½¸Ã½ÚµãÉÏ£¬²¢ÓÉ¸Ã½ÚµãÌæ»»Ô­¾ÖÓò¹ÜÀí·þÎñÆ÷£¬±£Ö¤¾ÖÓò¹ÜÀíµÄ¸ßÐ§ÐÔ¡£
 \par
 ÕâÀï£¬Ò²Ìá³öÒ»ÖÖ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢µÄ·þÎñµ¥Ôª×Ô¶¯¾ÛÀàµÄ¹ÜÀí²ã´Î»®·Ö·½·¨¡£ÔÚÇøÓò»®·Ö±ê×¼ÉÏ£¬¾ßÓÐÇ¿ÖÆÓë×Ô¶¯Á½ÖÖ»®·ÖÖ¸±ê¡£ËùÓÐ·þÎñµ¥ÔªÊ×ÏÈ°´ÕÕÇ¿ÖÆ±ê×¼½øÐÐÇøÓò»®·Ö£¬µ±Ò»¸öÔ­ÓÐÇøÓòÄÚµÄ·þÎñµ¥ÔªÊýÁ¿´ïµ½Ò»¶¨ÏÞ¶Èºó£¬°´ÕÕ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢µÄ¾ÛÀà/·ÖÀà·½·¨£¬½«Ô­ÇøÓò½øÐÐ²ð·Ö£¬²ð·ÖºóµÄÃ¿¸ö×ÓÇøÓòÖÐÑ¡³ö¸ÃÐÂÇøÓòµÄÇøÓò¹ÜÀí·þÎñÆ÷¡£µ±ÇøÓò¹ýÐ¡Ê±£¬Ïà½üÇøÓò½øÐÐºÏ²¢¡£ÕâÑùÐÎ³É¶à²ã´ÎµÄÇøÓò»®·Ö½á¹¹¡£¸Ã·½·¨¿É±ÜÃâÄ³ÇøÓò¹ý´óÊ±ÇøÓò¹ÜÀí·þÎñÆ÷µÄ¸ºÔØ¹ýÖØ£¬ÒÔ¼°ÇøÓò¹ýÐ¡Ê±µÄ¹ÜÀí×ÊÔ´ÀË·ÑÎÊÌâ¡£
@@ -338,7 +332,7 @@ imagId & ¾µÏñId\\\hline
 \label{fig:supernova-volume}
 \end{figure}
 \par
-ÈçÍ¼\ref{supernova-snapshot}ËùÊ¾£¬StorageÏÂµÄSnapshotsÊÇ¶Ô´æ´¢¾íVolume½øÐÐÏàÓ¦µÄ±¸·Ý¿ìÕÕ¡£ÓëSnapshotÏà¹ØµÄ²Ù×÷°üÀ¨´´½¨Ö¸¶¨VolumeµÄsnapshotÒÔ¼°É¾³ýÖ¸¶¨µÄsnapshot¡£
+ÈçÍ¼\ref{fig:supernova-snapshot}ËùÊ¾£¬StorageÏÂµÄSnapshotsÊÇ¶Ô´æ´¢¾íVolume½øÐÐÏàÓ¦µÄ±¸·Ý¿ìÕÕ¡£ÓëSnapshotÏà¹ØµÄ²Ù×÷°üÀ¨´´½¨Ö¸¶¨Volume µÄsnapshotÒÔ¼°É¾³ýÖ¸¶¨µÄsnapshot¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-snapshot.eps}
@@ -352,7 +346,27 @@ Security Groups£¬ÍøÂç°²È«×é£¬Ïà¶ÔÓÚ·À»ðÇ½£¬Ëü¶ÔÁ÷ÈëÊµÀýµÄÁ÷Á¿½øÐÐ¿ØÖÆºÍ¹ÜÀí¡£Ò»¸
 1£©²»ÔÊÐíÈë¾³Á÷Á¿£»\par
 2£©ÔÊÐíËùÓÐµÄ³ö¾³Á÷Á¿£»\par
 3£©ÔÊÐí¹ØÁªµ½°²È«×éµÄÊµÀýÖ®¼äÏà»¥Í¨ÐÅ¡£\par
-ÓÃ»§¿ÉÒÔ´´½¨ÐÂµÄ°²È«×é£¬»òÐÞ¸Ä°²È«×éµÄ¹æÔò£¬»òÉ¾³ý°²È«×é¡£
-
+ÓÃ»§¿ÉÒÔÊ¹ÓÃÈç±í\ref{tab:security}ËùÊ¾µÄeuca2oolsÃüÁîÀ´´´½¨ÐÂµÄ°²È«×é£¬»òÐÞ¸Ä°²È«×éµÄ¹æÔò£¬»òÉ¾³ý°²È«×éµÈ¡£
+\begin{table}[h]
+\begin{tabular}{c|c|c}
+\\\hline
+²Ù×÷ÀàÐÍ & euca2oolsÃüÁî & ÃèÊö \\\hline
+´´½¨°²È«×é & ec2-create-group & ÓÃµ±Ç°ÕË»§´´½¨ÐÂµÄ°²È«×é \\\hline
+ÃèÊö°²È«×é & ec2-describe-group & ÃèÊöÓëÕË»§Ïà¹ØµÄ°²È«×éÐÅÏ¢\\\hline
+Ìí¼Ó°²È«×é¹æÔò & ec2-authorize & ÏòÖ¸¶¨°²È«×éÌí¼ÓÒ»¸ö»ò¶à¸ö¹æÔò\\\hline
+ÒÆ³ý°²È«×é¹æÔò & ec2-revoke & ´ÓÖ¸¶¨°²È«×éÖÐÒÆ³ýÒ»¸ö»ò¶à¸ö¹æÔò\\\hline
+É¾³ý°²È«×é & ec2-delete-group & É¾³ýºÍÕË»§¹ØÁªµÄ°²È«×é\\\hline
+\end{tabular}
+\caption{°²È«×éÏà¹ØµÄ²Ù×÷ºÍeuca2oolsÃüÁî}
+\label{tab:security}
+\end{table}
+\par
+ÔÚSuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬°²È«×éÏà¹ØµÄWeb½çÃæÈçÍ¼\ref{fig:security} ËùÊ¾¡£ÔÚ~SecurityGroups~Ñ¡Ïî¿¨ÖÐ£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ~ Add a new Group ~´´½¨ÐÂµÄ°²È«×é£¬¶ÔÒÑ¾­´æÔÚµÄ°²È«×é£¬¿ÉÒÔÊ¹ÓÃµã»÷~Authorize~Ìí¼Ó°²È«×é¹æÔò£¬»òÍ¨¹ý~Revoke~ÒÆ³ý°²È«×é¹æÔò£¬»òÍ¨¹ý~Delete~ÍêÈ«É¾³ý°²È«×é¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{security.eps}
+\caption{SuperNovaÖÐµÄ°²È«×é}
+\label{fig:security}
+\end{figure}
 
 \section{Ð¡½á}

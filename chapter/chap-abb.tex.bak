@@ -1,11 +1,13 @@
 \begin{abb}{99}
 
-\begin{table}
+\centering
 \begin{tabular}{|c|c|c|}
 \hline
 VNE & Virtual Network Embedding & 虚拟网络嵌入\\\hline
 VNR & Virtual Network Request   & 虚拟网络请求 \\\hline
 SN  & Substrate Network         & 底层网络     \\\hline
+CRM & Customer  Relationship  Management&客户管理管理系统\\\hline
+EC2 & Elastic  Compute  Cloud & 弹性云计算服务\\\hline
+AWS & Amazon WEB Service & 亚马逊网络服务\\\hline
 \end{tabular}
-\end{table}
 \end{abb}
