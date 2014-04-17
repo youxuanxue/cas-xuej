@@ -67,6 +67,8 @@
 \RequirePackage{amsmath,amsthm,amsfonts,amssymb,bm}
 %% graphics packages
 \RequirePackage{graphicx}
+%xuej add package
+\RequirePackage{longtable}
 %% sort and compress citations
 \RequirePackage[sort&compress,numbers]{natbib}
 %% packages and settings depend on PDF mode

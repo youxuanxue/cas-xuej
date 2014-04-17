@@ -1,16 +1,40 @@
 
 \begin{abstract}
-本文是中国科学院学位论文的~\LaTeX{}~模板。除了介绍~\LaTeX{}~文档类
-~\texttt{CASthesis}~的用法外，本文还是一个简要的学位论文写作指南。
-
-\keywords{中科院，学位论文，\LaTeX{}~模板}
+近年来，随着互联网络的快速发展，网民规模随之增加，互联网普及率越来越高。随着~3G~网络的进一步普及，智能手机和无线网络的持续发展，音频、视频等多媒体业务也随之大幅增长。多媒体业务的大幅增长对基础设施服务提供商提出了巨大的挑战。由于多媒体业务对~QoS~服务质量要求苛刻，如严格的带宽需求保障、较小的延时保障和严格的延时抖动限制等。因此，如何提供合适的服务平台来承载媒体业务，如何保障~QoS~服务质量等等都具有很高的研究价值和广阔的市场前景。
+\par
+在传统的服务模式下，随着业务的增长和用户的增加，基础设施服务提供商常常通过部署服务器集群、增加服务器设备数量来为用户提供可靠服务。这种传统的服务模式在当今快速发展的互联网络环境下已不再适合。一方面，这种传统的服务模式给基础设施服务提供商带来了巨大的设备成本和部署压力。另一方面，这些部署的大量设备根本得不到充分利用，造成巨大的资源浪费。虚拟化技术对解决这个问题具有很大的优势，它通过建立统一的资源管控系统，管理所有的设备并进行虚拟化，按需为业务分配资源，显著提高了资源利用率，大大减少了服务器设备成本和部署开销。因此，虚拟化技术得到了越来越多的关注。
+\par
+现有的虚拟化系统，大多是面向硬件资源共享。然而，在实际应用中，常常会用到许多独立的服务，如媒体业务中经常涉及的存储、转码、流化服务。如果将这些独立的服务作为基本服务单元，一方面可以使其可以更好的为不同系统提供高质量服务，另一方面将硬件资源通过多服务类型虚拟，提高了利用率，降低了部署和运营成本，应用和研究价值均较强。
+\par
+因此，本文以服务虚拟化平台~SuperNova~为依托开展研究和开发工作，研究了面向媒体业务的虚拟化网络服务的关键问题和技术，包括虚拟网络嵌入、资源交互技术、业务流量隔离与控制以及服务虚拟化平台~SuperNova~的功能完善等。通过研究这些问题和技术，提出了相应的技术解决方案，解决了现有技术中的一些问题，取得了以下研究成果：
+\par
+1、提出了一种面向媒体业务的虚拟网络嵌入算法~MSO-VNE~。MSO-VNE~算法根据虚拟网络请求和底层物理网络的地理位置特征，运用节点聚类算法将虚拟网络请求聚类分割为规模较小的子请求，充分利用分而治之策略来降低虚拟网络嵌入的时间复杂度。针对所有的虚拟网络子请求，运用并发处理策略进一步降低虚拟网络嵌入处理的时间复杂度。MSO-VNE~算法通过动态服务均衡分析，充分考虑了节点在网络拓扑中的重要性。节点的重要性不仅与节点自身的可用资源有关，还与该节点的邻居节点的可用资源相关。通常，越是重要的节点具有优先的嵌入映射权利。动态服务均衡分析显著提高了虚拟网络嵌入的性能和底层物理网络的资源利用率，增加了基础设施提供商的长期收益。
+\par
+2、基于面向媒体业务的虚拟网络嵌入算法~MSO-VNE~，提出了一种面向媒体业务的资源映射交互框架。资源映射交互框架主要包括用户接口模块、预处理模块、资源映射模块、资源分配模块以及资源监控模块。用户接口模块是资源映射交互框架中面向用户的部分，供用户定义业务和服务请求，提交请求并获取特定的服务。预处理模块通过对用户提交的请求进行预处理，为进一步的快速处理提供保障。资源映射模块是资源映射交互框架的核心模块，它通过利用~MSO-VNE~嵌入映射算法进行资源映射匹配计算，以获得更好的~QoS~服务质量。当用户请求和底层物理网络的可用资源成功映射后，资源分配模块根据资源映射模块的映射结果进行真正的资源分配和管理。同时，资源监控模块通过实时监控底层资源池中的资源使用变化情况并进行必要的同步管理，以辅助资源映射模块和资源分配模块完成它们的工作。资源映射交互框架可有效地保障~QoS~服务质量并提高用户体验质量。
+\par
+3、基于~Linux~流量控制模块~TC~设计了多层次结构的业务流量隔离与控制系统。通过虚拟局域网~VLAN~实现不可见性隔离，即虚拟局域网中的同一个~VLAN~内的成员可相互通信，而不同~VLAN~之间是相互隔离和不可见的。通过区分数据流量，并规定不同的数据流被发送的方式和顺序实现流量控制和互不影响性隔离。业务流量隔离与控制系统封装了~Linux TC~的控制命令，隐藏了实现细节，简化了用户操作，提高了用户体验。另外，通过开放一定的~API~ 控制接口，用户可以根据实际业务的需求对流量控制规则进行自定义重配置。业务流量隔离与控制系统可以有效地隔离不同用户之间的业务流量干扰，也为用户提供了一种区分不同业务、实现较高~QoS~服务质量的工具。
+\par
+4、完善了服务虚拟化平台~SuperNova~的功能实现。服务虚拟化平台~SuperNova~的功能实现主要包括三个部分：首先是虚拟网络嵌入算法在服务虚拟化平台~SuperNova~中的工程实现；其次是业务流量隔离与控制系统在服务虚拟化平台~SuperNova~中的工程实现；最后是为提高用户体验质量而附加的部分功能实现，包括实例管理，存储管理，安全组管理等。无论是哪个模块组件，在工程实现时都需要充分考虑可实现性和高效率性，因此，可以根据具体情况做相应的简化。譬如，对于虚拟网络嵌入算法，可通过由用户指定集群区域，从而降低聚类算法的复杂度；考虑到链路映射的复杂性，可通过弱化链路映射来提高映射效率等。服务虚拟化平台~SuperNova~最终要面向用户提供服务，因此，平台的用户体验质量是至关重要的。通过对云控制器进行可视化改进，使得用户不再需要面对非常不人性化的终端屏幕，也不再需要输入繁复易错的命令。而是通过在~Web~页面上进行直观的点选操作就可以完成同样的功能，是对用户操作的一种人性化设计，可很好地提高用户体验质量。
+\par
+\keywords{虚拟化，虚拟网络嵌入，资源映射，流量隔离，流量控制，QoS，媒体业务}
 \end{abstract}
 
 
 \begin{englishabstract}
-This paper is a thesis template of Chinese Academy of Sciences. Besides that
-the usage of the \LaTeX{} document class \texttt{CASthesis}, a brief
-guideline for writing the thesis is also included.
+In recent years, with the rapid development of the Internet, the number of Internet users and the Internet penetration have been increasing. With the sustainable development of the 3G network, smart phones and wireless network, the multimedia services, such as the audio and video business, increased greatly. The surge of multimedia services give the infrastructure service providers a huge challenge. The multimedia services have strict demanding for quality of service, for instance, the strict bandwidth requirements, the smaller delay and delay jitter. Therefore, it has the high research value and broad market prospect to research how to provide appropriate platform to host the multimedia services and how to guarantee the quality of service.
+
+\par
+In the traditional service mode, with the growth of the business and the increase of the user number, the infrastructure service providers have to increase the quantity of server equipment to provide users reliable service. While, the traditional service mode is no longer applicable nowadays. On the one hand, the traditional service mode brings infrastructure service provides great equipment and deployment cost. On the other hand, it brings great waste of resources because we can not make full use of the deployed equipments. The virtualization technology has a great advantage to solve the problem. Actually, a unified resource control system was established and all the equipments was managed. The system allocates resource according to the demanding of the service. It is an efficient way to improve the resource utilization and decrease the cost of server equipment and deployment. As a result, the virtualization technology is gaining more and more attention.
+
+\par
+Most existing virtualization systems are designed for sharing hardware resource. In practice, most business often use many independent services, such as the storage, transcoding, streaming in the multimedia business. We can make these independent services as basic units. On the one hand, the basic units can provide high quality service for different systems. On the other hand, the multiple service types of hardware resources can improve the utilization and reduce the cost of operation and deployment. The research has a strong application and research value.
+
+\par
+As a result, on the basis of the service virtualization platform, SuperNova, we conducted some research and development work. In the multimedia service oriented virtualization of network service, some key problems including virtual network embedding, interactive technology, traffic control and isolation, and other programming problems were studied. Through studying these techniques, this paper proposed technical solutions to solve some problems in the existing technology. The contributions of this paper are as follows:
+
+\par
+1, A multimedia service oriented virtual network embedding algorithm, MSO-VNE, was proposed. According to the location characteristics of the virtual network request and substrate network, the nodes clustering algorithm was applied to split the origin request into smaller ones in the MSO-VNE algorithm. The proposed algorithm make full use of the divide-and-conquer strategy to reduce the time complexity. When embedding all the virtual network sub-requests, the concurrent strategy was applied to further reduce the time complexity. Through the dynamic service balance analysis, the MSO-VNE algorithm take full consideration to the importance of nodes in the network topology. In fact, the importance of a node is not only associated with the available resources of the node itself, but also associated with the available resources of neighbor nodes of the node. In general, the more important the node has the priority right to be embedded. The dynamic service balance analysis gained a significant performance, including improving the performance of the virtual network embedding, increasing the utilization of the substrate network and increasing the revenue of the infrastructure providers in the long term.
+
 
 \englishkeywords{Chinese Academy of Sciences (CAS), Thesis, \LaTeX{}
 Template}

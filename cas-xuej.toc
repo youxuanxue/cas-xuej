@@ -1,111 +1,118 @@
 \let \CTEX@spaceChar \relax 
 \contentsline {chapter}{摘\CTEX@spaceChar \CTEX@spaceChar 要}{i}{chapter*.1}
-\contentsline {chapter}{Abstract}{iii}{chapter*.2}
-\contentsline {chapter}{缩略语}{v}{chapter*.3}
-\contentsline {chapter}{目\CTEX@spaceChar \CTEX@spaceChar 录}{vii}{chapter*.4}
+\contentsline {chapter}{Abstract}{v}{chapter*.2}
+\contentsline {chapter}{缩略语}{vii}{chapter*.3}
+\contentsline {chapter}{目\CTEX@spaceChar \CTEX@spaceChar 录}{ix}{chapter*.4}
 \contentsline {chapter}{\numberline {第一章\hspace {0.3em}}绪论}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}研究背景及意义}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}研究内容及面临的挑战}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}本文主要贡献}{4}{section.1.3}
-\contentsline {section}{\numberline {1.4}本文内容安排}{5}{section.1.4}
-\contentsline {chapter}{\numberline {第二章\hspace {0.3em}}相关技术背景及技术基础}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}引言}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}云计算}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}什么是云计算}{7}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}云计算的基本元素}{8}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}云计算的服务类型}{9}{subsubsection.2.2.1.2}
-\contentsline {subsubsection}{\numberline {2.2.1.3}云计算的部署模式}{11}{subsubsection.2.2.1.3}
-\contentsline {subsection}{\numberline {2.2.2}云计算优势}{11}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}云平台}{12}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}OpenStack}{12}{subsubsection.2.2.3.1}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Eucalyptus}{14}{subsubsection.2.2.3.2}
-\contentsline {section}{\numberline {2.3}虚拟化技术}{15}{section.2.3}
-\contentsline {section}{\numberline {2.4}网络流量控制}{17}{section.2.4}
-\contentsline {chapter}{\numberline {第三章\hspace {0.3em}}面向媒体业务的虚拟网络嵌入研究}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}引言}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}相关研究}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}面向媒体业务的虚拟网络嵌入算法设计}{24}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}整体架构}{24}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}网络模型}{24}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}节点聚类}{28}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}动态服务均衡}{29}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}局部子请求映射}{31}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}仿真验证}{31}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}仿真环境}{31}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}时间复杂度}{34}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}负载分布}{35}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}平均收益开销比}{36}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}平均接受率}{38}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}小结}{39}{subsection.3.4.6}
-\contentsline {section}{\numberline {3.5}面向媒体业务的资源映射交互框架}{40}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}系统框架}{40}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}交互框架设计细则}{42}{subsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.2.1}用户接口模块}{42}{subsubsection.3.5.2.1}
-\contentsline {subsubsection}{\numberline {3.5.2.2}预处理模块}{43}{subsubsection.3.5.2.2}
-\contentsline {subsubsection}{\numberline {3.5.2.3}资源映射模块}{43}{subsubsection.3.5.2.3}
-\contentsline {subsubsection}{\numberline {3.5.2.4}资源监控}{44}{subsubsection.3.5.2.4}
-\contentsline {subsubsection}{\numberline {3.5.2.5}资源分配}{44}{subsubsection.3.5.2.5}
-\contentsline {section}{\numberline {3.6}小结}{44}{section.3.6}
-\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}业务流量隔离控制}{47}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{47}{section.4.1}
-\contentsline {section}{\numberline {4.2}流量控制原理}{47}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Linux TC}{47}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}QDisc}{49}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}配置管理}{54}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}业务流量隔离方案}{54}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}整体架构}{54}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}设计细则}{56}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}功能接口}{57}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}实验验证}{60}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}实验环境}{60}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}实验评估}{63}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}链路带宽}{63}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}业务干扰特征}{63}{subsubsection.4.4.2.2}
-\contentsline {subsubsection}{\numberline {4.4.2.3}流量隔离控制性能}{64}{subsubsection.4.4.2.3}
-\contentsline {section}{\numberline {4.5}小结}{64}{section.4.5}
-\contentsline {chapter}{\numberline {第五章\hspace {0.3em}}SuperNova系统工程开发}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}引言}{67}{section.5.1}
-\contentsline {section}{\numberline {5.2}SuperNova}{67}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}系统架构}{67}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.1.1}物理设备层}{68}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}统一的服务虚拟、控制和支持层}{68}{subsubsection.5.2.1.2}
-\contentsline {subsubsection}{\numberline {5.2.1.3}全局认知管理层}{71}{subsubsection.5.2.1.3}
-\contentsline {subsubsection}{\numberline {5.2.1.4}服务和应用层}{71}{subsubsection.5.2.1.4}
-\contentsline {subsection}{\numberline {5.2.2}编程架构}{72}{subsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.1}Boto}{72}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}GWT}{74}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}Jetty}{75}{subsubsection.5.2.2.3}
-\contentsline {subsubsection}{\numberline {5.2.2.4}Mule}{75}{subsubsection.5.2.2.4}
-\contentsline {subsubsection}{\numberline {5.2.2.5}JiBX}{75}{subsubsection.5.2.2.5}
-\contentsline {subsubsection}{\numberline {5.2.2.6}JDBC}{75}{subsubsection.5.2.2.6}
-\contentsline {subsubsection}{\numberline {5.2.2.7}Netty}{75}{subsubsection.5.2.2.7}
-\contentsline {subsubsection}{\numberline {5.2.2.8}Axis2C}{76}{subsubsection.5.2.2.8}
-\contentsline {subsubsection}{\numberline {5.2.2.9}WSDL2C}{76}{subsubsection.5.2.2.9}
-\contentsline {section}{\numberline {5.3}流量控制模块}{76}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}流量控制简介}{76}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}编程架构}{77}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}功能和实现}{77}{subsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.3.1}启动流量控制}{77}{subsubsection.5.3.3.1}
-\contentsline {subsubsection}{\numberline {5.3.3.2}查询流量控制规则}{80}{subsubsection.5.3.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3.3}配置流量控制规则}{80}{subsubsection.5.3.3.3}
-\contentsline {subsubsection}{\numberline {5.3.3.4}取消流量控制}{80}{subsubsection.5.3.3.4}
-\contentsline {section}{\numberline {5.4}虚拟网络嵌入模块}{81}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}工程设计}{81}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}算法简化}{81}{subsubsection.5.4.1.1}
-\contentsline {subsubsection}{\numberline {5.4.1.2}编程简化}{82}{subsubsection.5.4.1.2}
-\contentsline {subsection}{\numberline {5.4.2}开发实现}{84}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}功能接口}{85}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}云控制器模块}{85}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}云控制器简介}{85}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}功能完善}{86}{subsection.5.5.2}
-\contentsline {subsubsection}{\numberline {5.5.2.1}实例管理}{87}{subsubsection.5.5.2.1}
-\contentsline {subsubsection}{\numberline {5.5.2.2}存储管理}{88}{subsubsection.5.5.2.2}
-\contentsline {subsubsection}{\numberline {5.5.2.3}安全组管理}{90}{subsubsection.5.5.2.3}
-\contentsline {section}{\numberline {5.6}小结}{90}{section.5.6}
-\contentsline {chapter}{\numberline {第六章\hspace {0.3em}}总结和展望}{93}{chapter.6}
-\contentsline {section}{\numberline {6.1}工作总结}{93}{section.6.1}
-\contentsline {section}{\numberline {6.2}今后工作展望}{93}{section.6.2}
-\contentsline {chapter}{参考文献}{95}{chapter*.7}
-\contentsline {chapter}{发表文章目录}{101}{chapter*.8}
-\contentsline {chapter}{申请专利目录}{103}{chapter*.9}
-\contentsline {chapter}{致\CTEX@spaceChar \CTEX@spaceChar 谢}{105}{chapter*.10}
+\contentsline {section}{\numberline {1.2}研究内容及面临的挑战}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}本文主要贡献}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}本文内容安排}{6}{section.1.4}
+\contentsline {chapter}{\numberline {第二章\hspace {0.3em}}相关技术背景及技术基础}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}引言}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}云计算}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}虚拟化技术}{17}{section.2.3}
+\contentsline {section}{\numberline {2.4}网络流量控制}{19}{section.2.4}
+\contentsline {section}{\numberline {2.5}小结}{20}{section.2.5}
+\contentsline {chapter}{\numberline {第三章\hspace {0.3em}}面向媒体业务的虚拟网络嵌入研究}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}引言}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}相关研究}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}面向媒体业务的虚拟网络嵌入算法设计}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}整体架构}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}网络模型}{26}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}虚拟网络请求}{26}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}底层物理网络}{28}{subsubsection.3.3.2.2}
+\contentsline {subsection}{\numberline {3.3.3}节点聚类}{30}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}动态服务均衡}{31}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}局部嵌入映射}{33}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}仿真验证}{33}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}仿真环境}{33}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}时间复杂度}{36}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}负载分布}{37}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}平均收益开销比}{39}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}平均接受率}{41}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}面向媒体业务的资源映射交互框架}{42}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}系统框架}{42}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}设计细则}{45}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}用户接口模块}{45}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}预处理模块}{45}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}资源映射模块}{46}{subsubsection.3.5.2.3}
+\contentsline {subsubsection}{\numberline {3.5.2.4}资源分配}{46}{subsubsection.3.5.2.4}
+\contentsline {subsubsection}{\numberline {3.5.2.5}资源监控}{47}{subsubsection.3.5.2.5}
+\contentsline {section}{\numberline {3.6}小结}{47}{section.3.6}
+\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}业务流量隔离和控制}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}引言}{49}{section.4.1}
+\contentsline {section}{\numberline {4.2}流量控制原理}{50}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Linux TC}{50}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Linux TC\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 简介}{50}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Linux TC\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 流量控制方式}{51}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Linux TC\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 流量控制组件}{52}{subsubsection.4.2.1.3}
+\contentsline {subsection}{\numberline {4.2.2}QDisc}{52}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}无类别队列规定}{53}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}分类队列规定}{55}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}配置管理}{57}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}业务流量隔离和控制方案}{58}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}整体架构}{58}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}设计细则}{59}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}功能接口}{61}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}euca-setup-trafficcontrol}{61}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}euca-config-trafficcontrol}{61}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}euca-describe-trafficcontrol}{63}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}euca-stop-trafficcontrol}{63}{subsubsection.4.3.3.4}
+\contentsline {section}{\numberline {4.4}实验验证}{64}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}实验环境}{64}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}实验内容}{64}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}链路带宽速率测量}{65}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}业务之间的相互干扰}{65}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}流量隔离控制性能}{66}{subsubsection.4.4.2.3}
+\contentsline {subsection}{\numberline {4.4.3}实验评估}{66}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}链路带宽}{66}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}业务干扰特征}{67}{subsubsection.4.4.3.2}
+\contentsline {subsubsection}{\numberline {4.4.3.3}流量隔离控制性能}{68}{subsubsection.4.4.3.3}
+\contentsline {section}{\numberline {4.5}小结}{69}{section.4.5}
+\contentsline {chapter}{\numberline {第五章\hspace {0.3em}}SuperNova\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 系统工程开发}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}引言}{71}{section.5.1}
+\contentsline {section}{\numberline {5.2}SuperNova}{72}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}系统架构}{72}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}物理设备层}{73}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}统一的服务虚拟、控制和支持层}{73}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.3}全局认知管理层}{75}{subsubsection.5.2.1.3}
+\contentsline {subsubsection}{\numberline {5.2.1.4}服务和应用层}{75}{subsubsection.5.2.1.4}
+\contentsline {subsection}{\numberline {5.2.2}编程架构}{76}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Boto}{76}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}GWT}{76}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Jetty}{78}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2.4}Mule}{79}{subsubsection.5.2.2.4}
+\contentsline {subsubsection}{\numberline {5.2.2.5}JiBX}{79}{subsubsection.5.2.2.5}
+\contentsline {subsubsection}{\numberline {5.2.2.6}JDBC}{79}{subsubsection.5.2.2.6}
+\contentsline {subsubsection}{\numberline {5.2.2.7}Netty}{80}{subsubsection.5.2.2.7}
+\contentsline {subsubsection}{\numberline {5.2.2.8}Axis2C}{80}{subsubsection.5.2.2.8}
+\contentsline {subsubsection}{\numberline {5.2.2.9}WSDL2C}{81}{subsubsection.5.2.2.9}
+\contentsline {section}{\numberline {5.3}业务流量隔离和控制模块}{81}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}流量控制简介}{81}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}编程架构}{82}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}功能和实现}{85}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}启动}{85}{subsubsection.5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.2}查询}{85}{subsubsection.5.3.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3.3}配置}{86}{subsubsection.5.3.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.4}取消}{87}{subsubsection.5.3.3.4}
+\contentsline {section}{\numberline {5.4}虚拟网络嵌入模块}{87}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}工程设计}{87}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}算法简化}{87}{subsubsection.5.4.1.1}
+\contentsline {subsubsection}{\numberline {5.4.1.2}编程简化}{89}{subsubsection.5.4.1.2}
+\contentsline {subsection}{\numberline {5.4.2}开发实现}{90}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}功能接口}{92}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}云控制器模块}{92}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}云控制器简介}{92}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}功能完善}{92}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}实例管理}{94}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}存储管理}{95}{subsubsection.5.5.2.2}
+\contentsline {subsubsection}{\numberline {5.5.2.3}安全组管理}{97}{subsubsection.5.5.2.3}
+\contentsline {section}{\numberline {5.6}小结}{98}{section.5.6}
+\contentsline {chapter}{\numberline {第六章\hspace {0.3em}}总结和展望}{99}{chapter.6}
+\contentsline {section}{\numberline {6.1}工作总结}{99}{section.6.1}
+\contentsline {section}{\numberline {6.2}今后工作展望}{101}{section.6.2}
+\contentsline {chapter}{参考文献}{103}{chapter*.7}
+\contentsline {chapter}{发表文章目录}{113}{chapter*.8}
+\contentsline {chapter}{申请专利目录}{115}{chapter*.9}
+\contentsline {chapter}{致\CTEX@spaceChar \CTEX@spaceChar 谢}{117}{chapter*.10}

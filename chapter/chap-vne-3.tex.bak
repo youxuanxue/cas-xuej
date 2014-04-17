@@ -1,72 +1,67 @@
 \chapter{ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëÑÐ¾¿}
 \label{chap:vne}
 \section{ÒýÑÔ}
-Ëæ×ÅÔÆ¶ËÓ¦ÓÃ·þÎñºÍº£Á¿Êý¾ÝÐèÇóµÄÈÕÒæÔö¼Ó£¬´«Í³ÍøÂç½©»¯µÄ½á¹¹ÄÑÒÔÂú×ãÐÂÐËÒµÎñµÄÐèÇó¡£ÍøÂçÐéÄâ»¯±»ÈÏÎªÊÇÎ´À´ÍøÂçµÄ¹Ø¼ü¼¼Êõ¡£ÍøÂçÐéÄâ»¯¼¼Êõ¿É¿Ë·þ´«Í³ÍøÂçµÄ½©»¯ÎÊÌâ£¬ÔÊÐí¶à¸öÒì¹¹µÄÐéÄâÍøÂçÔÚÒ»¸ö¹²ÏíµÄµ×²ãÎïÀíÍøÂçÉÏ¹²´æ¡£ÀàËÆÓÚ·þÎñÆ÷ÐéÄâ»¯¼¼ÊõÈÃ¶à¸ö·þÎñÆ÷ÊµÀýËÞ×¡Í¬Ò»Ì¨ÎïÀíÖ÷»úÉÏ£¬ÍøÂçÐéÄâ»¯ÔÊÐí¶à¸öÒì¹¹µÄÐéÄâÍøÂç¼Ü¹¹ÔÚÍ¬Ò»¸ö¹²ÏíµÄÎïÀíÍøÂçÉÏ¡£¸÷¸öÐéÄâÍøÂçµÄÔË×÷ÊÇÏà»¥¶ÀÁ¢ºÍÍ¸Ã÷µÄ£¬¾ÍºÃÏñÖ»ÓÐÕâÒ»¸öÐéÄâÍøÂçÔÚÎïÀíÍøÂçÉÏÔËÐÐÒ»Ñù¡£
+ÔÆ¶ËÓ¦ÓÃ·þÎñµÄÈÕÒæÀ©ÕÅºÍº£Á¿Êý¾ÝÐèÇóµÄÈÕÒæÔö³¤¶ÔÍøÂç¼Ü¹¹Ìá³öÁËÐÂµÄÐèÇó¡£¶ø´«Í³ÍøÂçµÄ½©»¯½á¹¹Ê¹µÃËüÄÑÒÔ±ä¸üºÍÑÝ½ø£¬ÎÞ·¨Âú×ãÐÂÐËÒµÎñµÄÐèÇó¡£ÍøÂçÐéÄâ»¯¼¼Êõ±»ÈÏÎªÊÇ¿Ë·þ´«Í³ÍøÂç½©»¯ÎÊÌâ£¬¹¹½¨Î´À´ÍøÂçµÄ¹Ø¼ü¼¼Êõ¡£ÍøÂçÐéÄâ»¯¼¼ÊõÔÊÐí¶à¸öÒì¹¹µÄÐéÄâÍøÂçÔÚÒ»¸ö¹²ÏíµÄµ×²ãÎïÀíÍøÂçÉÏ¹²´æ¡£ÀàËÆÓÚ·þÎñÆ÷ÐéÄâ»¯¼¼ÊõÈÃ¶à¸öÐéÄâ»úÊµÀýËÞ×¡ÔÚÍ¬Ò»Ì¨ÎïÀíÖ÷»úÉÏ£¬ÍøÂçÐéÄâ»¯¼¼ÊõÔÊÐí¶à¸öÒì¹¹µÄÐéÄâÍøÂç¼Ü¹¹ÔÚÍ¬Ò»¸ö¹²ÏíµÄÎïÀíÍøÂçÉÏÔËÐÐ¶ø»¥²»Ó°Ïì¡£¸÷¸öÐéÄâÍøÂçµÄÔË×÷ÊÇÏà»¥¶ÀÁ¢ºÍÍ¸Ã÷µÄ£¬¾ÍºÃÏñÖ»ÓÐÕâÒ»¸öÐéÄâÍøÂçÔÚÎïÀíÍøÂçÉÏÔËÐÐÒ»Ñù¡£
 \par
-~VNE, Virtual Network Embedding~£¬¼´ÐéÄâÍøÂçÇ¶Èë£¬ÊÇÍøÂçÐéÄâ»¯±ØÐëÒª½â¾öµÄ¹Ø¼üÎÊÌâ¡£ÐéÄâÍøÂçÇ¶ÈëÍ¨¹ýÔÚ¹²ÏíµÄÎïÀíÍøÂçÉÏÊµÀý»¯ÐéÄâÍøÂç£¬ÓÐÐ§µØ½«ÐéÄâÍøÂçÇëÇóÍØÆËÖÐµÄÐéÄâ½ÚµãºÍÐéÄâÁ´½ÓÇ¶ÈëÓ³Éäµ½µ×²ãÎïÀíÍøÂçÉÏ£¬×î´ó»¯´Óµ×²ãÎïÀíÍøÂçÖÐ»ñµÃµÄÊÕÒæ£¬»ñÈ¡×î¼ÑµÄ¶¯Ì¬×ÊÔ´·ÖÅä£¬Îª×îÖÕÓÃ»§Ìá¹©¶¨ÖÆµÄ¶Ëµ½¶Ë±£Ö¤µÄ·þÎñ¡£ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇNPÄÑÎÊÌâ£¬ÆäÊ±¼ä¸´ÔÓ¶È·Ç³£¸ß£¬ËùÒÔ£¬ÏÖÓÐµÄÑÐ¾¿´ó¶à¶¼²àÖØÓÚÉè¼Æ»ùÓÚÆô·¢Ê½µÄËã·¨À´½â¾ö¡£
+ÐéÄâÍøÂçÇ¶Èë~VNE~ÎÊÌâ£¬ÊÇÍøÂçÐéÄâ»¯±ØÐëÒª½â¾öµÄ¹Ø¼üÎÊÌâ¡£ÐéÄâÍøÂçÇ¶ÈëÍ¨¹ýÔÚ¹²ÏíµÄÎïÀíÍøÂçÉÏÊµÀý»¯ÐéÄâÍøÂç£¬ÓÐÐ§µØ½«ÐéÄâÍøÂçÇëÇóÍØÆËÖÐµÄÐéÄâ½ÚµãºÍÐéÄâÁ´½ÓÇ¶ÈëÓ³Éäµ½µ×²ãÎïÀíÍøÂçÉÏ£¬×î´ó»¯´Óµ×²ãÎïÀíÍøÂçÖÐ»ñµÃµÄÊÕÒæ¡£¸ù¾ÝÒµÎñÐèÇóÌá¹©¶¯Ì¬×ÊÔ´·ÖÅä£¬Îª×îÖÕÓÃ»§Ìá¹©¶¨ÖÆµÄ¶Ëµ½¶Ë±£Ö¤µÄ·þÎñ¡£ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇ~NP~ÄÑÎÊÌâ£¬ÆäÊ±¼ä¸´ÔÓ¶È·Ç³£¸ß¡£Òò´Ë£¬ÏÖÓÐµÄÑÐ¾¿´ó¶à¶¼²àÖØÓÚÉè¼Æ»ùÓÚÆô·¢Ê½µÄËã·¨À´½â¾ö¡£
 \par
-±¾ÕÂÕë¶ÔÃ½ÌåÒµÎñµÄ~QoS~ÐèÇóÌØÕ÷£¬½áºÏµ×²ãÎïÀíÍøÂçºÍÐéÄâÍøÂçÇëÇóµÄµØÀíÎ»ÖÃ·Ö²¼ÊôÐÔ£¬Ìá³öÁËÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬~MSO-VNE~¡£»ùÓÚ~MSO-VNE~Ëã·¨£¬±¾ÕÂÉè¼Æ²¢Ìá³öÁËÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü¡£
+±¾ÕÂÕë¶ÔÃ½ÌåÒµÎñµÄ~QoS~ÐèÇóÌØÕ÷£¬½áºÏµ×²ãÎïÀíÍøÂçºÍÐéÄâÍøÂçÇëÇóµÄµØÀíÎ»ÖÃ·Ö²¼ÊôÐÔ£¬Ìá³öÁËÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬MSO-VNE~¡£»ùÓÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE£¬±¾ÕÂÉè¼Æ²¢Ìá³öÁËÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü£¬ÒÔÌá¸ßÓÃ»§ÌåÑéÖÊÁ¿¡£
 \par
-±¾ÕÂµÄÄÚÈÝ°²ÅÅÈçÏÂ£º\ref{sec:vne-relate}½Ú½éÉÜÁËÐéÄâÍøÂçÇ¶ÈëµÄÏà¹ØµÄÑÐ¾¿¹¤×÷ºÍÑÐ¾¿½øÕ¹£»\ref{sec:vne-suanfa}½ÚÏêÏ¸²ûÊöÁËÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÉè¼ÆË¼ÏëºÍ¼¼ÊõÏ¸½Ú£»\ref{sec:vne-fangzhen} ½Ú¶Ô~MSO-VNE~Ëã·¨½øÐÐ·ÂÕæÑéÖ¤ÒÔÆÀ¹À¸ÃËã·¨µÄÐÔÄÜ£»
-\ref{sec:vne-kuangjia}½ÚÏêÏ¸ÃèÊöÁË»ùÓÚ~MSO-VNE~Ëã·¨µÄÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜµÄÕûÌå¼Ü¹¹ºÍ¸÷¸ö×é¼þÄ£¿éµÄÏêÏ¸Éè¼Æ£»×îºó£¬ \ref{sec:vne-xiaojie}½Ú¶Ô±¾ÕÂµÄÄÚÈÝ½øÐÐ×Ü½á¡£
+±¾ÕÂµÄÄÚÈÝ°²ÅÅÈçÏÂ£ºµÚ~\ref{sec:vne-relate}~½Ú½éÉÜÁËÐéÄâÍøÂçÇ¶ÈëµÄÏà¹ØµÄÑÐ¾¿¹¤×÷ºÍÑÐ¾¿½øÕ¹£»µÚ~\ref{sec:vne-suanfa}~½ÚÏêÏ¸²ûÊöÁËÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÉè¼ÆË¼ÏëºÍ¼¼ÊõÏ¸½Ú£»µÚ~\ref{sec:vne-fangzhen}~½Ú¶Ô~MSO-VNE~Ëã·¨½øÐÐ·ÂÕæÑéÖ¤ÒÔÆÀ¹À¸ÃËã·¨µÄÐÔÄÜ£»µÚ~\ref{sec:vne-kuangjia}~½ÚÏêÏ¸ÃèÊöÁË»ùÓÚ~MSO-VNE~Ëã·¨µÄÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜµÄÕûÌå¼Ü¹¹ºÍ¸÷¸ö×é¼þÄ£¿éµÄÏêÏ¸Éè¼Æ£»×îºó£¬ µÚ~\ref{sec:vne-xiaojie}~½Ú¶Ô±¾ÕÂµÄÄÚÈÝ½øÐÐ×Ü½á¡£
 \section{Ïà¹ØÑÐ¾¿}
 \label{sec:vne-relate}
-ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÒª½â¾öµÄÎÊÌâÊÇÔÚµ×²ãÎïÀíÍøÂçÖÐËÑÑ°ºÏÊÊµÄÍØÆË³ÐÔØÐéÄâÍøÂçÇëÇó£¬Òò´Ë£¬ÐéÄâÍøÂçÇ¶ÈëÎÊÌâ¿É·ÖÎªÁ½¸ö×ÓÎÊÌâ£ºÐéÄâ½ÚµãÓ³ÉäÎÊÌâºÍÐéÄâÁ´½ÓÓ³ÉäÎÊÌâ¡£ÐéÄâ½ÚµãÓ³Éä£¬¼´½«ÐéÄâ½ÚµãÇ¶ÈëÓ³Éäµ½µ×²ãÎïÀí½ÚµãÉÏ£¬ÓÉÎïÀí½ÚµãÎªÐéÄâ½ÚµãÌá¹©±ØÒªµÄÎïÀí×ÊÔ´¡£ÐéÄâÁ´Â·Ó³Éä£¬¼´½«Á¬½ÓÐéÄâ½ÚµãµÄÐéÄâÁ´Â·Ç¶ÈëÓ³Éäµ½µ×²ãÎïÀíÍøÂçÖÐÁ¬½Ó¶ÔÓ¦½ÚµãµÄÂ·¾¶ÉÏ¡£
+ÐéÄâÍøÂçÇ¶ÈëÒª½â¾öµÄÎÊÌâÊÇÔÚµ×²ãÎïÀíÍøÂçÖÐËÑÑ°ºÏÊÊµÄÍØÆË³ÐÔØÐéÄâÍøÂçÇëÇó¡£Òò´Ë£¬ÐéÄâÍøÂçÇ¶ÈëÎÊÌâ¿É·ÖÎªÁ½¸ö×ÓÎÊÌâ£ºÐéÄâ½ÚµãÓ³ÉäÎÊÌâºÍÐéÄâÁ´½ÓÓ³ÉäÎÊÌâ¡£ÐéÄâ½ÚµãÓ³Éä£¬¼´½«ÐéÄâ½ÚµãÇ¶ÈëÓ³Éäµ½µ×²ãÎïÀí½ÚµãÉÏ£¬ÓÉÎïÀí½ÚµãÎªÐéÄâ½ÚµãÌá¹©±ØÒªµÄÎïÀí×ÊÔ´¡£ÐéÄâÁ´Â·Ó³Éä£¬¼´½«Á¬½ÓÐéÄâ½ÚµãµÄÐéÄâÁ´Â·Ç¶ÈëÓ³Éäµ½µ×²ãÎïÀíÍøÂçÖÐÁ¬½Ó¶ÔÓ¦½ÚµãµÄÂ·¾¶ÉÏ¡£
 \par
-~Multi-way separator problem\cite{multi-way}~ÊÇµäÐÍµÄ~NP~ÄÑÎÊÌâ£¬¶øÐéÄâÍøÂçÇ¶Èë~VNE~ÎÊÌâÓë~multi-way separator problem~ÃÜÇÐÏà¹Ø£¬Òò´Ë£¬ÐéÄâÍøÂçÇ¶Èë~VNE~ÎÊÌâÒ²ÊÇµäÐÍµÄ~NP~ÄÑÎÊÌâ¡£ÔÚÐéÄâÍøÂçÇ¶ÈëÎÊÌâÖÐ£¬¼´Ê¹ÊÇËùÓÐµÄÐéÄâ½Úµã¶¼±»³É¹¦Ó³Éäºó£¬ÐéÄâÁ´Â·µÄÓ³Éä»áÍË»¯Îª²»¿É·ÖÁ÷ÎÊÌâ\cite{unsplittable1,unsplittable2}£¬ÕâÈÔÈ»ÊÇ~NP~ÄÑÎÊÌâ¡£Òò´Ë£¬ÏÖÓÐµÄÑÐ¾¿´ó¶à¶¼ÖÂÁ¦ÓÚÉè¼Æ»ùÓÚÆô·¢Ê½µÄËã·¨À´½â¾ö~VNE~ÎÊÌâ¡£Æ©Èç£¬ÎÄÏ×\cite{uncoordinate}Ìá³öÁËÒ»ÖÖÂ·¾¶¿É·ÖÀëºÍ¿ÉÒÆÖ²µÄÐéÄâÍøÂçÇ¶Èë¼Ü¹¹£¬ÔÚ¸Ã¼Ü¹¹ÖÐ£¬ÐéÄâÍøÂçÇ¶ÈëÎÊÌâµÄ´¦Àí¹ý³Ì±»·ÖÎªÁ½¸ö¶ÀÁ¢µÄ½×¶Î£º½ÚµãÓ³Éä½×¶ÎºÍÁ´Â·Ó³Éä½×¶Î¡£Í¨¹ý×éºÏ²»Í¬µÄ½ÚµãÓ³ÉäËã·¨ºÍÁ´Â·Ó³ÉäËã·¨£¬¸Ã¼Ü¹¹¿ÉÉú³É²»Í¬µÄÐéÄâÍøÂçÓ³ÉäËã·¨£¬Õë¶Ô²»Í¬µÄÓ¦ÓÃ³¡¾°£¬¿ÉÑ¡Ôñ²»Í¬µÄËã·¨¶ÔÐéÄâÍøÂçÇëÇó½øÐÐÇ¶ÈëÓ³Éä´¦Àí¡£Ïà·´£¬ÎÄÏ×\cite{augmentation}Í¨¹ýÁªºÏ½ÚµãÓ³ÉäºÍÁ´Â·Ó³Éä£¬Ìá³öÁËÐ­×÷Ê½µÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£¸ÃËã·¨Ê×ÏÈÔÚµ×²ãÎïÀíÍøÂçÉÏ¹¹½¨»ùÓÚÐéÄâÍøÂçÇëÇóµÄÔöÇ¿Í¼£¬³ä·Ö¿¼ÂÇ½ÚµãºÍÁ´Â·µÄ×ÊÔ´ÊôÐÔ²¢ÔÚÔöÇ¿Í¼ÖÐ½â¾öÐéÄâÍøÂçÇ¶ÈëÎÊÌâ¡£³ý´ËÖ®Íâ£¬ÎÄÏ×\cite{matrix}´ÓÎÊÌâ½¨Ä£ÈëÊÖ£¬Í¨¹ý·´Ë¼ÍøÂçÄ£ÐÍ£¬½«ÐéÄâÍøÂçÇëÇóºÍµ×²ãÎïÀíÍøÂç½¨Ä£ÎªÁ÷Á¿¾ØÕó¶ø²»ÊÇÍ¨ÓÃµÄÄÚ²¿ÍØÆË£¬ÒÔ¶ÀÌØµÄ·½Ê½½â¾ö~VNE~ÎÊÌâ¡£ÁíÍâ£¬Ðí¶àÐÂÐËµÄË¼ÏëºÍËã·¨Ò²±»Ìá³öÀ´½â¾öÐéÄâÍøÂçÇ¶ÈëÎÊÌâ£¬Æ©Èç£¬ÎÄÏ×\cite{opportunity} Ìá³öÁË»ùÓÚ»ú»áÖ÷Òå×ÊÔ´¹²ÏíµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£»ÎÄÏ×\cite{svrvivable} Ìá³öÁË¿É´æ»îµÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£
+¶àÂ··ÖÁ÷ÎÊÌâ\cite{multi-way}ÊÇµäÐÍµÄ~NP~ÄÑÎÊÌâ£¬¶øÐéÄâÍøÂçÇ¶Èë~VNE~ÎÊÌâÓë¶àÂ··ÖÁ÷ÎÊÌâÃÜÇÐÏà¹Ø£¬Òò´Ë£¬ÐéÄâÍøÂçÇ¶Èë~VNE~ÎÊÌâÒ²ÊÇµäÐÍµÄ~NP~ÄÑÎÊÌâ¡£ÔÚÐéÄâÍøÂçÇ¶ÈëÎÊÌâÖÐ£¬¼´Ê¹ÊÇËùÓÐµÄÐéÄâ½Úµã¶¼±»³É¹¦Ó³Éäºó£¬ÐéÄâÁ´Â·µÄÓ³Éä»áÍË»¯Îª²»¿É·ÖÁ÷ÎÊÌâ\cite{unsplittable1,unsplittable2}£¬ÕâÈÔÈ»ÊÇ~NP~ÄÑÎÊÌâ¡£Òò´Ë£¬ÏÖÓÐµÄÑÐ¾¿´ó¶à¶¼ÖÂÁ¦ÓÚÉè¼Æ»ùÓÚÆô·¢Ê½µÄËã·¨À´½â¾ö~VNE~ÎÊÌâ¡£Æ©Èç£¬ÎÄÏ×\cite{uncoordinate}Ìá³öÁËÒ»ÖÖÂ·¾¶¿É·ÖÀëºÍ¿ÉÒÆÖ²µÄÐéÄâÍøÂçÇ¶Èë¼Ü¹¹£¬ÔÚ¸Ã¼Ü¹¹ÖÐ£¬ÐéÄâÍøÂçÇ¶ÈëÎÊÌâµÄ´¦Àí¹ý³Ì±»·ÖÎªÁ½¸ö¶ÀÁ¢µÄ½×¶Î£º½ÚµãÓ³Éä½×¶ÎºÍÁ´Â·Ó³Éä½×¶Î¡£Í¨¹ý×éºÏ²»Í¬µÄ½ÚµãÓ³ÉäËã·¨ºÍÁ´Â·Ó³ÉäËã·¨£¬¸Ã¼Ü¹¹¿ÉÉú³É²»Í¬µÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬Õë¶Ô²»Í¬µÄÓ¦ÓÃ³¡¾°£¬¿ÉÑ¡Ôñ²»Í¬µÄËã·¨¶ÔÐéÄâÍøÂçÇëÇó½øÐÐÇ¶ÈëÓ³Éä´¦Àí¡£Ïà·´£¬ÎÄÏ×\cite{augmentation}Í¨¹ýÁªºÏ½ÚµãÓ³ÉäºÍÁ´Â·Ó³Éä£¬Ìá³öÁËÐ­×÷Ê½µÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£¸ÃËã·¨Ê×ÏÈÔÚµ×²ãÎïÀíÍøÂçÉÏ¹¹½¨»ùÓÚÐéÄâÍøÂçÇëÇóµÄÔöÇ¿Í¼£¬³ä·Ö¿¼ÂÇ½ÚµãºÍÁ´Â·µÄ×ÊÔ´ÊôÐÔ²¢ÔÚÔöÇ¿Í¼ÖÐ½â¾öÐéÄâÍøÂçÇ¶ÈëÎÊÌâ¡£³ý´ËÖ®Íâ£¬ÎÄÏ×\cite{matrix}´ÓÎÊÌâ½¨Ä£ÈëÊÖ£¬Í¨¹ý·´Ë¼ÍøÂçÄ£ÐÍ£¬½«ÐéÄâÍøÂçÇëÇóºÍµ×²ãÎïÀíÍøÂç½¨Ä£ÎªÁ÷Á¿¾ØÕó¶ø²»ÊÇÍ¨ÓÃµÄÄÚ²¿ÍØÆË£¬ÒÔ¶ÀÌØµÄ·½Ê½½â¾ö~VNE~ÎÊÌâ¡£ÁíÍâ£¬Ðí¶àÐÂÐËµÄË¼ÏëºÍËã·¨Ò²±»Ìá³öÀ´½â¾öÐéÄâÍøÂçÇ¶ÈëÎÊÌâ£¬Æ©Èç£¬ÎÄÏ×\cite{opportunity} Ìá³öÁË»ùÓÚ»ú»áÖ÷Òå×ÊÔ´¹²ÏíµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£»ÎÄÏ×\cite{svrvivable} Ìá³öÁË¿É´æ»îµÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£
 \par
 Ëæ×ÅÍøÂçÐéÄâ»¯¼¼ÊõµÄ·¢Õ¹£¬Ðí¶à³ÉÊìµÄÐéÄâÍøÂçÇ¶ÈëËã·¨±»Ìá³öÀ´£¬ÎÄÏ×\cite{vne-survey}¶Ô½ü¼¸ÄêÌá³öµÄÐéÄâÍøÂçÇ¶ÈëËã·¨½øÐÐÉîÈëµ÷ÑÐºÍ×ÛºÏ·ÖÎö£¬Ìá³öÁËÒ»ÖÖÐéÄâÍøÂçÇ¶ÈëµÄ·ÖÀàÑ§¡£¸Ã·ÖÀàÑ§ÈÏÎªÄ¿Ç°µÄÐéÄâÍøÂçÇ¶ÈëËã·¨´óÖÂ¿ÉÒÔ´ÓÒÔÏÂ¼¸¸ö·½Ãæ½øÐÐ·ÖÀà£º\par
 \textbf{1¡¢¾²Ì¬µÄ~vs~¶¯Ì¬µÄ}\par
-¸ù¾ÝÊÇ·ñÒª±ä¸ü»òÇ¨ÒÆÐéÄâÍøÂçÇëÇó£¬ÒÔ¼°ÊÇ·ñÒªÀ©Õ¹µ×²ãÎïÀíÍøÂç»òÖØÐÂ½øÐÐ×ÊÔ´·ÖÅä£¬¿ÉÒÔ½«ÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨·ÖÎª¾²Ì¬µÄºÍ¶¯Ì¬µÄ¡£¾²Ì¬µÄ~VNE~·½·¨¼Ù¶¨µ×²ãÎïÀíÍøÂçºÍÐéÄâÍøÂçÇëÇó¶¼ÊÇ¾²Ì¬²»±äµÄ¡£Ïà·´£¬¶¯Ì¬µÄ~VNE~·½·¨³ä·Ö¿¼ÂÇµ½Êµ¼ÊÇé¿öÖÐÐéÄâÍøÂçÇëÇó¿ÉÄÜ·¢ÉúµÄÐèÇó±ä¸üÒÔ¼°µ×²ãÎïÀíÍøÂç»ù´¡ÉèÊ©¿ÉÄÜ·¢ÉúµÄÀ©Õ¹±ä»¯£¬ÔÚ½øÐÐÇ¶ÈëÊ±»á¶Ô²¿·ÖÐéÄâÍøÂçÇëÇó½øÐÐ±ØÒªµÄÇ¨ÒÆ£¬ÒÔ¼°½«µ×²ãÎïÀíÍøÂç×ÊÔ´½øÐÐ±ØÒªµÄÖØÐÂ·ÖÅä¡£Í¨³££¬¾²Ì¬µÄÐéÄâÍøÂçÇ¶ÈëÊÇÀíÏëµÄÇé¿ö£¬Êµ¼Ê¹¤³ÌÓ¦ÓÃÖÐµÄÐéÄâÍøÂçÇ¶Èë¶¼ÊÇ¶¯Ì¬µÄ¡£
+¸ù¾ÝÊÇ·ñÒª±ä¸ü»òÇ¨ÒÆÐéÄâÍøÂçÇëÇó£¬ÒÔ¼°ÊÇ·ñÒªÀ©ÕÅµ×²ãÎïÀíÍøÂç»òÖØÐÂÕûºÏµ×²ãËéÆ¬×ÊÔ´£¬¿ÉÒÔ½«ÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨·ÖÎª¾²Ì¬µÄºÍ¶¯Ì¬µÄ¡£¾²Ì¬µÄ~VNE~·½·¨¼Ù¶¨µ×²ãÎïÀíÍøÂçºÍÐéÄâÍøÂçÇëÇó¶¼ÊÇ¾²Ì¬²»±äµÄ¡£Ïà·´£¬¶¯Ì¬µÄ~VNE~·½·¨³ä·Ö¿¼ÂÇµ½Êµ¼ÊÇé¿öÖÐÐéÄâÍøÂçÇëÇó¿ÉÄÜ·¢ÉúµÄÐèÇó±ä¸üÒÔ¼°µ×²ãÎïÀíÍøÂç»ù´¡ÉèÊ©¿ÉÄÜ·¢ÉúµÄÀ©Õ¹±ä»¯£¬ÔÚ½øÐÐÇ¶ÈëÊ±»á¶Ô²¿·ÖÐéÄâÍøÂçÇëÇó½øÐÐ±ØÒªµÄÇ¨ÒÆ£¬ÒÔ¼°½«µ×²ãÎïÀíÍøÂç×ÊÔ´½øÐÐ±ØÒªµÄÖØÐÂ·ÖÅä¡£Í¨³££¬¾²Ì¬µÄÐéÄâÍøÂçÇ¶ÈëÊÇÀíÏëµÄÇé¿ö£¬Êµ¼Ê¹¤³ÌÓ¦ÓÃÖÐµÄÐéÄâÍøÂçÇ¶Èë¶¼ÊÇ¶¯Ì¬µÄ¡£¾²Ì¬µÄ~VNE~·½·¨¼Ù¶¨Ò»ÇÐ¶¼ÊÇÊÂÏÈÒÑÖªÇÒ²»±äµÄ£¬µ«Êµ¼ÊÇé¿öÈ´Ô¶·ÇÈç´Ë£¬²»¹ÜÊÇÐéÄâÍøÂçÇëÇó»¹ÊÇµ×²ãÎïÀíÍøÂç£¬¶¼¿ÉÄÜ´æÔÚ±ä¸ü£¬¾ßÌå±íÏÖÔÚÒÔÏÂ¼¸¸ö·½Ãæ£º
 \par
-¾²Ì¬µÄ~VNE~·½·¨¼Ù¶¨Ò»ÇÐ¶¼ÊÇÊÂÏÈÒÑÖªÇÒ²»±äµÄ£¬µ«Êµ¼ÊÇé¿öÈ´Ô¶·ÇÈç´Ë£¬²»¹ÜÊÇÐéÄâÍøÂçÇëÇó»¹ÊÇµ×²ãÎïÀíÍøÂç£¬¶¼¿ÉÄÜ´æÔÚ±ä¸ü£¬¾ßÌå±íÏÖÔÚÒÔÏÂ¼¸¸ö·½Ãæ£º
+1¡¢ÓÃ»§ÐèÇó±ä¸ü¡£ÕâÊÇÓÃ»§Ö÷¶¯Ìá³öµÄ±ä¸ü£¬ÓÈÆäÊÇÔÚÒÑÇ¶ÈëµÄÐéÄâÍøÂçÇëÇóÉúÃüÖÜÆÚ½áÊøÖ®Ç°¡£
 \par
-1£©ÓÃ»§ÐèÇó±ä¸ü¡£ÕâÊÇÓÃ»§Ö÷¶¯Ìá³öµÄ±ä¸ü£¬ÓÈÆäÊÇÔÚÒÑÇ¶ÈëµÄÐéÄâÍøÂçÇëÇóÉúÃüÖÜÆÚµ½ÆÚÖ®Ç°¡£
+2¡¢¹©Ó¦ÉÌÉèÊ©À©Õ¹¡£ÕâÀà±ä¸üÊÇµ×²ãÎïÀíÍøÂç»ù´¡ÉèÊ©Ìá¹©ÉÌÌá³öµÄ±ä¸ü£¬Í¨³£·¢ÉúÔÚÒµÎñ×³´óÊ±ÐèÒª²¹³äÀ©Õ¹»ù´¡ÉèÊ©µÄÇé¿ö¡£
 \par
-2£©¹©Ó¦ÉÌÉèÊ©À©Õ¹¡£ÕâÀà±ä¸üÊÇµ×²ãÎïÀíÍøÂç»ù´¡ÉèÊ©Ìá¹©ÉÌÌá³öµÄ±ä¸ü£¬Í¨³£·¢ÉúÔÚÒµÎñ×³´óÊ±ÐèÒª²¹³äÀ©Õ¹»ù´¡ÉèÊ©µÄÇé¿ö¡£
+3¡¢µ×²ãÎïÀíÍøÂçµÄËéÆ¬×ÊÔ´¡£ÓëÄÚ´æËéÆ¬Ò»Ñù£¬µ×²ãÎïÀíÍøÂçÒ²»á²úÉú¸÷ÖÖËéÆ¬×ÊÔ´¡£Ëæ×ÅÊ±¼äµÄÍÆÒÆ£¬ÐÂµÄÐéÄâÍøÂçÇëÇóµ½´ï²¢Ç¶Èë£¬Í¬Ê±£¬¹ýÆÚµÄÐéÄâÍøÂçÇëÇóÖð½¥Àë¿ª²¢ÊÍ·Å×ÊÔ´¡£ÕâÐ©²»¶ÏµÄ¼ÓÈëÓëÍË³ö£¬Ê¹µÃµ×²ãÎïÀíÍøÂçµÄ×ÊÔ´±äµÃÖ§ÀëÆÆËé£¬µ×²ãÎïÀíÍøÂçÖÐ´óÁ¿µÄËéÆ¬×ÊÔ´½«ÑÏÖØÓ°ÏìÏµÍ³½øÒ»²½½ÓÊÜÐÂµÄÐéÄâÍøÂçÇëÇó£¬µ¼ÖÂÐéÄâÍøÂçÇëÇó½ÓÊÜÂÊÏÂ½µ¡£
 \par
-3£©µ×²ãÎïÀíÍøÂçµÄËéÆ¬×ÊÔ´¡£ÓëÄÚ´æËéÆ¬Ò»Ñù£¬µ×²ãÎïÀíÍøÂçÒ²»á²úÉú¸÷ÖÖËéÆ¬×ÊÔ´¡£Ëæ×ÅÊ±¼äµÄÍÆÒÆ£¬ÐÂµÄÐéÄâÍøÂçÇëÇóµ½´ï²¢Ç¶Èë£¬Í¬Ê±£¬¹ýÆÚµÄÐéÄâÍøÂçÇëÇóÖð½¥Àë¿ª²¢ÊÍ·Å×ÊÔ´¡£ÕâÐ©²»¶ÏµÄ¼ÓÈëÓëÍË³ö£¬Ê¹µÃµ×²ãÎïÀíÍøÂçµÄ×ÊÔ´±äµÃÖ§ÀëÆÆËé£¬µ×²ãÎïÀíÍøÂçÖÐ´óÁ¿µÄËéÆ¬×ÊÔ´½«ÑÏÖØÓ°ÏìÏµÍ³½øÒ»²½½ÓÊÜÐÂµÄÐéÄâÍøÂçÇëÇó£¬µ¼ÖÂÐéÄâÍøÂçÇëÇó½ÓÊÜÂÊÏÂ½µ£»
-\par
-ÏÔÈ»£¬ÕâÐ©±ä¸üºÍ²»È·¶¨ÐÔÊÇ¾²Ì¬~VNE~·½·¨ÎÞ·¨½â¾öµÄ£¬¶¯Ì¬~VNE~·½·¨»á¸ù¾ÝÊµ¼ÊÐèÇóÊÔÍ¼ÖØÐÂÅäÖÃÒÑÓ³ÉäµÄÐéÄâÍøÂçÇëÇó£¬ÖØ×é×ÊÔ´µÄ·ÖÅä£¬ÓÅ»¯µ×²ãÎïÀíÍøÂçµÄ×ÊÔ´ÀûÓÃ¡£ÐéÄâÍøÂçÖØÅäÖÃËã·¨£¬~VNRe\cite{VNRe}~£¬ÊÇÒ»ÖÖ·´Ó¦Ê½ºÍµü´úÊ½µÄ¶¯Ì¬~VNE~Ëã·¨¡£¸ÃËã·¨»ùÓÚÕâÑùÒ»¸öÊÂÊµ£º´ó¶àÊýÐéÄâÍøÂçÇëÇó±»¾Ü¾ø¶¼ÊÇÓÉÓÚµ×²ãÎïÀíÁ´Â·µÄÆ¿¾±¡£Òò´Ë£¬µ±ÐéÄâÍøÂçÇëÇó±»¾Ü¾øµÄÊ±ºò£¬¶ÔÒÑÓ³ÉäµÄÐéÄâÍøÂç½Úµã°´ÕÕ¿ÉÇ¨ÒÆÐÔ½øÐÐÅÅÐò£¬ÓÅÏÈÇ¨ÒÆ×îÈÝÒ×Ç¨ÒÆµÄ½Úµã²¢ÖØÐÂÓ³Éä±»¾Ü¾øµÄÐéÄâÍøÂçÇëÇó¡£¡°Ç¨ÒÆ-Ç¶Èë¡±¹ý³Ì±»µü´úµØ½øÐÐ£¬Ö±µ½¸ÃÐéÄâÍøÂçÇëÇó³É¹¦Ó³Éä»òÕß´ïµ½Ò»¶¨µÄµü´ú´ÎÊý¡£ÎªÁË¼õÉÙµ×²ãÎïÀíÍøÂçÖÐµÄËéÆ¬×ÊÔ´²¢ºÏÀíÀûÓÃ£¬¿ÉÒÔ²ÉÓÃÖÜÆÚÐÔµÄÖØÐÂÅäÖÃËã·¨\cite{periodic}¡£ÎªÁËÓ¦¶ÔÓÃ»§¶ÔÐéÄâÍøÂçÇëÇóµÄÐèÇó±ä¸ü¿É²ÉÈ¡×ÊÔ´ÖØÅäÖÃËã·¨\cite{vnchange1,vnchange2}¡£ÔÚµ×²ãÎïÀíÍøÂç½øÐÐ½ø»¯ºÍÀ©Õ¹Ê±£¬¿ÉÒÔÕë¶Ô±ä¸üµÄµ×²ãÎïÀíÍøÂç½øÐÐÏà¹ØµÄÖØÐÂÅäÖÃ\cite{snchange}¡£×ÜÌå¶øÑÔ£¬¶¯Ì¬~VNE~Ëã·¨¿ÉÒÔ¸ù¾Ý²»Í¬µÄÊµ¼ÊÇé¿öÖÆ¶¨²»Í¬µÄÇ¨ÒÆ²ßÂÔ£¬°üÀ¨Õë¶ÔÁ´Â·Æ¿¾±µÄÇ¨ÒÆ\cite{VNRe}£¬·þÎñ·ÃÎÊÎ»ÖÃ±ä»¯µÄÇ¨ÒÆ\cite{poschange} µÈ¡£ÁíÍâ£¬¶¯Ì¬~VNE~Ëã·¨¿ÉÒÔ×·Çó²»Í¬µÄÖØÐÂÇ¶Èë²¿ÊðÄ¿±ê£¬Èç½ÚÊ¡µ×²ãÎïÀíÍøÂç×ÊÔ´µÄÖØÐÂÅäÖÃ\cite{snsave}¡£ÏÔÈ»£¬¶¯Ì¬~VNE~»áÓÐ¸üºÃµÄÓ³ÉäÐ§¹û£¬Æ©Èç¸ü¸ßµÄ½ÓÊÜÂÊ£¬¸üÉÙµÄµ×²ãÎïÀíÍøÂç×ÊÔ´¿ªÏúºÍ¸üºÃµÄ×ÊÔ´ÀûÓÃÂÊ£¬µ«ÊÇ¶¯Ì¬~VNE~ÒâÎ¶×ÅÇ¨ÒÆºÍÖØÓ³Éä£¬Æä±ØÈ»´øÀ´¸ü´óµÄ¼ÆËã¿ªÏú£¬Ä¿Ç°Ò»Ð©Ëã·¨Ò²ÔÚÑÐ¾¿ÔõÑù¼õÉÙ¶¯Ì¬~VNE~Ëã·¨µÄ¼ÆËã¿ªÏú\cite{costsave,periodic}¡£
+ÏÔÈ»£¬ÕâÐ©±ä¸üºÍ²»È·¶¨ÐÔÊÇ¾²Ì¬~VNE~·½·¨ÎÞ·¨½â¾öµÄ£¬¶¯Ì¬~VNE~·½·¨»á¸ù¾ÝÊµ¼ÊÐèÇóÊÔÍ¼ÖØÐÂÅäÖÃÒÑÓ³ÉäµÄÐéÄâÍøÂçÇëÇó£¬ÖØ×é×ÊÔ´µÄ·ÖÅä£¬ÓÅ»¯µ×²ãÎïÀíÍøÂçµÄ×ÊÔ´ÀûÓÃ¡£ÐéÄâÍøÂçÖØÅäÖÃËã·¨£¬VNRe\cite{VNRe}£¬ÊÇÒ»ÖÖ·´Ó¦Ê½ºÍµü´úÊ½µÄ¶¯Ì¬~VNE~Ëã·¨¡£¸ÃËã·¨ÔÚÐéÄâÍøÂçÇëÇóÇ¶ÈëÊ§°ÜÊ±¿ªÊ¼¹¤×÷¡£µ±ÐéÄâÍøÂçÇëÇó±»¾Ü¾øµÄÊ±ºò£¬¶ÔÒÑÓ³ÉäµÄÐéÄâÍøÂç½Úµã°´ÕÕ¿ÉÇ¨ÒÆÐÔ½øÐÐÅÅÐò£¬ÓÅÏÈÇ¨ÒÆ×îÈÝÒ×Ç¨ÒÆµÄ½Úµã²¢ÖØÐÂÓ³Éä±»¾Ü¾øµÄÐéÄâÍøÂçÇëÇó¡£¡°Ç¨ÒÆ-Ç¶Èë¡±¹ý³Ì±»·´¸´µü´úµØ½øÐÐ£¬Ö±µ½¸ÃÐéÄâÍøÂçÇëÇó³É¹¦Ó³Éä»òÕß´ïµ½Ò»¶¨µÄµü´ú´ÎÊý¡£ÎªÁË¼õÉÙµ×²ãÎïÀíÍøÂçÖÐµÄËéÆ¬×ÊÔ´²¢ºÏÀíÀûÓÃ£¬¿ÉÒÔ²ÉÓÃÖÜÆÚÐÔµÄÖØÐÂÅäÖÃËã·¨\cite{periodic}¡£ ÎªÁËÓ¦¶ÔÓÃ»§¶ÔÐéÄâÍøÂçÇëÇóµÄÐèÇó±ä¸ü¿É²ÉÈ¡×ÊÔ´ÖØÅäÖÃËã·¨\cite{vnchange1,vnchange2}¡£ÔÚµ×²ãÎïÀíÍøÂç½øÐÐ½ø»¯ºÍÀ©Õ¹Ê±£¬¿ÉÒÔÕë¶Ô±ä¸üµÄµ×²ãÎïÀíÍøÂç½øÐÐÏà¹ØµÄÖØÐÂÅäÖÃ\cite{snchange}¡£×ÜÌå¶øÑÔ£¬¶¯Ì¬~VNE~Ëã·¨¿ÉÒÔ¸ù¾Ý²»Í¬µÄÊµ¼ÊÇé¿öÖÆ¶¨²»Í¬µÄÇ¨ÒÆ²ßÂÔ£¬°üÀ¨Õë¶ÔÁ´Â·Æ¿¾±µÄÇ¨ÒÆ\cite{VNRe}£¬·þÎñ·ÃÎÊÎ»ÖÃ±ä»¯µÄÇ¨ÒÆ\cite{poschange}µÈ¡£ÁíÍâ£¬¶¯Ì¬~VNE~Ëã·¨¿ÉÒÔ×·Çó²»Í¬µÄÇ¶Èë²¿ÊðÄ¿±ê£¬Èç½ÚÊ¡µ×²ãÎïÀíÍøÂç×ÊÔ´µÄÖØÐÂÅäÖÃ\cite{snsave}¡£ÏÔÈ»£¬¶¯Ì¬~VNE~»áÓÐ¸üºÃµÄÓ³ÉäÐ§¹û£¬Æ©Èç¸ü¸ßµÄ½ÓÊÜÂÊ£¬¸üÉÙµÄµ×²ãÎïÀíÍøÂç×ÊÔ´¿ªÏúºÍ¸üºÃµÄ×ÊÔ´ÀûÓÃÂÊ£¬µ«ÊÇ¶¯Ì¬~VNE~ÒâÎ¶×ÅÇ¨ÒÆºÍÖØÓ³Éä£¬Æä±ØÈ»´øÀ´¸ü´óµÄ¼ÆËã¿ªÏú£¬Ä¿Ç°Ò»Ð©Ëã·¨Ò²ÔÚÑÐ¾¿ÔõÑù¼õÉÙ¶¯Ì¬~VNE~Ëã·¨µÄ¼ÆËã¿ªÏú\cite{costsave,periodic}¡£
 \par
 \textbf{2¡¢·Ö²¼Ê½µÄ~vs~ÖÐÐÄÊ½µÄ}\par
-ÔÚÖÐÐÄÊ½µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÖÐ£¬ÓÉÒ»¸öÖÐÐÄÓ³ÉäÊµÌå¸ºÔðÖ´ÐÐÐéÄâÍøÂçÇëÇóµÄÇ¶Èë²Ù×÷¡£¸ÃÖÐÐÄÓ³ÉäÊµÌåÔÚÇ¶ÈëÓ³Éä¹ý³ÌÖÐ£¬ÊìÖªÕû¸öÏµÍ³µÄ×ÊÔ´Çé¿ö£¬°üÀ¨ÍøÂçÏµÍ³ÖÐ¸÷¸ö½ÚµãµÄ×ÊÔ´Ê¹ÓÃÇé¿öºÍÏàÓ¦µÄÁ´Â·×ÊÔ´Ê¹ÓÃÇé¿ö¡£ÕâÐ©È«¾ÖµÄÖªÊ¶ºÍÐÅÏ¢½«ÓÐÖúÓÚ¸ü¼ÓÓÅ»¯µÄÇ¶Èë£¬È»¶ø£¬ÖÐÐÄÊ½µÄÇ¶ÈëÓ³ÉäµÄÈ±ÏÝ¾ÍÊÇÖÐÐÄÓ³ÉäÊµÌåµÄµ¥µãÊ§Ð§ÐÔ¡£Èç¹ûÖÐÐÄÓ³ÉäÊµÌå³öÏÖ¹ÊÕÏ»òÊ§°Ü½«µ¼ÖÂÕû¸öÏµÍ³ÖÐµÄÐéÄâÍøÂçÓ³ÉäÊ§°Ü¡£´ËÍâ£¬ÔÚ´óÐÍÍøÂçÖÐ¿ÉÄÜÓÐ¿ÉÉìËõÐÔÎÊÌâ£¬µ¥Ò»µÄÖÐÐÄÓ³ÉäÊµÌå¿ÉÄÜÃæ¶ÔÖÚ¶àµÄÐéÄâÍøÂçÇëÇó¶ø²»ÖªËù´ë£¬´Ó¶øÑÏÖØÓ°ÏìÐéÄâÍøÂçÇ¶ÈëµÄÐ§ÂÊ¡£
+ÔÚÖÐÐÄÊ½µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÖÐ£¬ÓÉÒ»¸öÖÐÐÄÓ³ÉäÊµÌå¸ºÔðÖ´ÐÐÐéÄâÍøÂçÇëÇóµÄÇ¶Èë²Ù×÷¡£¸ÃÖÐÐÄÓ³ÉäÊµÌåÔÚÇ¶ÈëÓ³Éä¹ý³ÌÖÐ£¬ÊìÖªÕû¸öÏµÍ³µÄ×ÊÔ´Çé¿ö£¬°üÀ¨ÍøÂçÏµÍ³ÖÐ¸÷¸ö½ÚµãµÄ×ÊÔ´Ê¹ÓÃÇé¿öºÍÏàÓ¦µÄÁ´Â·×ÊÔ´Ê¹ÓÃÇé¿ö¡£ÕâÐ©È«¾ÖµÄÖªÊ¶ºÍÐÅÏ¢½«ÓÐÖúÓÚ¸ü¼ÓÓÅ»¯µÄÇ¶Èë¡£È»¶ø£¬ÖÐÐÄÊ½µÄÇ¶ÈëÓ³ÉäµÄÈ±ÏÝ¾ÍÊÇÖÐÐÄÓ³ÉäÊµÌåµÄµ¥µãÊ§Ð§ÐÔ¡£Èç¹ûÖÐÐÄÓ³ÉäÊµÌå³öÏÖ¹ÊÕÏ»òÊ§°Ü½«µ¼ÖÂÕû¸öÏµÍ³ÖÐµÄÐéÄâÍøÂçÓ³ÉäÊ§°Ü¡£´ËÍâ£¬ÔÚ´óÐÍÍøÂçÖÐ¿ÉÄÜÓÐ¿ÉÉìËõÐÔÎÊÌâ£¬µ¥Ò»µÄÖÐÐÄÓ³ÉäÊµÌå¿ÉÄÜÃæ¶ÔÖÚ¶àµÄÐéÄâÍøÂçÇëÇó¶ø²»ÖªËù´ë£¬´Ó¶øÑÏÖØÓ°ÏìÐéÄâÍøÂçÇ¶ÈëµÄÐ§ÂÊ¡£
 \par
-ÓëÖÐÐÄÊ½µÄÐéÄâÍøÂçÓ³Éä²»Í¬£¬ÔÚ·Ö²¼Ê½µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÖÐ£¬ÓÉ¶à¸öÓ³ÉäÊµÌå¹²Í¬¸ºÔðÐéÄâÍøÂçµÄÇ¶Èë£¬ÆäÓÅÊÆÔÚÓÚËü¸ü¸ßµÄÇ¶ÈëÐ§ÂÊºÍ¿ÉÉìËõÐÔ¡£·Ö²¼Ê½µÄÐéÄâÍøÂçÇ¶ÈëÍ¨¹ý½«ÐéÄâÍøÂçÇëÇó¸ºÔØ·ÖÉ¢µ½¶à¸öÓ³ÉäÊµÌå£¬Ê¹µÃÃ¿¸öÓ³ÉäÊµÌå¶¼ÄÜ¸üºÃµØÓ¦¶ÔÇ¶Èë£¬²¢Ìá¸ßÐéÄâÍøÂçÇ¶ÈëµÄÐ§ÂÊ¡£È»¶ø£¬·Ö²¼Ê½µÄÇ¶ÈëÓ³ÉäÃæÁÙµÄÎÊÌâÊÇÆäÔö³¤µÄÍ¬²½¿ªÏú£¬¶à¸öÓ³ÉäÊµÌåÐèÒª»ã×Ü¸÷×ÔµÄÇ¶ÈëÓ³Éä½á¹û²¢½øÐÐÍ¬²½¸üÐÂ¡£ÁíÍâ£¬ÎªÁËµÃµ½¸üÓÅ»¯µÄÇ¶Èë£¬Ã¿¸öÓ³ÉäÊµÌåÏ£Íû»ñÈ¡µ½¹ØÓÚÈ«¾ÖµÄ×ã¹»¶àµÄÏµÍ³ÐÅÏ¢£¬¿ÉÓÃµÄÐÅÏ¢Ô½¶à£¬Ç¶ÈëµÄÐ§¹û¾ÍÔ½ºÃ¡£µ«ÊÇ£¬Èç¹û¶à¸öÓ³ÉäÊµÌå¶¼ÁôÓÐ×ã¹»¶àµÄÏµÍ³È«¾ÖÐÅÏ¢£¬±ØÈ»µ¼ÖÂ¿ªÏúÔö´ó¡£Òò´Ë£¬ ÐèÒªÔÚ¿ªÏúºÍÇ¶ÈëÐÔÄÜÖ®¼ä½øÐÐÆ½ºâºÍÕÛÖÔ¡£
+ÓëÖÐÐÄÊ½µÄÐéÄâÍøÂçÓ³Éä²»Í¬£¬ÔÚ·Ö²¼Ê½µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÖÐ£¬ÓÉ¶à¸öÓ³ÉäÊµÌå¹²Í¬¸ºÔðÐéÄâÍøÂçµÄÇ¶Èë£¬ÆäÓÅÊÆÔÚÓÚËü¸ü¸ßµÄÇ¶ÈëÐ§ÂÊºÍ¿ÉÉìËõÐÔ¡£·Ö²¼Ê½µÄÐéÄâÍøÂçÇ¶ÈëÍ¨¹ý½«ÐéÄâÍøÂçÇëÇó¸ºÔØ·ÖÉ¢µ½¶à¸öÓ³ÉäÊµÌå£¬Ê¹µÃÃ¿¸öÓ³ÉäÊµÌå¶¼ÄÜ¸üºÃµØÓ¦¶ÔÇ¶Èë£¬²¢Ìá¸ßÐéÄâÍøÂçÇ¶ÈëµÄÐ§ÂÊ¡£È»¶ø£¬·Ö²¼Ê½µÄÇ¶ÈëÓ³ÉäÃæÁÙµÄÎÊÌâÊÇÆäÔö³¤µÄÍ¬²½¿ªÏú£¬¶à¸öÓ³ÉäÊµÌåÐèÒª»ã×Ü¸÷×ÔµÄÇ¶ÈëÓ³Éä½á¹û²¢½øÐÐÍ¬²½¸üÐÂ¡£ÁíÍâ£¬ÎªÁËµÃµ½¸üÓÅ»¯µÄÇ¶Èë£¬Ã¿¸öÓ³ÉäÊµÌåÏ£Íû»ñÈ¡µ½¹ØÓÚÈ«¾ÖµÄ×ã¹»¶àµÄÏµÍ³ÐÅÏ¢£¬¿ÉÓÃµÄÐÅÏ¢Ô½¶à£¬Ç¶ÈëµÄÐ§¹û¾ÍÔ½ºÃ¡£µ«ÊÇ£¬Èç¹û¶à¸öÓ³ÉäÊµÌå¶¼ÁôÓÐ×ã¹»¶àµÄÏµÍ³È«¾ÖÐÅÏ¢£¬±ØÈ»µ¼ÖÂ¿ªÏúÔö´ó¡£Òò´Ë£¬ÐèÒªÔÚ¿ªÏúºÍÇ¶ÈëÐÔÄÜÖ®¼ä½øÐÐÆ½ºâºÍÕÛÖÔ¡£
 \par
 Ä¿Ç°£¬´ó¶àÊýÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨¶¼ÊÇÖÐÐÄÊ½µÄ£¬¶ø·Ö²¼Ê½µÄ~VNE~Ò»°ãÖ¸µÄÊÇÔÚ²»Í¬µ×²ãÎïÀíÍøÂçÉèÊ©Ìá¹©ÉÌÖ®¼äµÄ·Ö²¼Ê½Ç¶Èë\cite{interinp1,interinp2,interinp3,interinp4}¡£
 \par
 \textbf{3¡¢¼ò½àµÄ~vs~ÈßÓàµÄ}\par
 ÔÚ¼ò½àµÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÖÐ£¬Ö»Ê¹ÓÃ±ØÒªµÄµ×²ãÎïÀíÍøÂç×ÊÔ´À´³ÐÔØÐéÄâÍøÂçÇëÇó£¬¾ø¶Ô²»»áÔ¤Áô¶îÍâµÄÈßÓà×ÊÔ´¡£Òò´Ë£¬¿ÉÒÔÊ¹ÓÃÏàÍ¬µÄµ×²ãÎïÀíÍøÂç×ÊÔ´È¥Ó³ÉäÇ¶Èë¸ü¶àµÄÐéÄâÍøÂçÇëÇó£¬×î´ó»¯µ×²ãÎïÀíÍøÂçµÄÊÕÒæ²¢Ìá¸ßÐéÄâÍøÂçÇëÇóµÄ½ÓÊÜÂÊ¡£È»¶ø£¬ÓÉÓÚÃ»ÓÐÈÎºÎÔ¤ÁôµÄÈßÓà×ÊÔ´£¬Ê¹µÃµ±Ò»Ð©µ×²ãÎïÀíÍøÂçÉè±¸Ê§°ÜµÄÊ±ºò£¬²»ÄÜ¿ìËÙµØ´Ó´íÎóÖÐ»Ö¸´£¬Ê¹µÃÏµÍ³µÄÎÈ¶¨ÐÔºÍ¿ÉÓÃÐÔ½µµÍ¡£
 \par
-Ïà·´£¬ÈßÓàµÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÔÚ½øÐÐÇ¶ÈëÓ³ÉäÊ±£¬²»½öÎªÐéÄâÍøÂçÇëÇóÅä±¸ÁË±ØÒªµÄ×ÊÔ´£¬»¹·ÖÅäÁË¶îÍâµÄÈßÓà×ÊÔ´¡£ÔÚÕâÖÖÇé¿öÏÂ£¬ ¼´Ê¹²¿·Öµ×²ãÎïÀíÍøÂçÉè±¸Ê§Ð§»òÔÚÔËÐÐÊ±Ê§°ÜÊ±£¬¶¼¿ÉÑ¸ËÙ¼¤»î±¸·ÝÈßÓà×ÊÔ´²¢¿ìËÙ»Ö¸´Ê¹ÓÃ¡£Òò´Ë£¬ÈßÓàµÄ~VNE~·½·¨¿ÉÒÔÏÔÖøÌá¸ßÇ¶ÈëÓ³ÉäµÄ¿É¿¿ÐÔ£¬ÕâÖÖÇ¶ÈëÓ³ÉäµÄ¿É¿¿ÐÔÊÇÍ¨¹ýÎþÉüÇ¶ÈëÓ³Éä³É±¾¶ø»ñµÃµÄ¡£Ç¶Èë¿É¿¿ÐÔºÍÇ¶Èë³É±¾¿ªÏúÖ®¼ä´æÔÚ×ÅÆ½ºâÕÛÖÔ£º¿É¿¿ÐÔÔ½¸ß£¬Ç¶Èë³É±¾Ô½¸ß£¬¸ü¶àµÄ×ÊÔ´±»Ê¹ÓÃ£¬¿ÉÇ¶ÈëµÄÐéÄâÍøÂçÇëÇó¾Í¸üÉÙ¡£
+Ïà·´£¬ÈßÓàµÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨ÔÚ½øÐÐÇ¶ÈëÓ³ÉäÊ±£¬²»½öÎªÐéÄâÍøÂçÇëÇóÅä±¸ÁË±ØÒªµÄ×ÊÔ´£¬»¹·ÖÅäÁË¶îÍâµÄÈßÓà×ÊÔ´¡£ÔÚÕâÖÖÇé¿öÏÂ£¬ ¼´Ê¹²¿·Öµ×²ãÎïÀíÍøÂçÉè±¸Ê§Ð§»òÔÚÔËÐÐÊ±Ê§°ÜÊ±£¬¶¼¿ÉÑ¸ËÙ¼¤»î±¸·ÝÈßÓà×ÊÔ´²¢¿ìËÙ»Ö¸´Ê¹ÓÃ¡£Òò´Ë£¬ÈßÓàµÄ~VNE~·½·¨¿ÉÒÔÏÔÖøÌá¸ßÇ¶ÈëÓ³ÉäµÄ¿É¿¿ÐÔ£¬ÕâÖÖÇ¶ÈëÓ³ÉäµÄ¿É¿¿ÐÔÊÇÍ¨¹ýÎþÉüÇ¶ÈëÓ³Éä³É±¾¶ø»ñµÃµÄ¡£Ç¶Èë¿É¿¿ÐÔºÍÇ¶Èë³É±¾¿ªÏúÖ®¼ä´æÔÚ×ÅÆ½ºâÕÛÖÔ£º¿É¿¿ÐÔÔ½¸ß£¬Ç¶Èë³É±¾Ô½¸ß£¬¸ü¶àµÄ×ÊÔ´±»Ê¹ÓÃ£¬µ×²ãÎïÀíÍøÂç¿É½ÓÊÜµÄÐéÄâÍøÂçÇëÇó¾Í¸üÉÙ¡£
 \par
 ×ÛÉÏËùÊö£¬ÈßÓàµÄ~VNE~·½·¨±È¼ò½àµÄ~VNE~·½·¨¸ü¸´ÔÓ£¬ÐèÒª¿¼ÂÇ¸ü¶àµÄÓ°ÏìÒòËØ£¬°üÀ¨Ô¤Áô¶àÉÙÈßÓà×ÊÔ´£¬µ±Ê§°ÜµÄÊ±ºòÈçºÎÆô¶¯ºó±¸×ÊÔ´µÈ¡£
 ÎÄÏ×\cite{redundant1}³ä·Ö¿¼ÂÇÁËÒµÎñÇëÇóµÄ¶àÑùÐÔºÍºó±¸Â·¾¶µÄÖØÒªÐÔ£¬ÔÚ½øÐÐÐéÄâÍøÂçÇ¶ÈëÓ³ÉäÊ±£¬³ä·ÖÍÚ¾òµ×²ãÎïÀíÍøÂçÍØÆËµÄÐÅÏ¢²¢Ñ°ÕÒÓÐÐ§µÄºó±¸Â·¾¶¡£ÎÄÏ×\cite{Qosmap1,Qosmap2,Qosmap3}ÔÚ½øÐÐÐéÄâÍøÂçÇ¶ÈëÊ±£¬²»½öÔÚÓ³ÉäµÄ½Úµã¼äËÑÑ°Ö±½ÓµÄÂ·¾¶ÒÔÂú×ãÐéÄâÍøÂçÇëÇóµÄÐèÇóÏÞÖÆ£¬»¹Í¨¹ý¹¹ÔìÖðÌøÂ·¾¶×÷Îªºó±¸Â·¾¶¹©ÐéÄâÍøÂçÇëÇóÑ¡Ôñ¡£
 \par
 \textbf{4¡¢Ð­×÷µÄ~vs~·ÇÐ­×÷µÄ}\par
-´ÓÐéÄâÍøÂçµÄÇ¶Èë¹ý³ÌÀ´¿´£¬¿ÉÒÔ·ÖÎªÁ½ÖÖÇ¶Èë·½Ê½£º\par
-\textbf{1£©·ÇÐ­×÷µÄ}\par
-·ÇÐ­×÷µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨½«ÐéÄâÍøÂçÇëÇóµÄÇ¶ÈëÓ³Éä·ÖÎªÁ½¸ö¶ÀÁ¢µÄ½×¶Î£º~VnoM~ÐéÄâ½ÚµãÓ³Éä½×¶ÎºÍ~VliM~ÐéÄâÁ´Â·Ó³Éä½×¶Î¡£Ê×ÏÈ½øÐÐ~VnoM~ÐéÄâ½ÚµãÓ³Éä£¬~VNoM~×ñÑ­Ì°ÐÄËã·¨£º¶ÔÓÚÃ¿¸öÐéÄâ½Úµã£¬Ñ¡Ôñ½Úµã×ÊÔ´×î·á¸»µÄµ×²ãÎïÀíÍøÂç½ÚµãÀ´³ÐÔØ¸ÃÐéÄâ½Úµã¡£È»ºó½øÐÐ~VliM~ ÐéÄâÁ´Â·Ó³Éä£¬ÔÚÐéÄâ½ÚµãÓ³Éäµ½µÄÎïÀí½ÚµãÖ®¼äÑ°ÕÒÂú×ã×ÊÔ´ÏÞÖÆµÄµ×²ãÎïÀíÁ´Â·»òÂ·¾¶¡£~VliM~Ò»°ã¿É²ÉÓÃµ¥Â·¾¶Ó³Éä[16]£¬ÈçkÂ·×î¶ÌÂ·¾¶[17]£¬Ò²¿É²ÉÓÃ¶àÂ·¾¶Ó³Éä[18]£¬Èç¶àÉÌÆ·Á÷MCFµÈ·½·¨½â¾ö¡£
+´ÓÐéÄâÍøÂçµÄÇ¶Èë¹ý³ÌÀ´¿´£¬¿ÉÒÔ·ÖÎªÁ½ÖÖÇ¶Èë·½Ê½£ºÐ­×÷µÄºÍ·ÇÐ­×÷µÄ¡£·ÇÐ­×÷µÄ~VNE~·½·¨ÈÏÎªÐéÄâ½ÚµãÓ³ÉäºÍÐéÄâÁ´Â·Ó³ÉäÊÇ¶ÀÁ¢µÄºÍ»¥²»Ó°ÏìµÄ£¬Òò´Ë£¬·ÇÐ­×÷µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨½«ÐéÄâÍøÂçÇëÇóµÄÇ¶ÈëÓ³Éä·ÖÎªÁ½¸ö¶ÀÁ¢µÄ½×¶Î£º~VnoM~ÐéÄâ½ÚµãÓ³Éä½×¶ÎºÍ~VliM~ÐéÄâÁ´Â·Ó³Éä½×¶Î¡£Ê×ÏÈ×ñÑ­Ì°ÐÄ²ßÂÔ½øÐÐÐéÄâ½ÚµãÓ³Éä£º¶ÔÓÚÃ¿¸öÐéÄâ½Úµã£¬Ñ¡Ôñ½Úµã×ÊÔ´×î·á¸»µÄµ×²ãÎïÀíÍøÂç½ÚµãÀ´³ÐÔØ¸ÃÐéÄâ½Úµã¡£È»ºó£¬½øÐÐÐéÄâÁ´Â·Ó³Éä£¬ÔÚÐéÄâ½ÚµãÓ³Éäµ½µÄÎïÀí½ÚµãÖ®¼äÑ°ÕÒÂú×ã×ÊÔ´ÏÞÖÆµÄµ×²ãÎïÀíÁ´Â·»òÂ·¾¶¡£Í¨³££¬ÐéÄâÁ´Â·Ó³Éä¿É²ÉÓÃµ¥Â·¾¶Ó³Éä\cite{singleroute}£¬Èç~k~Â·×î¶ÌÂ·¾¶\cite{kroute}£¬Ò²¿É²ÉÓÃ¶àÂ·¾¶Ó³Éä\cite{uncoordinate}£¬Èç¶àÉÌÆ·Á÷~MCF\cite{mcf}~µÈ·½·¨½â¾ö¡£
 \par
-\textbf{2£©Ð­×÷µÄ}\par
-Ð­×÷VNE£ºÐ­µ÷½ÚµãºÍÁ´Â·½øÐÐVNEÇ¶Èë£¬ÓÐÐ§µØ½µµÍÓÉÓÚÈ±·¦Ð­µ÷µ¼ÖÂµÄÁ´Â·¿ªÏú£¬´Ó¶øÌá¸ßÐéÄâÍøÂçÇ¶Èë½ÓÊÜÂÊ£¬¸ÄÉÆ³¤ÆÚÊÕÒæ¡£
-ChowdhuryµÈÈËµÚÒ»´ÎÌá³öÁËÐ­×÷µÄÁ½½×¶ÎËã·¨DViNEºÍRviNE[19]£¬Í¨¹ý½áºÏÐéÄâÍøÂçÇëÇóÔÚµ×²ãÎïÀíÍøÂç´´½¨ÔöÇ¿Í¼£¨ÐéÄâ½ÚµãÔÚµ×²ãÎïÀíÍøÂçÖÐÎªÔª½Úµã£©£¬ÀûÓÃ»ìºÏÕûÊýÏßÐÔ¹æ»®½â¾öVnoMÐéÄâ½ÚµãÓ³Éä£¬ÔÙ½øÐÐÐéÄâÁ´Â·Ó³Éä¡£
+Ð­×÷µÄÐéÄâÍøÂçÇ¶Èë~VNE~·½·¨Í¨¹ýÐ­µ÷½ÚµãÓ³ÉäºÍÁ´Â·Ó³ÉäÀ´½øÐÐÐéÄâÍøÂçÇëÇóµÄÇ¶Èë£¬ÓÐÐ§µØ½µµÍÓÉÓÚÈ±·¦Ð­µ÷µ¼ÖÂµÄÁ´Â·¿ªÏú£¬´Ó¶øÌá¸ßÐéÄâÍøÂçÇ¶Èë½ÓÊÜÂÊ£¬²¢¸ÄÉÆ³¤ÆÚÊÕÒæ¡£Ð­×÷µÄ~VNE~·½·¨ÓÖ¿ÉÒÔ·ÖÎªÁ½½×¶ÎµÄÐ­×÷Ç¶Èë·½·¨ºÍÒ»½×¶ÎÇ¶Èë·½·¨¡£
 \par
-Ò»½×¶ÎÐ­×÷Ó³ÉäÊÇÖ¸ÐéÄâÁ´½ÓºÍÐéÄâ½ÚµãµÄÓ³ÉäÊÇÍ¬Ê±½øÐÐµÄ¡£µ±µÚÒ»¸öÐéÄâ½Úµã¶ÔÓ³ÉäÊ±,ËüÃÇÖ®¼äµÄÐéÄâÁ¬½ÓÒ²Ó³Éä,Ëæ×ÅÃ¿¸öÐéÄâ½Úµã±»Ó³Éä, Á¬½ÓÐéÄâ½ÚµãµÄÐéÄâÁ´½ÓÒÑ¾­Ò²±»Ó³Éä¡£ÎÄÏ×[20]ÊÇµäÐÍµÄÒ»½×¶ÎÓ³ÉäVNE·½·¨£¬Í¨¹ýBFS£¨breadth-first search£©Ëã·¨¼ÆËã½ÚµãÔÚÍøÂçÍØÆËÖÐµÄÖØÒªÐÔ£¬²¢ÒÀ´ÎÓ³ÉäÃ¿¸ö½ÚµãºÍÃ¿ÌõÁ´Â·¡£
+Á½½×¶ÎµÄÐ­×÷Ëã·¨~D-ViNE~ºÍ~R-ViNE~\cite{dvine-rvine}£¬Í¨¹ý½áºÏÐéÄâÍøÂçÇëÇóÔÚµ×²ãÎïÀíÍøÂç´´½¨ÔöÇ¿Í¼£¬¼´ÒÔÐéÄâ½ÚµãÎªÔ­ÐÍÔÚµ×²ãÎïÀíÍøÂçÖÐÌí¼ÓÔª½Úµã¡£ÔÚÔöÇ¿Í¼ÖÐ£¬ÔÙ¶ÔÐéÄâÍøÂçÇ¶ÈëÎÊÌâ½øÐÐ½¨Ä££¬²¢Íê³ÉÐéÄâ½ÚµãÓ³ÉäºÍÐéÄâÁ´Â·Ó³ÉäÕâÁ½¸ö½×¶ÎµÄÓ³Éä¡£
+\par
+Ò»½×¶ÎµÄÐ­×÷Ó³ÉäÊÇÖ¸ÐéÄâÁ´Â·ºÍÐéÄâ½ÚµãµÄÓ³ÉäÊÇÍ¬Ê±½øÐÐµÄ¡£µ±µÚÒ»¸öÐéÄâ½Úµã¶ÔÓ³Éä³É¹¦Ê±£¬½ô½Ó×Å¶ÔËüÃÇÖ®¼äµÄÐéÄâÁ´Â·½øÐÐÓ³Éä¡£Ëæ×ÅÃ¿¸öÐéÄâ½ÚµãµÄ³É¹¦Ó³Éä£¬Á¬½ÓÐéÄâ½ÚµãµÄÐéÄâÁ´Â·Ò²±»³É¹¦Ó³Éä¡£ÎÄÏ×\cite{onestage}ÊÇµäÐÍµÄÒ»½×¶ÎÓ³ÉäµÄ·½·¨£¬Í¨¹ý~BFS~Ëã·¨¼ÆËã½ÚµãÔÚÍøÂçÍØÆËÖÐµÄÖØÒªÐÔ£¬²¢ÒÀ´ÎÓ³ÉäÃ¿¸ö½ÚµãºÍÃ¿ÌõÁ´Â·¡£
 
 \section{ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨Éè¼Æ}
 \label{sec:vne-suanfa}
 \subsection{ÕûÌå¼Ü¹¹}
-±¾ÕÂÌá³öÁËÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬~MSO-VNE~¡£¸ÃËã·¨µÄÕûÌå¼Ü¹¹ÈçÍ¼\ref{fig:procedure}ËùÊ¾¡£~MSO-VNE~Ëã·¨ÔÚ½øÐÐÐéÄâÍøÂçÇ¶ÈëÊ±£¬Ö÷Òª·ÖÎªÒÔÏÂÁ½¸ö½×¶Î:
+±¾ÕÂÌá³öÁËÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬MSO-VNE~¡£¸ÃËã·¨µÄÕûÌå¼Ü¹¹ÈçÍ¼~\ref{fig:procedure}~ËùÊ¾¡£MSO-VNE~Ëã·¨ÔÚ½øÐÐÐéÄâÍøÂçÇ¶ÈëÊ±£¬Ö÷Òª·ÖÎªÒÔÏÂÁ½¸ö½×¶Î:
 \par
-\textbf{1£©È«¾Ö´¦Àí}
+\textbf{1¡¢È«¾Ö´¦Àí}
 \par
-ÔÚÈ«¾Ö´¦Àí½×¶Î£¬²ÉÓÃ¡°ÖÐÐÄÊ½¡±µÄ¼Ü¹¹£¬¶ÔÔ­Ê¼µÄÐéÄâÍøÂçÇëÇóÔËÓÃ½Úµã¾ÛÀà·ÖÎöºÍ·Ö¸î´¦Àí£¬½«Ô­Ê¼µÄÐéÄâÍøÂç×ÓÇëÇó»®·ÖÎª¶à¸ö×ÓÇëÇó¡£½Ó×Å£¬Ã¿¸ö×ÓÇëÇó»á±»·ÖÅÉµ½ÏàÓ¦ÇøÓòµÄµ×²ãÎïÀíÍøÂçÖÐ½øÐÐ¾Ö²¿Ç¶Èë¡£Ïà±ÈÔ­Ê¼µÄÐéÄâÍøÂçÇëÇó£¬ÐÂµÄ×ÓÇëÇó¾ßÓÐ¸üÉÙµÄ½ÚµãºÍ¸ü¼òµ¥µÄÁ´Â·£¬Òò´Ë£¬¸÷¸ö×ÓÇëÇóµÄÇ¶Èë´¦Àí¹ý³Ì»á±»´ó´ó¼ò»¯£¬Ó³ÉäÐ§ÂÊÒ²»á±»´ó´óÌáÉý¡£
+ÔÚÈ«¾Ö´¦Àí½×¶Î£¬²ÉÓÃ¡°ÖÐÐÄÊ½¡±µÄ¼Ü¹¹£¬¶ÔÔ­Ê¼µÄÐéÄâÍøÂçÇëÇóÔËÓÃ½Úµã¾ÛÀà·ÖÎöºÍ·Ö¸î´¦Àí£¬½«Ô­Ê¼µÄÐéÄâÍøÂç×ÓÇëÇó»®·ÖÎª¹æÄ£½ÏÐ¡µÄ¶à¸ö×ÓÇëÇó¡£½Ó×Å£¬Ã¿¸ö×ÓÇëÇó»á±»·ÖÅÉµ½ÏàÓ¦ÇøÓòµÄµ×²ãÎïÀíÍøÂçÖÐ½øÐÐ¾Ö²¿Ç¶Èë¡£Ïà±ÈÔ­Ê¼µÄÐéÄâÍøÂçÇëÇó£¬ÐÂµÄ×ÓÇëÇó¾ßÓÐ¸üÉÙµÄ½ÚµãºÍ¸ü¼òµ¥µÄÁ´Â·£¬Òò´Ë£¬¸÷¸ö×ÓÇëÇóµÄÇ¶Èë´¦Àí¹ý³Ì»á±»´ó´ó¼ò»¯£¬Ç¶ÈëÓ³ÉäÐ§ÂÊÒ²»á±»´ó´óÌáÉý¡£
 \par
-\textbf{2£©¾Ö²¿Ç¶Èë}
+\textbf{2¡¢¾Ö²¿Ç¶Èë}
 \par
-¾Ö²¿Ç¶Èë½×¶ÎÊÇÕæÕýµÄÇ¶ÈëºÍÓ³Éä´¦Àí½×¶Î£¬ËüµÄ´¦Àí¶ÔÏóÊÇÈ«¾Ö´¦Àí½×¶Î·Ö¸î¶ø³ÉµÄËùÓÐ×ÓÇëÇó¡£ÓÉÓÚ×ÓÇëÇóÏà±ÈÔ­Ê¼µÄÇëÇóÓÐ¸üÐ¡µÄ¹æÄ££¬Òò´Ë£¬¾Ö²¿Ç¶Èë¼ÆËãµÄ¸´ÔÓ¶È½«´ó´ó¼õÐ¡¡£ÔÚÕâ¸ö½×¶Î£¬¶à¸ö×ÓÇëÇó¿ÉÒÔ¡°·Ö²¼Ê½¡±µØÔÚ¸÷×ÔÇøÓòµÄµ×²ãÎïÀíÍøÂçÖÐÖ´ÐÐÕæÕýµÄÇ¶Èë´¦Àí£¬½øÒ»²½Ìá¸ßÁËÇ¶ÈëÐ§ÂÊ¡£ÁíÍâ£¬ÔÚ¾Ö²¿Ç¶ÈëÖÐ£¬ÎÒÃÇ²ÉÓÃÁË¶¯Ì¬·þÎñ¾ùºâ·ÖÎöÒÔ¸¨ÖúÇ¶Èë£¬Ìá¸ßÁËµ×²ãÎïÀíÍøÂçµÄ×ÊÔ´ÀûÓÃÂÊ¡£
+¾Ö²¿Ç¶Èë½×¶ÎÊÇÕæÕýµÄÇ¶ÈëÓ³Éä´¦Àí½×¶Î£¬ËüµÄ´¦Àí¶ÔÏóÊÇÈ«¾Ö´¦Àí½×¶Î·Ö¸î¶ø³ÉµÄËùÓÐ×ÓÇëÇó¡£ÓÉÓÚ×ÓÇëÇóÏà±ÈÔ­Ê¼µÄÇëÇóÓÐ¸üÐ¡µÄ¹æÄ££¬Òò´Ë£¬¾Ö²¿Ç¶Èë¼ÆËãµÄ¸´ÔÓ¶È½«´ó´ó¼õÐ¡¡£ÔÚÕâ¸ö½×¶Î£¬¶à¸ö×ÓÇëÇó¿ÉÒÔ¡°·Ö²¼Ê½¡±µØÔÚ¸÷×ÔÇøÓòµÄµ×²ãÎïÀíÍøÂçÖÐÖ´ÐÐÕæÕýµÄÇ¶Èë´¦Àí£¬½øÒ»²½Ìá¸ßÁËÇ¶ÈëÐ§ÂÊ¡£ÁíÍâ£¬ÔÚ¾Ö²¿Ç¶ÈëÖÐ£¬ÎÒÃÇ²ÉÓÃÁË¶¯Ì¬·þÎñ¾ùºâ·ÖÎöÒÔ¸¨ÖúÇ¶Èë£¬Ìá¸ßÁËµ×²ãÎïÀíÍøÂçµÄ×ÊÔ´ÀûÓÃÂÊ¡£
 \par
 ÔÚÏÂÃæµÄÕÂ½ÚÖÐ£¬ÎÒÃÇ½«ÏêÏ¸½éÉÜÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~¡£
 \begin{figure}
@@ -77,13 +72,10 @@ ChowdhuryµÈÈËµÚÒ»´ÎÌá³öÁËÐ­×÷µÄÁ½½×¶ÎËã·¨DViNEºÍRviNE[19]£¬Í¨¹ý½áºÏÐéÄâÍøÂçÇëÇóÔ
 \end{figure}
 
 \subsection{ÍøÂçÄ£ÐÍ}
-\textbf{1£©ÐéÄâÍøÂçÇëÇó}
-\par
-ÐéÄâÍøÂçÇëÇó¿É½¨Ä£Îª´øÈ¨ÖØµÄÎÞÏòÍ¼~$G^v=(N^v,E^v)$~£¬ÆäÖÐ~$N^v$~ÊÇÐéÄâ½Úµã¼¯ºÏ£¬¶ø~$E^v$~ÊÇÐéÄâÁ´Â·¼¯ºÏ¡£¶¨ÒåÐéÄâ½Úµã~$n^v$~µÄÁÚ¾Ó½Úµã¼¯ºÏÎª~$N^v(n^v)$~£¬¶¨ÒåÁ¬½Óµ½½Úµã~$n^v$~µÄÁ´Â·¼¯ºÏÎª~$E^v(n^v)$~¡£ÐéÄâÍøÂçÇëÇóÖÐµÄÐéÄâ½ÚµãºÍÐéÄâÁ´Â·¶¼ÓëËûÃÇµÄÐèÇóÏÞÖÆÏà¹ØÁª¡£ÎÒÃÇ¶¨ÒåÐéÄâÍøÂçÇëÇóÖÐ£¬ÐéÄâ½ÚµãµÄÐèÇóÏÞÖÆÐÅÏ¢°üÀ¨£ºµØÀíÎ»ÖÃ~$L^v$~¡¢´æ´¢ÈÝÁ¿~$S^v$~¡¢´ÅÅÌ~I/O~ËÙÂÊ~$I^v$~¡¢CPU~ÊýÁ¿~$P^v$~ºÍÄÚ´æ´óÐ¡~$M^v$~£¬ÐéÄâÁ´Â·µÄÐèÇóÏÞÖÆ°üÀ¨£º´ø¿í~$B^v$~¡¢ ÑÓ³Ù~$D^v$~ºÍÑÓ³Ù¶¶¶¯~$J^v$~¡£±í¸ñ\ref{tab:constraint}ÏêÏ¸ÁÐ¾Ù³öÁËÐéÄâÍøÂçÇëÇóÐèÇóÏÞÖÆ£¬²¢Îª¸÷¸öÐèÇóÏÞÖÆ¶¨ÒåÈ¨ÖØÓ°ÏìÒò×ÓÒÔ¼ÆËãÐéÄâ½ÚµãºÍÐéÄâÁ´Â·µÄ¹éÒ»»¯ÐèÇóÏÞÖÆ¡£Òò´Ë£¬ÐéÄâÍøÂçÇëÇóÖÐÐéÄâ½Úµã~$n^v$~µÄ¹éÒ»»¯×ÊÔ´~$c^v(n^v)$~¿É±íÊ¾Îª: $$c^v(n^v)=S^v(n^v)\cdot w_S^n + I^v(n^v) \cdot w_I^n + P^v(n^v)\cdot w_P^n + M^v(n^v)\cdot w_M^n$$
-\par
+\subsubsection{ÐéÄâÍøÂçÇëÇó}
+ÐéÄâÍøÂçÇëÇó¿É½¨Ä£Îª´øÈ¨ÖØµÄÎÞÏòÍ¼~$G^v=(N^v,E^v)$£¬ÆäÖÐ~$N^v$~ ÊÇÐéÄâ½Úµã¼¯ºÏ£¬¶ø~$E^v$~ÊÇÐéÄâÁ´Â·¼¯ºÏ¡£¶¨ÒåÐéÄâ½Úµã~$n^v$~µÄÁÚ¾Ó½Úµã¼¯ºÏÎª~$N^v(n^v)$£¬¶¨ÒåÁ¬½Óµ½½Úµã~$n^v$~µÄÁ´Â·¼¯ºÏÎª~$E^v(n^v)$~¡£ÐéÄâÍøÂçÇëÇóÖÐµÄÐéÄâ½ÚµãºÍÐéÄâÁ´Â·¶¼ÓëËûÃÇµÄÐèÇóÏÞÖÆÏà¹ØÁª¡£ÎÒÃÇ¶¨ÒåÐéÄâÍøÂçÇëÇóÖÐ£¬ÐéÄâ½ÚµãµÄÐèÇóÏÞÖÆÐÅÏ¢°üÀ¨£ºµØÀíÎ»ÖÃ~$L^v$¡¢´æ´¢ÈÝÁ¿~$S^v$¡¢´ÅÅÌ~I/O~ËÙÂÊ~$I^v$¡¢CPU~ÊýÁ¿~$P^v$~ºÍÄÚ´æ´óÐ¡~$M^v$£¬ÐéÄâÁ´Â·µÄÐèÇóÏÞÖÆ°üÀ¨£º´ø¿í~$B^v$¡¢ÑÓ³Ù~$D^v$~ºÍÑÓ³Ù¶¶¶¯~$J^v$¡£±í¸ñ~\ref{tab:constraint}~ÏêÏ¸ÁÐ¾Ù³öÁËÐéÄâÍøÂçÇëÇóÐèÇóÏÞÖÆ£¬²¢Îª¸÷¸öÐèÇóÏÞÖÆ¶¨ÒåÈ¨ÖØÓ°ÏìÒò×ÓÒÔ¼ÆËãÐéÄâ½ÚµãºÍÐéÄâÁ´Â·µÄ¹éÒ»»¯ÐèÇóÏÞÖÆ¡£Òò´Ë£¬ÐéÄâÍøÂçÇëÇóÖÐÐéÄâ½Úµã~$n^v$~µÄ¹éÒ»»¯×ÊÔ´~$c^v(n^v)$~¿É±íÊ¾Îª: $$c^v(n^v)=S^v(n^v)\cdot w_S^n + I^v(n^v) \cdot w_I^n + P^v(n^v)\cdot w_P^n + M^v(n^v)\cdot w_M^n$$
 ÐéÄâÁ´Â·~$e^v$~µÄ¹éÒ»»¯×ÊÔ´~$b^v(e^v)$~¿É±íÊ¾Îª:
 $$b^v(e^v)=B^v(e^v)\cdot w_B^e + D^v(e^v) \cdot w_D^e + J^v(e^v)\cdot w_J^e$$
-\par
 ÆäÖÐÐèÇóÏÞÖÆÖÐµÄµØÀíÎ»ÖÃÏÞÖÆÖ÷ÒªÓÃÓÚ½Úµã¾ÛÀà·ÖÎö£¬²»ÓÃ¿¼ÂÇÔÚ½ÚµãÐèÇóµÄ¹éÒ»»¯±íÊ¾ÖÐ¡£
 
 \begin{table}
@@ -122,10 +114,8 @@ CPU~ÊýÁ¿ & $P^s$  & $w_P^n$ &           &       &      \\\hline
 \label{tab:resource}
 \end{table}
 
-\par
-\textbf{2£©µ×²ãÎïÀíÍøÂç}
-\par
-Í¬ÑùµØ£¬µ×²ãÎïÀíÍøÂç¿É½¨Ä£Îª´øÈ¨ÖØµÄÎÞÏòÍ¼~$G^s=(N^s,E^s)$~£¬µ×²ãÎïÀíÍøÂçµÄµÚ~$i$~¸öÇøÓò¿É±íÊ¾ÎªÎÞÏòÍ¼~$G_i^s=(N_i^s,E_i^s)$~£¬ÆäÖÐ~$N_i^s$~±íÊ¾ÇøÓò~$i$~ÄÚµÄ½Úµã¼¯ºÏ£¬¶ø~$E_i^s$~±íÊ¾ÇøÓò~$i$~ ÄÚµÄÁ´Â·¼¯ºÏ¡£¶¨Òå½Úµã~$n^s$~µÄÁÚ¾Ó½Úµã¼¯ºÏÎª~$N^s(n^s)$~£¬¶¨ÒåÁ¬½Óµ½½Úµã~$n^s$~µÄÁ´Â·¼¯ºÏÎª~$E^s(n^s)$~¡£µ×²ãÎïÀíÍøÂçÖÐµÄ½ÚµãºÍÁ´Â·¶¼ÓëËûÃÇµÄ×ÊÔ´ÏÞÖÆÏà¹ØÁª¡£ÔÚµ×²ãÎïÀíÍøÂçÖÐ£¬ÎÒÃÇ¶¨Òå½ÚµãµÄ×ÊÔ´ÏÞÖÆÐÅÏ¢°üÀ¨£ºµØÀíµÄÎ»ÖÃ~$L^s$~¡¢ ´æ´¢ÈÝÁ¿~$S^s$~¡¢ ´ÅÅÌ~I/O~ ËÙÂÊ~$I^s$~¡¢CPU~ÊýÁ¿~$P^s$~ºÍÄÚ´æ´óÐ¡~$M^s$~£¬Á´Â·µÄ×ÊÔ´ÏÞÖÆ°üÀ¨£º´ø¿í~$B^s$~¡¢ÑÓ³Ù~$D^s$~ºÍÑÓ³Ù¶¶¶¯~$J^s$~¡£±í¸ñ\ref{tab:resource} ÏêÏ¸ÁÐ¾Ù³öÁËµ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´ÏÞÖÆ£¬²¢Îª¸÷¸ö×ÊÔ´ÏÞÖÆ¶¨ÒåÈ¨ÖØÓ°ÏìÒò×ÓÒÔ¼ÆËã½ÚµãºÍÁ´Â·µÄ¹éÒ»»¯×ÊÔ´ÏÞÖÆ¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐ½Úµã~$n^s$~µÄ¹éÒ»»¯×ÊÔ´~$c^s(n^s)$~¿É±íÊ¾Îª:$$c^s(n^s)=S^s(n^s)\cdot w_S^n + I^s(n^s) \cdot w_I^n + P^s(n^s)\cdot w_P^n + M^s(n^s)\cdot w_M^n$$
+\subsubsection{µ×²ãÎïÀíÍøÂç}
+Í¬ÑùµØ£¬µ×²ãÎïÀíÍøÂç¿É½¨Ä£Îª´øÈ¨ÖØµÄÎÞÏòÍ¼~$G^s=(N^s,E^s)$£¬µ×²ãÎïÀíÍøÂçµÄµÚ~$i$~¸öÇøÓò¿É±íÊ¾ÎªÎÞÏòÍ¼~$G_i^s=(N_i^s,E_i^s)$£¬ÆäÖÐ~$N_i^s$~±íÊ¾ÇøÓò~$i$~ÄÚµÄ½Úµã¼¯ºÏ£¬¶ø~$E_i^s$~±íÊ¾ÇøÓò~$i$~ ÄÚµÄÁ´Â·¼¯ºÏ¡£¶¨Òå½Úµã~$n^s$~µÄÁÚ¾Ó½Úµã¼¯ºÏÎª~$N^s(n^s)$£¬¶¨ÒåÁ¬½Óµ½½Úµã~$n^s$~µÄÁ´Â·¼¯ºÏÎª~$E^s(n^s)$~¡£µ×²ãÎïÀíÍøÂçÖÐµÄ½ÚµãºÍÁ´Â·¶¼ÓëËûÃÇµÄ×ÊÔ´ÏÞÖÆÏà¹ØÁª¡£ÔÚµ×²ãÎïÀíÍøÂçÖÐ£¬ÎÒÃÇ¶¨Òå½ÚµãµÄ×ÊÔ´ÏÞÖÆÐÅÏ¢°üÀ¨£ºµØÀíµÄÎ»ÖÃ~$L^s$¡¢´æ´¢ÈÝÁ¿~$S^s$¡¢´ÅÅÌ~I/O~ËÙÂÊ~$I^s$¡¢CPU~ÊýÁ¿~$P^s$~ºÍÄÚ´æ´óÐ¡~$M^s$£¬Á´Â·µÄ×ÊÔ´ÏÞÖÆ°üÀ¨£º´ø¿í~$B^s$¡¢ÑÓ³Ù~$D^s$~ºÍÑÓ³Ù¶¶¶¯~$J^s$¡£±í¸ñ~\ref{tab:resource}~ ÏêÏ¸ÁÐ¾Ù³öÁËµ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´ÏÞÖÆ£¬²¢Îª¸÷¸ö×ÊÔ´ÏÞÖÆ¶¨ÒåÈ¨ÖØÓ°ÏìÒò×ÓÒÔ¼ÆËã½ÚµãºÍÁ´Â·µÄ¹éÒ»»¯×ÊÔ´ÏÞÖÆ¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐ½Úµã~$n^s$~µÄ¹éÒ»»¯×ÊÔ´~$c^s(n^s)$~¿É±íÊ¾Îª:$$c^s(n^s)=S^s(n^s)\cdot w_S^n + I^s(n^s) \cdot w_I^n + P^s(n^s)\cdot w_P^n + M^s(n^s)\cdot w_M^n$$
 \par
 Á´Â·~$e^s$~µÄ¹éÒ»»¯×ÊÔ´~$b^s(e^s)$~¿É±íÊ¾Îª: $$b^s(e^s)=B^s(e^s)\cdot w_B^e + D^s(e^s) \cdot w_D^e + J^s(e^s)\cdot w_J^e$$
 \par
@@ -133,35 +123,34 @@ CPU~ÊýÁ¿ & $P^s$  & $w_P^n$ &           &       &      \\\hline
 \par
 ÔÚÐéÄâÍøÂçÇëÇóºÍµ×²ãÎïÀíÍøÂçÖÐ£¬½ÚµãÓëÁ´Â·µÄÐèÇóÏÞÖÆºÍ×ÊÔ´ÏÞÖÆ¶¼Éæ¼°Ó°ÏìÒò×ÓµÄÈ¨ÖØÉè¶¨¡£¸ù¾Ý²»Í¬µÄÓ¦ÓÃ³¡¾°£¬¿É×ÃÇéµ÷Õû¸÷¸öÓ°ÏìÒòËØµÄÈ¨ÖØ¡£Æ©Èç£¬ÔÚ´ø¿íÖ÷µ¼µÄÓ¦ÓÃ³¡¾°ÖÐ£¬¿É×ÃÇé¼Ó´ó´ø¿íÓ°ÏìÒò×ÓµÄÈ¨ÖØ£»ÔÚ¼ÆËãÖ÷µ¼µÄÓ¦ÓÃ³¡¾°ÖÐ£¬¿É×ÃÇé¼Ó´ó~CPU~Ó°ÏìÒò×ÓµÄÈ¨ÖØµÈµÈ¡£Ò»°ãÇé¿öÏÂ£¬¿É¼òµ¥µØÉè¶¨Îª¾ùºâÈ¨ÖØ£¬¼´¸÷¸öÓ°ÏìÒò×Ó¶¼ÊÇÍ¬µÈÖØÒªµÄ¡£
 \par
-ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇ¶¯Ì¬µÄ¡£Ëæ×ÅÊ±¼äÍÆÒÆ£¬²»Í¬µÄÐéÄâÍøÂçÇëÇó»áµ½´ïÏµÍ³²¢½ÓÊÜÇ¶ÈëÓ³Éä´¦Àí£¬Í¬Ê±£¬ÏµÍ³ÖÐÉúÃüÖÜÆÚ½áÊøµÄÐéÄâÍøÂçÇëÇó»áÀë¿ªÏµÍ³£¬²¢¹é»¹Õ¼ÓÃµÄ×ÊÔ´¡£Ò²¾ÍÊÇËµ£¬µ±ÐÂµÄÐéÄâÍøÂçÇëÇóµ½´ïÏµÍ³Ê±£¬ÐéÄâÍøÂçÇ¶ÈëËã·¨·¢»Ó×÷ÓÃ£¬ÔÚÌõ¼þÔÊÐíµÄÇé¿öÏÂ£¬ÏµÍ³ÖÐµÄÎïÀí×ÊÔ´»á±»·ÖÅä¸øÐéÄâÍøÂçÇëÇó£»µ±ÐéÄâÍøÂçÇëÇóµÄÉúÃüÖÜÆÚ½áÊøÊ±£¬ÐéÄâÍøÂçÇëÇó½«Àë¿ªÏµÍ³£¬²¢ÊÍ·ÅÕ¼ÓÃµÄ×ÊÔ´¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´ÓÖ·ÖÎª¿ÉÓÃ×ÊÔ´~$c_{available}$~ºÍÕ¼ÓÃ×ÊÔ´~$c_{used}~$¡£ÎÒÃÇ¶¨ÒåÐéÄâÍøÂçÇëÇó¼°ÆäÕ¼ÓÃµÄ×ÊÔ´ÎªÒ»¸öÓ³Éä¼¯ºÏ~$M_{map}$~£¬Ó³Éä¼¯ºÏÖÐµÄÈÎÒâÒ»¸öÓ³Éä¶Ô~$<r,c>\in M_{map}$~±íÊ¾ÐéÄâÍøÂçÇëÇó~$r$~Õ¼ÓÃÁËµ×²ãÎïÀíÍøÂçµÄ~$c$~×ÊÔ´¡£
+ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇ¶¯Ì¬µÄ¡£Ëæ×ÅÊ±¼äÍÆÒÆ£¬²»Í¬µÄÐéÄâÍøÂçÇëÇó»áµ½´ïÏµÍ³²¢½ÓÊÜÇ¶ÈëÓ³Éä´¦Àí£¬Í¬Ê±£¬ÏµÍ³ÖÐÉúÃüÖÜÆÚ½áÊøµÄÐéÄâÍøÂçÇëÇó»áÀë¿ªÏµÍ³£¬ÊÍ·Å²¢¹é»¹Õ¼ÓÃµÄ×ÊÔ´¡£Ò²¾ÍÊÇËµ£¬µ±ÐÂµÄÐéÄâÍøÂçÇëÇóµ½´ïÏµÍ³Ê±£¬ÐéÄâÍøÂçÇ¶ÈëËã·¨·¢»Ó×÷ÓÃ£¬ÔÚÌõ¼þÔÊÐíµÄÇé¿öÏÂ£¬ÏµÍ³ÖÐµÄÎïÀí×ÊÔ´»á±»·ÖÅä¸øÐéÄâÍøÂçÇëÇó£»µ±ÐéÄâÍøÂçÇëÇóµÄÉúÃüÖÜÆÚ½áÊøÊ±£¬ÐéÄâÍøÂçÇëÇó½«Àë¿ªÏµÍ³£¬²¢ÊÍ·ÅÕ¼ÓÃµÄ×ÊÔ´¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´ÓÖ·ÖÎª¿ÉÓÃ×ÊÔ´~$c_{available}$~ºÍÕ¼ÓÃ×ÊÔ´~$c_{used}~$¡£ÎÒÃÇ¶¨ÒåÐéÄâÍøÂçÇëÇó¼°ÆäÕ¼ÓÃµÄ×ÊÔ´ÎªÒ»¸öÓ³Éä¼¯ºÏ~$M_{map}$~£¬Ó³Éä¼¯ºÏÖÐµÄÈÎÒâÒ»¸öÓ³Éä¶Ô~$<r,c>\in M_{map}$~±íÊ¾ÐéÄâÍøÂçÇëÇó~$r$~Õ¼ÓÃÁËµ×²ãÎïÀíÍøÂçµÄ~$c$~×ÊÔ´¡£
 \par
-ÔÚµ×²ãÎïÀíÍøÂçÖÐ£¬ÎÒÃÇÎªÃ¿¸öÇøÓòµÄµ×²ãÎïÀíÍøÂç¶¨ÒåÁËÒ»¸öÎ»ÖÃÖÐÐÄ£¬ÈçµÚ~$i$~¸öÇøÓòµÄµ×²ãÎïÀíÍøÂç~$G_i^s$~µÄÎ»ÖÃÖÐÐÄÎª~$O_i^s$~£¬¼´~$O_i^s=(x_i,y_i)$~¡£Î»ÖÃÖÐÐÄÊÇÐéÄâµÄ£¬Êµ¼ÊÖÐ²¢²»ÕæÕý´æÔÚÕâ¸öÖÐÐÄµã¡£ÎÒÃÇ½«ÐéÄâµÄÎ»ÖÃÖÐÐÄ~$O_i^s$~¶¨ÒåÎª¸ÃÇøÓòÄÚËùÓÐ½ÚµãµÄÎ»ÖÃµÄ¼¸ºÎÖÐÐÄ£º
+ÔÚµ×²ãÎïÀíÍøÂçÖÐ£¬ÎÒÃÇÎªÃ¿¸öÇøÓòµÄµ×²ãÎïÀíÍøÂç¶¨ÒåÁËÒ»¸öÎ»ÖÃÖÐÐÄ£¬ÈçµÚ~$i$~¸öÇøÓòµÄµ×²ãÎïÀíÍøÂç~$G_i^s$~µÄÎ»ÖÃÖÐÐÄÎª~$O_i^s$£¬¼´~$O_i^s=(x_i,y_i)$¡£Î»ÖÃÖÐÐÄÊÇÐéÄâµÄ£¬Êµ¼ÊÖÐ²¢²»ÕæÕý´æÔÚÕâ¸öÖÐÐÄµã¡£ÎÒÃÇ½«ÐéÄâµÄÎ»ÖÃÖÐÐÄ~$O_i^s$~¶¨ÒåÎª¸ÃÇøÓòÄÚËùÓÐ½ÚµãµÄÎ»ÖÃµÄ¼¸ºÎÖÐÐÄ£º
 $$O_i^s = \sum_{n^s\in N_i^s}\frac{l^s(n^s)}{|N_i^s|}$$
 \par
-ÆäÖÐ£¬~$|N_i^s|$~±íÊ¾µÚ~$i$~¸öÇøÓòµÄµ×²ãÎïÀíÍøÂçÖÐµÄ½Úµã¸öÊý¡£ÔÚÊµ¼ÊÉú»îÖÐ£¬Ã¿¸öÇøÓòµÄµ×²ãÎïÀíÍøÂçÍ¨³£¶¼ÊÇÒ»¸ö¾ÖÓòÍø»·¾³£¬²»Í¬µÄÇøÓòµ×²ãÎïÀíÍøÂçÍ¨¹ý~Internet~½øÐÐ»¥Áª»¥Í¨¡£ÓÉÓÚ~Internet~·Ç³£¸´ÔÓ£¬ËùÒÔ£¬ÎÒÃÇ¼Ù¶¨ÔÚ~Internet~ÖÐµÄ´ø¿í×ÊÔ´ÊÇÎÞÏÞµÄ¡£ËäÈ»£¬ÉÏÊö¼Ù¶¨ÊÇ²»³ÉÁ¢µÄ£¬µ«ÊÇÎÒÃÇ¶Ô~Internet~µÄ×ÊÔ´ÊÇÃ»ÓÐ°ì·¨¿ØÖÆµÄ£¬Òò´ËÉÏÊö¼Ù¶¨Ò²ÊÇºÏÀíµÄ¡£
+ÆäÖÐ£¬$|N_i^s|$~±íÊ¾µÚ~$i$~¸öÇøÓòµÄµ×²ãÎïÀíÍøÂçÖÐµÄ½Úµã¸öÊý¡£ÔÚÊµ¼ÊÉú»îÖÐ£¬Ã¿¸öÇøÓòµÄµ×²ãÎïÀíÍøÂçÍ¨³£¶¼ÊÇÒ»¸ö¾ÖÓòÍø»·¾³£¬²»Í¬µÄÇøÓòµ×²ãÎïÀíÍøÂçÍ¨¹ý~Internet~½øÐÐ»¥Áª»¥Í¨¡£ÓÉÓÚ~Internet~·Ç³£¸´ÔÓ£¬ËùÒÔ£¬ÎÒÃÇ¼Ù¶¨ÔÚ~Internet~ÖÐµÄ´ø¿í×ÊÔ´ÊÇÎÞÏÞµÄ¡£ËäÈ»£¬ÉÏÊö¼Ù¶¨ÊÇ²»³ÉÁ¢µÄ£¬µ«ÊÇÎÒÃÇ¶Ô~Internet~µÄ×ÊÔ´ÊÇÃ»ÓÐ°ì·¨¿ØÖÆµÄ£¬Òò´ËÉÏÊö¼Ù¶¨Ò²ÊÇºÏÀíµÄ¡£
 
 \subsection{½Úµã¾ÛÀà}
-ÔÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¨MSO-VNE£©ÖÐ£¬½Úµã¾ÛÀà·ÖÎöÊÇ»ùÓÚµØÀíÎ»ÖÃÕ¹¿ªµÄ£¬ÆäÔ­ÒòÓÐÈçÏÂÁ½µã£º
+ÔÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬MSO-VNE~ÖÐ£¬½Úµã¾ÛÀà·ÖÎöÊÇ»ùÓÚµØÀíÎ»ÖÃÕ¹¿ªµÄ£¬ÆäÔ­ÒòÓÐÈçÏÂÁ½µã£º
 \par
-1£©µ×²ãÇøÓòÐÔ
+\textbf{1¡¢µ×²ãÇøÓòÐÔ}\par
+Í¨³££¬Êý¾ÝÖÐÐÄ»òµ×²ãÎïÀíÍøÂç·Ö²¼ÔÚ²»Í¬µÄµØÀíÎ»ÖÃ£¬¾ßÓÐÃ÷ÏÔµÄÇøÓòÐÔÌØÕ÷¡£²ÉÓÃ»ùÓÚµØÀíÎ»ÖÃµÄ½Úµã¾ÛÀà·ÖÎö£¬¿ÉÓÐÐ§µØÀûÓÃµ×²ãÎïÀíÍøÂçµÄÇøÓòÐÔÌØÕ÷£¬Ôö¼ÓÏµÍ³µÄÐÅÏ¢Á¿£¬Ìá¸ß×¼È·ÂÊ¡£
 \par
-Í¨³££¬Êý¾ÝÖÐÐÄ»òµ×²ãÎïÀíÍøÂçÊÇ·Ö²¼ÔÚ²»Í¬µÄµØÀíÎ»ÖÃµÄ£¬¾ßÓÐÃ÷ÏÔµÄÇøÓòÌØÐÔÐÔ¡£²ÉÓÃ»ùÓÚµØÀíÎ»ÖÃµÄ½Úµã¾ÛÀà·ÖÎö£¬¿ÉÓÐÐ§µØÀûÓÃµ×²ãÎïÀíÍøÂçµÄÇøÓòÐÔÌØÕ÷£¬Ôö¼ÓÏµÍ³µÄÐÅÏ¢Á¿£¬Ìá¸ß×¼È·ÂÊ¡£
+\textbf{2¡¢QoS~ÐèÇó}\par
+Ò»°ã¶øÑÔ£¬ÐéÄâÍøÂçÇëÇó¶¼ÓÐµØÀíÎ»ÖÃµÄÐèÇóÏÞÖÆ£¬ÓÈÆäÊÇÊµÊ±ÒµÎñµÄÐéÄâÍøÂçÇëÇó£¬¶ÔµØÀíÎ»ÖÃµÄÐèÇóÏÞÖÆ¸ü¼ÓÆÈÇÐ¡£ÒòÎªËüÃÇÐèÒª¸ü¸ßµÄ~QoS~·þÎñÖÊÁ¿ÒÔÌá¸ßÓÃ»§µÄÌåÑéÖÊÁ¿£¬±ÈÈç¶àÃ½ÌåÒµÎñ¶Ô´ø¿í¡¢ÑÓÊ±ÒÔ¼°ÑÓÊ±¶¶¶¯µÄÒªÇó¾Í±È½Ï¿Á¿Ì£¬ÕâÊÇÒµÎñ»ò·þÎñ±¾ÉíµÄÌØÖÊ¡£ÎªÁË±£Ö¤ÕâÀàÒµÎñ»ò·þÎñµÄ~QoS~·þÎñÖÊÁ¿£¬Í¨³£°Ñ·þÎñ½Úµã²¿ÊðÔÚÀëÖÕ¶ËÓÃ»§½Ï½üµÄµØ·½£¬ÒÔ¼õÉÙÑÓÊ±£¬¸ÄÉÆ~QoS~·þÎñÖÊÁ¿¡£
 \par
-2£©~QoS~ÐèÇó
-\par
-Ò»°ã¶øÑÔ£¬ÐéÄâÍøÂçÇëÇó¶¼ÓÐµØÀíÎ»ÖÃµÄÐèÇóÏÞÖÆ£¬ÓÈÆäÊÇÊµÊ±ÒµÎñµÄÐéÄâÍøÂçÇëÇó£¬¶ÔµØÀíÎ»ÖÃµÄÐèÇóÏÞÖÆ¸ü¼ÓÆÈÇÐ¡£ÒòÎªËüÃÇÐèÒª¸ü¸ßµÄ~QoS~·þÎñÖÊÁ¿ÒÔÌá¸ßÓÃ»§µÄÌåÑéÖÊÁ¿£¬±ÈÈç¶àÃ½ÌåÒµÎñ¶Ô´ø¿íºÍÑÓÊ±µÄÒªÇó¾Í±È½Ï¿Á¿Ì£¬ÕâÊÇÒµÎñ»ò·þÎñ±¾ÉíµÄÌØÖÊ¡£ÎªÁË±£Ö¤ÕâÀàÒµÎñ»ò·þÎñµÄ~QoS~·þÎñÖÊÁ¿£¬Í¨³£°Ñ·þÎñ½Úµã²¿ÊðÔÚÀëÖÕ¶ËÓÃ»§½Ï½üµÄµØ·½£¬ÒÔ¼õÉÙÑÓÊ±£¬¸ÄÉÆ~QoS~·þÎñÖÊÁ¿¡£
-\par
-Òò´Ë£¬²ÉÓÃ»ùÓÚµØÀíÎ»ÖÃµÄ½Úµã¾ÛÀà·ÖÎö£¬Ò»·½Ãæ£¬¿ÉÒÔ³ä·ÖÀûÓÃµ×²ãÎïÀíÍøÂçµÄÇøÓòÐÔÌØÕ÷£»ÁíÒ»·½Ãæ£¬¿ÉÒÔÌá¸ßÒµÎñºÍ·þÎñµÄ~QoS~·þÎñÖÊÁ¿¡£ÔÚÐéÄâÍøÂçÇëÇó~$G^v$~ÖÐ£¬Í¨¹ý¶ÔÐéÄâ½ÚµãÓ¦ÓÃ»ùÓÚµØÀíÎ»ÖÃµÄ¾ÛÀà·ÖÎö£¬½«ÇëÇóÖÐµÄ½Úµã¹é¾Ûµ½Èô¸É¸ö²»Í¬µÄÀà±ð£¬´Ó¶ø½«Ô­Ê¼µÄÐéÄâÍøÂçÇëÇó¾ÛÀàÎª¶à¸ö¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó¡£ÐéÄâÍøÂçÇëÇóÖÐµÄÈÎÒâ½Úµã~$n^v\in N^v$~£¬½«±»¾Û¼¯µ½~$C(n^v)$~ÖÐ£º
+Òò´Ë£¬²ÉÓÃ»ùÓÚµØÀíÎ»ÖÃµÄ½Úµã¾ÛÀà·ÖÎö£¬Ò»·½Ãæ£¬¿ÉÒÔ³ä·ÖÀûÓÃµ×²ãÎïÀíÍøÂçµÄÇøÓòÐÔÌØÕ÷£»ÁíÒ»·½Ãæ£¬¿ÉÒÔÌá¸ßÒµÎñºÍ·þÎñµÄ~QoS~·þÎñÖÊÁ¿¡£ÔÚÐéÄâÍøÂçÇëÇó~$G^v$~ÖÐ£¬Í¨¹ý¶ÔÐéÄâ½ÚµãÓ¦ÓÃ»ùÓÚµØÀíÎ»ÖÃµÄ¾ÛÀà·ÖÎö£¬½«ÇëÇóÖÐµÄ½Úµã¹é¾Ûµ½Èô¸É¸ö²»Í¬µÄÀà±ð£¬´Ó¶ø½«Ô­Ê¼µÄÐéÄâÍøÂçÇëÇó¾ÛÀàÎª¶à¸ö¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó¡£ÐéÄâÍøÂçÇëÇóÖÐµÄÈÎÒâ½Úµã~$n^v\in N^v$£¬½«±»¾Û¼¯µ½~$C(n^v)$~ÖÐ£º
 $$C(n^v)=\mathop{argmin}_{i=0,1,2,\cdot,|O^s|-1}{dis(l^v(n^v),O_i^s)}$$
 \par
-Ã¿¸öÐéÄâ½Úµã~$n^v$~¶¼±»¾ÛÀàµ½ÀëËü×î½üµÄÇøÓòµ×²ãÎïÀíÍøÂç~$G_i^s$~ ÖÐ£¬ÆäÖÐ~$i=C(n^v)$~¡£Í¬Ê±£¬¶ÔÓÚÈÎÒâµÄÐéÄâÍøÂçÇëÇó~$G^v$~£¬Æä¾ÛÀàºóµÄ×ÓÇëÇóÊýÁ¿¾ø²»³¬¹ýÇøÓòµ×²ãÎïÀíÍøÂçµÄ×ÜÊýÄ¿~$|O^s|$~¡£¾ÛÀà·ÖÎöºó£¬¸ù¾Ý¾ÛÀà½á¹û£¬¿ÉÒÔ½«ÐéÄâÍøÂçÇëÇó~$G^v$~·Ö¸îÎªÒ»×éÐéÄâÍøÂç×ÓÇëÇó¼¯ºÏ~$Q$~¡£¸Ã×ÓÇëÇó¼¯ºÏÖÐµÄÈÎÒâÒ»¸ö×ÓÇëÇó~$G_i^v\in Q$~ ¶¼±ÈÔ­Ê¼µÄÇëÇó~$G^v$~¹æÄ£Ð¡£¬Í¬Ò»¸ö×ÓÇëÇó~$G_i^v$~ÖÐµÄÐéÄâ½ÚµãÊôÓÚÏàÍ¬µÄ¾ÛÀà~$i$~£¬ÆäÖÐ~$i$~Ò²ÊÇµÚ~$i$~¸öÇøÓòµ×²ãÎïÀíÍøÂç~$G_i^s$~ µÄË÷Òý¡£ÓÉÓÚÎÒÃÇ¼Ù¶¨²»Í¬µÄÇøÓòµ×²ãÎïÀíÍøÂçÍ¨¹ý~Internet~»¥Áª»¥Í¨£¬ÇÒ~Internet~µÄÁ´Â·×ÊÔ´ÊÇÎÞÏÞµÄ¡£Òò´Ë£¬ÈÎºÎ¶ËµãÔÚ²»Í¬¾ÛÀàÖÐµÄÐéÄâÁ´Â·¶¼¿ÉÒÔºöÂÔ²»¼Æ¡£ÕâÑù£¬Ã¿¸öÐéÄâÍøÂç×ÓÇëÇó¶¼¿ÉÒÔ¶ÀÁ¢µØ·ÖÅäµ½ÇøÓòµ×²ãÎïÀíÍøÂç~$G_i^s$~ÖÐ½øÐÐ¾ÖÓòÇ¶Èë´¦Àí¡£½ø¶ø£¬ËùÓÐµÄ×ÓÇëÇó¶¼¿ÉÒÔ»¥²»¸ÉÈÅµØÔÚ²»Í¬µÄÇøÓòµ×²ãÎïÀíÍøÂçÖÐ½øÐÐ²¢·¢µÄ¾ÖÓòÇ¶Èë´¦Àí£¬ÕâÑùÒ»À´£¬Õû¸öÐéÄâÍøÂçÇëÇóµÄÇ¶ÈëÐÔÄÜ±ãµÃµ½´ó·ù¶ÈÌáÉý¡£
+Ã¿¸öÐéÄâ½Úµã~$n^v$~¶¼±»¾ÛÀàµ½ÀëËü×î½üµÄÇøÓòµ×²ãÎïÀíÍøÂç~$G_i^s$~ ÖÐ£¬ÆäÖÐ~$i=C(n^v)$¡£Í¬Ê±£¬¶ÔÓÚÈÎÒâµÄÐéÄâÍøÂçÇëÇó~$G^v$£¬Æä¾ÛÀàºóµÄ×ÓÇëÇóÊýÁ¿¾ø²»³¬¹ýÇøÓòµ×²ãÎïÀíÍøÂçµÄ×ÜÊýÄ¿~$|O^s|$¡£¾ÛÀà·ÖÎöºó£¬¸ù¾Ý¾ÛÀà½á¹û£¬¿ÉÒÔ½«ÐéÄâÍøÂçÇëÇó~$G^v$~·Ö¸îÎªÒ»×éÐéÄâÍøÂç×ÓÇëÇó¼¯ºÏ~$Q$¡£¸Ã×ÓÇëÇó¼¯ºÏÖÐµÄÈÎÒâÒ»¸ö×ÓÇëÇó~$G_i^v\in Q$~¶¼±ÈÔ­Ê¼µÄÇëÇó~$G^v$~¹æÄ£Ð¡£¬Í¬Ò»¸ö×ÓÇëÇó~$G_i^v$~ÖÐµÄÐéÄâ½ÚµãÊôÓÚÏàÍ¬µÄ¾ÛÀà~$i$£¬ÆäÖÐ~$i$~Ò²ÊÇµÚ~$i$~¸öÇøÓòµ×²ãÎïÀíÍøÂç~$G_i^s$~µÄË÷Òý¡£ÓÉÓÚÎÒÃÇ¼Ù¶¨²»Í¬µÄÇøÓòµ×²ãÎïÀíÍøÂçÍ¨¹ý~Internet~»¥Áª»¥Í¨£¬ÇÒ~Internet~µÄÁ´Â·×ÊÔ´ÊÇÎÞÏÞµÄ¡£Òò´Ë£¬ÈÎºÎ¶ËµãÔÚ²»Í¬¾ÛÀàÖÐµÄÐéÄâÁ´Â·¶¼¿ÉÒÔºöÂÔ²»¼Æ¡£ÕâÑù£¬Ã¿¸öÐéÄâÍøÂç×ÓÇëÇó¶¼¿ÉÒÔ¶ÀÁ¢µØ·ÖÅäµ½ÇøÓòµ×²ãÎïÀíÍøÂç~$G_i^s$~ÖÐ½øÐÐ¾ÖÓòÇ¶Èë´¦Àí¡£½ø¶ø£¬ËùÓÐµÄ×ÓÇëÇó¶¼¿ÉÒÔ»¥²»¸ÉÈÅµØÔÚ²»Í¬µÄÇøÓòµ×²ãÎïÀíÍøÂçÖÐ½øÐÐ²¢·¢µÄ¾ÖÓòÇ¶Èë´¦Àí£¬ÕâÑùÒ»À´£¬Õû¸öÐéÄâÍøÂçÇëÇóµÄÇ¶ÈëÐÔÄÜ±ãµÃµ½´ó·ù¶ÈÌáÉý¡£
+
 \subsection{¶¯Ì¬·þÎñ¾ùºâ}
-~PageRank~Ëã·¨¿ÉÒÔÓÐÐ§µØÆÀ¹À~Web~Ò³ÃæµÄÖÊÁ¿ºÍÊÜ»¶Ó­³Ì¶È£¬Ã¿¸öÒ³ÃæµÄ~rank value~ÅÅÃûÖµ°µº¬ÁË~Web~Ò³ÃæµÄÖØÒªÐÔ¡£Í¨³££¬Ò»¸ö±»ºÜ¶à¸ßÅÅÃûÖµÍøÒ³Á´½ÓµÄ~Web~ÍøÒ³½«»ñµÃÒ»¸ö½Ï¸ßµÄÅÅÃûÖµ£¬Í¬Ê±£¬Ò»¸öÒ³ÃæÁ´½Óµ½Ô½¶àµÄÒ³Ãæ£¬Ëü¶ÔÆäËûÒ³ÃæµÄÅÅÃûÖµµÄ¹±Ï×¾ÍÔ½Ð¡¡£
+PageRank\cite{pagerank,pagerank-paper}~ÍøÒ³ÅÅÃûËã·¨ÊÇ~Google~Ìá³öµÄ£¬ÓÃÓÚËÑË÷ÒýÇæ½øÐÐÍøÒ³ÅÅÃû¡£PageRank~¿ÉÒÔÓÐÐ§µØÆÀ¹ÀÍøÒ³µÄÏà¹ØÐÔºÍÖØÒªÐÔ£¬Ã¿¸öÒ³ÃæµÄÅÅÃûÖµ°µº¬ÁË¸ÃÒ³ÃæµÄÖÊÁ¿ºÍÊÜ»¶Ó­³Ì¶È¡£PageRank~Í¨¹ý»¥ÁªÍøÂçÖÐº£Á¿µÄ³¬Á´½Ó¹ØÏµÀ´È·¶¨Ò»¸öÒ³ÃæµÄÅÅÃûºÍµÈ¼¶¡£Èç¹ûÒ³Ãæ~A~ÓÐÁ´½ÓÖ¸ÏòÒ³Ãæ~B£¬±íÃ÷Ò³Ãæ~A~ÏòÒ³Ãæ~B~µÄÍøÒ³ÅÅÃûÍ¶Æ±£¬PageRank~¸ù¾ÝÍ¶Æ±À´Ô´ºÍÍ¶Æ±Ä¿±êµÄÍøÒ³ÅÅÃûÖµÀ´¾ö¶¨ÐÂµÄÍøÒ³ÅÅÃû¡£Ò»¸öÒ³ÃæµÄÍøÒ³ÅÅÃûÊÇÓÉËùÓÐÁ´ÏòËüµÄÒ³ÃæµÄÍøÒ³ÅÅÃû¾­¹ýµÝ¹éµü´ú¼ÆËã³öÀ´µÄ¡£Í¨³££¬Ò»¸ö±»ºÜ¶à¸ßÍøÒ³ÅÅÃûµÄÍøÒ³Á´½ÓµÄÍøÒ³½«»ñµÃÒ»¸ö½Ï¸ßµÄÍøÒ³ÅÅÃû¡£È»¶ø£¬Ò»¸öÒ³ÃæÁ´½Óµ½Ô½¶àµÄÒ³Ãæ£¬Ëü¶ÔÆäËûÒ³ÃæµÄÍøÒ³ÅÅÃûµÄ¹±Ï×¾ÍÔ½Ð¡¡£
 \par
-ÊÜ~PageRank~Ë¼ÏëµÄÆô·¢£¬ÎÒÃÇÔÚÐéÄâÍøÂçÇ¶ÈëÖÐÒýÈëÁË·þÎñÄÜÁ¦µÄ¸ÅÄî£¬·þÎñÄÜÁ¦¿ÉÓÃÀ´ÆÀ¹ÀÌØ¶¨½ÚµãµÄÖØÒªÐÔ¡£ÔÚÍ¨ÓÃÍøÂçÄ£ÐÍ~$G=(N,E)$~ÖÐ£¬¶ÔÓÚÈÎÒâµÄ½Úµã~$n\in N$~£¬Æä·þÎñÄÜÁ¦~$r(n)$~¿ÉÒÔ¶¨ÒåÎª£º
+ÊÜ~PageRank~ÍøÒ³ÅÅÃûËã·¨µÄÆô·¢£¬ÎÒÃÇÔÚÐéÄâÍøÂçÇ¶ÈëÖÐÒýÈëÁË·þÎñÄÜÁ¦µÄ¸ÅÄî£¬·þÎñÄÜÁ¦¿ÉÓÃÀ´ÆÀ¹ÀÌØ¶¨½ÚµãµÄÖØÒªÐÔ¡£ÔÚÍ¨ÓÃÍøÂçÄ£ÐÍ~$G=(N,E)$~ÖÐ£¬¶ÔÓÚÈÎÒâµÄ½Úµã~$n\in N$£¬Æä·þÎñÄÜÁ¦~$r(n)$~¿ÉÒÔ¶¨ÒåÎª£º
 $$r(n)=\sum_{m\in N}{p(m,n)\cdot r(m)}$$
 \par
-ÔÚ·þÎñÄÜÁ¦µÄ¶¨ÒåÖÐ£¬ÎÒÃÇÒýÈëÁË·þÎñÒò×Ó~$p(m,n)$~£¬Ëü±íÊ¾½Úµã~$m$~¶Ô½Úµã~$n$~µÄ·þÎñÄÜÁ¦¹±Ï×£¬Æä¶¨ÒåÈçÏÂ£º
+ÔÚ·þÎñÄÜÁ¦µÄ¶¨ÒåÖÐ£¬ÎÒÃÇÒýÈëÁË·þÎñÒò×Ó~$p(m,n)$£¬Ëü±íÊ¾½Úµã~$m$~¶Ô½Úµã~$n$~µÄ·þÎñÄÜÁ¦¹±Ï×£¬Æä¶¨ÒåÈçÏÂ£º
 $$p(m,n)=\left\{
 \begin{array}{c l}
     f_1 & m=n\\
@@ -170,17 +159,17 @@ $$p(m,n)=\left\{
     0 & other
 \end{array} \right.$$
 \par
-ÆäÖÐ£¬~$N_{neigh}(m)$~±íÊ¾½Úµã~$m$~µÄÁÚ¾Ó½Úµã¼¯ºÏ£¬¶ø~$f_1$~ºÍ~$f_2$~ÊÇÏàÓ¦µÄÈ¨ÖØ³£Êý£¬Âú×ã~$f_1 + f_2 = 1$~¡£~$r_0(n)$~ÊÇ½Úµã~$n$~µÄ¹éÒ»»¯×ÊÔ´£¬¶¨ÒåÎª½Úµã×ÊÔ´ºÍÁ´½Óµ½¸Ã½ÚµãµÄÁ´Â·×ÊÔ´µÄÒ»°ëµÄ³Ë»ý£º
+ÆäÖÐ£¬$N_{neigh}(m)$~±íÊ¾½Úµã~$m$~µÄÁÚ¾Ó½Úµã¼¯ºÏ£¬¶ø~$f_1$~ºÍ~$f_2$~ÊÇÏàÓ¦µÄÈ¨ÖØ³£Êý£¬Âú×ã~$f_1 + f_2 = 1$¡£$r_0(n)$~ÊÇ½Úµã~$n$~µÄ¹éÒ»»¯×ÊÔ´£¬¶¨ÒåÎª½Úµã×ÊÔ´ºÍÁ´½Óµ½¸Ã½ÚµãµÄÁ´Â·×ÊÔ´µÄÒ»°ëµÄ³Ë»ý£º
 $$r_0(n)=c(n) \cdot \sum_{e \in E_{neigh}(n)}1/2\cdot b(e)$$
 \par
-ÆäÖÐ£¬~$E_{neigh}(n)$~±íÊ¾Á´½Óµ½½Úµã~$n$~µÄÁ´Â·¼¯ºÏ£¬ÎÒÃÇ¼Ù¶¨Á´Â·´ø¿íÊÇÓÉÁ´Â·Á½¶ËµÄ½ÚµãÍêÈ«¹²ÏíµÄ£¬Õâ¾ÍÊÇÏµÊý1/2µÄÀ´Ô´¡£
+ÆäÖÐ£¬$E_{neigh}(n)$~±íÊ¾Á´½Óµ½½Úµã~$n$~µÄÁ´Â·¼¯ºÏ£¬ÎÒÃÇ¼Ù¶¨Á´Â·´ø¿íÊÇÓÉÁ´Â·Á½¶ËµÄ½ÚµãÍêÈ«¹²ÏíµÄ£¬Õâ¾ÍÊÇÏµÊý1/2µÄÀ´Ô´¡£
 \par
-ÓÉ´Ë£¬¶¯Ì¬·þÎñ¾ùºâËã·¨¿ÉÒÔÃèÊöÈç±í\ref{tab:dsba}ËùÊ¾¡£¶¯Ì¬·þÎñ¾ùºâËã·¨ÖÐµÄµü´ú´ÎÊýÊÇ¶àÏîÊ½Ê±¼ä¸´ÔÓ¶ÈµÄ¡£
+Òò´Ë£¬¶¯Ì¬·þÎñ¾ùºâËã·¨¿ÉÒÔÃèÊöÈç±í~\ref{tab:dsba}~ËùÊ¾¡£¸ù¾Ý~PageRank\cite{pagerank-paper}ÍøÒ³ÅÅÃûËã·¨£¬¶¯Ì¬·þÎñ¾ùºâËã·¨¿ÉÔÚ¶àÏîÊ½Ê±¼ä¸´ÔÓ¶ÈÄÚÍê³ÉµÝ¹éµü´úÔËËã£¬²¢¼ÆËã³ö¸÷¸ö½ÚµãµÄ¶¯Ì¬·þÎñÄÜÁ¦¡£
 \begin{table}[h]
 \centering
 \begin{tabular}{rl}
 \hline
-\multicolumn{2}{l}{$R=LB(G,\varepsilon_m)$£¬ÆäÖÐ$G=(N,E)$£¬$\varepsilon_m$ÎªãÐÖµ}\\\hline
+\multicolumn{2}{l}{$R=LB(G,\varepsilon_m)$£¬ÆäÖÐ~$G=(N,E)$£¬$\varepsilon_m$~ÎªãÐÖµ}\\\hline
 1: & Compute each $r_0(n)$ and $p(m,n)$, initialize $i\gets 0$ \\
 2: & while $\varepsilon < {\varepsilon}_m$ do \\
 3: & \qquad $\varepsilon \gets 0$ \\
@@ -196,27 +185,28 @@ $$r_0(n)=c(n) \cdot \sum_{e \in E_{neigh}(n)}1/2\cdot b(e)$$
 \end{table}
 
 \par
-¶¯Ì¬·þÎñ¾ùºâËã·¨ÔÚÐéÄâÍøÂçÇ¶ÈëÖÐ°çÑÝ×Å·Ç³£ÖØÒªµÄ½ÇÉ«¡£¼ÙÉèÔÚµ×²ãÎïÀíÍøÂçÖÐ´æÔÚÁ½¸ö½Úµã£¬ËüÃÇ¿ÉÓÃµÄ×ÊÔ´ÊÇÍêÈ«ÏàÍ¬µÄ£¬È»ºó£¬ËüÃÇµÄÁÚ¾ÓµÄ¿ÉÓÃ×ÊÔ´£¬»òÕßËüÃÇµÄÁÚ¾ÓµÄÁÚ¾ÓµÄ¿ÉÓÃ×ÊÔ´È´´ó²»ÏàÍ¬¡£´ËÊ±£¬ÎªÁËÔö¼ÓÇ¶ÈëÓ³ÉäµÄ³É¹¦¸ÅÂÊ£¬²¢¼õÉÙÐéÄâÁ´Â·ÔÚµ×²ãÎïÀíÍøÂçÖÐµÄÂ·¾¶³¤¶È£¬ÎÒÃÇÄþÔ¸Ñ¡ÔñÆäÁÚ½ü½Úµã¾ßÓÐ¸ü¶à×ÊÔ´µÄ½Úµã£¬Ò²¾ÍÊÇ¾ßÓÐ¸ü¸ß·þÎñÄÜÁ¦µÄ½Úµã¡£ÊÂÊµÉÏ£¬Ò»¸ö¾ßÓÐ½Ï¸ß·þÎñÄÜÁ¦µÄµ×²ã½ÚµãÖÁÉÙÂú×ãÒÔÏÂÁ½µãÖÐµÄÈÎÒ»µã£º
+¶¯Ì¬·þÎñ¾ùºâËã·¨ÔÚÐéÄâÍøÂçÇ¶ÈëÖÐ°çÑÝ×Å·Ç³£ÖØÒªµÄ½ÇÉ«¡£¼ÙÉèÔÚµ×²ãÎïÀíÍøÂçÖÐ´æÔÚÁ½¸ö½Úµã£¬ËüÃÇ¿ÉÓÃµÄ×ÊÔ´ÊÇÍêÈ«ÏàÍ¬µÄ£¬È»ºó£¬ËüÃÇµÄÁÚ¾ÓµÄ¿ÉÓÃ×ÊÔ´£¬»òÕßËüÃÇµÄÁÚ¾ÓµÄÁÚ¾ÓµÄ¿ÉÓÃ×ÊÔ´È´´ó²»ÏàÍ¬¡£´ËÊ±£¬ÎªÁËÔö¼ÓÇ¶ÈëÓ³ÉäµÄ³É¹¦¸ÅÂÊ£¬²¢¼õÉÙÐéÄâÁ´Â·ÔÚµ×²ãÎïÀíÍøÂçÖÐµÄÂ·¾¶³¤¶È£¬ÎÒÃÇÄþÔ¸Ñ¡ÔñÆäÁÚ½ü½Úµã¾ßÓÐ¸ü¶à×ÊÔ´µÄ½Úµã£¬Ò²¾ÍÊÇ¾ßÓÐ¸ü¸ß¶¯Ì¬·þÎñÄÜÁ¦µÄ½Úµã¡£ÊÂÊµÉÏ£¬Ò»¸ö¾ßÓÐ½Ï¸ß·þÎñÄÜÁ¦µÄµ×²ã½ÚµãÖÁÉÙÂú×ãÒÔÏÂÁ½µãÖÐµÄÈÎÒ»µã£º
 \par
-1£©½Úµã×ÔÉíÓÐ·á¸»µÄ×ÊÔ´
+1¡¢½Úµã×ÔÉíÓÐ·á¸»µÄ×ÊÔ´
 \par
-2£©½ÚµãµÄÁÚ¾ÓÓÐ·á¸»µÄ×ÊÔ´
+2¡¢½ÚµãµÄÁÚ¾ÓÓÐ·á¸»µÄ×ÊÔ´
 \par
-ÕâÐ©Ô­ÒòÈÃÎÒÃÇ¸ü¼ÓÏàÐÅÄÇÐ©¾ßÓÐ½Ï¸ß·þÎñÄÜÁ¦µÄµ×²ã½Úµã£¬Æä³É¹¦Ç¶ÈëµÄ¸ÅÂÊÒ²»á¸ü¸ß¡£Í¬Ê±£¬¡°ÄÜÕß¶àÀÍ¡±µÄË¼ÏëÊ¹µÃÒ»¸ö³É¹¦µÄÇ¶ÈëÓÐ¸üºÃµÄ¸ºÔØ¾ùºâÐ§¹û¡£Í¬ÑùµØ£¬ÎÒÃÇÈÏÎª¸ß·þÎñÄÜÁ¦µÄÐéÄâ½Úµã¾ßÓÐÓÅÏÈÇ¶ÈëÈ¨£¬ÒòÎªµ±¸Ã½ÚµãÇ¶ÈëÊ§°ÜµÄÊ±ºò£¬Ëü¿ÉÒÔÌáÇ°¸æÖªÕû¸öÐéÄâÍøÂçÇëÇóµÄÊ§°Ü¡£
-\subsection{¾Ö²¿×ÓÇëÇóÓ³Éä}
-ÈçÍ¼\ref{fig:procedure}ËùÊ¾£¬Ã¿¸öÐéÄâÍøÂç×ÓÇëÇóµÄÇ¶ÈëÓ³ÉäÊÇÔÚ¾Ö²¿Ç¶Èë½×¶ÎÍê³ÉµÄ¡£¾­¹ýÈ«¾Ö´¦Àíºó£¬ÐéÄâÍøÂçÇëÇó±»¾ÛÀà·Ö¸îÎª¶à¸ö¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó£¬ÔÙ¾­¹ý¼ò»¯´¦Àíºó£¬¸÷¸ö×ÓÇëÇó±äµÃÏà»¥¶ÀÁ¢¡£Òò´Ë£¬ÎÒÃÇ¿ÉÒÔ²¢·¢µØ´¦Àí¶à¸ö×ÓÇëÇó¡£ÔÚ¶Ô×ÓÇëÇó½øÐÐ¾Ö²¿Ç¶ÈëÊ±£¬Ö÷Òª²ÉÓÃÌ°ÐÄ²ßÂÔ¡£Ì°ÐÄ²ßÂÔÒÔ½ÚµãµÄ¶¯Ì¬·þÎñÄÜÁ¦Îª²Î¿¼ÒÀ¾Ý£¬ÓÅÏÈ½«×ÓÇëÇóÖÐ¾ßÓÐ×î´ó¶¯Ì¬·þÎñÄÜÁ¦µÄÐéÄâ½ÚµãÓ³Éäµ½¶ÔÓ¦µÄÇøÓòµ×²ãÎïÀíÍøÂçÖÐ¾ßÓÐ×î´ó¶¯Ì¬·þÎñÄÜÁ¦µÄµ×²ã½ÚµãÉÏ¡£¾Ö²¿Ç¶ÈëµÄ¾ßÌåËã·¨ÃèÊöÈç±í\ref{tab:local algo}ËùÊ¾¡£ÓÉ´Ë¿ÉÖª£¬ËùÓÐÐéÄâÍøÂç×ÓÇëÇóÇ¶Èë´¦ÀíµÄÊ±¼ä¸´ÔÓ¶ÈÎª~$O(max_{0\leq i < |O^s|}(|N_i^v|^2 \cdot (|N_i^s|log|N_i^s| + |E_i^s|)))$~¡£
+²»¹ÜÊÇ½Úµã×ÔÉíµÄ·á¸»×ÊÔ´»¹ÊÇ½ÚµãÁÚ¾ÓµÄ·á¸»×ÊÔ´£¬¶¼ÈÃÎÒÃÇ¸ü¼ÓÏàÐÅÔÚÄÇÐ©¾ßÓÐ½Ï¸ß¶¯Ì¬·þÎñÄÜÁ¦µÄµ×²ã½ÚµãÉÏ³É¹¦Ç¶ÈëÐéÄâÍøÂçÇëÇóµÄ¸ÅÂÊÔö¼Ó¡£Í¬Ê±£¬¡°ÄÜÕß¶àÀÍ¡±µÄË¼ÏëÊ¹µÃÒ»¸ö³É¹¦µÄÇ¶ÈëÓÐ¸üºÃµÄ¸ºÔØ¾ùºâÐ§¹û¡£Í¬ÑùµØ£¬ÎÒÃÇÈÏÎª¸ß¶¯Ì¬·þÎñÄÜÁ¦µÄÐéÄâ½Úµã¾ßÓÐÓÅÏÈÇ¶ÈëÈ¨£¬ÒòÎªµ±¸Ã½ÚµãÇ¶ÈëÊ§°ÜµÄÊ±ºò£¬Ëü¿ÉÒÔÌáÇ°¸æÖªÕû¸öÐéÄâÍøÂçÇëÇóµÄÊ§°Ü£¬´Ó¶øÖÕÖ¹ÐéÄâÍøÂçÇëÇóµÄÇ¶Èë£¬¼õÉÙ²»±ØÒªµÄÇ¶Èë¿ªÏú¡£
+
+\subsection{¾Ö²¿Ç¶ÈëÓ³Éä}
+ÈçÍ¼~\ref{fig:procedure}~ËùÊ¾£¬Ã¿¸öÐéÄâÍøÂç×ÓÇëÇóÕæÕýµÄÇ¶ÈëÓ³ÉäÊÇÔÚ¾Ö²¿Ç¶Èë½×¶ÎÍê³ÉµÄ¡£¾­¹ýÈ«¾Ö´¦Àíºó£¬ÐéÄâÍøÂçÇëÇó±»¾ÛÀà·Ö¸îÎª¶à¸ö¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó£¬ÔÙ¾­¹ý¼ò»¯´¦Àíºó£¬¸÷¸ö×ÓÇëÇó±äµÃÏà»¥¶ÀÁ¢¡£Òò´Ë£¬ÎÒÃÇ¿ÉÒÔ²¢·¢µØ´¦Àí¶à¸ö×ÓÇëÇó¡£ÔÚ¶Ô×ÓÇëÇó½øÐÐ¾Ö²¿Ç¶ÈëÊ±£¬Ö÷Òª²ÉÓÃÌ°ÐÄ²ßÂÔ¡£Ì°ÐÄ²ßÂÔÒÔ½ÚµãµÄ¶¯Ì¬·þÎñÄÜÁ¦Îª²Î¿¼ÒÀ¾Ý£¬ÓÅÏÈ½«×ÓÇëÇóÖÐ¾ßÓÐ×î´ó¶¯Ì¬·þÎñÄÜÁ¦µÄÐéÄâ½ÚµãÓ³Éäµ½¶ÔÓ¦µÄÇøÓòµ×²ãÎïÀíÍøÂçÖÐ¾ßÓÐ×î´ó¶¯Ì¬·þÎñÄÜÁ¦µÄµ×²ã½ÚµãÉÏ¡£¾Ö²¿Ç¶ÈëµÄ¾ßÌåËã·¨ÃèÊöÈç±í~\ref{tab:local algo}~ËùÊ¾¡£ÓÉ´Ë¿ÉÖª£¬ËùÓÐÐéÄâÍøÂç×ÓÇëÇóÇ¶Èë´¦ÀíµÄÊ±¼ä¸´ÔÓ¶ÈÎª~$O(max_{0\leq i < |O^s|}(|N_i^v|^2 \cdot (|N_i^s|log|N_i^s| + |E_i^s|)))$~¡£
 \begin{table}[h]
 \centering
-\begin{tabular}{r|p{0.9\textwidth}}
+\begin{tabular}{l|p{0.88\textwidth}}
 \hline
 \multicolumn{2}{l}{¾Ö²¿Ç¶ÈëËã·¨£º$LocalEmbed(G_i^s, G_i^v)$}\\\hline
- 1.& ¶Ô~$G_i^s$~ºÍ~$G_i^v$~Ó¦ÓÃ¶¯Ì¬·þÎñ¾ùºâ·ÖÎö£¬¼ÆËã¸÷½ÚµãµÄ¶¯Ì¬·þÎñÄÜÁ¦£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|N_i^s|log|N_i^s|)$~£¬ÆäÖÐ~$O(|N_i^s|) > O(|N_i^v|)$~£»\\\hline
+ 1.& ¶Ô~$G_i^s$~ºÍ~$G_i^v$~Ó¦ÓÃ¶¯Ì¬·þÎñ¾ùºâ·ÖÎö£¬¼ÆËã¸÷½ÚµãµÄ¶¯Ì¬·þÎñÄÜÁ¦£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|N_i^s|log|N_i^s|)$£¬ÆäÖÐ~$O(|N_i^s|) > O(|N_i^v|)$£»\\\hline
 2. & ´Ó¾ßÓÐ×î¸ß¶¯Ì¬·þÎñÄÜÁ¦µÄÐéÄâ½Úµã~$n^v$~¿ªÊ¼£¬ÒÀ´Î´¦ÀíËùÓÐÎ´Ç¶ÈëµÄÐéÄâ½Úµã£¬Ö±µ½ËùÓÐÐéÄâ½Úµã¶¼±»Ç¶ÈëÎªÖ¹£»\\\hline
-2.1. & ´ÓÇøÓòµ×²ãÎïÀíÍøÂçÖÐÑ¡Ôñ×î¶à~$k$~¸ö×î¸ß¶¯Ì¬·þÎñÄÜÁ¦µÄºòÑ¡½Úµã£¬ÕâÐ©ºòÑ¡½Úµã¶¼ÄÜÂú×ã½Úµã~$n^v$~µÄÐèÇóÏÞÖÆ¡£Ê±¼ä¸´ÔÓ¶ÈÎª~$O(N_i^s)$~£» \\\hline
-2.2. & ÕÒ³öÃ¿¸öºòÑ¡½Úµãµ½ÒÑÓ³Éä½ÚµãÖ®¼äµÄ×î¶ÌÂ·¾¶£¬²¢¼ÆËã×ÜµÄÂ·¾¶¿ªÏú£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|N_i^v|\cdot(|N_i^s|log|N_i^s|) + |E_i^s|)$~£» \\\hline
-2.3. & ÔÚ~$k$~¸öºòÑ¡½ÚµãÖÐ£¬ÕÒ³ö¾ßÓÐ×îÐ¡µÄ×ÜµÄÂ·¾¶¿ªÏúµÄµ×²ã½Úµã~$n^s$~£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(k)$~£» \\\hline
-2.4. & ½«ÐéÄâ½Úµã~$n^v$~Ó³Éäµ½µ×²ã½Úµã~$n^s$~ÉÏ£¬Í¬Ê±Íê³ÉÒÑÓ³Éä½Úµãµ½~$n^s$~½ÚµãÖ®¼äµÄÁ´Â·Ó³Éä£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|E_{neigh}^v(n^v)|)$~£» \\\hline
-3. & µ±ËùÓÐµÄÐéÄâ½Úµã¶¼³É¹¦Ó³Éäºó£¬·ÖÅäÊµ¼ÊµÄ×ÊÔ´ÒÔÌá¹©·þÎñ£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|N_i^v| + |E_i^v|)$~£»\\\hline
+2.1. & ´ÓÇøÓòµ×²ãÎïÀíÍøÂçÖÐÑ¡Ôñ×î¶à~$k$~¸ö×î¸ß¶¯Ì¬·þÎñÄÜÁ¦µÄºòÑ¡½Úµã£¬ÕâÐ©ºòÑ¡½Úµã¶¼ÄÜÂú×ã½Úµã~$n^v$~µÄÐèÇóÏÞÖÆ¡£Ê±¼ä¸´ÔÓ¶ÈÎª~$O(N_i^s)$£» \\\hline
+2.2. & ÕÒ³öÃ¿¸öºòÑ¡½Úµãµ½ÒÑÓ³Éä½ÚµãÖ®¼äµÄ×î¶ÌÂ·¾¶£¬²¢¼ÆËã×ÜµÄÂ·¾¶¿ªÏú£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|N_i^v|\cdot(|N_i^s|log|N_i^s|) + |E_i^s|)$£» \\\hline
+2.3. & ÔÚ~$k$~¸öºòÑ¡½ÚµãÖÐ£¬ÕÒ³ö¾ßÓÐ×îÐ¡µÄ×ÜµÄÂ·¾¶¿ªÏúµÄµ×²ã½Úµã~$n^s$£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(k)$£» \\\hline
+2.4. & ½«ÐéÄâ½Úµã~$n^v$~Ó³Éäµ½µ×²ã½Úµã~$n^s$~ÉÏ£¬Í¬Ê±Íê³ÉÒÑÓ³Éä½Úµãµ½~$n^s$~½ÚµãÖ®¼äµÄÁ´Â·Ó³Éä£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|E_{neigh}^v(n^v)|)$£» \\\hline
+3. & µ±ËùÓÐµÄÐéÄâ½Úµã¶¼³É¹¦Ó³Éäºó£¬·ÖÅäÊµ¼ÊµÄ×ÊÔ´ÒÔÌá¹©·þÎñ£¬Ê±¼ä¸´ÔÓ¶ÈÎª~$O(|N_i^v| + |E_i^v|)$£»\\\hline
 \end{tabular}
 \caption{ÐéÄâÍøÂçÇ¶ÈëµÄ¾Ö²¿Ç¶ÈëËã·¨}
 \label{tab:local algo}
@@ -225,59 +215,63 @@ $$r_0(n)=c(n) \cdot \sum_{e \in E_{neigh}(n)}1/2\cdot b(e)$$
 \section{·ÂÕæÑéÖ¤}
 \label{sec:vne-fangzhen}
 \subsection{·ÂÕæ»·¾³}
-ÎªÁËÆÀ¹À±¾ÕÂÌá³öµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬~MSO-VNE~£¬±¾½Ú½«ÏêÏ¸½éÉÜÎÒÃÇÎª¸ÃËã·¨Éè¼ÆµÄ·ÂÕæÊµÑé¡£ÔÚ·ÂÕæÊµÑéÖÐ£¬ÎÒÃÇÉè¼Æ²¢ÊµÏÖÁËÀëÉ¢ÊÂ¼þÄ£ÄâÆ÷£¬ÒÔ¸üÌù½üÏÖÊµµÄ·½Ê½Ä£ÄâÐéÄâÍøÂçÇëÇóµÄµ½À´ºÍ±»´¦ÀíµÄ¹ý³Ì¡£·ÂÕæÊµÑé¿ÉÒÔÓÐÐ§µØÆÀ¹ÀÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÐÔÄÜ£¬Ò²ÎªÐéÄâÍøÂçÇ¶ÈëËã·¨ÔÚ¹¤³ÌÖÐµÄÊµ¼ÊÓ¦ÓÃÌá¹©ÒÀ¾ÝºÍ±£ÕÏ¡£
+ÎªÁËÆÀ¹À±¾ÕÂÌá³öµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬MSO-VNE£¬±¾½Ú½«ÏêÏ¸½éÉÜÎÒÃÇÎª¸ÃËã·¨Éè¼ÆµÄ·ÂÕæÊµÑé¡£ÔÚ·ÂÕæÊµÑéÖÐ£¬ÎÒÃÇÉè¼Æ²¢ÊµÏÖÁËÀëÉ¢ÊÂ¼þÄ£ÄâÆ÷£¬ÒÔ¸üÌù½üÏÖÊµµÄ·½Ê½Ä£ÄâÐéÄâÍøÂçÇëÇóµÄµ½À´ºÍ±»´¦ÀíµÄ¹ý³Ì¡£·ÂÕæÊµÑé¿ÉÒÔÓÐÐ§µØÆÀ¹ÀÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÐÔÄÜ£¬Ò²ÎªÐéÄâÍøÂçÇ¶ÈëËã·¨ÔÚ¹¤³ÌÖÐµÄÊµ¼ÊÓ¦ÓÃÌá¹©ÒÀ¾ÝºÍ±£ÕÏ¡£
 \par
-ÔÚÊµ¼ÊÉú»îÖÐ£¬ÕæÊµµÄµ×²ãÎïÀíÍøÂç»ù´¡ÉèÊ©µÄÍØÆËÊÇºÜÄÑ»ñÈ¡µÄ£¬Í¬Ê±£¬ÐéÄâÍøÂçÇëÇóµÄÍØÆËÒ²ºÜÄÑµÃµ½¡£Òò´Ë£¬±¾½Ú²ÉÓÃÈË¹¤ºÏ³ÉµÄÍøÂçÍØÆË£¬ÎÒÃÇÊ¹ÓÃµÄºÏ³É¹¤¾ßÊÇ~GT-ITM (Georgia Tech Internetwork Topology Models)£¬~¸ÃÍØÆËÉú³ÉÆ÷¿ÉÒÔÓÃÀ´Éú³ÉÒÔÆ½ÃæËæ»úÍ¼ºÍ²ã´ÎÍ¼×÷ÎªÄ£ÐÍµÄÍøÂçÍØÆË¡£×î¼òµ¥µÄÆ½ÃæËæ»úÍ¼Ä£ÐÍÊÇ´¿Ëæ»úÄ£ÐÍ£º½áµãÔÚÆ½ÃæÉÏËæ»ú·Ö²¼£¬ÈÎÒâÁ½¸ö½áµã¼äÓÐ±ßµÄ¸ÅÂÊÎª~$a$~¡£´¿Ëæ»úÄ£ÐÍ·Ç³£¼òµ¥£¬ÇÒ²»ÄÜºÜºÃµØ·´Ó³ÏÖÊµÍøÂçµÄÍØÆË½á¹¹£¬ËùÒÔÔÚ´Ë»ù´¡ÉÏÓÖÌá³öÁË¼¸ÖÖÆ½ÃæËæ»úÍ¼Ä£ÐÍ£º
+ÔÚÊµ¼ÊÉú»îÖÐ£¬ÕæÊµµÄµ×²ãÎïÀíÍøÂç»ù´¡ÉèÊ©µÄÍØÆËÊÇºÜÄÑ»ñÈ¡µÄ£¬Í¬Ê±£¬ÐéÄâÍøÂçÇëÇóµÄÍØÆËÒ²ºÜÄÑµÃµ½¡£Òò´Ë£¬±¾½Ú²ÉÓÃÈË¹¤ºÏ³ÉµÄÍøÂçÍØÆË£¬ÎÒÃÇÊ¹ÓÃµÄºÏ³É¹¤¾ßÊÇ~GT-ITM~ÍØÆËÉú³ÉÆ÷¡£GT-ITM~ÍØÆËÉú³ÉÆ÷¿ÉÒÔÓÃÀ´Éú³ÉÒÔÆ½ÃæËæ»úÍ¼ºÍ²ã´ÎÍ¼×÷ÎªÄ£ÐÍµÄÍøÂçÍØÆË¡£Ö÷ÒªµÄÆ½ÃæËæ»úÍ¼Ä£ÐÍ°üÀ¨ÒÔÏÂ¼¸ÖÖ£º
 \par
-1£©~Waxman 1~Ä£ÐÍ\par
-¸ÃÄ£ÐÍÖÐ£¬´Ó½áµã~$u$~µ½~$v$~ÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=a*e^{-d/(bL)}$~£¬ÆäÖÐ~$0<a,b\leq1$~£¬~$d$~ÊÇÁ½½áµã¼äµÄ¾àÀë£¬~$L=\sqrt{2}*scale$~ÊÇÆ½ÃæÉÏÈÎÒâÁ½½áµã¼äµÄ×î´ó¾àÀë¡£~$a$~Ôö´óÔòÍ¼ÖÐ±ßµÄÊýÄ¿»áÔö´ó£¬~$b$~Ôö´óÔòÍ¼ÖÐ³¤±ßÊýÓë¶Ì±ßÊýµÄ±ÈÖµ»áÔö´ó¡£\par
-2£©~Waxman 2~Ä£ÐÍ\par
-¸ÃÄ£ÐÍºÍ~Waxman 1~Ä£ÐÍºÜÏàËÆ£¬½«~Waxman 1~Ä£ÐÍÖÐµÄ²ÎÊý~$d$~µÄÈ¡Öµ·¶Î§±äÎª~$0$~µ½~$L$~Ö®¼äµÄËæ»úÊý¼´ÊÇ~Waxman 2~Ä£ÐÍ¡£\par
-3£©~Doar-Leslie~Ä£ÐÍ\par
-¸ÃÄ£ÐÍºÍ~Waxman 1~Ä£ÐÍºÜÏàËÆ£¬½«~Waxman 1~Ä£ÐÍÖÐµÃµ½µÄ¸ÅÂÊÖµ~$P(u,v)$~³ËÒÔÒ»¸ö±ÈÀýÒò×Ó~$ke/n$~±ãÊÇ~Doar-Leslie~Ä£ÐÍ¡£ÆäÖÐ~$e$~ ÊÇ½áµã¶ÈÊýµÄÆÚÍûÖµ£¬~$n$~ÊÇ½áµãÊý£¬~$k$~ÊÇÓÉ~$a$~£¬~$b$~¹²Í¬¾ö¶¨µÄ³£Êý¡£\par
-4£©Ö¸ÊýÄ£ÐÍ\par
-ÔÚÖ¸ÊýÄ£ÐÍÖÐ£¬´Ó½áµã~$u$~µ½~$v$~ÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=a*e^{-d/(L-d)}$~£¬ÓÉ´Ë¿ÉÖª£¬½Úµã¼äÓÐ±ßµÄ¸ÅÂÊËæ×Å½Úµã¼ä¾àÀëµÄÔö¼Ó¶ø³ÉÖ¸Êý¼¶µÄ½µµÍ¡£\par
-5£©~Locality~Ä£ÐÍ\par
-ÔÚLocalityÄ£ÐÍÖÐ£¬¸ù¾ÝÁ½½áµã¼äµÄ¾àÀë½«½áµã¶Ô·Ö³É²»Í¬µÄµÈ¼¶£¬²»Í¬µÈ¼¶µÄ½áµã¶ÔÖ®¼äÓÐ±ßµÄ¸ÅÂÊ²»Í¬¡£Æ©ÈçÔÚÁ½¼¶Ä£ÐÍÖÐµÄ·Ö¼¶¸ÅÂÊÄ£ÐÍÈçÏÂ£º\par
+1¡¢´¿Ëæ»úÄ£ÐÍ\par
+½áµãÔÚÆ½ÃæÉÏËæ»ú·Ö²¼£¬ÈÎÒâÁ½¸ö½áµã¼äÓÐ±ßµÄ¸ÅÂÊÎª~$a$~¡£´¿Ëæ»úÄ£ÐÍ·Ç³£¼òµ¥£¬µ«²»ÄÜºÜºÃµØ·´Ó³ÏÖÊµÍøÂçµÄÍØÆË½á¹¹¡£
+\par
+2¡¢Waxman 1~Ä£ÐÍ\par
+½áµãÔÚÆ½ÃæÉÏËæ»ú·Ö²¼£¬´Ó½áµã~$u$~µ½~$v$~ÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=a*e^{-d/(bL)}$£¬ÆäÖÐ~$0<a,b\leq1$£¬$d$~ÊÇÁ½½áµã¼äµÄ¾àÀë£¬$L=\sqrt{2}*scale$~ÊÇÆ½ÃæÉÏÈÎÒâÁ½½áµã¼äµÄ×î´ó¾àÀë¡£$a$~Ôö´óÔòÍ¼ÖÐ±ßµÄÊýÄ¿»áÔö´ó£¬$b$~Ôö´óÔòÍ¼ÖÐ³¤±ßÊýÓë¶Ì±ßÊýµÄ±ÈÖµ»áÔö´ó¡£\par
+3¡¢Waxman 2~Ä£ÐÍ\par
+Waxman 2~Ä£ÐÍºÍ~Waxman 1~Ä£ÐÍºÜÏàËÆ£¬½«~Waxman 1~Ä£ÐÍÖÐµÄ²ÎÊý~$d$~µÄÈ¡Öµ·¶Î§±äÎª~$0$~µ½~$L$~Ö®¼äµÄËæ»úÊý¼´ÊÇ~Waxman 2~Ä£ÐÍ¡£
+\par
+4¡¢Doar-Leslie~Ä£ÐÍ\par
+¸ÃÄ£ÐÍºÍ~Waxman 1~Ä£ÐÍºÜÏàËÆ£¬½«~Waxman 1~Ä£ÐÍÖÐµÃµ½µÄ¸ÅÂÊÖµ~$P(u,v)$~³ËÒÔÒ»¸ö±ÈÀýÒò×Ó~$ke/n$~±ãÊÇ~Doar-Leslie~Ä£ÐÍ¡£ÆäÖÐ~$e$~ÊÇ½áµã¶ÈÊýµÄÆÚÍûÖµ£¬$n$~ÊÇ½áµãÊý£¬$k$~ÊÇÓÉ~$a$£¬$b$~¹²Í¬¾ö¶¨µÄ³£Êý¡£
+\par
+5¡¢Ö¸ÊýÄ£ÐÍ\par
+ÔÚÖ¸ÊýÄ£ÐÍÖÐ£¬´Ó½áµã~$u$~µ½~$v$~ÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=a*e^{-d/(L-d)}$£¬ÓÉ´Ë¿ÉÖª£¬½Úµã¼äÓÐ±ßµÄ¸ÅÂÊËæ×Å½Úµã¼ä¾àÀëµÄÔö¼Ó¶ø³ÉÖ¸Êý¼¶µÄ½µµÍ¡£\par
+6¡¢Locality~Ä£ÐÍ\par
+ÔÚ~Locality~Ä£ÐÍÖÐ£¬¸ù¾ÝÁ½½áµã¼äµÄ¾àÀë½«½áµã¶Ô·Ö³É²»Í¬µÄµÈ¼¶£¬²»Í¬µÈ¼¶µÄ½áµã¶ÔÖ®¼äÓÐ±ßµÄ¸ÅÂÊ²»Í¬¡£Æ©ÈçÔÚÁ½¼¶Ä£ÐÍÖÐµÄ·Ö¼¶¸ÅÂÊÄ£ÐÍÈçÏÂ£º\par
 $$P(u,v)=\left\{
 \begin{array}{c l}
     a, & d < L*radius\\
     b, & d \geq L*radius
 \end{array}\right.$$
 \par
-Ò²¾ÍÊÇËµ£¬Èç¹û½Úµã~$u$~ºÍ~$v$~Ö®¼äµÄ¾àÀë~$d$~Âú×ã~$d<L*radius$~£¬Ôò½Úµã~$u$~ºÍ~$v$~Ö®¼äÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=a$~£¬·ñÔò½Úµã¼äÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=b$~£¬ÆäÖÐ~$radius$~ ÓÃÀ´È·¶¨·Ö¼¶½çÏÞ¡£\par
-Æ½ÃæËæ»úÍ¼ÊÇ²ã´ÎÍ¼µÄ»ù´¡£¬²ã´ÎÍ¼Ò»°ãÓÉ¶à¸öÆ½ÃæËæ»úÍ¼×é³É£¬~GT-ITM~ÖÐµÄ²ã´ÎÍ¼Ö÷Òª°üÀ¨Á½Àà£º~N-Level~ºÍ~Transit-Stub~¡£ÆäÖÐ~N-Level~²ÉÓÃµÝ¹éµÄ·½Ê½À´Éú³ÉÍøÂçÍØÆËÍ¼£ºÊ×ÏÈÓÃÉÏÊöÁùÖÖËæ»úÍ¼Ä£ÐÍÖÐµÄÈÎÒ»ÖÖÉú³ÉÒ»¸öÆ½ÃæËæ»úÍ¼£¬×÷ÎªÊ×²ãÍ¼£»È»ºóÓÃÆ½ÃæËæ»úÍ¼´úÌæÊ×²ãÍ¼ÖÐµÄÃ¿Ò»¸ö½áµã£¬²¢ÇÒÒÀ´ÎÌæ´úÏÂÈ¥¡£ÔÚ~Transit-Stub~ÖÐ£¬½«½áµã»®Èë²»Í¬ÀàÐÍµÄÓò£¬ÔÙ½«ÕâÐ©ÓòÁ¬½ÓÆðÀ´£ºÊ×ÏÈÉú³ÉÒ»¸öÆ½ÃæËæ»úÍ¼£¬Í¼ÖÐµÄÃ¿Ò»¸ö½áµã´ú±íÒ»¸ö~transit~Óò£»È»ºóÓÃÆ½ÃæËæ»úÍ¼´úÌæÕâÐ©~transit~Óò£¬±íÊ¾ÕâÐ©~transit~ÓòµÄ¹Ç¸ÉÍØÆË£»¶Ô~transit~ÓòÖÐµÄÃ¿¸ö½áµã£¬Éú³ÉÒ»¸ö»ò¶à¸öËæ»úÆ½ÃæÍ¼×÷Îª~stub~Óò£¬²¢½«ÆäºÍ½áµãÁ¬½ÓÆðÀ´£»×îºó»¹¿ÉÒÔÔÚÌØ¶¨µÄ½áµã¶ÔÖ®¼äÔö¼ÓÒ»Ð©¶îÍâ±ß£¬ÕâÐ©½áµã¶ÔÐèÂú×ã£ºÒ»¸öÔÚ~transit~ÓòÒ»¸öÔÚ~stub~Óò£¬»òÕßÔÚ²»Í¬µÄ~stub~Óò¡£
+Ò²¾ÍÊÇËµ£¬Èç¹û½Úµã~$u$~ºÍ~$v$~Ö®¼äµÄ¾àÀë~$d$~Âú×ã~$d<L*radius$£¬Ôò½Úµã~$u$~ºÍ~$v$~Ö®¼äÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=a$£¬·ñÔò½Úµã¼äÓÐ±ßµÄ¸ÅÂÊÎª~$P(u,v)=b$£¬ÆäÖÐ~$radius$~ÓÃÀ´È·¶¨·Ö¼¶½çÏÞ¡£
 \par
-ÔÚ·ÂÕæÊµÑéÖÐ£¬ÎÒÃÇ²ÉÓÃ~Transit-Stub~Ä£ÐÍ¹¹½¨µ×²ãÎïÀíÍøÂçÍØÆË£¬²ÉÓÃÆ½ÃæËæ»úÍ¼Ä£ÐÍºÏ³ÉÐéÄâÍøÂçÇëÇó¡£ÎÒÃÇ¹¹½¨ÁË~3~¸öÇøÓòµ×²ãÎïÀíÍøÂçºÍ³ÉÇ§ÉÏÍò¸öÐéÄâÍøÂçÇëÇó¡£ÆäÖÐ£¬Ã¿¸öÇøÓòµ×²ãÎïÀíÍøÂç°üº¬~50~ ¸ö½Úµã£¬¸²¸Ç~$80\times80$~µÄÍø¸ñÇøÓò¡£Í¬Ê±£¬ÎÒÃÇ¼Ù¶¨²»Í¬µÄÇøÓòµ×²ãÍøÂçÍøÂçÍ¨¹ý~Internet~»¥Áª»¥Í¨£¬¿¼ÂÇµ½~Internet~ µÄ¸´ÔÓÐÔºÍ²»¿É¿ØÖÆÐÔ£¬ÎÒÃÇ¼Ù¶¨~Internet~ÓÐÎÞÏÞµÄÁ´Â·×ÊÔ´¡£ÎªÁËÊ¹ÎÒÃÇµÄ·ÂÕæÊµÑé¸ü½Ó½üÕæÊµÇé¾°£¬ÎÒÃÇÉè¶¨ÐéÄâÍøÂçÇëÇóµÄµ½´ï·þ´Ó²´ËÉ·Ö²¼£¬Æ½¾ùµ½´ïËÙÂÊÊÇÃ¿~100~¸öÊ±¼äµ¥Î»~4~µ½~8~¸öÇëÇó²»µÈ¡£Ã¿¸öÐéÄâÍøÂçÇëÇóµÄÉú´æÖÜÆÚ·þ´ÓÆ½¾ùÊ±¼äÎª~1000~¸öÊ±¼äµ¥Î»µÄÖ¸Êý·Ö²¼£¬ÇÒÃ¿¸öÐéÄâÍøÂçÇëÇóµÄ½ÚµãÊýÁ¿ÊÇ~2~µ½~10~µÄ¾ùÔÈ·Ö²¼¡£
+Æ½ÃæËæ»úÍ¼ÊÇ²ã´ÎÍ¼µÄ»ù´¡£¬²ã´ÎÍ¼Ò»°ãÓÉ¶à¸öÆ½ÃæËæ»úÍ¼×é³É£¬GT-ITM~ÖÐµÄ²ã´ÎÍ¼Ö÷Òª°üÀ¨Á½Àà£ºN-Level~ºÍ~Transit-Stub~¡£ÆäÖÐ~N-Level~²ÉÓÃµÝ¹éµÄ·½Ê½À´Éú³ÉÍøÂçÍØÆËÍ¼£ºÊ×ÏÈÓÃÉÏÊöÁùÖÖËæ»úÍ¼Ä£ÐÍÖÐµÄÈÎÒ»ÖÖÉú³ÉÒ»¸öÆ½ÃæËæ»úÍ¼£¬×÷ÎªÊ×²ãÍ¼£»È»ºóÓÃÆ½ÃæËæ»úÍ¼´úÌæÊ×²ãÍ¼ÖÐµÄÃ¿Ò»¸ö½áµã£¬²¢ÇÒÒÀ´ÎÌæ´úÏÂÈ¥¡£ÔÚ~Transit-Stub~ÖÐ£¬½«½áµã»®Èë²»Í¬ÀàÐÍµÄÓò£¬ÔÙ½«ÕâÐ©ÓòÁ¬½ÓÆðÀ´£ºÊ×ÏÈÉú³ÉÒ»¸öÆ½ÃæËæ»úÍ¼£¬Í¼ÖÐµÄÃ¿Ò»¸ö½áµã´ú±íÒ»¸ö~transit~Óò£»È»ºóÓÃÆ½ÃæËæ»úÍ¼´úÌæÕâÐ©~transit~Óò£¬±íÊ¾ÕâÐ©~transit~ÓòµÄ¹Ç¸ÉÍØÆË£»¶Ô~transit~ÓòÖÐµÄÃ¿¸ö½áµã£¬Éú³ÉÒ»¸ö»ò¶à¸öËæ»úÆ½ÃæÍ¼×÷Îª~stub~Óò£¬²¢½«ÆäºÍ½áµãÁ¬½ÓÆðÀ´£»×îºó»¹¿ÉÒÔÔÚÌØ¶¨µÄ½áµã¶ÔÖ®¼äÔö¼ÓÒ»Ð©¶îÍâ±ß£¬ÕâÐ©½áµã¶ÔÐèÂú×ã£ºÒ»¸öÔÚ~transit~ÓòÒ»¸öÔÚ~stub~Óò£¬»òÕßÔÚ²»Í¬µÄ~stub~Óò¡£
+\par
+ÔÚ±¾½ÚµÄ·ÂÕæÊµÑéÖÐ£¬ÎÒÃÇ²ÉÓÃ~Transit-Stub~Ä£ÐÍ¹¹½¨µ×²ãÎïÀíÍøÂçÍØÆË£¬²ÉÓÃÆ½ÃæËæ»úÍ¼Ä£ÐÍºÏ³ÉÐéÄâÍøÂçÇëÇó¡£ÎÒÃÇ¹¹½¨ÁË~3~¸öÇøÓòµ×²ãÎïÀíÍøÂçºÍ³ÉÇ§ÉÏÍò¸öÐéÄâÍøÂçÇëÇó¡£ÆäÖÐ£¬Ã¿¸öÇøÓòµ×²ãÎïÀíÍøÂç°üº¬~50~ ¸ö½Úµã£¬¸²¸Ç~$80\times80$~µÄÍø¸ñÇøÓò¡£Í¬Ê±£¬ÎÒÃÇ¼Ù¶¨²»Í¬µÄÇøÓòµ×²ãÍøÂçÍøÂçÍ¨¹ý~Internet~»¥Áª»¥Í¨£¬¿¼ÂÇµ½~Internet~ µÄ¸´ÔÓÐÔºÍ²»¿É¿ØÖÆÐÔ£¬ÎÒÃÇ¼Ù¶¨~Internet~ÓÐÎÞÏÞµÄÁ´Â·×ÊÔ´¡£ÎªÁËÊ¹ÎÒÃÇµÄ·ÂÕæÊµÑé¸ü½Ó½üÕæÊµÇé¾°£¬ÎÒÃÇÉè¶¨ÐéÄâÍøÂçÇëÇóµÄµ½´ï·þ´Ó²´ËÉ·Ö²¼£¬Æ½¾ùµ½´ïËÙÂÊÊÇÃ¿~100~¸öÊ±¼äµ¥Î»~4~µ½~8~¸öÇëÇó²»µÈ¡£Ã¿¸öÐéÄâÍøÂçÇëÇóµÄÉú´æÖÜÆÚ·þ´ÓÆ½¾ùÊ±¼äÎª~1000~¸öÊ±¼äµ¥Î»µÄÖ¸Êý·Ö²¼£¬ÇÒÃ¿¸öÐéÄâÍøÂçÇëÇóµÄ½ÚµãÊýÁ¿ÊÇ~2~µ½~10~µÄ¾ùÔÈ·Ö²¼¡£
 \par
 ·ÂÕæÊµÑéµÄÖ÷ÒªÄ¿µÄÊÇÆÀ¹ÀÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~ µÄÐÔÄÜ£¬Òò´Ë£¬ÊµÑé²ÎÕÕ¶ÔÏóÊÇ±Ø²»¿ÉÉÙµÄ¡£ÎÒÃÇÔÚ·ÂÕæÊµÑéÖÐÑ¡ÔñµÄ²ÎÕÕ¶ÔÏóÊÇÏÖÓÐµÄ~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨£¬Ö÷ÒªµÄÆÀ¹ÀÖ¸±ê°üÀ¨Ê±¼ä¸´ÔÓ¶È¡¢¸ºÔØ·Ö²¼¡¢Æ½¾ùÊÕÒæ¿ªÏú±ÈºÍÆ½¾ù½ÓÊÜÂÊ¡£ÎªÁË¸üÕæÊµ×¼È·µØÆÀ¹À~MSO-VNE~Ëã·¨µÄÐÔÄÜ£¬ÎÒÃÇÔÚÏàÍ¬µÄ·ÂÕæ»·¾³ÏÂ¶ÔÍ¬ÑùµÄÊý¾Ý¼¯Ó¦ÓÃÒÔÉÏÈýÖÖ²»Í¬µÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£
 %\subsection{ÐÔÄÜÆÀ¹À}
 \subsection{Ê±¼ä¸´ÔÓ¶È}
-ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇµäÐÍµÄNPÄÑÎÊÌâ£¬ÆäÊ±¼ä¸´ÔÓ¶È·Ç³£¸ß¡£Òò´Ë£¬ÏÖÓÐµÄÑÐ¾¿´ó¶àÇãÏòÓÚÉè¼ÆÆô·¢Ê½Ëã·¨À´½â¾ö¡£Æ©Èç£¬~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨¾ÍÊÇµäÐÍµÄ»ùÓÚÆô·¢Ê½µÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£ÎÒÃÇÏÈÀ´ÏêÏ¸·ÖÎö~D-ViNE~Ëã·¨µÄÊ±¼ä¸´ÔÓ¶È¡£
+ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇµäÐÍµÄ~NP~ÄÑÎÊÌâ£¬ÆäÊ±¼ä¸´ÔÓ¶È·Ç³£¸ß¡£Òò´Ë£¬ÏÖÓÐµÄÑÐ¾¿´ó¶àÇãÏòÓÚÉè¼ÆÆô·¢Ê½Ëã·¨À´½â¾ö¡£Æ©Èç£¬D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨¾ÍÊÇµäÐÍµÄ»ùÓÚÆô·¢Ê½µÄÐéÄâÍøÂçÇ¶ÈëËã·¨¡£ÎÒÃÇÏÈÀ´ÏêÏ¸·ÖÎö~D-ViNE~Ëã·¨µÄÊ±¼ä¸´ÔÓ¶È¡£
 \par
-~D-ViNE~Ëã·¨ÊÇÐ­µ÷ÁË½ÚµãÓ³ÉäºÍÁ´Â·Ó³ÉäµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬¸ÃËã·¨Ê×ÏÈ»á½áºÏÐéÄâÍøÂçÇëÇó¹¹½¨ÔöÇ¿µÄµ×²ãÎïÀíÍøÂçÍØÆË£¬ÕâÒ»²½ÖèµÄÊ±¼ä¸´ÔÓ¶ÈÎª~$O(|N^v|)$~¡£ È»ºó£¬~D-ViNE~ Ëã·¨½«×ÅÁ¦½â¾öÕûÊýÏßÐÔ¹æ»®ÎÊÌâ£¬ÆäÊ±¼ä¸´ÔÓ¶ÈÎª~$O((|E^s|(1+|E^v|))^{3.5}L^2lnLlnlnL)$~¡£×îºó£¬~D-ViNE~Ëã·¨½«ÒÔÊ±¼ä¸´ÔÓ¶È~$O((|E^s||E^v|)^{3.5}L^2lnLlnlnL)$~À´½â¾öÁ´Â·Ó³ÉäÏà¹ØµÄ~MCF~ÎÊÌâ¡£ÓÉ´Ë¿ÉÖª£¬ÔÚ~D-ViNE~Ëã·¨ÖÐ£¬ÕûÊýÏßÐÔ¹æ»®ÎÊÌâÊÇÆä¸´ÔÓ¶È×î¸ßµÄ²¿·Ö£¬ËüÒ²¾ÍÊÇÕû¸ö~D-ViNE~Ëã·¨µÄÊ±¼ä¸´ÔÓ¶È¡£
+~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨\cite{dvine-rvine}ÊÇÐ­µ÷ÁË½ÚµãÓ³ÉäºÍÁ´Â·Ó³ÉäµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬Ëã·¨Ê×ÏÈ»á½áºÏÐéÄâÍøÂçÇëÇó¹¹½¨ÔöÇ¿µÄµ×²ãÎïÀíÍøÂçÍØÆË£¬ÕâÒ»²½ÖèµÄÊ±¼ä¸´ÔÓ¶ÈÎª~$O(|N^v|)$~¡£ È»ºó£¬Ëã·¨½«×ÅÁ¦½â¾öÕûÊýÏßÐÔ¹æ»®ÎÊÌâ£¬ÆäÊ±¼ä¸´ÔÓ¶ÈÎª~$O((|E^s|(1+|E^v|))^{3.5}L^2lnLlnlnL)$¡£ ×îºó£¬Ëã·¨½«ÒÔÊ±¼ä¸´ÔÓ¶È~$O((|E^s||E^v|)^{3.5}L^2lnLlnlnL)$~À´½â¾öÁ´Â·Ó³ÉäÏà¹ØµÄ~MCF~ ÎÊÌâ¡£ÓÉ´Ë¿ÉÖª£¬ÔÚÕâÁ½¸öËã·¨ÖÐ£¬ÕûÊýÏßÐÔ¹æ»®ÎÊÌâÊÇ¸´ÔÓ¶È×î¸ßµÄ²¿·Ö£¬ËüÒ²¾ÍÊÇÕû¸öËã·¨µÄÊ±¼ä¸´ÔÓ¶È¡£
 \par
-ÔÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÓ³ÉäËã·¨~MSO-VNE~ÖÐ£¬È«¾Ö´¦Àí½×¶Î½«ÐéÄâÍøÂçÇëÇó»®·ÖÎª¶à¸ö¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó£¬Ïà±ÈÔ­Ê¼µÄÐéÄâÍøÂçÇëÇó£¬¶Ô¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó½øÐÐÇ¶Èë´¦Àí¾ßÓÐ¸üµÍµÄÊ±¼ä¸´ÔÓ¶È¡£Í¬Ê±£¬¾ÖÓòÇ¶Èë½×¶Î¿É²¢·¢µØÇ¶Èë¶à¸ö×ÓÇëÇó£¬±ã½øÒ»²½½µµÍÁËÐéÄâÍøÂçÇ¶Èë´¦ÀíµÄÊ±¼ä¸´ÔÓ¶È¡£Èç±í\ref{tab:local algo}ËùÊ¾£¬ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~µÄÊ±¼ä¸´ÔÓ¶ÈÎª£º
+ÔÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÓ³ÉäËã·¨~MSO-VNE~ÖÐ£¬È«¾Ö´¦Àí½×¶Î½«ÐéÄâÍøÂçÇëÇó»®·ÖÎª¶à¸ö¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó£¬Ïà±ÈÔ­Ê¼µÄÐéÄâÍøÂçÇëÇó£¬¶Ô¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó½øÐÐÇ¶Èë´¦Àí¾ßÓÐ¸üµÍµÄÊ±¼ä¸´ÔÓ¶È¡£ÓÉÓÚÐéÄâÍøÂç×ÓÇëÇóÖ®¼äµÄÏà»¥¶ÀÁ¢ÐÔ£¬¾Ö²¿Ç¶Èë½×¶Î¿É²¢·¢µØÇ¶ÈëÓ³Éä¶à¸ö×ÓÇëÇó£¬±ã½øÒ»²½½µµÍÁËÐéÄâÍøÂçÇ¶Èë´¦ÀíµÄÊ±¼ä¸´ÔÓ¶È¡£Èç±í~\ref{tab:local algo}~ ËùÊ¾£¬ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~µÄÊ±¼ä¸´ÔÓ¶ÈÎª£º
 $$O(\max_{0\leq i < |O^s|}(|N_i^v|^2 \cdot (|N_i^s|log|N_i^s| + |E_i^s|)))$$
 \par
 ¼´Ê¹ÔÚ×î»µµÄÇé¿öÏÂ£¬µ±ËùÓÐµÄÇøÓòµ×²ãÎïÀíÍøÂç¶¼Î»ÓÚÍ¬Ò»¸öµØÀíÎ»ÖÃÊ±£¬ÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÊ±¼ä¸´ÔÓ¶ÈÑÝ±äÎª£º
 $$O(|N^v|^2 \cdot (|N^s|log|N^s| + |E^s|))$$
 \par
-ÓÉÓÚµ×²ãÎïÀíÍøÂçºÍÐéÄâÍøÂçÇëÇó¶¼ÊÇÁ¬Í¨Í¼£¬Âú×ã~$O(|N|)<O(|E|)$~£¬Òò´Ë£¬ÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~µÄÊ±¼ä¸´ÔÓ¶È¿É¼ò»¯Îª£º
+ÓÉÓÚµ×²ãÎïÀíÍøÂçºÍÐéÄâÍøÂçÇëÇó¶¼ÊÇÁ¬Í¨Í¼£¬Âú×ã~$O(|N|)<O(|E|)$£¬Òò´Ë£¬ÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~µÄÊ±¼ä¸´ÔÓ¶È¿É¼ò»¯Îª£º
 $$O(|E^v|^2 \cdot |E^s|log|E^s)$$
 \par
-ÓëÏÖÓÐµÄ~D-ViNE~Ëã·¨Ïà±È£¬ºÜÏÔÈ»£¬ÎÒÃÇÌá³öµÄ~MSO-VNE~Ëã·¨¾ßÓÐ¸üµÍµÄÊ±¼ä¸´ÔÓ¶È¡£
+ÓëÏÖÓÐµÄ~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨Ïà±È£¬ºÜÏÔÈ»£¬±¾ÕÂÌá³öµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~¾ßÓÐ¸üµÍµÄÊ±¼ä¸´ÔÓ¶È¡£
 
 \subsection{¸ºÔØ·Ö²¼}
 ¸ºÔØ·Ö²¼°üÀ¨µ×²ãÎïÀíÍøÂçÖÐÎïÀí½ÚµãÉÏµÄ¸ºÔØ·Ö²¼ºÍÎïÀíÁ´Â·ÉÏµÄ¸ºÔØ·Ö²¼¡£¸ºÔØ·Ö²¼Ö÷ÒªºâÁ¿ÔÚÒ»¶ÎÊ±¼äÄÚ£¬µ×²ãÎïÀíÍøÂçÖÐ¸÷¸öÎïÀí½ÚµãºÍÁ´Â·ÉÏµÄ¸ºÔØÇé¿ö£¬ÒÔ¼°È«²¿ÎïÀí½ÚµãºÍÁ´Â·ÉÏµÄ¸ºÔØ·Ö²¼Çé¿ö¡£
 \par
-¶ÔÓÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨¶øÑÔ£¬ÐéÄâÍøÂçÇëÇó¾ÍÊÇµ×²ãÎïÀíÍøÂçµÄ¸ºÔØ¡£¾ßÌå¶øÑÔ£¬ÐéÄâÍøÂçÇëÇóÖÐµÄ½Úµã»á¸ù¾ÝÆäÐèÇóÏÞÖÆÕ¼ÓÃµ×²ãÎïÀíÍøÂçÖÐ½ÚµãµÄ×ÊÔ´£¬Èç~CPU~×ÊÔ´¡¢´æ´¢×ÊÔ´µÈ£»Í¬Ê±£¬ÐéÄâÍøÂçÇëÇóÖÐµÄÁ´Â·Ò²»á¸ù¾ÝÆäÐèÇóÏÞÖÆÕ¼ÓÃµ×²ãÎïÀíÍøÂçÖÐÁ´Â·µÄ×ÊÔ´£¬Èç´ø¿í×ÊÔ´µÈ¡£ÓÉÓÚÇ¶ÈëËã·¨ºÍ²¿Êð²ßÂÔµÄ²»Í¬£¬µ¼ÖÂÕâÐ©ÐéÄâ½Úµã¸ºÔØºÍÐéÄâÁ´Â·¸ºÔØÔÚµ×²ãÎïÀíÍøÂçÖÐµÄ·Ö²¼¸÷²»ÏàÍ¬¡£Òò´Ë£¬ºâÁ¿¸ºÔØ·Ö²¼µÄ¾ßÌåÇé¿ö£¬¿ÉÒÔ¿ú¼ûÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÐÔÄÜ¡£
+¶ÔÓÚÐéÄâÍøÂçÇ¶ÈëÎÊÌâ£¬ÐéÄâÍøÂçÇëÇó¾ÍÊÇµ×²ãÎïÀíÍøÂçµÄ¸ºÔØ¡£¾ßÌå¶øÑÔ£¬ÐéÄâÍøÂçÇëÇóÖÐµÄ½Úµã»á¸ù¾ÝÆäÐèÇóÏÞÖÆÕ¼ÓÃµ×²ãÎïÀíÍøÂçÖÐ½ÚµãµÄ×ÊÔ´£¬Èç~CPU~×ÊÔ´¡¢´æ´¢×ÊÔ´µÈ¡£Í¬Ê±£¬ÐéÄâÍøÂçÇëÇóÖÐµÄÁ´Â·Ò²»á¸ù¾ÝÆäÐèÇóÏÞÖÆÕ¼ÓÃµ×²ãÎïÀíÍøÂçÖÐÁ´Â·µÄ×ÊÔ´£¬Èç´ø¿í×ÊÔ´µÈ¡£ÓÉÓÚÇ¶ÈëËã·¨ºÍ²¿Êð²ßÂÔµÄ²»Í¬£¬µ¼ÖÂÕâÐ©ÐéÄâ½Úµã¸ºÔØºÍÐéÄâÁ´Â·¸ºÔØÔÚµ×²ãÎïÀíÍøÂçÖÐµÄ·Ö²¼¸÷²»ÏàÍ¬¡£Òò´Ë£¬ºâÁ¿¸ºÔØ·Ö²¼µÄ¾ßÌåÇé¿ö£¬¿ÉÒÔ¿ú¼ûÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÐÔÄÜ¡£
 \par
 ÐèÒª×¢ÒâµÄÊÇ£¬ÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇ¶¯Ì¬ÎÊÌâ¡£Ëæ×ÅÊ±¼äµÄÍÆÒÆ£¬ÐÂµÄÐéÄâÍøÂçÇëÇó»áµ½´ïµ×²ãÎïÀíÍøÂç²¢Õ¼ÓÃµ×²ãÎïÀíÍøÂç×ÊÔ´£¬Í¬Ê±£¬¹ýÆÚµÄÐéÄâÍøÂçÇëÇó»áËæ×ÅÆäÉúÃüÖÜÆÚµÄ½áÊø»áÀë¿ªµ×²ãÎïÀíÍøÂç²¢ÊÍ·ÅÆäÕ¼ÓÃµÄ×ÊÔ´¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´Ê¹ÓÃÇé¿öÊÇ¶¯Ì¬±ä»¯µÄ¡£ÁíÍâ£¬ÓÉÓÚÎÒÃÇ¼Ù¶¨ÐéÄâÍøÂçÇëÇóµÄµ½´ï·þ´Ó²´ËÉ·Ö²¼£¬ÐéÄâÍøÂçÇëÇóµÄÉúÃüÖÜÆÚ·þ´ÓÖ¸Êý·Ö²¼¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐ×ÜÌå×ÊÔ´µÄÊ¹ÓÃÇé¿öÔÚ¶¯Ì¬±ä»¯ÖÐÄÜ±£³Ö»ù±¾Æ½ÎÈ£¬Õâ¿É´Ó·ÂÕæÊµÑé½á¹ûÍ¼~\ref{fig:nb}~ºÍÍ¼~\ref{fig:eb}~ÖÐ¿´³ö¡£
 \par
-·ÂÕæÊµÑé»¹¿É·´Ó³³öÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÐÔÄÜ¡£´ÓÊµÑé½á¹ûÍ¼ÖÐ£¬ÎÒÃÇ¿ÉÒÔ¿´³ö£¬~MSO-VNE~Ëã·¨¾ßÓÐ¸üºÃµÄ¾ùºâ¸ºÔØ·Ö²¼ÄÜÁ¦¡£ÈçÍ¼~\ref{fig:nb}~ºÍÍ¼~\ref{fig:eb}~ËùÊ¾£¬ÔÚ~MSO-VNE~Ëã·¨ÖÐ£¬µ×²ãÎïÀí×ÊÔ´Ê¹ÓÃµÃ×î¶àºÍ×îÉÙµÄµ×²ãÎïÀíÍøÂç½ÚµãºÍÁ´Â·µÄ±ÈÀý¶¼ÒªÃ÷ÏÔµÍÓÚÔÚÆäËûÁ½¸öËã·¨¡£»»¾ä»°Ëµ£¬ÔÚ~D-ViNE~ Ëã·¨ºÍ~R-ViNE~Ëã·¨ÖÐ£¬´æÔÚ¸ü¶àµÄ×ÊÔ´ÀûÓÃ²»ºÏÀíµÄµ×²ãÎïÀí½ÚµãºÍÁ´Â·£¬ÆäÀûÓÃ²»ºÏÀíÐÔÔÚÓÚ£ºÕâÐ©½Úµã×ÊÔ´ºÍÁ´Â·µÄ×ÊÔ´ÒªÃ´±»¹ý¶ÈÊ¹ÓÃ£¬ÒªÃ´Ã»ÓÐµÃµ½³ä·ÖµØÀûÓÃ¡£
-\par
-×ÛÉÏËùÊö£¬ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~Ïà±ÈÓÚ~D-ViNE~ Ëã·¨ºÍ~R-ViNE~Ëã·¨¾ßÓÐ¸üºÃµÄ¸ºÔØ¾ùºâÄÜÁ¦£¬~MSO-VNE~Ëã·¨Ê¹µÃÐéÄâÍøÂçÇëÇóÖÐµÄ½Úµã¸ºÔØºÍÁ´Â·¸ºÔØÔÚµ×²ãÎïÀíÍøÂçÖÐµÄ·Ö²¼¸ü¾ùºâ£¬´Ó¶øÌáÉýÁËµ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´ÀûÓÃÂÊ¡£
+·ÂÕæÊµÑé»¹¿É·´Ó³³öÐéÄâÍøÂçÇ¶ÈëËã·¨µÄÐÔÄÜ¡£´ÓÊµÑé½á¹ûÍ¼ÖÐ£¬ÎÒÃÇ¿ÉÒÔ¿´³ö£¬MSO-VNE~Ëã·¨¾ßÓÐ¸üºÃµÄ¾ùºâ¸ºÔØ·Ö²¼ÄÜÁ¦¡£ÈçÍ¼~\ref{fig:nb}~ºÍÍ¼~\ref{fig:eb}~ËùÊ¾£¬ÔÚ~MSO-VNE~Ëã·¨ÖÐ£¬µ×²ãÎïÀí×ÊÔ´Ê¹ÓÃµÃ×î¶àºÍ×îÉÙµÄµ×²ãÎïÀíÍøÂç½ÚµãºÍÁ´Â·µÄ±ÈÀý¶¼ÒªÃ÷ÏÔµÍÓÚÔÚÆäËûÁ½¸öËã·¨¡£»»¾ä»°Ëµ£¬ÔÚ~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨ÖÐ£¬´æÔÚ¸ü¶àµÄ×ÊÔ´ÀûÓÃ²»ºÏÀíµÄµ×²ãÎïÀí½ÚµãºÍÁ´Â·£¬ÆäÀûÓÃ²»ºÏÀíÐÔÔÚÓÚ£ºÕâÐ©½Úµã×ÊÔ´ºÍÁ´Â·µÄ×ÊÔ´ÒªÃ´±»¹ý¶ÈÊ¹ÓÃ£¬ÒªÃ´Ã»ÓÐµÃµ½³ä·ÖµØÀûÓÃ¡£
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{nb.eps}
 \caption{µ×²ãÎïÀíÍøÂçÖÐµÄ½Úµã¸ºÔØ·Ö²¼}
@@ -289,10 +283,12 @@ $$O(|E^v|^2 \cdot |E^s|log|E^s)$$
 \caption{µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·¸ºÔØ·Ö²¼}
 \label{fig:eb}
 \end{figure}
+\par
+×ÛÉÏËùÊö£¬ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~Ïà±ÈÓÚ~D-ViNE~ Ëã·¨ºÍ~R-ViNE~Ëã·¨¾ßÓÐ¸üºÃµÄ¸ºÔØ¾ùºâÄÜÁ¦¡£MSO-VNE~Ëã·¨Ê¹µÃÐéÄâÍøÂçÇëÇóÖÐµÄ½Úµã¸ºÔØºÍÁ´Â·¸ºÔØÔÚµ×²ãÎïÀíÍøÂçÖÐµÄ·Ö²¼¸ü¾ùºâ£¬´Ó¶øÌáÉýÁËµ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´ÀûÓÃÂÊ¡£
 
 \subsection{Æ½¾ùÊÕÒæ¿ªÏú±È}
-ÔÚÐéÄâÍøÂçÇ¶ÈëÎÊÌâÖÐ£¬´æÔÚ¡°ÊÕÒæ¡±ºÍ¡°¿ªÏú¡±Á½¸ö¸ÅÄî¡£ÊÕÒæÊÇÖ¸µ±³É¹¦Ç¶ÈëÒ»¸öÐéÄâÍøÂçÇëÇóºó£¬µ×²ãÎïÀíÍøÂçÒò³ÐÔØ¸ÃÐéÄâÍøÂçÇëÇó»ñµÃµÄÊÕÒæ¡£¿ªÏúÊÇÖ¸µ±³É¹¦Ç¶ÈëÒ»¸öÐéÄâÍøÂçÇëÇóºó£¬µ×²ãÎïÀíÍøÂçÒò³ÐÔØ¸ÃÐéÄâÍøÂçÇëÇóµÄ×ÊÔ´¿ªÏú¡£Í¨³££¬¶ÔÓÚ½Úµã¶øÑÔ£¬ÆäÊÕÒæºÍ¿ªÏúÊÇÏàÍ¬µÄ¡£Æ©ÈçÐéÄâ½ÚµãÐèÒª~50M~´æ´¢¿Õ¼ä£¬ÎªÁË³ÐÔØ¸ÃÐéÄâ½Úµã£¬µ×²ãÎïÀíÍøÂçÐèÒª·ÖÅä~50M~µÄ´æ´¢¿Õ¼ä¸ø¸ÃÐéÄâ½Úµã£¬²»¹ÜÊÇ´ÓÒ»¸öµ×²ã½ÚµãÉÏ·ÖÅä~50M~´æ´¢¿Õ¼ä£¬»¹ÊÇ¶à¸öµ×²ã½Úµã¹²Í¬´ÕÆë~50M~´æ´¢¿Õ¼ä¡£µ×²ãÎïÀíÍøÂçµÄÊÕÒæºÍ¿ªÏú¶¼ÊÇ~50M~µÄ´æ´¢¿Õ¼ä£¬Òò´Ë£¬ÆäÊÕÒæºÍ¿ªÏúÊÇÏàÍ¬µÄ£¬ÊÕÒæ¿ªÏú±ÈÎª£ºÊÕÒæ/¿ªÏú~$=1$~£¬ÇÒ±£³Öºã¶¨²»±ä¡£\par
-¶ÔÓÚÁ´Â·¶øÑÔ£¬ÊÕÒæºÍ¿ªÏú¾Í²»Ò»¶¨ÏàÍ¬ÁË¡£ÔÚÐéÄâÍøÂçÇ¶ÈëÖÐ£¬¿ÉÄÜ´æÔÚ¿ç¹ý½ÚµãµÄÁ´Â·Ó³Éä£¬¼´ÐéÄâÁ´Â·¿ÉÄÜ»á±»Ó³Éäµ½ÓÉ¶àÌõµ×²ãÎïÀíÁ´Â·×é³ÉµÄÂ·¾¶ÉÏ£¬¸ÃÂ·¾¶ÖÐµÄÄ³Ð©½Úµã²¢Ã»ÓÐ±»ÓÃÓÚ³ÐÔØÈÎºÎÐéÄâ½Úµã¡£ÔÚÕâÖÖÇé¿öÏÂ£¬µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·¿ªÏú½«´óÓÚ¸Ãµ×²ãÎïÀíÍøÂçµÄÁ´Â·ÊÕÒæ¡£ÈçÍ¼~\ref{fig:vne-rcr}~ËùÊ¾£¬µ±ÐéÄâÍøÂçÇëÇóÇ¶Èëµ½µ×²ãÎïÀíÍøÂçÖÐÊ±£¬ÎïÀíÂ·¾¶$<E,D,C>$ÉÏµÄ½Úµã~$D$~²¢Ã»ÓÐÓÃÓÚ³ÐÔØÈÎºÎÐéÄâ½Úµã£¬ÒòÎªÆä½Úµã×ÊÔ´²»×ãÒÔ³ÐÔØÐéÄâÍøÂçÇëÇóÖÐµÄÈÎºÎÒ»¸öÐéÄâ½Úµã¡£´ËÊ±£¬µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·¿ªÏúÎª~$<a,b> + 2 ~ \ast <b,c> + <a,c> = 67$~£¬¶øÁ´Â·ÊÕÒæÖ»ÓÐ~$<a,b> + <b,c> + <a,c> = 52$~¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·ÊÕÒæ¿ªÏú±ÈÎª~$52/57=0.78$~¡£
+ÔÚÐéÄâÍøÂçÇ¶ÈëÎÊÌâÖÐ£¬´æÔÚ¡°ÊÕÒæ¡±ºÍ¡°¿ªÏú¡±Á½¸ö¸ÅÄî¡£ÊÕÒæÊÇÖ¸µ±³É¹¦Ç¶ÈëÒ»¸öÐéÄâÍøÂçÇëÇóºó£¬µ×²ãÎïÀíÍøÂçÒò³ÐÔØ¸ÃÐéÄâÍøÂçÇëÇó»ñµÃµÄÊÕÒæ¡£¿ªÏúÊÇÖ¸µ±³É¹¦Ç¶ÈëÒ»¸öÐéÄâÍøÂçÇëÇóºó£¬µ×²ãÎïÀíÍøÂçÒò³ÐÔØ¸ÃÐéÄâÍøÂçÇëÇóµÄ×ÊÔ´¿ªÏú¡£Í¨³££¬¶ÔÓÚ½Úµã¶øÑÔ£¬ÆäÊÕÒæºÍ¿ªÏúÊÇÏàÍ¬µÄ¡£Æ©ÈçÐéÄâ½ÚµãÐèÒª~50M~´æ´¢¿Õ¼ä£¬ÎªÁË³ÐÔØ¸ÃÐéÄâ½Úµã£¬µ×²ãÎïÀíÍøÂçÐèÒª·ÖÅä~50M~µÄ´æ´¢¿Õ¼ä¸ø¸ÃÐéÄâ½Úµã£¬²»¹ÜÊÇ´ÓÒ»¸öµ×²ã½ÚµãÉÏ·ÖÅä~50M~´æ´¢¿Õ¼ä£¬»¹ÊÇ¶à¸öµ×²ã½Úµã¹²Í¬´ÕÆë~50M~´æ´¢¿Õ¼ä¡£µ×²ãÎïÀíÍøÂçµÄÊÕÒæºÍ¿ªÏú¶¼ÊÇ~50M~µÄ´æ´¢¿Õ¼ä£¬Òò´Ë£¬ÆäÊÕÒæºÍ¿ªÏúÊÇÏàÍ¬µÄ£¬ÊÕÒæ¿ªÏú±ÈÎª£ºÊÕÒæ/¿ªÏú~$=1$~£¬ÇÒ±£³Öºã¶¨²»±ä¡£
+\par
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vne-rcr.eps}
@@ -300,114 +296,114 @@ $$O(|E^v|^2 \cdot |E^s|log|E^s)$$
 \label{fig:vne-rcr}
 \end{figure}
 \par
+¶ÔÓÚÁ´Â·¶øÑÔ£¬ÊÕÒæºÍ¿ªÏú¾Í²»Ò»¶¨ÏàÍ¬ÁË¡£ÔÚÐéÄâÍøÂçÇ¶ÈëÖÐ£¬¿ÉÄÜ´æÔÚ¿ç¹ý½ÚµãµÄÁ´Â·Ó³Éä£¬¼´ÐéÄâÁ´Â·¿ÉÄÜ»á±»Ó³Éäµ½ÓÉ¶àÌõµ×²ãÎïÀíÁ´Â·×é³ÉµÄÂ·¾¶ÉÏ£¬¸ÃÂ·¾¶ÖÐµÄÄ³Ð©½Úµã²¢Ã»ÓÐ±»ÓÃÓÚ³ÐÔØÈÎºÎÐéÄâ½Úµã¡£ÔÚÕâÖÖÇé¿öÏÂ£¬µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·¿ªÏú½«´óÓÚ¸Ãµ×²ãÎïÀíÍøÂçµÄÁ´Â·ÊÕÒæ¡£ÈçÍ¼~\ref{fig:vne-rcr}~ËùÊ¾£¬µ±ÐéÄâÍøÂçÇëÇóÇ¶Èëµ½µ×²ãÎïÀíÍøÂçÖÐÊ±£¬ÎïÀíÂ·¾¶$<E,D,C>$ÉÏµÄ½Úµã~$D$~²¢Ã»ÓÐÓÃÓÚ³ÐÔØÈÎºÎÐéÄâ½Úµã£¬ÒòÎªÆä½Úµã×ÊÔ´²»×ãÒÔ³ÐÔØÐéÄâÍøÂçÇëÇóÖÐµÄÈÎºÎÒ»¸öÐéÄâ½Úµã¡£´ËÊ±£¬µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·¿ªÏúÎª~$<a,b> + 2 ~ \ast <b,c> + <a,c> = 67$£¬¶øÁ´Â·ÊÕÒæÖ»ÓÐ~$<a,b> + <b,c> + <a,c> = 52$¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÖÐµÄÁ´Â·ÊÕÒæ¿ªÏú±ÈÎª~$52/57=0.78$¡£
+\par
 ×÷Îª»ù´¡ÉèÊ©Ìá¹©Õß£¬×·ÇóµÄÊÇ½«µ×²ãÎïÀíÍøÂçµÄÀûÒæ×î´ó»¯£¬Ï£ÍûÔÚÏàÍ¬µÄµ×²ãÎïÀíÍøÂçÉÏÇ¶Èë²¿Êð¸ü¶àµÄÐéÄâÍøÂçÇëÇó£¬×·ÇóÊÕÒæ¿ªÏú±È×î´ó»¯¡£ÈçÍ¼~\ref{fig:rcr}~ËùÊ¾µÄ·ÂÕæÊµÑé½á¹û±íÃ÷£¬ÔÚÈý¸öÐéÄâÍøÂçÇ¶ÈëËã·¨ÖÐ£¬ÎÒÃÇÌá³öµÄ~MSO-VNE~Ëã·¨ÓÐ×î¸ßµÄÆ½¾ùÊÕÒæ¿ªÏú±È£¬Õâ¾ÍÒâÎ¶×Å~MSO-VNE~Ëã·¨»ñµÃÏàÍ¬µÄÊÕÒæÖ»ÐèÒª¸üÉÙµÄ¿ªÏú£¬»òÕßËµÔÚÏàÍ¬µÄ¿ªÏúÏÂ¿ÉÒÔ»ñµÃ¸ü¶àµÄÊÕÒæ¡£
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{rcr.eps}
+\includegraphics[width=0.6\textwidth]{rcr.eps}
 \caption{Æ½¾ùÊÕÒæ¿ªÏú±È¶Ô±È½á¹û}
 \label{fig:rcr}
 \end{figure}
 \par
-~MSO-VNE~Ëã·¨µÄ¸ßÆ½¾ùÊÕÒæ¿ªÏú±ÈÀ´Ô´ÓÚ¾ÖÓòÇ¶Èë½×¶ÎµÄ¶¯Ì¬¸ºÔØ¾ùºâ·ÖÎö¡£ÔÚ¶¯Ì¬¸ºÔØ¾ùºâ·ÖÎöÖÐ£¬Í¨¹ýÒýÈë¶¯Ì¬·þÎñÄÜÁ¦À´ÆÀ¹À½ÚµãµÄÖØÒªÐÔ£¬ÓÉÓÚ¶¯Ì¬·þÎñÄÜÁ¦²»½ö¿¼ÂÇÁË½Úµã×ÔÉíµÄ×ÊÔ´£¬»¹¿¼ÂÇÁËÁÚ¾Ó½ÚµãµÄ×ÊÔ´£¬ÔÙ¼ÓÉÏÌ°ÐÄ²¿Êð²ßÂÔµÄÊµÊ©£¬Ê¹µÃÐéÄâÍøÂçÇ¶ÈëÄÜÓÐÐ§µØ±ÜÃâ¹ÂÁ¢Ç¶ÈëÎÊÌâ¡£¹ÂÁ¢Ç¶ÈëÊÇÖ¸½«ÐéÄâÍøÂçÇëÇóÖÐµÄÄ³¸öÐéÄâ½ÚµãÇ¶Èëµ½µ×²ãÎïÀíÍøÂçÖÐ¹ÂÁ¢µÄÎïÀí½ÚµãÉÏµÄÇéÐÎ¡£¹ÂÁ¢µÄÎïÀí½ÚµãÊÇÖ¸ÄÇÐ©×ÔÉíÓµÓÐ·á¸»µÄ×ÊÔ´£¬µ«ÊÇÆäÁÚ¾Ó½ÚµãµÄ×ÊÔ´¼¸±»ÏûºÄ´ù¾¡µÄ½Úµã¡£µ±´æÔÚ¹ÂÁ¢Ç¶ÈëÊ±£¬ÎªÁËÍê³ÉÕû¸öÐéÄâÍøÂçÇëÇóµÄÇ¶Èë£¬±ØÈ»´æÔÚºÜ¶à¿çÔ½½ÚµãµÄÁ´Â·Ó³Éä£¬´Ó¶øÔö¼ÓÁËÐéÄâÁ´Â·Ó³ÉäµÄµ×²ãÂ·¾¶³¤¶È£¬Ê¹µÃÁ´Â·µÄ¿ªÏúÔö´ó¡£
+MSO-VNE~Ëã·¨µÄ¸ßÆ½¾ùÊÕÒæ¿ªÏú±ÈÀ´Ô´ÓÚ¾Ö²¿Ç¶Èë½×¶ÎµÄ¶¯Ì¬¸ºÔØ¾ùºâ·ÖÎö¡£ÔÚ¶¯Ì¬¸ºÔØ¾ùºâ·ÖÎöÖÐ£¬Í¨¹ýÒýÈë¶¯Ì¬·þÎñÄÜÁ¦À´ÆÀ¹À½ÚµãµÄÖØÒªÐÔ£¬ÓÉÓÚ¶¯Ì¬·þÎñÄÜÁ¦²»½ö¿¼ÂÇÁË½Úµã×ÔÉíµÄ×ÊÔ´£¬»¹¿¼ÂÇÁËÁÚ¾Ó½ÚµãµÄ×ÊÔ´£¬ÔÙ¼ÓÉÏÌ°ÐÄ²¿Êð²ßÂÔµÄÊµÊ©£¬Ê¹µÃÐéÄâÍøÂçÇ¶ÈëÄÜÓÐÐ§µØ±ÜÃâ¹ÂÁ¢Ç¶ÈëÎÊÌâ¡£¹ÂÁ¢Ç¶ÈëÊÇÖ¸½«ÐéÄâÍøÂçÇëÇóÖÐµÄÄ³¸öÐéÄâ½ÚµãÇ¶Èëµ½µ×²ãÎïÀíÍøÂçÖÐ¹ÂÁ¢µÄÎïÀí½ÚµãÉÏµÄÇéÐÎ¡£¹ÂÁ¢µÄÎïÀí½ÚµãÊÇÖ¸ÄÇÐ©×ÔÉíÓµÓÐ·á¸»µÄ×ÊÔ´£¬µ«ÊÇÆäÁÚ¾Ó½ÚµãµÄ×ÊÔ´¼¸±»ÏûºÄ´ù¾¡µÄ½Úµã¡£µ±´æÔÚ¹ÂÁ¢Ç¶ÈëÊ±£¬ÎªÁËÍê³ÉÕû¸öÐéÄâÍøÂçÇëÇóµÄÇ¶Èë£¬±ØÈ»´æÔÚºÜ¶à¿çÔ½½ÚµãµÄÁ´Â·Ó³Éä£¬´Ó¶øÔö¼ÓÁËÐéÄâÁ´Â·Ó³ÉäµÄµ×²ãÂ·¾¶³¤¶È£¬Ê¹µÃÁ´Â·µÄ¿ªÏúÔö´ó¡£
 \par
-ÔÚ~MSO-VNE~Ëã·¨ÖÐ£¬¾ÖÓòÇ¶Èë½×¶ÎÒýÈëµÄ¶¯Ì¬·þÎñÄÜÁ¦ºÍÌ°ÐÄ²ßÂÔ¿É±£Ö¤ÐéÄâÁ´Â·¾¡¿ÉÄÜ±»Ó³Éäµ½µ×²ãÎïÀíÍøÂçÖÐµÄ½Ï¶ÌÂ·¾¶ÉÏ¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÔÚ³ÐÔØ¸ÃÐéÄâÍøÂçÇëÇóÊ±£¬²ÉÓÃ~MSO-VNE~Ëã·¨½«µ¼ÖÂÐéÄâÁ´Â·Ó³ÉäµÄµ×²ãÎïÀíÂ·¾¶³¤¶È¼õÉÙ¡£ÓÉÓÚÁ´Â·ÊÕÒæÊÇ²»±äµÄ£¬Á´Â·¿ªÏúµÄ½µµÍÊ¹µÃµ×²ãÎïÀíÍøÂçµÄÁ´Â·ÊÕÒæ¿ªÏú±ÈµÃµ½Ôö¼Ó¡£
+ÔÚ~MSO-VNE~Ëã·¨ÖÐ£¬¾Ö²¿Ç¶Èë½×¶ÎÒýÈëµÄ¶¯Ì¬·þÎñÄÜÁ¦ºÍÌ°ÐÄ²ßÂÔ¿É±£Ö¤ÐéÄâÁ´Â·¾¡¿ÉÄÜ±»Ó³Éäµ½µ×²ãÎïÀíÍøÂçÖÐµÄ½Ï¶ÌÂ·¾¶ÉÏ¡£Òò´Ë£¬µ×²ãÎïÀíÍøÂçÔÚ³ÐÔØ¸ÃÐéÄâÍøÂçÇëÇóÊ±£¬²ÉÓÃ~MSO-VNE~Ëã·¨½«µ¼ÖÂÐéÄâÁ´Â·Ó³ÉäµÄµ×²ãÎïÀíÂ·¾¶³¤¶È¼õÉÙ¡£ÓÉÓÚÁ´Â·ÊÕÒæÊÇ²»±äµÄ£¬Á´Â·¿ªÏúµÄ½µµÍÊ¹µÃµ×²ãÎïÀíÍøÂçµÄÁ´Â·ÊÕÒæ¿ªÏú±ÈµÃµ½Ôö¼Ó¡£
 
 \subsection{Æ½¾ù½ÓÊÜÂÊ}
 Æ½¾ù½ÓÊÜÂÊºâÁ¿µÄÊÇÔÚÒ»¶ÎÊ±¼äÄÚ±»µ×²ãÎïÀíÍøÂç½ÓÊÜµÄÇëÇóÔÚ×ÜÇëÇóÖÐµÄ±ÈÀý¡£ÓÉÓÚÐéÄâÍøÂçÇ¶ÈëµÄ¶¯Ì¬ÐÔ£¬µ×²ãÎïÀíÍøÂçÖÐµÄ×ÊÔ´Ê¹ÓÃÇé¿öÊÇ¶¯Ì¬±ä»¯µÄ¡£¶¯Ì¬ÐÔ¼´Ëæ×ÅÊ±¼äµÄÍÆÒÆ£¬ÐÂµÄÐéÄâÍøÂçÇëÇó»áµ½´ïµ×²ãÎïÀíÍøÂç²¢Õ¼ÓÃµ×²ãÎïÀíÍøÂç×ÊÔ´£¬Í¬Ê±£¬¹ýÆÚµÄÐéÄâÍøÂçÇëÇó»áËæ×ÅÆäÉúÃüÖÜÆÚµÄ½áÊø¶øÀë¿ªµ×²ãÎïÀíÍøÂç²¢ÊÍ·ÅÆäÕ¼ÓÃµÄ×ÊÔ´¡£ÁíÍâ£¬ÐéÄâÍøÂçÇ¶ÈëÓÖÊÇ»ù±¾Æ½ÎÈµÄ£¬ÒòÎªÐéÄâÍøÂçÇëÇóµÄµ½´ï·þ´Ó²´ËÉ·Ö²¼£¬Í¬Ê±£¬ÐéÄâÍøÂçÇëÇóµÄÉúÃüÖÜÆÚ·þ´ÓÖ¸Êý·Ö²¼¡£Òò´Ë£¬Æ½¾ù½ÓÊÜÂÊÔÚ×ã¹»³¤µÄÊ±¼äºóÒ²ÊÇ±£³Ö»ù±¾Æ½ÎÈµÄ¡£
-\par
-ÈçÍ¼\ref{fig:accept}ËùÊ¾µÄ·ÂÕæÊµÑé½á¹ûÍ¼±íÃ÷£¬ÔÚËùÓÐµÄËã·¨ÖÐ£¬~MSO-VNE~ Ëã·¨¾ßÓÐ×î¸ßµÄÆ½¾ù½ÓÊÜÂÊ¡£¼´ÔÚÏàÍ¬µÄ»·¾³ÏÂ£¬~MSO-VNE~Ëã·¨ÄÜ¹»½ÓÊÜ²¢ÈÝÄÉµÄÐéÄâÍøÂçÇëÇóÊý¾ø²»»á±ÈÆäËûµÄËã·¨ÉÙ¡£
-\par
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{accept.eps}
+\includegraphics[width=0.6\textwidth]{accept.eps}
 \caption{Æ½¾ù½ÓÊÜÂÊ¶Ô±È½á¹û}
 \label{fig:accept}
 \end{figure}
 \par
+ÈçÍ¼\ref{fig:accept}ËùÊ¾µÄ·ÂÕæÊµÑé½á¹ûÍ¼±íÃ÷£¬ÔÚËùÓÐµÄËã·¨ÖÐ£¬~MSO-VNE~ Ëã·¨¾ßÓÐ×î¸ßµÄÆ½¾ù½ÓÊÜÂÊ¡£¼´ÔÚÏàÍ¬µÄ»·¾³ÏÂ£¬~MSO-VNE~Ëã·¨ÄÜ¹»½ÓÊÜ²¢ÈÝÄÉµÄÐéÄâÍøÂçÇëÇóÊý¾ø²»»á±ÈÆäËûµÄËã·¨ÉÙ¡£
+\par
+
 ~MSO-VNE~Ëã·¨µÄ¸ßÆ½¾ù½ÓÊÜÂÊÊÇºÜÈÝÒ×Àí½âµÄ¡£Ö±¹ÛµØ£¬~MSO-VNE~Ëã·¨µÄ¸ßÆ½¾ùÊÕÒæ¿ªÏú±ÈËµÃ÷¸ÃËã·¨ÔÚÏàÍ¬µÄÊÕÒæÏÂ£¬Ö»ÐèÒª¸üÉÙµÄ×ÊÔ´¿ªÏú¡£Õâ¾ÍÒâÎ¶×ÅÊ£ÓàµÄ×ÊÔ´¿ÉÒÔÓÃÀ´Ç¶Èë¸ü¶àµÄÐéÄâÍøÂçÇëÇó£¬¾Ã¶ø¾ÃÖ®£¬µ×²ãÎïÀíÍøÂç±ãÄÜ½ÓÊÜ²¢ÈÝÄÉ¸ü¶àµÄÐéÄâÍøÂçÇëÇó£¬¼´¾ßÓÐ¸ü¸ßµÄÆ½¾ù½ÓÊÜÂÊ¡£
-\subsection{Ð¡½á}
-·ÂÕæÊµÑé½á¹û±íÃ÷£¬Ïà±ÈÓÚ~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨£¬±¾ÕÂÌá³öµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~¾ßÓÐºÜ³öÉ«µÄÐÔÄÜ±íÏÖ£º¸üµÍµÄÊ±¼ä¸´ÔÓ¶È¡¢µ×²ãÎïÀíÍøÂçÖÐ¸ü¾ùºâµÄ¸ºÔØ·Ö²¼¡¢¸ü¸ßµÄÆ½¾ùÊÕÒæ¿ªÏú±ÈºÍ¸ü¸ßµÄÆ½¾ù½ÓÊÜÂÊ¡£~MSO-VNE~Ëã·¨µÄ³öÉ«ÐÔÄÜ£¬Ò»·½ÃæµÃÒæÓÚÈ«¾Ö´¦Àí½×¶Î²ÉÓÃµÄ·Ö¶øÖÎÖ®Ë¼ÏëºÍ²¢·¢´¦ÀíË¼Ïë£ºÍ¨¹ý½«ÐéÄâÍøÂçÇëÇó¾ÛÀà·Ö¸îÎª¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó£¬²¢½«¸÷¸ö×ÓÇëÇó·ÖÅÉµ½ÀëËü×î½üµÄÇøÓòµ×²ãÎïÀíÍøÂçÖÐ½øÐÐ²¢·¢´¦Àí£¬´Ó¶ø´ó´ó½µµÍÁËÊ±¼ä¸´ÔÓ¶È¡£ÁíÒ»·½ÃæµÃÒæÓÚ¾ÖÓòÇ¶Èë½×¶ÎµÄ¶¯Ì¬¸ºÔØ¾ùºâ·ÖÎö£ºÍ¨¹ýÒýÈë¶¯Ì¬·þÎñÄÜÁ¦À´ÆÀ¹À½ÚµãµÄÖØÒªÐÔ£¬²»½ö¿¼ÂÇ½Úµã×ÔÉíµÄ×ÊÔ´³ÐÔØÄÜÁ¦£¬»¹¼æ¹ËÁÚ¾Ó½ÚµãµÄ×ÊÔ´³ÐÔØÄÜÁ¦£¬ÎªÕû¸öÐéÄâÍøÂçÇëÇóµÄ³É¹¦ºÍÓÅ»¯Ç¶ÈëÌá¹©ÁË±£ÕÏ£¬ÔÚ¸ÄÉÆÁËµ×²ãÎïÀíÍøÂçµÄ¸ºÔØ·Ö²¼Çé¿öºÍ×ÊÔ´ÀûÓÃÂÊµÄÇé¿öÏÂ£¬´ó´ó¼õÉÙÁËÁ´Â·Ó³Éä¿ªÏú£¬Ìá¸ßÁËÆ½¾ùÊÕÒæ¿ªÏú±ÈºÍÆ½¾ù½ÓÊÜÂÊ¡£
+\par
+%\subsection{Ð¡½á}
+·ÂÕæÊµÑé½á¹û±íÃ÷£¬Ïà±ÈÓÚ~D-ViNE~Ëã·¨ºÍ~R-ViNE~Ëã·¨£¬±¾ÕÂÌá³öµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~¾ßÓÐºÜ³öÉ«µÄÐÔÄÜ±íÏÖ£º¸üµÍµÄÊ±¼ä¸´ÔÓ¶È¡¢µ×²ãÎïÀíÍøÂçÖÐ¸ü¾ùºâµÄ¸ºÔØ·Ö²¼¡¢¸ü¸ßµÄÆ½¾ùÊÕÒæ¿ªÏú±ÈºÍ¸ü¸ßµÄÆ½¾ù½ÓÊÜÂÊ¡£~MSO-VNE~Ëã·¨µÄ³öÉ«ÐÔÄÜ£¬Ò»·½ÃæµÃÒæÓÚÈ«¾Ö´¦Àí½×¶Î²ÉÓÃµÄ·Ö¶øÖÎÖ®Ë¼ÏëºÍ²¢·¢´¦ÀíË¼Ïë£ºÍ¨¹ý½«ÐéÄâÍøÂçÇëÇó¾ÛÀà·Ö¸îÎª¹æÄ£½ÏÐ¡µÄ×ÓÇëÇó£¬²¢½«¸÷¸ö×ÓÇëÇó·ÖÅÉµ½ÀëËü×î½üµÄÇøÓòµ×²ãÎïÀíÍøÂçÖÐ½øÐÐ²¢·¢´¦Àí£¬´Ó¶ø´ó´ó½µµÍÁËÊ±¼ä¸´ÔÓ¶È¡£ÁíÒ»·½ÃæµÃÒæÓÚ¾Ö²¿Ç¶Èë½×¶ÎµÄ¶¯Ì¬¸ºÔØ¾ùºâ·ÖÎö£ºÍ¨¹ýÒýÈë¶¯Ì¬·þÎñÄÜÁ¦À´ÆÀ¹À½ÚµãµÄÖØÒªÐÔ£¬²»½ö¿¼ÂÇ½Úµã×ÔÉíµÄ×ÊÔ´³ÐÔØÄÜÁ¦£¬»¹¼æ¹ËÁÚ¾Ó½ÚµãµÄ×ÊÔ´³ÐÔØÄÜÁ¦¡£¶¯Ì¬¾ùºâ·ÖÎöÎªÕû¸öÐéÄâÍøÂçÇëÇóµÄ³É¹¦ºÍÓÅ»¯Ç¶ÈëÌá¹©ÁË±£ÕÏ£¬ÔÚ¸ÄÉÆÁËµ×²ãÎïÀíÍøÂçµÄ¸ºÔØ·Ö²¼Çé¿öºÍ×ÊÔ´ÀûÓÃÂÊµÄÇé¿öÏÂ£¬´ó´ó¼õÉÙÁËÁ´Â·Ó³Éä¿ªÏú£¬Ìá¸ßÁËÆ½¾ùÊÕÒæ¿ªÏú±ÈºÍÆ½¾ù½ÓÊÜÂÊ¡£
 
 \section{ÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü}
 \label{sec:vne-kuangjia}
-»ùÓÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~£¬±¾½ÚÌá³öÁËÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü£¬~MSO-VNE~Ëã·¨¸ºÔð´¦Àí¸Ã½»»¥¿ò¼ÜµÄ×ÊÔ´Ó³Éä£¬ÊÇ¸Ã½»»¥¿ò¼ÜµÄºËÐÄÄ£¿é¡£±¾½Ú½«ÏêÏ¸½éÉÜÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü£¬°üÀ¨ÏµÍ³¿ò¼ÜºÍ¸÷²¿·ÖµÄ×é¼þÄ£¿é¡£
+»ùÓÚÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE£¬±¾½ÚÌá³öÁËÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü£¬MSO-VNE~Ëã·¨¸ºÔð´¦Àí¸Ã½»»¥¿ò¼ÜµÄ×ÊÔ´Ó³Éä£¬ÊÇ¸Ã½»»¥¿ò¼ÜµÄºËÐÄÄ£¿é¡£±¾½Ú½«ÏêÏ¸½éÉÜÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü£¬°üÀ¨ÏµÍ³¿ò¼ÜºÍ¸÷²¿·ÖµÄ×é¼þÄ£¿é¡£
 \subsection{ÏµÍ³¿ò¼Ü}
-ÔÚÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐ£¬~MSO-VNE~Ëã·¨ÊÇÆäºËÐÄÄ£¿é¡£¾¡¹ÜÐéÄâÍøÂçÇ¶ÈëÎÊÌâÆðÔ´ÓÚÍøÂçÐéÄâ»¯£¬µ«ËüÈÔÈ»ÊôÓÚ×ÊÔ´¹ÜÀíÁìÓò£¬Òò´Ë£¬¿É½«ÆäÓ¦ÓÃµ½×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐ´¦Àí×ÊÔ´Ó³ÉäÎÊÌâ¡£±¾ÕÂÌá³öµÄ~MSO-VNE~Ëã·¨ÊÇÃæÏòÃ½ÌåÒµÎñµÄ£¬Òò´Ë£¬½«ÆäÓ¦ÓÃµ½ÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä¹ÜÀíÖÐ£¬¿ÉÒÔ±£ÕÏÃ½Ìå·þÎñµÄ~QoS~·þÎñÖÊÁ¿ÐèÇó¡£
-\par
-ÈçÍ¼\ref{fig:framework}ËùÊ¾£¬×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖ÷Òª°üÀ¨ÒÔÏÂ¼¸¸öÄ£¿é£º
-\par
-\textbf{1£©ÓÃ»§½Ó¿ÚÄ£¿é}\par
-¸ÃÄ£¿éÊÇ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐÃæÏòÓÃ»§µÄ²¿·Ö£¬ÓÃ»§Í¨¹ý¸ÃÄ£¿éÖÐµÄÏàÓ¦×é¼þÒÔÃüÁîÐÐ·½Ê½»òWebÒ³Ãæ·½Ê½¶¨ÒåÆäÒµÎñÐèÇóºÍ·þÎñÇëÇó£¬Í¨¹ýÌá½»ÇëÇóÒÔ»ñÈ¡ÌØ¶¨µÄ·þÎñ¡£
-\par
-\textbf{2£©Ô¤´¦ÀíÄ£¿é}\par
-Ô¤´¦ÀíÄ£¿éµÄÖ÷ÒªÖ°ÔðÊÇ¶ÔÓÃ»§Ìá½»µÄÇëÇó½øÐÐÔ¤´¦Àí£¬Ê¹µÃ¸ÃÇëÇó²»½öÊÇÈËÀà¿ÉÀí½âµÄ£¬¸üÊÇ¼ÆËã»ú¿ÉÀí½âµÄ¡£
-\par
-\textbf{3£©×ÊÔ´Ó³ÉäÄ£¿é}\par
-×ÊÔ´Ó³ÉäÄ£¿éÊÇ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜµÄºËÐÄÄ£¿é¡£ÔÚ¸ÃÄ£¿éÖÐ£¬ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~±»²ÉÓÃÒÔ´¦Àí¸Ã¿ò¼ÜÖÐµÄ×ÊÔ´Ó³ÉäÎÊÌâ£¬Í¨¹ý½«ÓÃ»§µÄÒµÎñÇëÇóºÍµ×²ãÎïÀíÍøÂçµÄ¿ÉÓÃ×ÊÔ´½øÐÐÆ¥Åä¼ÆËãºÍÓ³Éä´¦Àí£¬Íê³É×ÊÔ´µÄÓ³Éä¡£
-\par
-\textbf{4£©×ÊÔ´·ÖÅäÄ£¿é}\par
-×ÊÔ´·ÖÅäÄ£¿éÊÇ×ÊÔ´Ó³ÉäÄ£¿éµÄ²¹³ä¡£µ±ÓÃ»§Ìá½»µÄÒµÎñÇëÇóºÍµ×²ãÎïÀíÍøÂçµÄ¿ÉÓÃ×ÊÔ´³É¹¦Ó³Éäºó£¬×ÊÔ´·ÖÅäÄ£¿é±ã¿ªÊ¼¹¤×÷£¬ Ëü¸ù¾Ý×ÊÔ´Ó³ÉäÄ£¿éµÄÓ³Éä½á¹û½øÐÐÕæÕýµÄ×ÊÔ´·ÖÅä¹¤×÷¡£
-\par
-\textbf{5£©×ÊÔ´¼à¿ØÄ£¿é}\par
-×ÊÔ´¼à¿ØÄ£¿éÊÇ¸¨ÖúÄ£¿é£¬Ëü¿ÉÒÔ¸¨Öú×ÊÔ´Ó³ÉäÄ£¿éºÍ×ÊÔ´·ÖÅäÄ£¿éÍê³ÉËüÃÇµÄ¹¤×÷¡£×ÊÔ´Ó³ÉäÄ£¿éÍ¨¹ý×ÊÔ´¼à¿ØÄ£¿é»ñÈ¡µ×²ãÎïÀíÍøÂçÖÐµÄ¿ÉÓÃ×ÊÔ´ÊýÁ¿£¬ÒÔ¸¨Öú×ÊÔ´Ó³Éä¹¤×÷¡£×ÊÔ´·ÖÅäÄ£¿éÍ¨¹ý×ÊÔ´¼à¿ØÄ£¿é»ñÈ¡²¢·ÖÅäÊµ¼ÊµÄ×ÊÔ´¡£×ÊÔ´¼à¿ØÄ£¿éÍ¨¹ýÊµÊ±¼à¿Øµ×²ã×ÊÔ´³ØÖÐµÄ×ÊÔ´Ê¹ÓÃ±ä»¯Çé¿ö²¢½øÐÐ±ØÒªµÄÍ¬²½¹ÜÀí¡£
-
+ÔÚÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐ£¬MSO-VNE~Ëã·¨ÊÇÆäºËÐÄÄ£¿é¡£¾¡¹ÜÐéÄâÍøÂçÇ¶ÈëÎÊÌâÆðÔ´ÓÚÍøÂçÐéÄâ»¯£¬µ«ËüÈÔÈ»ÊôÓÚ×ÊÔ´¹ÜÀíÁìÓò£¬Òò´Ë£¬¿É½«ÆäÓ¦ÓÃµ½×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐ´¦Àí×ÊÔ´Ó³ÉäÎÊÌâ¡£±¾ÕÂÌá³öµÄ~MSO-VNE~Ëã·¨ÊÇÃæÏòÃ½ÌåÒµÎñµÄ£¬Òò´Ë£¬½«ÆäÓ¦ÓÃµ½ÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä¹ÜÀíÖÐ£¬¿ÉÒÔÓÐÐ§±£ÕÏÃ½Ìå·þÎñµÄ~QoS~·þÎñÖÊÁ¿¡£ÈçÍ¼~\ref{fig:framework}~ËùÊ¾£¬×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖ÷Òª°üÀ¨ÒÔÏÂ¼¸¸öÄ£¿é£º
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{framework.eps}
-\caption{ÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´½»»¥ÏµÍ³¿ò¼Ü}
+\caption{ÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥ÏµÍ³¿ò¼Ü}
 \label{fig:framework}
 \end{figure}
+\par
+\textbf{1¡¢ÓÃ»§½Ó¿ÚÄ£¿é}\par
+ÓÃ»§½Ó¿ÚÄ£¿éÊÇ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐÃæÏòÓÃ»§µÄ²¿·Ö£¬ÓÃ»§Í¨¹ý¸ÃÄ£¿éÖÐµÄÏàÓ¦×é¼þÒÔÃüÁîÐÐ·½Ê½»ò~Web~Ò³Ãæ·½Ê½¶¨ÒåÆäÒµÎñÐèÇóºÍ·þÎñÇëÇó£¬Í¨¹ýÌá½»ÇëÇóÒÔ»ñÈ¡ÌØ¶¨µÄ·þÎñ¡£
+\par
+\textbf{2¡¢Ô¤´¦ÀíÄ£¿é}\par
+Ô¤´¦ÀíÄ£¿éµÄÖ÷ÒªÖ°ÔðÊÇ¶ÔÓÃ»§Ìá½»µÄÇëÇó½øÐÐÔ¤´¦Àí£¬Ê¹µÃ¸ÃÇëÇó²»½öÊÇÈËÀà¿ÉÀí½âµÄ£¬¸üÊÇ¼ÆËã»ú¿ÉÀí½âµÄ¡£
+\par
+\textbf{3¡¢×ÊÔ´Ó³ÉäÄ£¿é}\par
+×ÊÔ´Ó³ÉäÄ£¿éÊÇ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜµÄºËÐÄÄ£¿é¡£ÔÚ¸ÃÄ£¿éÖÐ£¬ÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~±»²ÉÓÃÒÔ´¦Àí¸Ã¿ò¼ÜÖÐµÄ×ÊÔ´Ó³ÉäÎÊÌâ£¬Í¨¹ý½«ÓÃ»§µÄÒµÎñÇëÇóºÍµ×²ãÎïÀíÍøÂçµÄ¿ÉÓÃ×ÊÔ´½øÐÐÆ¥Åä¼ÆËãºÍÓ³Éä´¦Àí£¬Íê³É×ÊÔ´µÄÓ³Éä¡£
+\par
+\textbf{4¡¢×ÊÔ´·ÖÅäÄ£¿é}\par
+×ÊÔ´·ÖÅäÄ£¿éÊÇ×ÊÔ´Ó³ÉäÄ£¿éµÄ²¹³ä¡£µ±ÓÃ»§Ìá½»µÄÒµÎñÇëÇóºÍµ×²ãÎïÀíÍøÂçµÄ¿ÉÓÃ×ÊÔ´³É¹¦Ó³Éäºó£¬×ÊÔ´·ÖÅäÄ£¿é±ã¿ªÊ¼¹¤×÷£¬Ëü¸ù¾Ý×ÊÔ´Ó³ÉäÄ£¿éµÄÓ³Éä½á¹û½øÐÐÕæÕýµÄ×ÊÔ´·ÖÅä¹¤×÷¡£
+\par
+\textbf{5¡¢×ÊÔ´¼à¿ØÄ£¿é}\par
+×ÊÔ´¼à¿ØÄ£¿éÊÇ¸¨ÖúÄ£¿é£¬Ëü¿ÉÒÔ¸¨Öú×ÊÔ´Ó³ÉäÄ£¿éºÍ×ÊÔ´·ÖÅäÄ£¿éÍê³ÉËüÃÇµÄ¹¤×÷¡£×ÊÔ´Ó³ÉäÄ£¿éÍ¨¹ý×ÊÔ´¼à¿ØÄ£¿é»ñÈ¡µ×²ãÎïÀíÍøÂçÖÐµÄ¿ÉÓÃ×ÊÔ´ÊýÁ¿£¬ÒÔ¸¨Öú×ÊÔ´Ó³Éä¹¤×÷¡£×ÊÔ´·ÖÅäÄ£¿éÍ¨¹ý×ÊÔ´¼à¿ØÄ£¿é»ñÈ¡²¢·ÖÅäÊµ¼ÊµÄ×ÊÔ´¡£×ÊÔ´¼à¿ØÄ£¿éÍ¨¹ýÊµÊ±¼à¿Øµ×²ã×ÊÔ´³ØÖÐµÄ×ÊÔ´Ê¹ÓÃ±ä»¯Çé¿ö²¢½øÐÐ±ØÒªµÄÍ¬²½¹ÜÀí¡£
 \par
 ´ÓÕûÌåÀ´¿´£¬ÃæÏòÃ½ÌåÒµÎñµÄ×ÊÔ´Ó³Éä½»»¥¿ò¼Ü¿ÉÒÔ·ÖÎªÁ½²ã£ºÓÃ»§²ãºÍÏµÍ³²ã¡£ÆäÖÐ£¬ÓÃ»§²ãµÄÉè¼ÆÊÇÃæÏòÒµÎñÓÃ»§µÄ£¬ÓÃ»§Í¨¹ý¶¨ÒåËûÃÇµÄÒµÎñÐèÇó²¢Ìá½»ÇëÇó£¬È»ºó£¬ÕâÐ©ÒµÎñÐèÇó»á±»·ÖÎöºÍ´¦Àí¡£µ±È»£¬ÈÎºÎÇëÇóµÄ¾ßÌåµÄ·ÖÎöºÍ´¦Àí¶¼ÊÇÔÚÏµÍ³²ã½øÐÐµÄ£¬¶øÏµÍ³²ã¶ÔÓÃ»§ÊÇÍ¸Ã÷µÄ¡£ÓÃ»§²ãµÄÉè¼Æ×ÚÖ¼ÊÇÈÃÓÃ»§×¨×¢ÔÚËûÃÇËù¹ØÐÄµÄÒµÎñºÍ·þÎñÉÏ£¬¶ø²»ÊÇÈÎºÎÆäËûµÄËöËéÏ¸½Ú£¬ÈçÔõÑù½øÐÐÇëÇóÔ¤´¦Àí£¬ÈçºÎÖ´ÐÐÓ³ÉäÒÖ»òÈçºÎ·ÖÅä»ò¼à¿Ø×ÊÔ´¡£ÕâÐ©ËöËéµÄÏ¸½Ú¶¼ÊÇÓÐÏµÍ³²ãÀ´´¦ÀíµÄ¡£
 \par
 µ±ÓÃ»§µÄÇëÇóµ½´ïÊ±£¬ÏµÍ³²ã¿ªÊ¼¹¤×÷¡£Ê×ÏÈ£¬ÏµÍ³²ãÖ´ÐÐÔ¤´¦ÀíÒÔ´ÓÓÃ»§Ìá½»µÄÒµÎñÐèÇóÇëÇóÖÐÌáÈ¡ÓÐÓÃµÄÐÅÏ¢²¢·ÖÎöÓÃ»§µÄÒµÎñÐèÇó¡£ÏµÍ³²ãµÄºËÐÄÊÇ×ÊÔ´Ó³Éä£¬ÔÚ×ÊÔ´Ó³ÉäÄ£¿éÖÐ£¬ÎÒÃÇ²ÉÓÃÁË~MSO-VNE~Ëã·¨ÒÔÖ´ÐÐÓ³ÉäÆ¥Åä¡£Í¨¹ý×ÊÔ´¼à¿ØÄ£¿é£¬¿ÉÒÔ»ñÈ¡ÏµÍ³µÄ¿ÉÓÃ×ÊÔ´£¬Èç¹ûÏµÍ³ÓÐ×ã¹»µÄ×ÊÔ´£¬ÓÃ»§µÄÇëÇó¾Í»áµÃµ½³É¹¦µÄÆ¥Åä¡£µ±³É¹¦Æ¥Åäºó£¬×ÊÔ´·ÖÅä×ÓÄ£¿é»áÎªÓÃ»§·ÖÅäÊµ¼ÊµÄ×ÊÔ´¡£µ±È»£¬²»¹ÜÊÇ·ñÄÜ¹»³É¹¦Ó³Éä£¬ÏµÍ³²ã¶¼»á½«´¦Àí½á¹û·´À¡¸øÓÃ»§²ã¡£·´À¡¶ÔÏµÍ³ÊÇÓÐÓÃµÄ£¬²»½ö¿ÉÒÔ¸æËßÓÃ»§ÇëÇóµÄ´¦Àí½á¹û£¬»¹¿ÉÒÔ¸¨ÖúÓÃ»§×ö¸üºÃµÄ¾ö²ß¡£
 \par
 ÏÂÃæ£¬ÎÒÃÇ½«ÏêÏ¸ÃèÊö×ÊÔ´Ó³Éä½»»¥¿ò¼ÜÖÐµÄ¸÷¸öÄ£¿éÉè¼Æ¡£
-\subsection{½»»¥¿ò¼ÜÉè¼ÆÏ¸Ôò}
+\subsection{Éè¼ÆÏ¸Ôò}
 \subsubsection{ÓÃ»§½Ó¿ÚÄ£¿é}
-ÓÃ»§½Ó¿ÚÄ£¿éÊÇÃæÏòÓÃ»§µÄ£¬ÆäÕ½ÂÔÄ¿±êÊÇ¼ò»¯ÓÃ»§²Ù×÷£¬ÌáÉýÓÃ»§ÌåÑéÖÊÁ¿¡£ÓÃ»§½Ó¿ÚÄ£¿éµÄÉè¼ÆÖ÷Òª¿¼ÂÇÒÔÏÂ¼¸¸ö×ÓÄ£¿é£º
+ÓÃ»§½Ó¿ÚÄ£¿éÊÇÃæÏòÓÃ»§µÄ£¬ÆäÕ½ÂÔÄ¿±êÊÇ¼ò»¯ÓÃ»§²Ù×÷£¬ÌáÉýÓÃ»§ÌåÑéÖÊÁ¿¡£ÓÃ»§½Ó¿ÚÄ£¿éµÄÉè¼ÆÖ÷Òª°üÀ¨ÒÔÏÂ¼¸¸ö×ÓÄ£¿é£º
 \par
-\textbf{1£©¹¦ÄÜ¶¨Òå}\par
+\textbf{1¡¢¹¦ÄÜ¶¨Òå}\par
 ¹¦ÄÜ¶¨Òå×ÓÄ£¿éµÄÖ÷ÒªÓÃÍ¾ÊÇ¶¨ÒåÏµÍ³¿ÉÄÜÌá¹©µÄ¹¦ÄÜ¡£Êµ¼ÊÉÏ£¬¹¦ÄÜ¶¨Òå×ÓÄ£¿éºÍ¾ßÌåµÄÓ¦ÓÃ³¡¾°ÃÜÇÐÏà¹Ø¡£Ò»¸öÁ¼ºÃµÄ¹¦ÄÜ¶¨Òå×ÓÄ£¿é¿ÉÒÔÇåÎúµØ½«ÏµÍ³¼°ÆäÌá¹©µÄ¹¦ÄÜ³ÊÏÖÔÚÓÃ»§ÃæÇ°£¬ºÜºÃµØ»Ø´ð¡°ÏµÍ³ÊÇÊ²Ã´¡±ÒÔ¼°¡°ÏµÍ³ÄÜ×öÊ²Ã´¡±µÈÀàËÆµÄÎÊÌâ£¬Áô¸øÓÃ»§Á¼ºÃµÄµÚÒ»Ó¡Ïó£¬²¢ÒÔÌá¸ßÓÃ»§ÌåÑéÖÊÁ¿Îª×ÚÖ¼¡£
 \par
-\textbf{2£©½»»¥Éè¼Æ}\par
-½»»¥Éè¼Æ×ÓÄ£¿éÖ÷Òª½â¾öµÄÊÇÈçÏÂÎÊÌâ£ºÓÃ»§ÈçºÎÓëÏµÍ³½øÐÐÍ¨ÐÅºÍ½»Á÷¡¢ÈçºÎÊµÏÖÁ¼ºÃµÄÈË»ú½»»¥µÈÎÊÌâ¡£³£¼ûµÄ½»»¥·½Ê½°üÀ¨ÃüÁîÐÐ¿Í»§¶Ë¹¤¾ß¡¢~Web~ÍøÒ³½»»¥µÈ¡£Ïà±È½Ï¶øÑÔ£¬ÃüÁîÐÐ¿Í»§¶Ë¹¤¾ß¾ßÓÐ¼ò½à×¼È·ºÍ¿ìËÙµÄÌØµã£¬µ«ËûÉÔÏÔ¸´ÔÓµÄ²Ù×÷·½Ê½ÏÔÈ»±È²»ÉÏWebÒ³ÃæµÄ¿ÉÊÓ»¯½»»¥·½Ê½¡£²»¹Ü²ÉÓÃÄÄÖÖ½»»¥·½Ê½£¬¶¼±ØÐë×öµ½ÒâÍ¼Ã÷ÁË¡¢²Ù×÷¼òµ¥ºÍ¿ìËÙÏìÓ¦¡£
+\textbf{2¡¢½»»¥Éè¼Æ}\par
+½»»¥Éè¼Æ×ÓÄ£¿éÖ÷Òª½â¾öµÄÊÇÈçÏÂÎÊÌâ£ºÓÃ»§ÈçºÎÓëÏµÍ³½øÐÐÍ¨ÐÅºÍ½»Á÷¡¢ÈçºÎÊµÏÖÁ¼ºÃµÄÈË»ú½»»¥µÈÎÊÌâ¡£³£¼ûµÄ½»»¥·½Ê½°üÀ¨ÃüÁîÐÐ¿Í»§¶Ë¹¤¾ß¡¢Web~ÍøÒ³½»»¥µÈ¡£Ïà±È½Ï¶øÑÔ£¬ÃüÁîÐÐ¿Í»§¶Ë¹¤¾ß¾ßÓÐ¼ò½à×¼È·ºÍ¿ìËÙµÄÌØµã£¬µ«ËûÉÔÏÔ¸´ÔÓµÄ²Ù×÷·½Ê½ÏÔÈ»±È²»ÉÏ~Web~Ò³ÃæµÄ¿ÉÊÓ»¯½»»¥·½Ê½¡£²»¹Ü²ÉÓÃÄÄÖÖ½»»¥·½Ê½£¬¶¼±ØÐë×öµ½ÒâÍ¼Ã÷ÁË¡¢²Ù×÷¼òµ¥ºÍ¿ìËÙÏìÓ¦¡£
 \par
-\textbf{3£©·´À¡Éè¼Æ}\par
+\textbf{3¡¢·´À¡Éè¼Æ}\par
 ¹ãÒåÉÏÀ´Ëµ£¬·´À¡Éè¼Æ×ÓÄ£¿éÒ²¿ÉÒÔËã×öÊÇ½»»¥Éè¼ÆµÄÒ»²¿·Ö¡£·´À¡Éè¼ÆµÄÖØµãÔÚÓÚÏµÍ³½«´¦Àí½á¹û¸æÖª²¢·´À¡¸øÌá½»ÇëÇóµÄÓÃ»§¡£Í¨¹ý½«×îÖÕµÄ´¦Àí½á¹û·´À¡¸øÓÃ»§£¬ÒÔÖ¸µ¼ÓÃ»§×ö½øÒ»²½µÄ¾ö²ß¡£
 \par
-\textbf{4£©Ò³Ãæ²¼¾Ö}\par
-Ò³Ãæ²¼¾Ö×ÓÄ£¿é×ÓÕë¶ÔWebÍøÒ³½»»¥·½Ê½¡£¼òµ¥À´Ëµ£¬Ò³Ãæ²¼¾Ö×ÓÄ£¿é¾ÍÊÇºÏÀí°²ÅÅ×é¼þÔªËØµÄ³ÊÏÖ·½Ê½£¬ÈçºÎ½«ÏµÍ³¹¦ÄÜ¡¢½»»¥ÔªËØµÈºÏÀíµØ×éºÏ²¼¾Ö£¬ÈçºÎÍ»³öÏµÍ³µÄÖØµã£¬ÈçºÎÎüÒýÓÃ»§µÄ×¢ÒâÁ¦µÈ¡£
+\textbf{4¡¢Ò³Ãæ²¼¾Ö}\par
+Ò³Ãæ²¼¾Ö×ÓÄ£¿éÖ»Õë¶Ô~Web~ÍøÒ³½»»¥·½Ê½¡£¼òµ¥À´Ëµ£¬Ò³Ãæ²¼¾Ö×ÓÄ£¿é¾ÍÊÇºÏÀí°²ÅÅ×é¼þÔªËØµÄ³ÊÏÖ·½Ê½£¬ÈçºÎ½«ÏµÍ³¹¦ÄÜ¡¢½»»¥ÔªËØµÈºÏÀíµØ×éºÏ²¼¾Ö£¬ÈçºÎÍ»³öÏµÍ³µÄÖØµã£¬ÈçºÎÎüÒýÓÃ»§µÄ×¢ÒâÁ¦µÈ¡£
 
 \subsubsection{Ô¤´¦ÀíÄ£¿é}
-Ô¤´¦ÀíÄ£¿éÊÇÔÚ½øÐÐ×ÊÔ´Ó³ÉäÇ°£¬¶ÔÓÃ»§Ìá½»µÄÒµÎñÇëÇó½øÐÐÊÊµ±µÄÕûÀíºÍÔ¤´¦Àí¡£Ô¤´¦ÀíÄ£¿éÖ÷Òª°üº¬ÈçÏÂ¼¸¸ö×ÓÄ£¿é£º
+´Ó×ÊÔ´Ó³Éä½»»¥ÏµÍ³µÄ¿ò¼ÜÊ¾ÒâÍ¼\ref{fig:framework}ÖÐ¿ÉÒÔ¿´³ö£¬Ô¤´¦ÀíÄ£¿é±»»®¹éµ½ÏµÍ³²ã£¬Êµ¼ÊÉÏ£¬Ô¤´¦ÀíÄ£¿é¶Ô½ÓÁËÓÃ»§²ãºÍÏµÍ³²ã¡£Ô¤´¦ÀíÄ£¿é½«ÓÃ»§²ãÖÐÓÃ»§Ìá½»µÄÒµÎñÇëÇó½øÐÐÊÊµ±µÄÕûÀíºÍÔ¤´¦Àí£¬ÎªÏµÍ³²ãµÄ½øÒ»²½´¦Àíµì¶¨ÁË»ù´¡¡£Ô¤´¦ÀíÄ£¿éÖ÷Òª°üº¬ÈçÏÂ¼¸¸ö×ÓÄ£¿é£º
 \par
-\textbf{1£©ÐÅÏ¢³éÈ¡}\par
+\textbf{1¡¢ÐÅÏ¢³éÈ¡}\par
 ÐÅÏ¢³éÈ¡×ÓÄ£¿éÍ¨¹ý´ÓÓÃ»§Ìá½»µÄÒµÎñÇëÇóÖÐ³éÈ¡³öÏµÍ³ÐèÒªµÄÓÐÓÃµÄÐÅÏ¢£¬ÌÞ³ýÈßÓàµÄÐÅÏ¢£¬ÒÔ¼õÐ¡´¦Àí¸´ÔÓ¶È²¢Ìá¸ßÐ§ÂÊ¡£
 \par
-\textbf{2£©ÐèÇó½âÎö}\par
+\textbf{2¡¢ÐèÇó½âÎö}\par
 ÐèÇó½âÎö×ÓÄ£¿éÍ¨¹ý¶ÔÐèÇó½øÐÐ·ÖÀà´¦ÀíÒÔ¼°±àÅÅºÏÀíµÄÐÅÏ¢³ÊÏÖ·½Ê½£¬¶ÔÐèÇóÐÅÏ¢½øÐÐ»ù±¾µÄÔ¤´¦ÀíºÍ½âÎö¡£
 
 \subsubsection{×ÊÔ´Ó³ÉäÄ£¿é}
 ×ÊÔ´Ó³ÉäÄ£¿éÊÇ×ÊÔ´Ó³Éä½»»¥¿ò¼ÜµÄºËÐÄ£¬¾­¹ýÉÏÊö¼¸¸öÄ£¿éµÄ´¦Àí£¬ÓÃ»§Ìá½»µÄÒµÎñÐèÒª±»ºÏÀíµÄ½âÎöºÍ´¦Àí£¬ÄÜ¹»±»¼ÆËã»úÊ¶±ðºÍÀí½â¡£´ËÊ±£¬×ÊÔ´Ó³ÉäÄ£¿é»ñÈ¡ÏµÍ³µÄ¿ÉÓÃ×ÊÔ´£¬²¢½øÐÐÓ³ÉäÆ¥Åä¼ÆËã¡£×ÊÔ´Ó³ÉäÄ£¿éÖ÷Òª°üÀ¨ÒÔÏÂ¼¸¸ö×ÓÄ£¿é£º
 \par
-\textbf{1£©×ÊÔ´»ñÈ¡}\par
+\textbf{1¡¢×ÊÔ´»ñÈ¡}\par
 ×ÊÔ´»ñÈ¡×ÓÄ£¿éÔÚ×ÊÔ´¼à¿ØÄ£¿éµÄ¸¨ÖúÏÂ£¬»ñÈ¡ÏµÍ³µÄ×ÊÔ´Ê¹ÓÃÇé¿öºÍ¿ÉÓÃ×ÊÔ´£¬ÎªÓ³ÉäÆ¥Åä×öºÃ³ä·ÖµÄ×¼±¸¡£
 \par
-\textbf{2£©Ó³ÉäÆ¥Åä}\par
+\textbf{2¡¢Ó³ÉäÆ¥Åä}\par
 Ó³ÉäÆ¥Åä×ÓÄ£¿éµÄÖ÷ÒªÈÎÎñÊÇ½«ÓÃ»§µÄÇëÇóºÍÏµÍ³µÄ¿ÉÓÃ×ÊÔ´½øÐÐÆ¥Åä¼ÆËã¡£ÔÚÕâÀï£¬ÎÒÃÇ²ÉÓÃµÄÊÇ±¾½ÚÌá³öµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëËã·¨~MSO-VNE~£¬ÉÏ½ÚµÄ·ÂÕæÊµÑéÒÑÑéÖ¤ÁË¸ÃËã·¨µÄ³öÉ«ÐÔÄÜ¡£
 
 \subsubsection{×ÊÔ´¼à¿Ø}
 ×ÊÔ´¼à¿ØÄ£¿éÖ÷Òª°üÀ¨ÒÔÏÂ¼¸¸ö×ÓÄ£¿é£º
 \par
-\textbf{1£©¼à¿Ø}\par
-\textbf{2£©Í¬²½¹ÜÀí}\par
+\textbf{1¡¢¼à¿Ø}\par
+\textbf{2¡¢Í¬²½¹ÜÀí}\par
 ¹ËÃûË¼Òå£¬×ÊÔ´¼à¿ØÄ£¿é¾ÍÊÇ¼à¿Ø×ÊÔ´³ØÖÐ×ÊÔ´µÄ±ä»¯£¬²¢½øÐÐÍ¬²½ºÍ¸üÐÂ¹ÜÀí¡£
 \subsubsection{×ÊÔ´·ÖÅä}
 ×ÊÔ´·ÖÅäÄ£¿éÖ÷Òª°üÀ¨ÒÔÏÂ¼¸¸ö×ÓÄ£¿é£º
 \par
-\textbf{1£©·ÖÅä}\par
-\textbf{2£©Í¬²½¹ÜÀí}\par
+\textbf{1¡¢·ÖÅä}\par
+\textbf{2¡¢Í¬²½¹ÜÀí}\par
 ×ÊÔ´·ÖÅäÄ£¿éµÄ¹¦ÄÜºÜÖ±½ÓÃ÷È·£ºµ±Ó³Éä³É¹¦µÄÊ±ºò£¬ÎªÓÃ»§µÄÇëÇó·ÖÅäÕæÕýµÄ×ÊÔ´ÒÔÎªÆäÌá¹©·þÎñ¡£²¢±£³Ö×ÊÔ´³ØÖÐ×ÊÔ´µÄÍ¬²½ºÍ¸üÐÂ²Ù×÷¡£
 
 \section{Ð¡½á}

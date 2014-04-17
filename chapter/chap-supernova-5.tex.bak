@@ -1,136 +1,161 @@
-\chapter{SuperNovaÏµÍ³¹¤³Ì¿ª·¢}
+\chapter{SuperNova~ÏµÍ³¹¤³Ì¿ª·¢}
 \section{ÒýÑÔ}
-1.¼òÒª½éÉÜ´ó±³¾°
-2.¼òÒª½éÉÜ±¾²¿·ÖÄÚÈÝ
+SuperNova~ÊÇÒ»¸ö²ã´Î½á¹¹µÄ·þÎñÐéÄâ»¯Æ½Ì¨£¬ËüÍ¨¹ýÆÁ±Îµ×²ãÓ²¼þÉè±¸²¢Òþ²ØÊµÏÖÏ¸½Ú£¬ÒÔ¿ª·Å½Ó¿Ú~API~µÄ·½Ê½ÏòÓ¦ÓÃÌá¹©ËùÐèµÄ·þÎñ£¬¶øÓ¦ÓÃÎÞÐèÁË½âµ×²ãµÄÓ²¼þÇé¿öºÍ¾ßÌåµÄÊµÏÖÏ¸½Ú£¬¸ù¾ÝÒµÎñµÄÐèÇó±ã¿É»ñµÃµ¯ÐÔ·þÎñ¡£SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨Ìá¹©Ò»ÖÖ»ùÓÚ·þÎñÐéÄâ»¯¡¢¾ßÓÐÔÆ·þÎñÌØÕ÷¡¢¿ª·Å½Ó¿ÚµÄÍøÂçÏµÍ³¼°ÊµÏÖ·½·¨£¬Í¨¹ý½«·Ö²¼ÔÚ²»Í¬µØÀíÎ»ÖÃµÄÎïÀíÉè±¸Á¬½ÓÆðÀ´£¬²ÉÓÃÐéÄâ»¯¼¼ÊõÒÔ´óÁ£¶È·þÎñµÄÐÎÊ½¶ÔÍâÌá¹©×ÊÔ´£¬´Ó¶ø´ïµ½¶àÖÖÒµÎñ¹²ÏíÓ²¼þ×ÊÔ´£¬Âú×ãÓÃ»§¶ÔÃ½ÌåÒµÎñµÄ·þÎñÖÊÁ¿ÐèÇó¡£
+\par
+SuperNova~ÏµÍ³µÄ¹¤³Ì¿ª·¢¹¤×÷Ö÷Òª°üÀ¨ÒÔÏÂ¼¸¸ö²¿·Ö£º\par
+1¡¢½«µÚ\ref{chap:vne}ÕÂËùÊöµÄÃæÏòÃ½ÌåÒµÎñµÄÐéÄâÍøÂçÇ¶ÈëÏµÍ³Ó¦ÓÃµ½~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÒÔÓÐÐ§µØÌá¸ß×ÊÔ´Ç¶ÈëÓ³ÉäµÄÐ§ÂÊºÍµ×²ãÎïÀí×ÊÔ´µÄÀûÓÃÂÊÒÔ¼°³¤ÆÚÊÕÒæ¡£
+\par
+2¡¢½«µÚ\ref{chap:tc}ÕÂËùÊöµÄÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÏµÍ³Ó¦ÓÃµ½~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÒÔ¸ôÀëÏµÍ³ÖÐ²»Í¬µÄÒµÎñÁ÷Á¿£¬²¢Çø·Ö²»Í¬ÌØÕ÷µÄÊý¾ÝÁ÷Á¿£¬Í¨¹ýÁ÷Á¿¿ØÖÆÒÔÌá¹©ÓÐ~QoS~±£ÕÏµÄ·þÎñ¡£
+\par
+3¡¢ÍêÉÆ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄ¹¦ÄÜ£¬Ìá¹©¿ÉÊÓ»¯²Ù×÷·½Ê½£¬¼ò»¯ÒµÎñÏûÏ¢´¦ÀíÁ÷³Ì£¬Ìá¸ßÓÃ»§ÌåÑéÖÊÁ¿¡£
+\par
+±¾ÕÂµÄÄÚÈÝ°²ÅÅÈçÏÂ£ºµÚ~\ref{sec:supernova-supernova}~½Ú½éÉÜÁË~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÏµÍ³¼Ü¹¹ºÍ±à³Ì¼Ü¹¹£»µÚ~\ref{sec:supernova-tc}~½ÚÏêÏ¸²ûÊöÁË~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é£¬²»½ö°üÀ¨±à³Ì¼Ü¹¹ºÍÊµÏÖÏ¸½Ú£¬»¹°üÀ¨¹¦ÄÜ½Ó¿ÚºÍÊ¹ÓÃ·½Ê½£»µÚ~\ref{sec:supernova-vne}~½ÚÏêÏ¸²ûÊöÁËÐéÄâÍøÂçÇ¶ÈëÄ£¿éÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÉÏµÄ¹¤³ÌÊµÏÖ£¬Ö÷Òª°üÀ¨¶Ô¸ÃÄ£¿éµÄ¹¤³ÌÉè¼Æ¼ò»¯£¬¹¤³Ì¿ª·¢ÊµÏÖÁ÷³Ì£¬ÒÔ¼°¹¦ÄÜ½Ó¿ÚºÍÊ¹ÓÃ·½Ê½¡£µÚ~\ref{sec:supernova-other}~½Ú½éÉÜÁË~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÔÆ¿ØÖÆÆ÷Ä£¿é£¬Í¨¹ýÍêÉÆÔÆ¿ØÖÆÆ÷µÄ¹¦ÄÜÒÔ¼ò»¯ÏûÏ¢´¦ÀíÁ÷³Ì²¢Ìá¸ßÓÃ»§ÌåÑéÖÊÁ¿£»µÚ~\ref{sec:supernova-conclude}~½Ú¶Ô±¾ÕÂµÄÄÚÈÝ½øÐÐ×Ü½á¡£
 \section{SuperNova}
+\label{sec:supernova-supernova}
 \subsection{ÏµÍ³¼Ü¹¹}
-SuperNovaÊÇÒ»¸ö¶à²ãµÄ·þÎñÐéÄâ»¯Æ½Ì¨£¬Í¼\ref{fig:supernova-jiagou}ÊÇÆäÏµÍ³¼Ü¹¹Ê¾ÒâÍ¼¡£
+SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÏµÍ³¼Ü¹¹Ê¾ÒâÍ¼ÈçÍ¼~\ref{fig:supernova-jiagou5}~ËùÊ¾¡£ÓÉ´Ë¿ÉÖª£¬¸ÃÆ½Ì¨Ö÷Òª°üÀ¨~4~ ´ó²ã´Î²¿·Ö£ºÎïÀíÉè±¸²ã£¬Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ã£¬·þÎñºÍÓ¦ÓÃ²ã£¬È«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨¡£
 \begin{figure}[h]
+\centering
 \includegraphics[width=\textwidth]{supernova-jiagou.eps}
-\caption{SuperNovaÏµÍ³¼Ü¹¹Ê¾ÒâÍ¼}
-\label{fig:supernova-jiagou}
+\caption{SuperNova~ÏµÍ³¼Ü¹¹Ê¾ÒâÍ¼}
+\label{fig:supernova-jiagou5}
 \end{figure}
 \par
-ÆäÖÐ£¬ÎïÀíÉè±¸²ãÊÇÖÚ¶àÎïÀíÉè±¸µÄ¼¯ºÏ£¬ÈçRSPE£¬·þÎñÆ÷µÈ¡£ÔÚSuperNova ÖÐ£¬ÎïÀíÉè±¸²ãÍ³Ò»ÏòÉÏ²ãÌá¹©ÒÔ½ÚµãÎªµ¥Î»µÄÐÅÏ¢£¬°üÀ¨Ã¿¸ö½Úµã¿É³ÐÔØµÄ²»Í¬·þÎñÄÜÁ¦µ¥Ôª¼°ÆäÄÜÁ¦×´Ì¬£»·þÎñºÍÓ¦ÓÃ²ãÊÇÖ¸ÒµÎñÏµÍ³µÄ¼¯ºÏ£¬ÓÉÍ³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÏòÆäÌá¹©·þÎñÄÜÁ¦£»È«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨¾ßÓÐÈ«¾Ö¼à¿Ø¡¢ÓÅ»¯ºÍ·´À¡Çý¶¯µÄ¹¦ÄÜ£¬¿ÉÒÔÓÐÐ§¶¯Ì¬Ìá¸ßÏµÍ³ÐÔÄÜ¡£ÔÚSuperNovaÖÐ£¬Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÒÔ¼°È«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨ÊÇÑÐ¾¿ÖØµã¡£
+ÆäÖÐ£¬ÎïÀíÉè±¸²ãÊÇÖÚ¶àÎïÀí·þÎñÆ÷µÄ¼¯ºÏ¡£ÎïÀíÉè±¸²ãÍ³Ò»ÏòÉÏ²ãÌá¹©ÒÔ½ÚµãÎªµ¥Î»µÄÐÅÏ¢£¬°üÀ¨Ã¿¸ö½ÚµãµÄ×ÊÔ´×´Ì¬ºÍÊ¹ÓÃÇé¿ö¡£·þÎñºÍÓ¦ÓÃ²ãÊÇÖ¸ÒµÎñºÍÓ¦ÓÃÏµÍ³µÄ¼¯ºÏ£¬ÓÉÍ³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÏòÆäÌá¹©·þÎñÄÜÁ¦¡£Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÊÇ~SuperNova~µÄºËÐÄ²ã£¬ËüÁ¬½ÓÁËÎïÀíÉè±¸²ãºÍ·þÎñÓ¦ÓÃ²ã£¬Í¨¹ýÆÁ±ÎÎïÀíÉè±¸²ãµÄ·þÎñÆ÷Ó²¼þÉè±¸£¬²¢ÒÔ½Ó¿ÚµÄ·½Ê½Ïò·þÎñºÍÓ¦ÓÃ²ãÌá¹©ËùÐè·þÎñ£¬Òò´Ë£¬Ó¦ÓÃÎÞÐèÁË½âµ×²ãµÄÍøÂçÏ¸½ÚºÍÓ²¼þÇé¿ö£¬¿É¸ù¾Ý¾ßÌåµÄÒµÎñºÍÓ¦ÓÃÐèÇó»ñµÃµ¯ÐÔ·þÎñ¡£ÔÚ~SuperNova~ÖÐ£¬È«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨¾ßÓÐÈ«¾Ö¼à¿Ø¡¢ÓÅ»¯ºÍ·´À¡Çý¶¯µÄ¹¦ÄÜ£¬¶ÔÓÚÓÅ»¯²¢Ìá¸ßÏµÍ³ÐÔÄÜÓÐÖØÒªµÄ×÷ÓÃ¡£
 \par
-·þÎñÐéÄâ»¯Æ½Ì¨µÄÉè¼ÆÄ¿±êÊÇ½«Ó²¼þÉè±¸½øÐÐÆÁ±Î£¬ÒÔ½Ó¿ÚµÄ·½Ê½Ïò·þÎñºÍÓ¦ÓÃ²ãÌá¹©ËùÐè·þÎñ¡£Ó¦ÓÃÎÞÐèÁË½âÍøÂçÏ¸½ÚºÍÓ²¼þÇé¿ö£¬¿É¸ù¾ÝÐèÇó»ñµÃµ¯ÐÔ·þÎñ¡£ÏÂÃæ½«ÏêÏ¸½éÉÜ¸÷¸ö²¿·Ö¡£
+ÏÂÃæ½«ÏêÏ¸½éÉÜ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐµÄ¸÷¸ö²ã´Î×é¼þ¡£
 \subsubsection{ÎïÀíÉè±¸²ã}
-ÎïÀíÉè±¸²ãÍ¨¹ý¶ÔÎïÀíÉè±¸½øÐÐ¹ÜÀíºÍ³éÏó£¬Éú³É²¢ÊµÏÖ²»Í¬µÄ·þÎñÀàÐÍ£¬²¢ÏòÍ³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÌá¹©¾ßÓÐ²»Í¬ÄÜÁ¦µÄ½ÚµãÐÅÏ¢£¬×÷ÎªÐéÄâ»¯Æ½Ì¨µÄÊäÈë£¬ÐéÄâ»¯Æ½Ì¨½«ÕâÐ©½Úµã×éÖ¯ÎªÒ»¸ö¿ÉÕë¶Ô²»Í¬·þÎñÀàÐÍ½øÐÐÀ©Õ¹µÄÐéÄâ·þÎñÍø¡£
+ÎïÀíÉè±¸²ã¶ÔÎïÀí·þÎñÆ÷Ó²¼þÉè±¸½øÐÐ¹ÜÀíºÍ³éÏó£¬Éú³É¡¢ÊµÏÖ²»Í¬µÄ·þÎñÀàÐÍ£¬²¢ÏòÍ³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÌá¹©¾ßÓÐ²»Í¬ÄÜÁ¦µÄ½ÚµãÐÅÏ¢¡£ÕâÐ©ÐÅÏ¢×÷Îª·þÎñÐéÄâ»¯Æ½Ì¨µÄÊäÈë£¬·þÎñÐéÄâ»¯Æ½Ì¨½«ÕâÐ©½Úµã×éÖ¯ÎªÒ»¸ö¿ÉÕë¶Ô²»Í¬·þÎñÀàÐÍ½øÐÐÀ©Õ¹µÄÐéÄâ·þÎñÍø¡£
 \subsubsection{Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Ö²ã}
-¸Ã²ãµÄÖ÷ÒªÈÎÎñÊÇ×éÖ¯ÎïÀíÉè±¸²ãÌá¹©µÄ´óÁ¿½Úµã£¬ÒÔ±ãÎª²»Í¬µÄÓ¦ÓÃÀàÐÍÌá¹©·þÎñÐéÄâ»¯¡£¸Ã²ãÊÇÒ»¸öº¬ËÄ¸ö×Ó²ãµÄ½á¹¹£¬°üÀ¨ÐéÄâÁ¬½Ó²ã¡¢ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ã¡¢·þÎñÐ­×÷²ãºÍ·þÎñ¿ØÖÆ²ã£¬¸÷²ã¹¦ÄÜÏêÊöÈçÏÂ£º
+Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Ö²ãµÄÖ÷ÒªÈÎÎñÊÇ×éÖ¯ÎïÀíÉè±¸²ãÌá¹©µÄ´óÁ¿½ÚµãÐÅÏ¢£¬ÒÔ±ãÎª²»Í¬µÄÒµÎñºÍÓ¦ÓÃÀàÐÍÌá¹©·þÎñ¡£¸Ã²ã°üÀ¨ËÄ¸ö×Ó²ã£ºÐéÄâÁ¬½Ó²ã¡¢ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ã¡¢·þÎñÐ­×÷²ãºÍ·þÎñ¿ØÖÆ²ã¡£
 \par
-\textbf{1£©ÐéÄâÁ¬½Ó²ã}\par
-¸Ã²ãÖ÷Òª¶ÔÎïÀíÉè±¸²ãÌá¹©µÄËùÓÐ½Úµã½øÐÐ×éÍø£¬Ê¹Æä³ÉÎªÒ»¸öÈ«¾Ö¿ÉÂ·ÓÉ¡¢¿É¿ìËÙ¶¨Î»¡¢¸ßÀ©Õ¹ÐÔµÄ×Ô×éÖ¯ÍøÂç£¬²¢ÔÚÎïÀí×ÊÔ´Ö®¼ä°²È«½»»»Êý¾Ý¡£
+\textbf{1¡¢ÐéÄâÁ¬½Ó²ã}\par
+ÐéÄâÁ¬½Ó²ã¶ÔÎïÀíÉè±¸²ãÌá¹©µÄËùÓÐ½Úµã½øÐÐÁ¬½Ó×éÍø£¬ÐÎ³ÉÒ»¸öÈ«¾Ö¿ÉÂ·ÓÉ¡¢¿É¿ìËÙ¶¨Î»¡¢¸ßÀ©Õ¹ÐÔµÄ×Ô×éÖ¯ÍøÂç£¬´Ó¶ø¿ÉÔÚÎïÀí×ÊÔ´Ö®¼ä°²È«µØ½»»»Êý¾Ý¡£
 \par
-ÐéÄâÁ¬½Ó²ã²ÉÓÃÒ»ÖÖ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢±àÂëµÄÍøÂç½á¹¹£¬°üÀ¨Á½²ã£º¾ÖÓò¹ÜÀí²ãºÍÁ¬½Ó²ã¡£¾ÖÓò¹ÜÀí²ãÖ÷Òª¸ºÔð²»Í¬µØÀíÇøÓò£¨Ò²¿ÉÄÜÊÇ¸ù¾ÝÁ´Â·×´Ì¬×é³ÉµÄÇøÓò£©½ÚµãµÄ¼ìË÷¡¢¹ÜÀíºÍË÷ÒýµÈ¹¤×÷£»ÐéÄâÁ¬½Ó²ãÖÐËùÓÐ½ÚµãÍ¨¹ý½á¹¹»¯P2P·½Ê½£¨DHT£©½øÐÐ×éÖ¯£¬Ö÷Òª¸ºÔðÎïÀíÉè±¸²ãËùÌá¹©µÄ½ÚµãµÄÂ·ÓÉºÍ²éÑ¯£¬Í¬Ê±£¬µØÀíÎ»ÖÃÐÅÏ¢µÄÒýÈë£¬±£Ö¤ÁËP2PÍøÂçÖÐ½ÚµãµÄÇøÓò¾Û¼¯ÐÔ£»ÁíÍâ£¬ P2P¼¼ÊõµÄÓ¦ÓÃ£¬±ãÓÚ¸Ã²ãµÄÀ©Õ¹£¬½µµÍÁË¹ÜÀí·þÎñÆ÷µÄ¸ºÔØ£¬ÌáÉýÁËÓÃ»§ÌåÑé¡£ÆäÖÐ£¬¾ÖÓò¹ÜÀí·þÎñÆ÷ÓÉÐéÄâ²ãÖÐµÄÄ³¸ö½Úµãµ£ÈÎ¡£¸ÃÐéÄâÁ¬½Ó²ãµÄ½á¹¹ÈçÍ¼\ref{fig:linklayer}ËùÊ¾¡£
+ÐéÄâÁ¬½Ó²ãµÄ½á¹¹Ê¾ÒâÍ¼ÈçÍ¼~\ref{fig:linklayer}~ËùÊ¾¡£ÐéÄâÁ¬½Ó²ã²ÉÓÃ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢±àÂëµÄÍøÂç½á¹¹£¬°üÀ¨¾ÖÓò¹ÜÀí²ãºÍÁ¬½Ó²ã¡£¾ÖÓò¹ÜÀí²ãÖ÷Òª¸ºÔð¹ÜÀí²»Í¬µØÀíÇøÓòÄÚµÄ½Úµã£¬»òÊÇ¸ù¾ÝÁ´Â·×´Ì¬×é³ÉµÄÇøÓòÄÚµÄ½Úµã¡£¾ÖÓò¹ÜÀí·þÎñÆ÷ÓÉÆäÖÐµÄÄ³¸ö½Úµãµ£ÈÎ¡£Á¬½Ó²ãÍ¨¹ý½á¹¹»¯~P2P~·½Ê½½«ËùÓÐ½Úµã×éÖ¯Á¬½ÓÆðÀ´¡£ÐéÄâÁ¬½Ó²ãµÄÖ÷Òª¹¤×÷ÊÇ¸ºÔð¶ÔÎïÀíÉè±¸²ãËùÌá¹©µÄ½Úµã½øÐÐ×¼È·Â·ÓÉºÍ²éÑ¯¡£ÔÚÐéÄâÁ¬½Ó²ãÖÐ£¬µØÀíÎ»ÖÃÐÅÏ¢µÄÒýÈë£¬±£Ö¤ÁË~P2P~ÍøÂçÖÐ½ÚµãµÄÇøÓò¾Û¼¯ÐÔ£¬Ìá¸ßÁËÐéÄâÁ¬½Ó²ãµÄ¿ÉÀ©Õ¹ÐÔ£¬½µµÍÁË¹ÜÀí·þÎñÆ÷µÄ¸ºÔØ£¬ÌáÉýÁËÓÃ»§ÌåÑéÖÊÁ¿¡£
 \par
-
-¸Ã½á¹¹ÖÐ£¬È«¾Ö¹ÜÀí·þÎñÆ÷£¨Global Manager£¬GM£©ÊÇÒ»¸öÈ«¾ÖÉè±¸£¬Ã¿¸ö¼ÓÈëÐéÄâ»¯Æ½Ì¨µÄ½Úµã¶¼Ê×ÏÈÔÚÈ«¾Ö¼à¹Ü·þÎñÆ÷ÉÏ×¢²á£¬½«ÆäIPµØÖ·¡¢µØÀíÎ»ÖÃÐÅÏ¢ÒÔ¼°ÏàÓ¦µÄÄÜÁ¦ÐÅÏ¢½øÐÐ±¨¸æ£¬Èç´æ´¢¿Õ¼ä¡¢¿ÉÖ§³ÖÁ÷»¯Â·ÊýµÈ¡£Èç¹ûÐéÄâÁ¬½Ó²ãÖÐÃ»ÓÐ½Úµã£¬Ôò¸Ã½ÚµãÎªÐéÄâÁ¬½Ó²ãµÄµÚÒ»¸ö½Úµã£¬Í¬Ê±£¬¸Ã½ÚµãÒ²±»Ñ¡ÎªËùÔÚÇøÓòµÄ¾ÖÓò¹ÜÀí·þÎñÆ÷¡£Èç¹ûÐéÄâÁ¬½Ó²ãÖÐÒÑÓÐ½Úµã£¬GMÔòÎª½Úµã·µ»ØÒ»Ð©½ÚµãÐÅÏ¢£¬°ïÖú¸Ã½Úµã¼ÓÈëÐéÄâÁ¬½Ó²ã¡£ÁíÍâ£¬ÔÚÍ¬Ò»¸öÇøÓòÖÐ£¬Èç¹ûÄ³¸ö½ÚµãÄÜÁ¦ÔÚÒ»¸ö½Ï³¤Ê±¼äÄÚÔ¶´óÓÚ¾ÖÓò¹ÜÀí·þÎñÆ÷£¬Ôò½«ÇøÓò¹ÜÀí·þÎñÆ÷ÖÐµÄÄÚÈÝÍ¬²½µ½¸Ã½ÚµãÉÏ£¬²¢ÓÉ¸Ã½ÚµãÌæ»»Ô­¾ÖÓò¹ÜÀí·þÎñÆ÷£¬±£Ö¤¾ÖÓò¹ÜÀíµÄ¸ßÐ§ÐÔ¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{supernova-linklayer.eps}
+\caption{ÐéÄâÁ¬½Ó²ãµÄ½á¹¹Ê¾ÒâÍ¼}
+\label{fig:linklayer}
+\end{figure}
 \par
-ÕâÀï£¬Ò²Ìá³öÒ»ÖÖ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢µÄ·þÎñµ¥Ôª×Ô¶¯¾ÛÀàµÄ¹ÜÀí²ã´Î»®·Ö·½·¨¡£ÔÚÇøÓò»®·Ö±ê×¼ÉÏ£¬¾ßÓÐÇ¿ÖÆÓë×Ô¶¯Á½ÖÖ»®·ÖÖ¸±ê¡£ËùÓÐ·þÎñµ¥ÔªÊ×ÏÈ°´ÕÕÇ¿ÖÆ±ê×¼½øÐÐÇøÓò»®·Ö£¬µ±Ò»¸öÔ­ÓÐÇøÓòÄÚµÄ·þÎñµ¥ÔªÊýÁ¿´ïµ½Ò»¶¨ÏÞ¶Èºó£¬°´ÕÕ»ùÓÚµØÀíÎ»ÖÃÐÅÏ¢µÄ¾ÛÀà/·ÖÀà·½·¨£¬½«Ô­ÇøÓò½øÐÐ²ð·Ö£¬²ð·ÖºóµÄÃ¿¸ö×ÓÇøÓòÖÐÑ¡³ö¸ÃÐÂÇøÓòµÄÇøÓò¹ÜÀí·þÎñÆ÷¡£µ±ÇøÓò¹ýÐ¡Ê±£¬Ïà½üÇøÓò½øÐÐºÏ²¢¡£ÕâÑùÐÎ³É¶à²ã´ÎµÄÇøÓò»®·Ö½á¹¹¡£¸Ã·½·¨¿É±ÜÃâÄ³ÇøÓò¹ý´óÊ±ÇøÓò¹ÜÀí·þÎñÆ÷µÄ¸ºÔØ¹ýÖØ£¬ÒÔ¼°ÇøÓò¹ýÐ¡Ê±µÄ¹ÜÀí×ÊÔ´ÀË·ÑÎÊÌâ¡£
+ÈçÍ¼~\ref{fig:linklayer}~ËùÊ¾£¬È«¾Ö¹ÜÀí·þÎñÆ÷ÊÇÒ»¸öÈ«¾ÖÉè±¸£¬Ã¿¸öÐÂ¼ÓÈëµ½·þÎñÐéÄâ»¯Æ½Ì¨µÄ½Úµã¶¼ÐèÒªÊ×ÏÈÔÚÈ«¾Ö¹ÜÀí·þÎñÆ÷ÉÏ×¢²á£¬»ã±¨Æä~IP~µØÖ·¡¢µØÀíÎ»ÖÃÒÔ¼°ÏàÓ¦µÄ·þÎñÄÜÁ¦ÐÅÏ¢¡£ÊÂÊµÉÏ£¬·þÎñÐéÄâ»¯Æ½Ì¨ÖÐµÄ½Úµã»áÖÜÆÚÐÔ²éÑ¯×ÔÉí¿ÉÌá¹©µÄ·þÎñÄÜÁ¦×´¿ö£¬²¢Í¨¹ý´ø¿íºÍÑÓ³ÙÌ½²â·½·¨Ì½²âÍøÂçÖÐÁ´Â·×´¿ö£¬Ïò¾ÖÓò¹ÜÀí·þÎñÆ÷»ã±¨£¬¾ÖÓò¹ÜÀí·þÎñÆ÷ÔÙÏòÈ«¾Ö¹ÜÀí·þÎñÆ÷»ã±¨¡£È«¾Ö¹ÜÀí·þÎñÆ÷»á¶ÔÆäÊÕ¼¯µ½µÄÐÅÏ¢½øÐÐ·ÖÎöºÍÕûºÏ£¬²¢½«·ÖÎö½á¹û·µ»Ø¸ø¾ÖÓò¹ÜÀí·þÎñÆ÷£¬ÒÔ±ã¾ÖÓò¹ÜÀí·þÎñÆ÷½øÐÐ·þÎñ·ÖÅä¼ÆËãÊ±×÷³ö¸üºÃµÄ¾ö²ß¡£ÁíÍâ£¬½Úµã»á´ÓÏµÍ³ÖÐËùÓÐ½ÚµãÖÐÑ¡ÔñÒ»²¿·Ö½Úµã×÷Îª¸Ã½ÚµãµÄÓÅÏÈÁÚ¾Ó½Úµã£¬²¢ÇÒ¶¨Ê±Ïà»¥½»»»ÁÚ¾ÓÐÅÏ¢¡£
 \par
-µ±ÓÐ·þÎñÇëÇóÊ±£¬¸ù¾Ý·þÎñµÄÄ¿±êµØÀíÇøÓòÐÅÏ¢ºÍÈ«¾Ö£¬ÈÎÒâÒ»¸ö½Úµã¿ÉÒÔÂ·ÓÉµ½ËùÓÐÇøÓòµÄ½Úµã£¬½ø¶øÖªµÀ¸ÃÇøÓòµÄ¾ÖÓò·þÎñÆ÷µØÖ·£¬Ïò¾ÖÓò·þÎñÆ÷·¢Æð²éÑ¯ÇëÇó£¬¾ÖÓò·þÎñÆ÷¶ÔÈÎÎñ½øÐÐ·ÖÎö£¬¼ÆËã³ö·þÎñ·½Ê½£¬ÎªËùÇëÇóµÄ·þÎñ·µ»ØºÏÊÊµÄÈë¿Ú½Úµã¡£Èç¹û¾ÖÓò·þÎñÆ÷²»¿ÉÓÃ£¬Í¨¹ýDHTµÄÂ·ÓÉ»úÖÆ£¬Ò²¿ÉÒÔ½«¸ÃÇëÇóµÝ½»¸ø¶ÔÓ¦ÇøÓòµÄÄ³¸ö½Úµã£¬Õâ¸ö½ÚµãÎª¸ÃÇëÇó½øÐÐ·þÎñÐèÇó¼ÆËãÖ´ÐÐ¡£
+µ±·þÎñÇëÇóµ½´ïÊ±£¬È«¾Ö¹ÜÀí·þÎñÆ÷¸ù¾Ý·þÎñÇëÇóµÄÄ¿±êµØÀíÇøÓòÐÅÏ¢£¬½«¸Ã·þÎñÇëÇó·ÖÅÉµ½Ä³¸ö¾ÖÓò¹ÜÀí·þÎñÆ÷£¬¾ÖÓò¹ÜÀí·þÎñÆ÷¶Ô¸Ã·þÎñÇëÇóÈÎÎñ½øÐÐ·ÖÎö£¬¼ÆËã³ö·þÎñ·½Ê½£¬²¢ÎªËùÇëÇóµÄ·þÎñ·µ»ØºÏÊÊµÄÈë¿Ú½Úµã¡£
 \par
-½ÚµãÖÜÆÚÐÔ²éÑ¯×ÔÉí¿ÉÌá¹©µÄ·þÎñÄÜÁ¦×´¿ö£¬Í¬Ê±£¬Í¨¹ý´ø¿íºÍÑÓ³ÙÌ½²â·½·¨Ì½²âÍøÂçÖÐÁ´Â·×´¿ö£¬ÏòÇøÓò¹ÜÀí·þÎñÆ÷±¨¸æ£¬ÇøÓò¹ÜÀí·þÎñÆ÷Ò²ÏòÈ«¾Ö¹ÜÀí·þÎñÆ÷±¨¸æ£¬ÓÉÈ«¾Ö¹ÜÀí·þÎñÆ÷½øÐÐ·ÖÎöÕûºÏ£¬½«·ÖÎö½á¹û·µ»Ø¸ø¾ÖÓò¹ÜÀí·þÎñÆ÷£¬±ãÓÚÆä½øÐÐ·þÎñ·ÖÅä¼ÆËãÊ±µÄ¾ö²ß¡£½ÚµãÒÀ¾ÝÒ»¶¨µÄËã·¨´ÓÏµÍ³ÖÐËùÓÐ½ÚµãÖÐÑ¡ÔñÒ»²¿·Ö½Úµã×÷Îª±¾½ÚµãµÄÓÅÏÈÁÚ¾Ó½Úµã£¬²¢ÇÒ±Ë´Ë¼ä¶¨Ê±µÄ½»»»ÁÚ¾ÓÐÅÏ¢¡£
-
-\textbf{2£©ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ã}\par
-¸Ã²ãÍ¨¹ý¶ÔÎïÀí×ÊÔ´¡¢·þÎñÄÜÁ¦½øÐÐ·â×°£¬Ê¹Æä³ÉÎª×îÐ¡Á£¶È·þÎñµ¥Î»£¬ÀûÓÃÐéÄâÁ¬½Ó²ãÌá¹©µÄ½Ó¿Ú½øÐÐÍ¨ÐÅ£¬²¢¶ÔÉÏ²ã¿ª·Å¹ÜÀí½Ó¿Ú¡£
+\textbf{2¡¢ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ã}\par
+ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ãÍ¨¹ý²ÉÓÃ»ùÓÚ·þÎñµ¥ÔªµÄÊôÐÔ·â×°Ä£ÐÍ£¬½«µ¥¸ö½ÚµãÌá¹©µÄ·þÎñÐéÄâ»¯Îª¶à¸ö¾ßÓÐ²»Í¬ÊôÐÔµÄ·þÎñµ¥Ôª¡£·þÎñµ¥ÔªÊôÐÔ·â×°Ä£ÐÍÒþ²ØÁË²»Í¬Ó²¼þ·þÎñÆ÷Éè±¸Ö®¼äµÄ²îÒì£¬ÌáÈ¡³öÕâÐ©Éè±¸Ö®¼äµÄ¹²Í¬ÌØÕ÷²¢½øÐÐ³éÏó£¬ÎªÉÏ²ãÌá¹©Í³Ò»µÄµ÷ÓÃ·½Ê½¡£ÔÚÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ãÖÐ£¬·þÎñµ¥Ôª¼´ÊÇ×îÐ¡Á£¶È·þÎñµ¥Î»£¬ÊÇ¶Ô½ÚµãÎïÀí×ÊÔ´¡¢·þÎñÄÜÁ¦µÄ·â×°ºÍ³éÏó¡£Í¨³££¬»ù±¾·þÎñµ¥ÔªÖ»Ìá¹©µ¥Ò»µÄ¹¦ÄÜ£¬Æ©Èç´æ´¢¡¢Á÷»¯¡¢¼ÆËãµÈ¡£ÁíÍâ£¬ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ã»¹¶ÔÍøÂçÁ´Â·×´Ì¬½øÐÐÌ½²â£¬²¢½«Ì½²âµÄÐÅÏ¢×÷Îª½ÚµãÊôÐÔ½øÐÐ·â×°¡£ÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ãÎ»ÓÚÐéÄâÁ¬½Ó²ãºÍ·þÎñÐ­×÷²ãÖ®¼ä£¬Í¨¹ýÀûÓÃÐéÄâÁ¬½Ó²ãÌá¹©µÄ½Ó¿Ú½øÐÐÍ¨ÐÅ£¬²¢¶Ô·þÎñÐ­×÷²ã¿ª·Å¹ÜÀí½Ó¿Ú¡£
 \par
-ÔÚÕâÒ»²ã£¬ÎÒÃÇÌá³öÁËÒ»¸ö»ùÓÚ·þÎñµ¥ÔªµÄÊôÐÔ·â×°Ä£ÐÍ£¬½«µ¥½ÚµãÌá¹©µÄ·þÎñÐéÄâÎª¶à¸ö¾ßÓÐ²»Í¬ÊôÐÔµÄ·þÎñµ¥Ôª¡£·þÎñµ¥ÔªÊôÐÔ·â×°Ä£ÐÍÒþ²ØÁË²»Í¬Ó²¼þÉè±¸Ö®¼äµÄ²îÒì£¬ÌáÈ¡³öÕâÐ©Éè±¸Ö®¼äµÄ¹²Í¬ÌØÕ÷²¢½øÐÐ³éÏó£¬ÎªÉÏ²ãÌá¹©Í³Ò»µÄµ÷ÓÃ·½Ê½¡£ÕâÐ©»ù±¾·þÎñµ¥ÔªÖ»Ìá¹©µ¥Ò»µÄ¹¦ÄÜ£¬Èç´æ´¢¡¢Á÷»¯¡¢¼ÆËãÄÜÁ¦µÈ¡£
+\textbf{3¡¢·þÎñÐ­×÷²ã}\par
+·þÎñÐ­×÷²ã£¬¹ËÃûË¼Òå£¬ÊÇ¶ÔÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ãÌá¹©µÄ×îÐ¡Á£¶È·þÎñµ¥Ôª½øÐÐ×éÖ¯Ð­×÷£¬ÒÔÎª²»Í¬ÓÃ»§µÄ²»Í¬ÐèÇó¡¢²»Í¬µÄ·þÎñÀàÐÍÒÔ¼°²»Í¬µÄÓ¦ÓÃÌØÕ÷Ìá¹©¾ßÓÐµ¯ÐÔÄÜÁ¦µÄÍøÂç·þÎñ£¬Í¬Ê±ÆÁ±Îµ×²ãÏ¸½Ú¡£·þÎñÐ­×÷²ã²»½öÒª³ä·Ö¿¼ÂÇ²»Í¬·þÎñµ¥ÔªµÄÌØÕ÷£¬»¹Òª¼æ¹Ëµ×²ãÍøÂçµÄÊµÊ±ÌØÕ÷£¬ÒÔ±ã½øÐÐÓÐÐ§µÄ·þÎñ×éÖ¯ºÍÐ­×÷¡£·þÎñÐ­×÷²ãÊ¹µÃÄÜÁ¦½á¹¹ÄÜ¸üºÃµØÅäºÏÊµ¼ÊÓ²¼þµÄ·Ö²¼×´¿ö£¬¼æ¹ËÏµÍ³ÈÝ´íºÍ¸ºÔØ¾ùºâµÈ¶à¸öÖ¸±ê£¬ÓÐÐ§µØÌá¸ßÏµÍ³·þÎñÐÔÄÜ¡£
 \par
-\textbf{3£©·þÎñÐ­×÷²ã}\par
-Í¨¹ýÐéÄâ¶ÀÁ¢·þÎñµ¥Ôª²ãµÄ´¦Àí£¬ËùÓÐµÄ·þÎñµ¥ÔªÏà¹ØÄÜÁ¦ºÍÊôÐÔ¶¼·â×°ÆäÖÐ£¬Ã¿¸ö·þÎñµ¥Ôª³ýÁË±£Ö¤DHTÕý³£ÔËÐÐµÄÂ·ÓÉ±íÍâ£¬»¹ÐèÎ¬»¤Ò»¸öÔÚÍøÂçÉÏ¿ÉÒÔÓÅÏÈÐ­×÷µÄ·þÎñµ¥ÔªÁÐ±í£¬°üÀ¨ÕâÐ©·þÎñµ¥ÔªËùÔÚ½Úµã¡¢ÒÔ¼°Ïà¹ØÁ´Â·ÐÅÏ¢¡£Òò´Ë£¬ÔÚ·þÎñÐ­×÷²ã£¬ÎÒÃÇÒª½«¸ù¾Ý²»Í¬µÄ·þÎñÀàÐÍºÍÓ¦ÓÃÌØÕ÷£¬¶Ô·þÎñµ¥Ôª½øÐÐ×éÖ¯²¢Ð­×÷¡£¸Ã²ã¿ÉÒÔ¸ù¾ÝÓÃ»§ÐèÇó£¬Ìá¹©¾ßÓÐµ¯ÐÔÄÜÁ¦µÄÍøÂç·þÎñ£¬Í¬Ê±ÆÁ±Îµ×²ãÏ¸½Ú¡£·þÎñÐ­×÷²ãµÄÖ÷Òª¹¦ÄÜ°üÀ¨£º
-1)	Ë÷Òý·þÎñ£ºÎ¬»¤·þÎñµ¥ÔªµÄÕ¼ÓÃºÍ»ØÊÕÐÅÏ¢£¬Í¬Ê±Ìá¹©²éÑ¯ÒÑ×¢²á·þÎñµ¥ÔªµÄ¹¦ÄÜ£»
-2)	·Ö³ØºÍµ÷¶È£º½«·þÎñµ¥Ôª°´ÌØ¶¨µÄÓÃÍ¾¾ÛºÏÆðÀ´£¬²¢Ìá¹©²»Í¬ÈÎÎñÖ®¼äµÄµ÷¶È¹¦ÄÜ£»
-3)	¼àÊÓºÍÕï¶Ï£º¼àÊÓÐéÄâÓ²¼þ£¬°üÀ¨¹¦ÄÜÐÔËðÊ§¡¢ÈëÇÖ¼ì²â¡¢¹ýÔØ¼ì²âµÈ£»
-4)	ÄÜÁ¦¼à¿Ø£º¹ÜÀíÊý¾Ý¡¢ÄÚ´æºÍ´æ´¢£¬×î´ó»¯·ÃÎÊÐÔÄÜ(ÀýÈçÏìÓ¦Ê±¼ä¡¢¿É¿¿ÐÔ¡¢ÈßÓà¡¢³É±¾µÈ)¡£
-\par
-ÔÚ¸Ã²ãÖÐ£¬¸ù¾Ý²»Í¬·þÎñµ¥ÔªµÄÌØÕ÷£¬³ä·Ö¿¼ÂÇµ×²ãÍøÂçÌØÕ÷£¬½øÐÐ²»Í¬µÄ·þÎñÐ­×÷Í¬Ê±£¬Ê¹ÄÜÁ¦½á¹¹·ûºÏÊµ¼ÊÓ²¼þ·Ö²¼×´¿ö£¬²¢¼æ¹ËÏµÍ³ÈÝ´íºÍ¸ºÔØ¾ùºâ¶à¸öÖ¸±ê£¬ÓÐÐ§Ìá¸ßÏµÍ³·þÎñÐÔÄÜ¡£
-
-\textbf{4£©·þÎñ¿ØÖÆ²ã}\par
-Ìá¹©¸øÖÕ¶ËÓÃ»§µÄ×îºóÒ»²ã£¬¶Ô·þÎñÐ­×÷²ã½øÐÐÆÁ±Î£¬ÓÃ»§²»ÐèÖªµÀ·þÎñÐ­×÷²ãµÄÊµÏÖÏ¸½Ú£¬½öÍ¨¹ýÕâÒ»²ã¶¨ÒåµÄ·þÎñ½Ó¿Ú¼´¿ÉÌá³öÐèÇó£¬²¢»ñµÃ·þÎñ¡£Æä¹¦ÄÜ°üÀ¨£º
-1)	·þÎñµ÷¶È£º¸ù¾ÝÓÃ»§ÐèÇóµ÷¶ÈËùÐè·þÎñ£»
-2)	ÒþË½±£»¤£º¹¹½¨Ò»¸öÒþË½¿ò¼Ü£¬À´±£»¤ÖÕ¶ËÓÃ»§µÄÒþË½¡¢Êý¾Ý»úÃÜÐÔºÍÍêÕûÐÔ£»
-3)	½»»»ºÍÓÅ»¯Ö§³Ö£ºÔÚÖÕ¶ËÓÃ»§ºÍ·þÎñÓµÓÐÕßÖ®¼ä³äµ±ÖÙ²ÃÕßµÄÉí·Ý£¬ÔÚ·þÎñÓµÓÐÕß¾¡Á¦¶øÎªµÄÇé¿öÏÂ£¬±£Ö¤ÖÕ¶ËÓÃ»§µÄÐèÇó¡£
+\textbf{4¡¢·þÎñ¿ØÖÆ²ã}\par
+·þÎñ¿ØÖÆ²ã¶Ô·þÎñÐ­×÷²ã½øÐÐÆÁ±Î£¬Îª·þÎñºÍÓ¦ÓÃ²ãÌá¹©·þÎñ¡£Òò´Ë£¬ÓÃ»§µÄ·þÎñºÍÓ¦ÓÃÎÞÐèÁË½â·þÎñÐ­×÷²ãµÄÊµÏÖÏ¸½Ú£¬½öÍ¨¹ý·þÎñ¿ØÖÆ²ã¶¨ÒåµÄ·þÎñ½Ó¿Ú¼´¿ÉÌá³öÐèÇó£¬²¢´ÓÏµÍ³ÖÐ»ñµÃ·þÎñ¡£
 
 \subsubsection{È«¾ÖÈÏÖª¹ÜÀí²ã}
-ÔÚÉÏÊöµÄ½á¹¹ÖÐ£¬ÊÜÏÞÓÚ²ã´ÎÐ­Òé½á¹¹£¬¸÷²ãºÜÉÙÁË½âÆäËû²ãµÄÐÅÏ¢£¬·þÎñµ¥ÔªµÄµ÷¶ÈºÍ¿ØÖÆÖ»ÄÜµÃµ½´ÎÓÅµÄ½á¹û¡£Òò´ËÒýÈëÁËÈ«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨(Global Cognitive Management Plane)£¬ÆäÄ¿µÄÎª£º³Ðµ£ÍøÂç·þÎñ¹ÜÀíÆ÷µÄ¹¦ÄÜ£¬Í¨¹ý²»¶ÏµÄ¹Û²ìÑ§Ï°£¬ÒÔ´ïµ½¸üºÃµÄÊµÊ©½á¹û£»ÁíÍâ£¬Ò²Ê¹ÐéÄâ»¯Æ½Ì¨¸üºÃµÄÀí½âºÍ·ûºÏÓÃ»§ÐèÇó¡£
+·þÎñÐéÄâ»¯Æ½Ì¨~SuperNova~µÄ²ã´Î½á¹¹Ê¹¸÷²ãÖ®¼äµÃµ½ºÜºÃµÄÆÁ±Î£¬¸÷²ã¿ÉÒÔ¶ÀÁ¢µØÀ©Õ¹»ò¸Ä±ä¶ø»¥²»Ó°Ïì¡£Òò´Ë£¬ÏµÍ³µÄ¼æÈÝÐÔºÍÀ©Õ¹ÐÔ¶¼·Ç³£ºÃ£¬È»¶ø£¬ÕâÖÖÆÁ±ÎºÍ¸ôÀëÒ²ÓÐËüµÄÈ±µã¡£ÓÉÓÚ¸÷²ãÖ®¼äÈ±·¦ÁË½âºÍÐÅÏ¢½»Á÷£¬È±·¦È«¾ÖÖªÊ¶£¬Ê¹µÃ·þÎñµ¥ÔªµÄµ÷¶ÈºÍ¿ØÖÆÖ»ÄÜµÃµ½´ÎÓÅµÄ½á¹û¡£Òò´Ë£¬ÔÚ·þÎñÐéÄâ»¯Æ½Ì¨~SuperNova~ÖÐÒýÈëÁËÈ«¾ÖÈÏÖª¹ÜÀí²ã£¬À´³Ðµ£ÍøÂç·þÎñ¹ÜÀíÆ÷µÄ¹¦ÄÜ£¬Í¨¹ý²»¶ÏµÄ¹Û²ìºÍÑ§Ï°£¬ÒÔ´ïµ½È«¾ÖÓÅ»¯µÄÊµÊ©½á¹û¡£Í¬Ê±£¬Ê¹·þÎñÐéÄâ»¯Æ½Ì¨~SuperNova~¸üºÃµØÀí½âºÍ·ûºÏÓÃ»§ÐèÇó¡£
 \par
-1)	È«¾Ö¶àÄ¿±êÓÅ»¯£ºÈÚºÏ¸÷¸ö²ã´ÎÐÅÏ¢£¬Ê¹ÏµÍ³´ïµ½È«¾ÖÓÅ»¯£»
-2)	ÐÅÏ¢²É¼¯ºÍÄ£ÐÍ¾ö²ß£ºÊÕ¼¯ÎïÀí×ÊÔ´µÄ×´Ì¬ºÍÐÅÏ¢¡¢ÓÃ»§Ä¿µÄºÍÓÃ»§Ä£Ê½£¬Í¨¹ýÑµÁ·Ò»¸ö¸ÐÖªÒýÇæÄ£ÐÍ×é¼þ£¬¶ÔÔËÐÐ¼Æ»®½øÐÐ¾ö²ß£¬²¢¸ù¾Ý×ö³öµÄ¾ö¶¨Ö¸µ¼×ÊÔ´¹²Ïí²ã¡£
-3)	¸ÐÖªÒýÇæÄ£ÐÍÑ§Ï°ºÍ¸üÐÂ£ºÐèÒªÓÐÈË¹¤ÖÇÄÜµÄ·½·¨½øÐÐ×ÔÑ§Ï°£¬ÈçÍ¨¹ýÉñ¾­ÍøÂç¡¢½ø»¯¹æ»®µÈ£»²¢²»¶ÏµÄÍ¨¹ý»·¾³Êý¾Ý¿â¡¢ÏÈÑéÐÐÎªºÍËûÃÇµÄ·´À¡À´µ÷Õû×Ô¼ºµÄÐÐÎª¡£
-\par
-¸Ã²ã¿ÉÒÔÍ¨¹ýÒ»¸öµ¥¶ÀµÄ·þÎñÆ÷½øÐÐÊµÏÖ¡£¸÷²ãÏµ¼äÍ¨¹ý½Ó¿ÚÏò¸Ã²ã¸æÖªµ±Ç°×´Ì¬¡¢ÓÃ»§·ÃÎÊÇé¿öÒÔ¼°Ó²¼þÉè±¸Çé¿öµÈÐÅÏ¢¡£ÈÏÖªÆ½Ì¨ÖÜÆÚÐÔ¸ù¾ÝËùËÑ¼¯µÄÐÅÏ¢¼ÆËã²»Í¬ÓÃ»§ÕËºÅÏÂµÄÎÄ¼þ·ÃÎÊÇé¿öºÍÇ÷ÊÆ¡¢ÓÃ»§ÐÐÎª±ä»¯º¯Êý¡¢Ó²¼þÊ¹ÓÃ¹æÔòµÈÐÐÎªÌØÕ÷£¬²¢·´À¡¸ø·þÎñÐ­×÷²ã£¬Ê¹²»Í¬Ó¦ÓÃ¿ÉÒÔ¸ù¾ÝÕâ¸öÐÅÏ¢µ÷ÕûºÍÓÅ»¯ÆäÍøÂç½á¹¹£¬¾ùºâ¸ºÔØ¡£ÁíÍâ£¬ÎªÃ¿¸öÎïÀíÉè±¸½¨Á¢Âí¶û¿Æ·òÄ£ÐÍ£¬¹À¼ÆÆäÔÚÊ±ÓòÉÏµÄ¸ºÔØºÍÄÜÁ¦±ä»¯×´Ì¬£¬½«¸ÃÐÅÏ¢Í¨Öª·þÎñÐ­×÷²ã£¬´Ù½ø¸Ã²ãÓÅ»¯¡£
+Í¨³££¬È«¾ÖÈÏÖª¹ÜÀí²ã¿ÉÓÃÒ»¸öµ¥¶ÀµÄ·þÎñÆ÷À´ÊµÏÖ£¬ÆäÓà¸÷²ãÍ¨¹ý¿ª·ÅµÄ½Ó¿ÚÖÜÆÚÐÔµØÏòÈ«¾ÖÈÏÖª¹ÜÀí²ã»ã±¨µ±Ç°×´Ì¬¡¢ÓÃ»§·ÃÎÊÇé¿öÒÔ¼°Ó²¼þÉè±¸Çé¿öµÈÐÅÏ¢¡£È«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨¸ù¾ÝËùËÑ¼¯µÄÐÅÏ¢¼ÆËã³ö²»Í¬ÓÃ»§ÕËºÅÏÂµÄÎÄ¼þ·ÃÎÊÇé¿öºÍÇ÷ÊÆ¡¢ÓÃ»§ÐÐÎª±ä»¯º¯Êý¡¢Ó²¼þÊ¹ÓÃ¹æÔòµÈÐÐÎªÌØÕ÷£¬²¢·´À¡¸ø·þÎñÐ­×÷²ã£¬Ê¹²»Í¬Ó¦ÓÃ¿ÉÒÔ¸ù¾ÝÕâ¸öÐÅÏ¢µ÷ÕûºÍÓÅ»¯ÆäÍøÂç½á¹¹£¬¾ùºâ¸ºÔØ¡£ÁíÍâ£¬ÎªÃ¿¸öÎïÀíÉè±¸½¨Á¢Âí¶û¿Æ·òÄ£ÐÍ£¬¹À¼ÆÆäÔÚÊ±ÓòÉÏµÄ¸ºÔØºÍÄÜÁ¦±ä»¯×´Ì¬£¬½«¸ÃÐÅÏ¢Í¨Öª·þÎñÐ­×÷²ã£¬´Ù½ø¸Ã²ãµÄ½øÒ»²½ÓÅ»¯¡£
 \subsubsection{·þÎñºÍÓ¦ÓÃ²ã}
-¶ÔÓ¦ÓÃÌá³öµÄÈÎÎñµ÷ÓÃ¡°Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ã¡±µÄ½Ó¿Ú²¢Ö´ÐÐ¡£
-
+·þÎñºÍÓ¦ÓÃ²ãÊÇÃæÏòÓÃ»§µÄ²ã´Î½á¹¹£¬Ö±½ÓÃæÏòÓÃ»§¡£ÓÃ»§Ó¦ÓÃÌá³ö·þÎñÐèÇó£¬·þÎñºÍÓ¦ÓÃ²ã¶Ô¸Ã·þÎñÐèÇóÈÎÎñµ÷ÓÃ¡°Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ã¡±µÄ¿ª·Å½Ó¿Ú²¢Ö´ÐÐ¡£
 \par
-ÔÚ·þÎñÐéÄâ»¯Æ½Ì¨SuperNovaÖÐ£¬Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÊÇÏµÍ³µÄÑÐ¾¿ÖØµã£¬¶ø±¾ÎÄµÄ¿ª·¢¹¤×÷Ö÷Òª¼¯ÖÐÔÚ¸Ã²ãµÄ·þÎñ¿ØÖÆ²ã×Ó²ã£¬ÒÔ¼°È«¾ÖÈÏÖª¹ÜÀí²ã¡£
+ÔÚ·þÎñÐéÄâ»¯Æ½Ì¨~SuperNova~ÖÐ£¬Í³Ò»µÄ·þÎñÐéÄâ¡¢¿ØÖÆºÍÖ§³Å²ãÊÇÏµÍ³µÄÑÐ¾¿ÖØµã£¬¶ø±¾ÎÄµÄ¿ª·¢¹¤×÷Ö÷Òª¼¯ÖÐÔÚ¸Ã²ãµÄ·þÎñ¿ØÖÆ²ã×Ó²ã£¬ÒÔ¼°È«¾ÖÈÏÖª¹ÜÀí²ã¡£
 
 \subsection{±à³Ì¼Ü¹¹}
-ÔÚÉÏÒ»½Ú£¬ÎÒÃÇ½éÉÜÁË·þÎñÐéÄâ»¯Æ½Ì¨µÄÏµÍ³²ã´Î¼Ü¹¹£¬ÏêÏ¸½éÉÜÁËÏµÍ³µÄ²ã´Î×é³ÉÒÔ¼°¸÷²ãµÄ¹¦ÄÜ¡£ÏµÍ³¼Ü¹¹¶ÔÎÒÃÇÈÏÊ¶ÏµÍ³¡¢Àí½âÏµÍ³µÈÓÐºÜ´óµÄ°ïÖú£¬µ«ÊÇÔÚ½øÐÐÊµ¼Ê¿ª·¢¹¤×÷Ê±£¬ÐèÒª¸üÉîÈëµØÀí½âÏµÍ³µÄ±à³Ì¼Ü¹¹¡£±¾½Ú½«ÏêÏ¸½éÉÜ·þÎñÐéÄâ»¯Æ½Ì¨µÄ±à³Ì¼Ü¹¹¡£
-\par
-ÈçÍ¼\ref{fig:supernova-biancheng}ËùÊ¾£¬SuperNova·þÎñÐéÄâ»¯Æ½Ì¨µÄ±à³Ì¼Ü¹¹Ö÷Òª·ÖÎªÁ½¸ö²¿·Ö£ºÈ«¾Ö¹ÜÀí·þÎñÆ÷±à³ÌºÍ¾ÖÓò¹ÜÀí·þÎñÆ÷±à³Ì¡£È«¾Ö¹ÜÀí·þÎñÆ÷ÊÇÃæÏòÓÃ»§µÄ£¬ÔÚ¸Ã²ã£¬ÓÃ»§Í¨¹ýÃüÁîÐÐ¿Í»§¶Ë»òWeb ServiceÍøÒ³ÓëÏµÍ³½øÐÐ½»»¥£¬Ìá³öÏûÏ¢ÇëÇó£¬È»ºó¾­ÓÉMule ESBÏûÏ¢¿ò¼Ü½øÐÐÏà¹ØµÄ´¦Àí¡£Èç¹ûÓÃ»§µÄÏûÏ¢ÇëÇóÐè½»ÓÉ¾ÖÓò¹ÜÀí·þÎñÆ÷´¦Àí£¬ÔòÍ¨¹ýNettyÒì²½Í¨ÐÅ»úÖÆÓë¾ÖÓò¹ÜÀí·þÎñÆ÷Í¨ÐÅ£¬ÓÉ¾ÖÓò¹ÜÀí·þÎñÆ÷Íê³ÉÏàÓ¦µÄÇëÇó£¬ÊµÏÖ¹¦ÄÜ¡£ÏÂÃæ½«ÏêÏ¸½éÉÜ·þÎñÐéÄâ»¯Æ½Ì¨ÖÐÉæ¼°µÄ×é¼þ¡£
+ÈçÍ¼~\ref{fig:supernova-biancheng}~ËùÊ¾£¬SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄ±à³Ì¼Ü¹¹Ö÷Òª·ÖÎªÁ½¸ö²¿·Ö£ºÈ«¾Ö¹ÜÀí·þÎñÆ÷±à³ÌºÍ¾ÖÓò¹ÜÀí·þÎñÆ÷±à³Ì¡£È«¾Ö¹ÜÀí·þÎñÆ÷ÊÇÃæÏòÓÃ»§µÄ£¬ÔÚ¸Ã²ã£¬ÓÃ»§Í¨¹ýÃüÁîÐÐ¿Í»§¶Ë»ò~Web Service~ÍøÒ³ÓëÏµÍ³½øÐÐ½»»¥£¬Ìá³öÏûÏ¢ÇëÇó£¬È»ºó¾­ÓÉ~Mule ESB~ÏûÏ¢¿ò¼Ü½øÐÐÏà¹ØµÄ´¦Àí¡£Èç¹ûÓÃ»§µÄÏûÏ¢ÇëÇóÐè½»ÓÉ¾ÖÓò¹ÜÀí·þÎñÆ÷´¦Àí£¬ÔòÍ¨¹ý~Netty~Òì²½Í¨ÐÅ»úÖÆÓë¾ÖÓò¹ÜÀí·þÎñÆ÷Í¨ÐÅ£¬ÓÉ¾ÖÓò¹ÜÀí·þÎñÆ÷Íê³ÉÏàÓ¦µÄÇëÇó¡£ÏÂÃæ½«ÏêÏ¸½éÉÜ·þÎñÐéÄâ»¯Æ½Ì¨~SuperNova~µÄ±à³Ì¼Ü¹¹ÖÐÉæ¼°µÄ×é¼þ¡£
 \par
 \begin{figure}
-\centering
+\begin{flushright}
 \includegraphics[height=\textheight]{supernova-biancheng.eps}
 \caption{SuperNova·þÎñÐéÄâ»¯Æ½Ì¨±à³Ì¼Ü¹¹Ê¾ÒâÍ¼}
 \label{fig:supernova-biancheng}
+\end{flushright}
 \end{figure}
 \par
 \subsubsection{Boto}
-BotoÊÇÒ»¸öPython°ü£¬ËüÌá¹©ÁË·ÃÎÊAWS£¨Amazon Web Service£©·þÎñµÄ½Ó¿Ú£¬°üÀ¨Amazon S3¡¢Amazon EC2¡¢Amazon DynamoDBµÈAWS·þÎñ¡£Boto¿âÍ¨¹ýÌá¹©Python API£¬½µµÍÁË´úÂë±à³Ì¸´ÔÓÐÔ£¬Ìá¸ßÁË´úÂë¸´ÓÃÂÊ¡£ÆäÌØµãÈçÏÂ£º
-\par\textbf{1£©PythonÓïÑÔ}\par
-»ùÓÚPythonÓïÑÔ±àÐ´£¬¼ò½à
-\par\textbf{2£©Ò»ÖÂµÄ·þÎñ½Ó¿Ú}\par
-ËùÓÐµÄ·þÎñ¿Í»§¶Ë¶¼²ÉÓÃÏàÍ¬µÄ½Ó¿Ú£¬ÒÔ±ãÔÚËùÓÐÖ§³ÖµÄ·þÎñÉÏ¶¼Ìá¹©Ò»ÖÂµÄ·ÃÎÊÌåÑé¡£
-\par\textbf{3£©¼ò»¯´úÂë¸´ÔÓÐÔ}\par
-·â×°´úÂëÏ¸½Ú£¬Ìá¹©¼ò½àµÄ½Ó¿Ú£¬´ó´ó¼ò»¯ÁË´úÂëµÄ±àÐ´£¬½µµÍÁË±à³Ì¸´ÔÓÐÔ¡£
+Boto\cite{boto}~ÊÇÒ»¸ö~Python\cite{python}~°ü£¬ËüÌá¹©ÁË·ÃÎÊ~AWS~ ·þÎñµÄ½Ó¿Ú£¬°üÀ¨~Amazon S3¡¢Amazon EC2¡¢Amazon DynamoDB~ µÈ~AWS~ ·þÎñ¡£Boto~¿âÌá¹©ÁË¿ª·ÅµÄ~Python API~£¬ÇÒËùÓÐµÄ·þÎñ¿Í»§¶Ë¶¼²ÉÓÃÏàÍ¬µÄ½Ó¿Ú£¬ÒÔ±ãÔÚËùÓÐÖ§³ÖµÄ·þÎñÉÏ¶¼Ìá¹©Ò»ÖÂµÄÓÃ»§·ÃÎÊÌåÑé¡£Boto~¿âÍ¨¹ý·â×°´úÂëÏ¸½Ú£¬Ìá¹©¼ò½àµÄ½Ó¿Ú£¬´ó´ó¼ò»¯ÁË´úÂëµÄ±àÐ´£¬½µµÍÁË±à³Ì¸´ÔÓÐÔ£¬Ìá¸ßÁË´úÂë¸´ÓÃÂÊ¡£
 \par
-ÔÚSuperNovaµÄ¹¤³Ì¿ª·¢¹¤×÷ÖÐ£¬ÎÒÃÇÊ¹ÓÃBoto Python APIµÄÖ÷Òª¹¤×÷°üÀ¨ÓëAWS EC2½¨Á¢Á¬½Ó¡¢·¢ËÍHTTPÇëÇó²¢»ñÈ¡ÏìÓ¦¡£
+ÔÚ~SuperNova~µÄ¹¤³Ì¿ª·¢¹¤×÷ÖÐ£¬ÎÒÃÇÊ¹ÓÃ~Boto~¿âÀ´Óë~AWS EC2~½¨Á¢Á¬½Ó£¬¸ù¾ÝÒµÎñÐèÇó·¢ËÍ¶¨ÖÆµÄ~HTTP~ÇëÇó²¢»ñÈ¡ÏìÓ¦¡£
 
 \subsubsection{GWT}
-Ajax£¬Asynchronous JavaScript and XML£¬ÊÇÓÉXHTML¡¢CSS¡¢JavaScript¡¢XMLHttpRequest¡¢XMLµÈ¼¼Êõ×éºÏ¶ø³É£¬ÊÇµ±Ç°WebÓ¦ÓÃ¿ª·¢ÁìÓòµÄÈÈÃÅ¼¼Êõ£¬ÓÃÓÚ´´½¨¸ü¼Ó¶¯Ì¬ºÍ½»»¥ÐÔ¸üºÃµÄWebÓ¦ÓÃ³ÌÐò£¬ÌáÉýÓÃ»§µÄä¯ÀÀÌåÑé¡£È»¶ø£¬AjaxÓ¦ÓÃµÄ¿ª·¢ºÍµ÷ÊÔÊÇ·Ç³£·±¸´µÄ£¬ÓÉÓÚÃ»ÓÐºÏÊÊµÄ¿ª·¢¹¤¾ßÒÔ¸¨ÖúÖ§³ÖAjaxÓ¦ÓÃµÄ¿ª·¢ºÍµ÷ÊÔ£¬¼´Ê¹¿ª·¢Õß¶ÔÓÚAjax¼¼Êõ·Ç³£ÊìÏ¤£¬Æä¿ª·¢ºÍµ÷ÊÔ¹ý³ÌÒ²ºÜÀ§ÄÑ¡£Óë´ËÏà·´£¬JavaÓïÑÔ×÷ÎªÆóÒµÓ¦ÓÃ¿ª·¢µÄÖ÷Á÷ÓïÑÔ£¬ÓÐ¸÷ÖÖ¸÷Ñù¿ª·¢¹¤¾ßµÄÖ§³Ö£¬ÈçEclipse¡¢NetBeansµÈ£¬Æä¿ª·¢ºÍµ÷ÊÔ¹ý³Ì±äµÃ·Ç³£¼òµ¥¡£
+Ajax\cite{ajax}£¬ÊÇÓÉ~XHTML¡¢CSS¡¢JavaScript¡¢XMLHttpRequest¡¢XML~µÈ¼¼Êõ×éºÏ¶ø³ÉµÄ~Web~Ó¦ÓÃ¿ª·¢ÁìÓòµÄÈÈÃÅ¼¼Êõ£¬ÓÃÓÚ´´½¨¸ü¼Ó¶¯Ì¬ºÍ½»»¥ÐÔ¸üºÃµÄ~Web~ Ó¦ÓÃ³ÌÐò£¬ÌáÉýÓÃ»§µÄä¯ÀÀÌåÑé¡£È»¶ø£¬Ajax~Ó¦ÓÃµÄ¿ª·¢ºÍµ÷ÊÔÊÇ·Ç³£·±¸´µÄ£¬ÓÉÓÚÃ»ÓÐºÏÊÊµÄ¿ª·¢¹¤¾ß¸¨ÖúÖ§³Ö~Ajax~Ó¦ÓÃµÄ¿ª·¢ºÍµ÷ÊÔ£¬Ê¹µÃ~Ajax~Ó¦ÓÃµÄ¿ª·¢ºÍµ÷ÊÔ¹ý³ÌºÜÀ§ÄÑ¡£Óë´ËÏà·´£¬Java\cite{java}~ÓïÑÔ×÷ÎªÆóÒµÓ¦ÓÃ¿ª·¢µÄÖ÷Á÷ÓïÑÔ£¬ÓÐ¸÷ÖÖ¸÷Ñù¿ª·¢¹¤¾ßµÄÖ§³Ö£¬Èç~Eclipse¡¢NetBeans~µÈ£¬Æä¿ª·¢ºÍµ÷ÊÔ¹ý³Ì±äµÃ·Ç³£¼òµ¥¡£
 \par
-GWT£¬Google Web Toolkit£¬ÊÇGoogleÍÆ³öµÄAjaxÓ¦ÓÃ¿ª·¢°ü£¬ËüÖ§³Ö¿ª·¢ÕßÊ¹ÓÃJavaÓïÑÔ¿ª·¢AjaxÓ¦ÓÃ¡£GWT½â¾öÁËAjaxÓ¦ÓÃ¿ª·¢ÖÐ¿ª·¢¹¤¾ßÈ±Ê§µÄÄÑÌâ£¬¿ª·¢Õß¿ÉÒÔ³ä·ÖÀûÓÃJavaÓïÑÔµÄ¿ª·¢ÓÅÊÆ£¬½µµÍAjaxÓ¦ÓÃ¿ª·¢µÄÄÑ¶È£¬¼Ó¿ìAjax Ó¦ÓÃµÄ¿ª·¢ËÙ¶È£¬ÎªAjax´ó¹æÄ£Ó¦ÓÃ´´Ôì¿ÉÄÜ¡£ÁíÒ»·½Ãæ£¬ÓÖ¿ÉÒÔ³ä·Ö·¢»ÓAjax ¼¼ÊõµÄÓÅÊÆ£¬´´½¨¸ü¼Ó¶¯Ì¬ºÍ½»»¥ÐÔ¸üºÃµÄWebÓ¦ÓÃ³ÌÐò£¬ÌáÉýÓÃ»§µÄä¯ÀÀÌåÑé¡£Ê¹ÓÃGWT¿ª·¢µÄJavaÓ¦ÓÃ½«ÓÉGWT¿ª·¢°üÌá¹©µÄ±àÒë¹¤¾ß±àÒëºóÉú³É¶ÔÓ¦µÄ¡¢Ó¦ÓÃÁËAjax¼¼ÊõµÄWebÓ¦ÓÃ£¬JavaÓ¦ÓÃÖÐºÍ·þÎñÆ÷Ö®¼äµÄ½»»¥¶¯×÷Ò²±»×Ô¶¯Éú³ÉµÄÒì²½µ÷ÓÃ´úÂëËù´úÌæ¡£
+GWT\cite{gwt}~ÊÇ~Google~ÍÆ³öµÄ~Ajax~Ó¦ÓÃ¿ª·¢°ü£¬Ö§³Ö¿ª·¢ÕßÊ¹ÓÃ~Java~ÓïÑÔ¿ª·¢~Ajax~Ó¦ÓÃ£¬ÄÜ¹»½«~Java~ÓïÑÔ¿ª·¢µÄÓ¦ÓÃ×ª»¯Îª~Ajax~ Ó¦ÓÃ¡£GWT~ ½â¾öÁË~Ajax~Ó¦ÓÃ¿ª·¢ÖÐ¿ª·¢¹¤¾ßÈ±Ê§µÄÄÑÌâ£¬¿ª·¢Õß¿ÉÒÔ³ä·ÖÀûÓÃ~Java~ ÓïÑÔµÄ¿ª·¢ÓÅÊÆ£¬½µµÍ~Ajax~Ó¦ÓÃ¿ª·¢µÄÄÑ¶È£¬¼Ó¿ì~Ajax~Ó¦ÓÃµÄ¿ª·¢ËÙ¶È¡£Òò´Ë£¬¿É³ä·Ö·¢»Ó~Ajax~¼¼ÊõµÄÓÅÊÆ£¬´´½¨¸ü¼Ó¶¯Ì¬ºÍ½»»¥ÐÔ¸üºÃµÄ~Web~Ó¦ÓÃ³ÌÐò£¬ÌáÉýÓÃ»§µÄä¯ÀÀÌåÑé¡£Ê¹ÓÃ~GWT~ ¿ª·¢µÄ~Java~Ó¦ÓÃ½«ÓÉ~GWT~¿ª·¢°üÌá¹©µÄ±àÒë¹¤¾ß±àÒëºóÉú³É¶ÔÓ¦µÄ¡¢Ó¦ÓÃÁË~Ajax~¼¼ÊõµÄ~Web~Ó¦ÓÃ£¬Java~Ó¦ÓÃÖÐºÍ·þÎñÆ÷Ö®¼äµÄ½»»¥¶¯×÷Ò²±»×Ô¶¯Éú³ÉµÄÒì²½µ÷ÓÃ´úÂëËù´úÌæ¡£
 \par
-GWTÖ§³Ö½«JavaÓïÑÔ¿ª·¢µÄÓ¦ÓÃ×ª»¯ÎªAjaxÓ¦ÓÃ£¬²¢Ìá¹©ÁË¸ü¶àµÄ¸ß¼¶ÌØÐÔ£º
-\par\textbf{1£©GWT±àÒëÆ÷}\par
-GWT±àÒëÆ÷ÊÇGWTµÄºËÐÄ£¬¸ºÔð½«Java´úÂë·­Òë³ÉAjaxÄÚÈÝ¡£GWT±àÒëÆ÷ÄÜ¹»·­ÒëJavaÓïÑÔµÄ´ó²¿·ÖÌØÐÔ£¬°üÀ¨Ö§³ÖJavaÓïÑÔÖÐµÄ»ù±¾ÀàÐÍ£¬Ö§³Öjava.lang°üºÍjava.util°üÖÐµÄ´ó²¿·ÖÀàºÍ½Ó¿Ú£¬Ö§³ÖÕýÔò±í´ïÊ½ºÍÐòÁÐ»¯¡£
-\par\textbf{2£©¿çÆ½Ì¨Ö§³Ö}\par
-GWTÌá¹©ÁËºÜ¶àµÄ×é¼þÔªËØ£¬ÈçButton£¬VerticalPannelµÈ£¬GWT±àÒëÆ÷ÄÜ¹»½«ÕâÐ©×é¼þ·­Òë³Éä¯ÀÀÆ÷ÄÚÖÃµÄÀàÐÍ£¬Ê¹µÃÓÉGWT±àÒëÉú³ÉµÄAjaxÓ¦ÓÃÄÜ¹»Ö§³Ö´ó²¿·ÖµÄä¯ÀÀÆ÷ºÍ²Ù×÷ÏµÍ³£¬ÈçInternet Explorer¡¢FirefoxµÈä¯ÀÀÆ÷ºÍLinux¡¢WindowsµÈ²Ù×÷ÏµÍ³¡£
-\par\textbf{3£©ËÞÖ÷Ä£Ê½}\par
-ËÞÖ÷Ä£Ê½ÊÇÖ¸ÎÒÃÇºÍGWTÓ¦ÓÃ½»»¥µÄ×´Ì¬¡£µ±ÎÒÃÇ¿ª·¢ºÍµ÷ÊÔÊ±£¬ÎÒÃÇ¾Í´¦ÓÚËÞÖ÷Ä£Ê½ÏÂ¡£´ËÊ±£¬JavaÐéÄâ»úÊ¹ÓÃGWTÄÚÖÃµÄä¯ÀÀÆ÷ÔËÐÐGWTÓ¦ÓÃ±àÒëºóµÄclassÄÚÈÝ£¬Òò´ËÄÜ¹»Ìá¹©¡°±àÂë¡¢²âÊÔ¡¢µ÷ÊÔ¡±¹ý³ÌµÄ×î¼ÑËÙ¶È¡£
-\par\textbf{3£©WebÄ£Ê½}\par
-WebÄ£Ê½ÊÇÖ¸ÎÒÃÇºÍ³É¹¦×ª»»µÄAjaxÓ¦ÓÃµÄ½»»¥×´Ì¬¡£´ËÊ±£¬GWTÓ¦ÓÃÒÑ¾­³É¹¦±àÒë×ª»»ÎªAjaxÓ¦ÓÃÁË£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃWeb·½Ê½À´·ÃÎÊAjaxÓ¦ÓÃÁË£¬Òò´Ë£¬²»ÔÙÐèÒªGWT¹¤¾ß°ü»òÕßJVMÐéÄâ»úµÄÖ§³ÖÁË¡£
+GWT~Ö§³Ö½«~Java~ÓïÑÔ¿ª·¢µÄÓ¦ÓÃ×ª»¯Îª~Ajax~Ó¦ÓÃ£¬²¢Ìá¹©ÁË¸ü¶àµÄ¸ß¼¶ÌØÐÔ£º
+\par\textbf{1¡¢GWT~±àÒëÆ÷}\par
+GWT~±àÒëÆ÷ÊÇ~GWT~¿ª·¢¹¤¾ß°üµÄºËÐÄ£¬¸ºÔð½«~Java~´úÂë·­Òë³É~Ajax~ ÄÚÈÝ¡£GWT~±àÒëÆ÷ÄÜ¹»·­Òë~Java~ÓïÑÔµÄ´ó²¿·ÖÌØÐÔ£¬°üÀ¨Ö§³Ö~Java~ÓïÑÔÖÐµÄ»ù±¾ÀàÐÍ£¬Ö§³Ö~java.lang\cite{java.lang}~°üºÍ~java.util\cite{java.util}~ °üÖÐµÄ´ó²¿·ÖÀàºÍ½Ó¿Ú£¬Ö§³ÖÕýÔò±í´ïÊ½ºÍÐòÁÐ»¯¡£
+\par\textbf{2¡¢¿çÆ½Ì¨Ö§³Ö}\par
+GWT~Ìá¹©ÁËºÜ¶àµÄ×é¼þÔªËØ£¬Èç~Button¡¢VerticalPannel~µÈ£¬GWT~±àÒëÆ÷ÄÜ¹»½«ÕâÐ©×é¼þ·­Òë³Éä¯ÀÀÆ÷ÄÚÖÃµÄÀàÐÍ£¬Ê¹µÃÓÉ~GWT~±àÒëÉú³ÉµÄ~Ajax~Ó¦ÓÃÄÜ¹»Ö§³Ö´ó²¿·ÖµÄä¯ÀÀÆ÷ºÍ²Ù×÷ÏµÍ³£¬Èç~Internet Explorer¡¢Firefox~µÈä¯ÀÀÆ÷ºÍ~Linux¡¢Windows~µÈ²Ù×÷ÏµÍ³¡£
+\par\textbf{3¡¢ËÞÖ÷Ä£Ê½}\par
+ËÞÖ÷Ä£Ê½ÊÇÖ¸ÎÒÃÇºÍ~GWT~Ó¦ÓÃ½»»¥µÄ×´Ì¬¡£µ±ÎÒÃÇ¿ª·¢ºÍµ÷ÊÔÊ±£¬ÎÒÃÇ¾Í´¦ÓÚËÞÖ÷Ä£Ê½ÏÂ¡£´ËÊ±£¬Java~ÐéÄâ»úÊ¹ÓÃ~GWT~ÄÚÖÃµÄä¯ÀÀÆ÷ÔËÐÐ~GWT~Ó¦ÓÃ±àÒëºóµÄ~class~ÄÚÈÝ£¬Òò´ËÄÜ¹»Ìá¹©¡°±àÂë¡¢²âÊÔ¡¢µ÷ÊÔ¡±¹ý³ÌµÄ×î¼ÑËÙ¶È¡£
+\par\textbf{3¡¢WebÄ£Ê½}\par
+Web~Ä£Ê½ÊÇÖ¸ÎÒÃÇºÍ³É¹¦×ª»»µÄ~Ajax~Ó¦ÓÃµÄ½»»¥×´Ì¬¡£´ËÊ±£¬GWT~Ó¦ÓÃÒÑ¾­³É¹¦±àÒë×ª»»Îª~Ajax~Ó¦ÓÃÁË£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ~Web~·½Ê½À´·ÃÎÊ~Ajax~Ó¦ÓÃÁË£¬Òò´Ë£¬²»ÔÙÐèÒª~GWT~¹¤¾ß°ü»òÕß~JVM\cite{jvm1,jvm2}~ ÐéÄâ»úµÄÖ§³ÖÁË¡£
 
 
 \subsubsection{Jetty}
-Jetty ÊÇÒ»¸ö¿ªÔ´µÄservletÈÝÆ÷£¬ËüÎª»ùÓÚJavaµÄwebÄÚÈÝ£¬ÀýÈç~JSP~ºÍ~ servlet~Ìá¹©ÔËÐÐ»·¾³¡£JettyÊÇÊ¹ÓÃJavaÓïÑÔ±àÐ´µÄ£¬ËüµÄAPIÒÔÒ»×éJAR°üµÄÐÎÊ½·¢²¼¡£¿ª·¢ÈËÔ±¿ÉÒÔ½«JettyÈÝÆ÷ÊµÀý»¯³ÉÒ»¸ö¶ÔÏó£¬¿ÉÒÔÑ¸ËÙÎªÒ»Ð©¶ÀÁ¢ÔËÐÐµÄJavaÓ¦ÓÃÌá¹©ÍøÂçºÍWebÁ¬½Ó¡£Í¨³££¬Jetty¿ÉÍ¨¹ýXML»òÕßAPIÀ´¶Ô½øÐÐÅäÖÃ£¬Í¬Ê±£¬Jetty¿É×÷ÎªÇ¶ÈëÊ½·þÎñÆ÷¡£
+Jetty\cite{jetty}~ÊÇÒ»¸ö¿ªÔ´µÄ~servlet~ÈÝÆ÷¡£Jetty~Îª»ùÓÚ~Java~ µÄ~Web~ÄÚÈÝÌá¹©ÔËÐÐ»·¾³¡£Jetty~Ê¹ÓÃ~Java~ÓïÑÔ±àÐ´£¬ÒÔ~JAR~°üµÄÐÎÊ½¶ÔÍâ·¢²¼¿ª·ÅµÄ~API¡£¿ª·¢ÈËÔ±¿ÉÒÔ½«~Jetty~ÈÝÆ÷ÊµÀý»¯³ÉÒ»¸ö¶ÔÏó£¬¿ÉÒÔÑ¸ËÙÎªÒ»Ð©¶ÀÁ¢ÔËÐÐµÄ~Java~Ó¦ÓÃÌá¹©ÍøÂçºÍ~Web~Á¬½Ó¡£Í¨³££¬Jetty~¿ÉÍ¨¹ý~XML~ÎÄ¼þ»òÕß~API~½Ó¿Ú½øÐÐÅäÖÃ¡£ÁíÍâ£¬Jetty~ ¿É×÷ÎªÇ¶ÈëÊ½·þÎñÆ÷¡£
 
 \subsubsection{Mule}
-MuleÊÇÒ»ÖÖMulesoftÍÆ³öµÄ¿ªÔ´ÇáÁ¿¼¶µÄESBÏûÏ¢¿ò¼Ü¡£MuleµÄºËÐÄ¸ÅÄîÊÇSEDA £¨Staged Event-driven Architecture£©£¬¼´·Ö½×¶ÎºÍÊÂ¼þÇý¶¯¡£·Ö½×¶ÎÖ¸µÄÊÇ½«Ò»¸ö¸´ÔÓµÄ´¦Àí¹ý³Ì·Ö½â³É¼¸¸ö²»Í¬µÄ½×¶Î£¬¿ÉÒÔÓÉ²»Í¬µÄÏß³Ì·Ö±ð½øÐÐ´¦Àí£»ÊÂ¼þÇý¶¯ÒâÎ¶×ÅËùÓÐµÄ´¦Àí¹ý³Ì¶¼ÊÇÊÂ¼þÇý¶¯µÄ£¬²ÉÓÃÒì²½Í¨ÐÅÄ£Ê½¡£
+Mule~ÊÇÓÉ~Mulesoft\cite{mulesoft}~ÍÆ³öµÄ¿ªÔ´ÇáÁ¿¼¶µÄ~ESB~ÆóÒµ·þÎñ×ÜÏßÏûÏ¢¿ò¼Ü¡£Mule~ µÄºËÐÄ¸ÅÄîÊÇ~SEDA£¬¼´·Ö½×¶ÎºÍÊÂ¼þÇý¶¯¡£·Ö½×¶ÎÖ¸µÄÊÇ½«Ò»¸ö¸´ÔÓµÄ´¦Àí¹ý³Ì·Ö½â³É¼¸¸ö²»Í¬µÄ½×¶Î£¬¿ÉÒÔÓÉ²»Í¬µÄÏß³Ì·Ö±ð½øÐÐ´¦Àí£»ÊÂ¼þÇý¶¯ÒâÎ¶×ÅËùÓÐµÄ´¦Àí¹ý³Ì¶¼ÊÇ»ùÓÚÊÂ¼þÇý¶¯ºÍÒì²½Í¨ÐÅÄ£Ê½¡£
 \subsubsection{JiBX}
+JiBX\cite{jibx}~ÊÇ¶Ô~XML~Êý¾ÝºÍ~Java~¶ÔÏó½øÐÐ°ó¶¨µÄ¹¤¾ß¿ò¼Ü¡£JiBX~Í¨¹ý°ó¶¨¶¨ÒåÎÄµµÀ´¶¨Òå~XML~Êý¾ÝÓë~Java~¶ÔÏó¼äµÄ°ó¶¨ºÍ×ª»»¹æÔò£¬°ó¶¨¶¨ÒåÎÄµµÊÇÁªÏµ~XML~Êý¾ÝÓë~Java~¶ÔÏóÖ®¼äµÄÇÅÁº¡£ÔÚ~JiBX~ ÖÐ£¬Í¨¹ý~marshal~°ó¶¨£¬¿ÉÓÉ~Java~¶ÔÏóÉú³É~XML~Êý¾ÝÎÄµµ£»Í¨¹ý~unmarshal~°ó¶¨£¬¿É¸ù¾Ý~XML~Êý¾ÝÎÄµµ½¨Á¢~Java~¶ÔÏó¡£
 \subsubsection{JDBC}
-\subsubsection{Netty}
-NettyÊÇÓÉJBOSSÌá¹©µÄÒ»¸öJava¿ªÔ´¿ò¼Ü¡£NettyÌá¹©Òì²½µÄ¡¢ÊÂ¼þÇý¶¯µÄÍøÂçÓ¦ÓÃ³ÌÐò¿ò¼ÜºÍ¹¤¾ß£¬ÓÃÒÔ¿ìËÙ¿ª·¢¸ßÐÔÄÜ¡¢¸ß¿É¿¿ÐÔµÄÍøÂç·þÎñÆ÷ºÍ¿Í»§¶Ë³ÌÐò¡£Ò²¾ÍÊÇËµ£¬Netty ÊÇÒ»¸ö»ùÓÚNIOµÄ¿Í»§¡¢·þÎñÆ÷¶Ë±à³Ì¿ò¼Ü£¬Ê¹ÓÃNetty ¿ÉÒÔÈ·±£¿ìËÙºÍ¼òµ¥µÄ¿ª·¢³öÒ»¸öÍøÂçÓ¦ÓÃ£¬ÀýÈçÊµÏÖÁËÄ³ÖÖÐ­ÒéµÄ¿Í»§¡¢·þÎñ¶ËÓ¦ÓÃ¡£NettyÏàµ±¼ò»¯ºÍÁ÷Ïß»¯ÁËÍøÂçÓ¦ÓÃµÄ±à³Ì¿ª·¢¹ý³Ì£¬ÀýÈçTCPºÍUDPµÄsocket·þÎñ¿ª·¢¡£
-
-\subsubsection{Axis2C}
-\subsubsection{WSDL2C}
-
-\section{Á÷Á¿¿ØÖÆÄ£¿é}
-\subsection{Á÷Á¿¿ØÖÆ¼ò½é}
+JDBC\cite{jdbc}~¼´~Java~Êý¾Ý¿âÁ¬½Ó£¬ÊÇ±ê×¼µÄ~Java API~½Ó¿Ú¼¯ºÏ£¬ÓÃÓÚ·ÃÎÊÊý¾Ý¿â¡£JDBC~¶ÔÊý¾Ý¿âµÄ²Ù×÷Óë¾ßÌåµÄÊý¾Ý¿âÀàÐÍÎÞ¹Ø£¬ËüÊÇÒ»ÖÖ¹æ·¶£¬Ìá¹©ÁËÒ»Ì×ÍêÕû¶øÍ³Ò»µÄ±à³Ì½Ó¿Ú£¬Ê¹¿ª·¢ÈËÔ±¿ÉÒÔÊ¹ÓÃ´¿~Java~µÄ·½Ê½À´Á¬½Ó²¢²Ù×÷ÈÎÒâÀàÐÍµÄÊý¾Ý¿â¡£ÈçÍ¼~\ref{fig:jdbc}~ËùÊ¾Îª~JDBC~µÄÌåÏµ¼Ü¹¹Ê¾ÒâÍ¼¡£´ÓÍ¼ÖÐ¿ÉÒÔ¿´³ö£¬JDBC~ÓÉÁ½²ã×é³É£º
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{supernova-tc.eps}
+\includegraphics[width=0.8\textwidth]{jdbc.eps}
+\caption{JDBC~µÄÌåÏµ¼Ü¹¹Ê¾ÒâÍ¼}
+\label{fig:jdbc}
+\end{figure}
+\par
+1¡¢JDBC API\par
+JDBC API~Ê¹ÓÃÒ»¸öÇý¶¯³ÌÐò¹ÜÀíÆ÷ºÍÊý¾Ý¿âÌØ¶¨µÄÇý¶¯³ÌÐò£¬´Ó¶øÌá¹©Í¸Ã÷µÄÒì¹¹Êý¾Ý¿âµÄÁ¬½Ó¡£Òò´Ë£¬Ó¦ÓÃ³ÌÐò¿ÉÖ±½ÓÊ¹ÓÃ~JDBC API~Íê³ÉÊý¾Ý¿âÏà¹ØµÄ²Ù×÷£¬¶øÎÞÐèÁË½âÌØ¶¨µÄÊý¾Ý¿âÏ¸½Ú¡£
+\par
+2¡¢JDBC Driver API\par
+JDBC Driver API~ÓÃÓÚÖ§³Ö~JDBC~¹ÜÀíÆ÷£¬È·±£Ê¹ÓÃÕýÈ·µÄÇý¶¯³ÌÐòÀ´·ÃÎÊÃ¿¸öÊý¾ÝÔ´µÄ~JDBC~Çý¶¯³ÌÐò¹ÜÀíÆ÷¡£Çý¶¯³ÌÐò¹ÜÀíÆ÷ÄÜ¹»Ö§³Ö¶à¸ö²¢·¢Á¬½Óµ½¶à¸öÒì¹¹Êý¾Ý¿âµÄÇý¶¯³ÌÐò¡£
+
+\subsubsection{Netty}
+Netty\cite{netty}~ÊÇÓÉ~JBOSS\cite{jboss}~Ìá¹©µÄÒ»¸ö~Java~¿ªÔ´¿ò¼Ü¡£Netty~ Ìá¹©Òì²½µÄ¡¢ÊÂ¼þÇý¶¯µÄÍøÂçÓ¦ÓÃ³ÌÐò¿ò¼ÜºÍ¹¤¾ß£¬ÓÃÒÔ¿ìËÙ¿ª·¢¸ßÐÔÄÜ¡¢¸ß¿É¿¿ÐÔµÄÍøÂç·þÎñÆ÷ºÍ¿Í»§¶Ë³ÌÐò¡£Òò´Ë£¬Netty~ÊÇ»ùÓÚ~NIO~µÄ¿Í»§¡¢·þÎñÆ÷¶Ë±à³Ì¿ò¼Ü£¬Ê¹ÓÃ~Netty~¿ÉÒÔÈ·±£¿ìËÙºÍ¼òµ¥µÄ¿ª·¢³öÒ»¸öÍøÂçÓ¦ÓÃ£¬ÀýÈçÊµÏÖÁËÄ³ÖÖÐ­ÒéµÄ¿Í»§¡¢·þÎñ¶ËÓ¦ÓÃ¡£Netty~ ¼ò»¯ºÍÁ÷Ïß»¯ÁËÍøÂçÓ¦ÓÃµÄ±à³Ì¿ª·¢¹ý³Ì¡£
+
+\subsubsection{Axis2C}
+Axis2C\cite{axis2c}~ÊÇ»ùÓÚ~Axis2~¼Ü¹¹£¬ÓÃ~C~ÓïÑÔÊµÏÖµÄ~Web Service~ÒýÇæ£¬¾ßÓÐÁ¼ºÃµÄ¿ÉÒÆÖ²ÐÔ£¬¿É×÷ÎªÆäËûÓ¦ÓÃµÄ×ÓÄ£¿éÀ´Ìá¹©~Web~·þÎñ¡£Axis2C~ Ö§³Ö~SOAP~Ð­Òé£¬Ò²Ö§³Ö~RESTful~·ç¸ñµÄ~Web~·þÎñ¡£ÓÃ»§¿ÉÒÔ»ùÓÚ ~Axis2C~¿ª·¢~Web~·þÎñÌá¹©¸øÆäËû¿Í»§¶Ëµ÷ÓÃ£¬Ò²¿ÉÍ¨¹ýµ÷ÓÃ~Axis2C~ Ìá¹©µÄ~C~ÓïÑÔ¿â£¬¿ª·¢¿Í»§¶Ë³ÌÐò£¬·ÃÎÊÆäËûµÄ~Web~·þÎñ¡£
+\subsubsection{WSDL2C}
+Axis2C~Ìá¹©ÁË~WSDL2C~¹¤¾ß£¬¿É¸ù¾Ý~WSDL~ÓïÑÔ±àÐ´µÄÓÃÓÚÃèÊöÕû¸ö~Web Service~µÄ~XML~Êý¾ÝÎÄµµ£¬Éú³É~C~ÓïÑÔÃèÊöµÄ~Axis2C~µÄ·þÎñÆ÷~Stub¡£Òò´Ë£¬WSDL2C~Ïàµ±ÓÚ·­Òë»ú£¬½«~XML~ÓïÑÔ·­ÒëÎª~C~ÓïÑÔ¡£WSDL~ÊÇ~Web~·þÎñÃèÊöÓïÑÔ£¬¿É¾«È·µØÃèÊö~Web~·þÎñ¡£WSDL~µÄÎÄµµ½á¹¹Í¼ÈçÍ¼~\ref{fig:wsdl}~ËùÊ¾£¬Í¨³££¬WSDL~ÎÄµµµÄ°üº¬ÒÔÏÂ¼¸¸öÖØÒªµÄÔªËØ£º\par
+1¡¢Types£ºÊý¾ÝÀàÐÍ¶¨ÒåµÄÈÝÆ÷£¬Í¨³£Ê¹ÓÃÄ³ÖÖÀàÐÍÏµÍ³£¬Èç~XML Schema~ÖÐµÄÀàÐÍÏµÍ³¡£
+\par
+2¡¢Message£ºÍ¨ÐÅÏûÏ¢µÄÊý¾Ý½á¹¹µÄ³éÏóÀàÐÍ»¯¶¨Òå¡£Ê¹ÓÃ~Types~Ëù¶¨ÒåµÄÀàÐÍÀ´¶¨ÒåÕû¸öÏûÏ¢µÄÊý¾Ý½á¹¹¡£
+\par
+3¡¢Operation£º¶Ô·þÎñÖÐËùÖ§³ÖµÄ²Ù×÷µÄ³éÏóÃèÊö£¬¿É×¼È·ÃèÊöÒ»¸ö·ÃÎÊÈë¿ÚµÄÇëÇóºÍÏìÓ¦ÏûÏ¢¶Ô¡£
+\par
+4¡¢Binding£ºÌØ¶¨¶Ë¿ÚÀàÐÍµÄ¾ßÌåÐ­ÒéºÍÊý¾Ý¸ñÊ½¹æ·¶µÄ°ó¶¨¡£
+\par
+5¡¢Port£º·þÎñ·ÃÎÊµã£¬ÊÇÒ»¸öÐ­Òé/Êý¾Ý¸ñÊ½°ó¶¨Óë¾ßÌå~Web~·ÃÎÊµØÖ·µÄ×éºÏ¡£
+\par
+6¡¢PortType£º·þÎñ·ÃÎÊµãÀàÐÍ¡£ÃèÊöÁËÄ³¸ö·ÃÎÊÈë¿ÚµãÀàÐÍËùÖ§³ÖµÄ²Ù×÷µÄ³éÏó¼¯ºÏ¡£\par
+7¡¢Service£ºÓÉÏà¹ØµÄ·þÎñ·ÃÎÊµã¼¯ºÏËù×é³ÉµÄ~Web~·þÎñ¡£
+\par
+\begin{figure}[h]
+\centering
+\includegraphics[width=textwidth]{wsdl.eps}
+\caption{WSDL~ÎÄµµ½á¹¹Í¼}
+\label{fig:wsdl}
+\end{figure}
+\section{ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é}
+\label{sec:supernova-tc}
+\subsection{Á÷Á¿¿ØÖÆ¼ò½é}
+ÈçÍ¼\ref{fig:tc}ºÍÍ¼\ref{fig:supernova-tc}ËùÊ¾£¬~SuperNova~ÖÐµÄÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éÖ÷ÒªÓ¦ÓÃÔÚ¾ÖÓò¹ÜÀí·þÎñÆ÷ÉÏ£¬²¢½«Á÷¾­¾ÖÓò¹ÜÀí·þÎñÆ÷µÄÁ÷Á¿»®·ÖÎª~outer~Êý¾ÝÁ÷Á¿ºÍ~inner~Êý¾ÝÁ÷Á¿Á½´ó²¿·Ö¡£Í¨³££¬inner~Êý¾ÝÁ÷Á¿ÊÇÖ¸ÓÃ»§²¿ÊðµÄÒµÎñÄÚ²¿Ö®¼äµÄÏà»¥Í¨ÐÅ²úÉúµÄÊý¾ÝÁ÷Á¿£¬¶ø~outer~Á÷Á¿ÔòÊÇÍâ²¿ÖÕ¶ËÓÃ»§Í¨¹ý~Internet~¶Ô¸ÃÒµÎñµÄ·ÃÎÊÁ÷Á¿¡£¸ù¾Ý~outer~Íâ²¿Á÷Á¿µÄÌØÕ÷£¬ÎÒÃÇÓÖ½øÒ»²½Ô¤ÉèÁË~5~ ¸ö²»Í¬ÓÅÏÈ¼¶µÄÀà±ð£¬ÓÃ»§¿É¸ù¾ÝÒµÎñÐèÇóÑ¡ÔñÆäÖÐµÄÈô¸É¸ö½øÐÐÅäÖÃÒÔÌá¹©×Ô¶¨ÒåµÄÁ÷Á¿¿ØÖÆ·½°¸¡£ÔÚÏµÍ³²ãÃæ£¬ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éÍ¨¹ý¸ôÀë²»Í¬ÓÃ»§Ö®¼äµÄÊý¾ÝÁ÷Á¿£¬ÆÁ±ÎÁË²»Í¬ÓÃ»§µÄÊý¾ÝÁ÷Á¿¸ÉÈÅ¡£ÔÚÓÃ»§²ãÃæ£¬ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¸ù¾ÝÓÃ»§ÐèÇóÇø·Ö¶Ô´ýÓÃ»§µÄ²»Í¬ÒµÎñÁ÷Á¿£¬±ÜÃâÒµÎñÖ®¼äµÄÊý¾ÝÁ÷Á¿¸ÉÈÅ¡£
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{supernova-tc.eps}
 \caption{SuperNovaÖÐµÄÁ÷Á¿¿ØÖÆÄ£¿é}
 \label{fig:supernova-tc}
 \end{figure}
-\par
-ÈçÍ¼\ref{fig:tc}ºÍÍ¼\ref{fig:supernova-tc}ËùÊ¾£¬~SuperNova~ÖÐµÄÁ÷Á¿¿ØÖÆÖ÷ÒªÓ¦ÓÃÔÚ¾ÖÓò¹ÜÀí·þÎñÆ÷ÉÏ£¬²¢½«Á÷¾­¾ÖÓò¹ÜÀí·þÎñÆ÷µÄÁ÷Á¿»®·ÖÎª~outer~ºÍ~inner~Á½´ó²¿·Ö¡£ÊÂÊµÉÏ£¬¶ÔÓÚ²»Í¬ÓÃ»§¶øÑÔ£¬Á÷Á¿¿ØÖÆÄ£¿é¸ôÀëÁËËûÃÇÖ®¼äµÄÁ÷Á¿£¬ÆÁ±ÎÁË²»Í¬ÓÃ»§µÄÁ÷Á¿Ö®¼äµÄÏà»¥¸ÉÈÅ¡£~inner~Á÷Á¿ÊÇÖ¸ÓÃ»§²¿ÊðµÄÒµÎñÄÚ²¿Ö®¼äµÄÏà»¥Í¨ÐÅ´øÀ´µÄÁ÷Á¿£¬¶ø~outer~Á÷Á¿ÊÇÍâ²¿~Internet~ ¶Ô¸ÃÒµÎñµÄ·ÃÎÊÁ÷Á¿¡£¸ù¾Ý~outer~Íâ²¿Á÷Á¿ÖÐÊý¾Ý°üµÄÌØÕ÷£¬ÎÒÃÇÓÖ½øÒ»²½Ï¸·ÖÁË~5~¸öº¢×ÓClass£¬ÒÔÇø·Ö~5~¸ö²»Í¬ÓÅÏÈ¼¶µÄÁ÷Á¿²¢Ìá¹©ÓÃ»§×Ô¶¨Òå·ÖÀà¹æÔò¡£
 \subsection{±à³Ì¼Ü¹¹}
-\par
+ÈçÍ¼\ref{fig:tc-biancheng}ËùÊ¾£¬SuperNova~ÖÐÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éµÄ±à³Ì¼Ü¹¹Ê¾ÒâÍ¼¡£Í¼ÖÐ×ÔÉÏ¶øÏÂÕ¹Ê¾ÁËÕû¸ö¿ª·¢¹ý³Ì£¬²¢Ã÷È·±ê³öÁËÐèÒªÌí¼Ó»òÐÞ¸ÄµÄÎÄ¼þ¡£Ê×ÏÈ£¬ÓÃ»§Ìá³öÇëÇó¡°ÎÒÏëÆô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¡±¡£ÇëÇóµÄ·½Ê½°üÀ¨ÃüÁîÐÐ¹¤¾ßºÍ~Web Service~Á½ÖÖ¡£ÔÚÃüÁîÐÐ¹¤¾ßÏÂ£¬ÐèÒª±àÐ´~Python~´úÂë~setuptrafficcontrol.py~£¬µ÷ÓÃ~Boto~ ¿âÓë~AWS EC2~½¨Á¢Á¬½Ó£¬·¢ËÍÇëÇóÏûÏ¢²¢µÈ´ýÏìÓ¦¡£ÔÚ~Web~·½Ê½ÏÂ£¬±àÐ´~GWT Java~´úÂë£¬°üÀ¨ÓÃ»§½çÃæ~EucalyptusWebInterface.java~ÎÄ¼þ£¬Òì²½µ÷ÓÃ´úÂë~EucalyptusWebBackend.java£¬EucalyptusWebBackendAsync.java£¬
+EucalyptusWebBackendImpl.java~£¬ÒÔ¼°¹¦ÄÜÊµÏÖ~TrafficController.java~µÈÎÄ¼þ¡£
 \begin{figure}
 \centering
 \includegraphics[height=\textheight]{tc-biancheng.eps}
@@ -138,32 +163,29 @@ NettyÊÇÓÉJBOSSÌá¹©µÄÒ»¸öJava¿ªÔ´¿ò¼Ü¡£NettyÌá¹©Òì²½µÄ¡¢ÊÂ¼þÇý¶¯µÄÍøÂçÓ¦ÓÃ³ÌÐò¿ò¼
 \label{fig:tc-biancheng}
 \end{figure}
 \par
-ÈçÍ¼\ref{fig:tc-biancheng}ËùÊ¾£¬SuperNovaÖÐÁ÷Á¿¿ØÖÆÄ£¿é±à³Ì¼Ü¹¹Ê¾ÒâÍ¼£¬Í¼ÖÐ×ÔÉÏ¶øÏÂÕ¹Ê¾ÁËÕû¸ö¿ª·¢¹ý³Ì£¬²¢Ã÷È·±ê³öÁËÐèÒªÌí¼Ó»òÐÞ¸ÄµÄÎÄ¼þ¡£Ê×ÏÈ£¬ÓÃ»§Ìá³öÇëÇó¡°ÎÒÏëÆô¶¯Á÷Á¿¿ØÖÆÄ£¿é¡±¡£ÇëÇóµÄ·½Ê½°üÀ¨ÃüÁîÐÐ¹¤¾ßºÍ~Web Service~Á½ÖÖ¡£ÔÚÃüÁîÐÐ¹¤¾ßÏÂ£¬ÐèÒª±àÐ´~Python~´úÂë~setuptrafficcontrol.py~£¬µ÷ÓÃ~Boto~¿âÓë~EC2~½¨Á¢Á¬½Ó£¬²¢·¢ËÍÇëÇóÏûÏ¢¡£ÔÚ~Web~·½Ê½ÏÂ£¬±àÐ´GWT Java´úÂë£¬°üÀ¨ÓÃ»§½çÃæ~EucalyptusWebInterface.java~ÎÄ¼þ£¬Òì²½µ÷ÓÃ´úÂë~EucalyptusWebBackend.java~£¬~EucalyptusWebBackendAsync.java~£¬
-~EucalyptusWebBackendImpl.java~£¬ÒÔ¼°¹¦ÄÜÊµÏÖTrafficController.javaµÈÎÄ¼þ¡£
+ÎÞÂÛÊÇ²ÉÓÃÃüÁîÐÐ·½Ê½»¹ÊÇ~Web Service~·½Ê½£¬·ÃÎÊÇëÇóÏûÏ¢¶¼»á½øÈëµ½~Mule~×é¼þÖÐ¡£Mule~×é¼þ¸ù¾ÝÏûÏ¢ÀàÐÍ£¬½«ÏûÏ¢µ¼Ïò²»Í¬µÄ~Mule Component~×é¼þ½øÐÐ´¦Àí¡£¶ÔÓÚÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é£¬Ö÷ÒªµÄ~Mule Component~ÊÇ~TrafficControlEndpoint.java~ËùÊµÏÖµÄ~TrafficControlEndpoint~×é¼þ£¬¸ù¾Ý~msgs-binding.xml~ÖÐµÄÅäÖÃ¶¨Òå£¬¸Ã×é¼þ½ÓÊÜËùÓÐ¹ØÓÚÁ÷Á¿¸ôÀë¿ØÖÆµÄÏûÏ¢£¬°üÀ¨~SetupTrafficControlType£¬StopTrafficControlType£¬ConfigTrafficControlType~µÈÏûÏ¢¡£ÔÚ~Mule~×é¼þ~TrafficControlEndpoint~ÖÐ£¬»¹´æÔÚÓëÄÚ´æÊý¾Ý¿â±íµÄ½»»¥¡£ÄÚ´æÊý¾Ý¿â±íµÄÊý¾ÝÊÇÔÚÏµÍ³¿ÕÏÐÊ±£¬È«¾Ö¹ÜÀí·þÎñÆ÷´ÓËùÓÐ¾ÖÓò¹ÜÀí·þÎñÆ÷ÊÕ¼¯µÄ»º´æÊý¾Ý£¬¾ßÓÐ¿ìËÙ·ÃÎÊ»ñÈ¡µÄÌØµã¡£
 \par
-½øÈëµ½MuleÖÐµÄÏûÏ¢£¬¸ù¾ÝÆäÏûÏ¢ÀàÐÍ£¬¾­ÓÉ²»Í¬µÄMule component×é¼þ´¦Àí¡£¶ÔÓÚÁ÷Á¿¸ôÀë¿ØÖÆÄ£¿é£¬Ö÷ÒªµÄ~Mule component~ÊÇ~TrafficControlEndpoint.java~×é¼þ£¬¸ù¾Ý msgs-binding.xml ÖÐµÄÅäÖÃ¶¨Òå£¬¸Ã×é¼þ½ÓÊÜËùÓÐ¹ØÓÚÁ÷Á¿¸ôÀë¿ØÖÆµÄÏûÏ¢£¬°üÀ¨SetupTrafficControlType£¬StopTrafficControlType£¬~ConfigTrafficControlType~µÈÏûÏ¢¡£ÔÚMule×é¼þTrafficControlEndpointÖÐ£¬»¹´æÔÚÓëÄÚ´æÊý¾Ý¿â±íµÄ½»»¥¡£ÄÚ´æÊý¾Ý¿â±íµÄÊý¾ÝÊÇÔÚÏµÍ³¿ÕÏÐÊ±£¬È«¾Ö¹ÜÀí·þÎñÆ÷´ÓËùÓÐ¾ÖÓò¹ÜÀí·þÎñÆ÷ÊÕ¼¯µÄ»º´æÊý¾Ý£¬¾ßÓÐ¿ìËÙ·ÃÎÊ»ñÈ¡µÄÌØµã¡£
-\par
-Èç¹ûÓÃ»§µÄÇëÇóÐèÒª¾ÖÓò¹ÜÀí·þÎñÆ÷À´½øÐÐ´¦Àí£¬ÔòÍ¨¹ýNetty¿ò¼ÜÊµÏÖÈ«¾Ö¹ÜÀí·þÎñÆ÷ºÍ¾ÖÓò¹ÜÀí·þÎñÆ÷µÄÒì²½Í¨ÐÅ¡£ÔÚ¾ÖÓò¹ÜÀí·þÎñÆ÷ÖÐ£¬Í¨¹ýWSDLÎÄ¼þ¶¨ÒåÊý¾ÝÀàÐÍÒÔ¼°²Ù×÷ÀàÐÍ£¬Èçsupernova-cc.wsdl£¬ÔÙÍ¨¹ýWSDL2C½«Æä×ª»»ÎªCÓïÑÔ¶¨ÒåµÄ´úÂë¡£Axis2CÄÜ¹»½«½ÓÊÜµ½µÄSOAPÏûÏ¢×ª»»ÒÔµ÷ÓÃC³ÌÐò´úÂë¡£
+Èç¹ûÓÃ»§µÄÇëÇóÐèÒª¾ÖÓò¹ÜÀí·þÎñÆ÷½øÐÐ´¦Àí£¬ÔòÍ¨¹ý~Netty~¿ò¼ÜÊµÏÖÈ«¾Ö¹ÜÀí·þÎñÆ÷ºÍ¾ÖÓò¹ÜÀí·þÎñÆ÷µÄÒì²½Í¨ÐÅ£¬È«¾Ö¹ÜÀí·þÎñÆ÷½«ÇëÇóÏûÏ¢´«¸ø¾ÖÓò¹ÜÀí·þÎñÆ÷£¬¾ÖÓò¹ÜÀí·þÎñÆ÷ÔÚ´¦Àí½áÊøºó°Ñ½á¹ûÒì²½µØ·µ»Ø¸øÈ«¾Ö¹ÜÀíÆ÷¡£ÔÚ¾ÖÓò¹ÜÀí·þÎñÆ÷ÖÐ£¬Í¨¹ý~WSDL Web~·þÎñÃèÊöÎÄ¼þ¶¨ÒåÊý¾ÝÀàÐÍÒÔ¼°²Ù×÷ÀàÐÍ£¬Èç~supernova-cc.wsdl£¬ÔÙÍ¨¹ý~Axis2C~µÄ¹¤¾ß~WSDL2C~½«Æä×ª»»Îª~C~ÓïÑÔ¶¨ÒåµÄ´úÂë£¬½ø¶øµ÷ÓÃ¾ßÌåµÄ¹¦ÄÜÊµÏÖº¯Êý£¬ÈçÎÄ¼þ~TrafficControl.cpp~ÖÐ¶¨ÒåµÄº¯Êý¡£
 \par
 \subsection{¹¦ÄÜºÍÊµÏÖ}
-ÏÂÃæ½«ÏêÏ¸½éÉÜÁ÷Á¿¸ôÀë¿ØÖÆµÄ¸÷¸ö¹¦ÄÜ¶¨Òå¡£
-\subsubsection{Æô¶¯Á÷Á¿¿ØÖÆ}
-Æô¶¯Á÷Á¿¸ôÀë¿ØÖÆÄ£¿éµÄ·½Ê½ÓÐÁ½ÖÖ£º
-\par\textbf{1£©ÃüÁîÐÐ¹¤¾ß}\par
-Ö±½ÓÔÚÖÕ¶ËÊäÈëÃüÁî£ºeuca-setup-trafficcontrol£¬¼´¿ÉÆô¶¯Á÷Á¿¸ôÀë¿ØÖÆÄ£¿é¡£
-\par\textbf{2£©Web ·½Ê½}\par
-ÈçÍ¼\ref{fig:euca-setup}ËùÊ¾£¬µã»÷¹´Ñ¡checkbox£¬¼´¿ÉÆô¶¯Á÷Á¿¸ôÀë¿ØÖÆÄ£¿é¡£
+\subsubsection{Æô¶¯}
+Æô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éµÄ·½Ê½ÓÐÁ½ÖÖ£º
+\par\textbf{1£©ÃüÁîÐÐ·½Ê½}\par
+Æô¶¯ÖÕ¶Ë¹¤¾ß£¬ÔÚÖÕ¶ËÊäÈëÃüÁî£ºeuca-setup-trafficcontrol£¬¼´¿ÉÆô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¡£
+\par\textbf{2£©Web~·½Ê½}\par
+ÈçÍ¼\ref{fig:euca-setup}ËùÊ¾£¬µã»÷²¢¹´Ñ¡~Traffic Control~¸´Ñ¡¿ò£¬Í¨¹ý¡°±£´æ´ØÅäÖÃ¡±Ê¹ÅäÖÃÉúÐ§£¬¼´¿ÉÆô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¡£
 \par
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{euca-setup.eps}
-\caption{Web·½Ê½Æô¶¯Á÷Á¿¿ØÖÆ}
+\includegraphics[width=0.95\textwidth]{euca-setup.eps}
+\caption{Web~·½Ê½Æô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é}
 \label{fig:euca-setup}
 \end{figure}
 \par
-²»¹ÜÊÇ²ÉÓÃÃüÁîÐÐ¹¤¾ß£¬»¹ÊÇ²ÉÓÃWeb·½Ê½£¬¶¼¿ÉÒÔºÜÈÝÒ×µØÆô¶¯Á÷Á¿¿ØÖÆÄ£¿é¡£ÊÂÊµÉÏ£¬Èç¹ûÏµÍ³´ÓÀ´Ã»ÓÐÆô¶¯¹ýÁ÷Á¿¿ØÖÆ£¬ÔòÁ÷Á¿¿ØÖÆÄ£¿é»á´ÓÅäÖÃÎÄ¼þÖÐ¶ÁÈ¡Ä¬ÈÏµÄÁ÷Á¿¿ØÖÆ²ÎÊý£¬ÒÔÊµÏÖÈçÍ¼\ref{fig:tc}ËùÊ¾µÄÁ÷Á¿¿ØÖÆ¼Ü¹¹¡£ÁíÒ»·½Ãæ£¬Èç¹ûÏµÍ³Ôø¾­Æô¶¯¹ýÁ÷Á¿¿ØÖÆÄ£¿é£¬²¢ÖØÐÂ½øÐÐÏàÓ¦µÄÅäÖÃºÍ¹æÔòÐÞ¸Ä£¬ÕâÐ©ÐÂµÄ¹æÔò¶¼»á±»±£´æÏÂÀ´¡£ËùÒÔ£¬µ±ÓÃ»§ÔÙ´ÎÆô¶¯Á÷Á¿¿ØÖÆÊ±£¬»á×Ô¶¯»Ö¸´µ½ÓÃ»§µÄ×îÐÂ¹æÔò¡£ÕâÖÖÉè¼Æ·½Ê½¸ü¼Ó·ûºÏÓÃ»§µÄÐÐÎªÏ°¹ß£¬ÄÜ¹»¼õÇáÓÃ»§·±¸´µÄÅäÖÃ²Ù×÷£¬Ìá¸ßÓÃ»§ÌåÑé¡£
+²»¹ÜÊÇ²ÉÓÃÃüÁîÐÐ·½Ê½£¬»¹ÊÇ²ÉÓÃ~Web~·½Ê½£¬¶¼¿ÉÒÔºÜÈÝÒ×µØÆô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¡£ÊÂÊµÉÏ£¬Èç¹ûÏµÍ³´ÓÀ´Ã»ÓÐÆô¶¯¹ýÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é£¬Ôò¸ÃÄ£¿é»á´ÓÏµÍ³ÅäÖÃÎÄ¼þÖÐ¶ÁÈ¡Ä¬ÈÏµÄÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆ²ÎÊý£¬ÒÔÊµÏÖÈçÍ¼\ref{fig:tc} ËùÊ¾µÄÁ÷Á¿¿ØÖÆ¼Ü¹¹¡£Ïà·´£¬Èç¹ûÏµÍ³Ôø¾­Æô¶¯¹ýÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é£¬²¢ÖØÐÂ½øÐÐ¹ýÏàÓ¦µÄÅäÖÃºÍ¹æÔòÐÞ¸Ä£¬ÕâÐ©ÐÂµÄ¹æÔò¶¼»á±»±£´æÏÂÀ´¡£µ±ÓÃ»§ÔÙ´ÎÆô¶¯ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éÊ±£¬»á×Ô¶¯»Ö¸´µ½ÓÃ»§×îºóÒ»´ÎÐÞ¸ÄºóµÄ×îÐÂ¹æÔò¡£ÕâÖÖÉè¼Æ·½Ê½¸ü¼Ó·ûºÏÓÃ»§µÄÐÐÎªÏ°¹ß£¬ÄÜ¹»¼õÇáÓÃ»§·±¸´µÄÅäÖÃ²Ù×÷¸ºµ££¬Ìá¸ßÓÃ»§ÌåÑéÖÊÁ¿¡£
 
-\subsubsection{²éÑ¯Á÷Á¿¿ØÖÆ¹æÔò}
+\subsubsection{²éÑ¯}
+²éÑ¯°üÀ¨²éÑ¯ÏµÍ³ÊÇ·ñÆô¶¯ÁËÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é£¬»¹°üÀ¨²éÑ¯ÏµÍ³ÒÑÆô¶¯µÄÒµÎñÁ÷Á¿¿ØÖÆ¹æÔò¡£¿ÉÍ¨¹ýÃüÁîeuca-describe-trafficcontrol ½øÐÐ£¬ÈçÍ¼~\ref{fig:euca-describe}~ËùÊ¾¡£Êµ¼ÊÉÏ£¬²éÑ¯²Ù×÷ÊÇÖ±½ÓÔÚÈ«¾Ö¹ÜÀí·þÎñÆ÷ÉÏ¿ªÕ¹µÄ¡£Òò´Ë£¬ÔÚ~SuperNova~Á÷Á¿¿ØÖÆÄ£¿é±à³Ì¼Ü¹¹~\ref{fig:tc-biancheng}~ÖÐ£¬²éÑ¯ÏûÏ¢ÔÚ¾­¹ý~Mule~×é¼þºó£¬±ãÖÕÖ¹ÁËÏûÏ¢´«µÝ¡£ÕâÊÇÒòÎªÔÚ~SuperNova~ÏµÍ³µÄÈ«¾Ö¹ÜÀí·þÎñÆ÷ÖÐ£¬´æÔÚÄÚ´æÊý¾Ý¿â±í£¬ÆäÖÐ»º´æÁËÏà¹ØµÄÁ÷Á¿¿ØÖÆ¹æÔò¡£Òò´Ë£¬Á÷Á¿¿ØÖÆ¹æÔòµÄ²éÑ¯ÎÞÐèÏò¾ÖÓò¹ÜÀí·þÎñÆ÷·¢³öÇëÇó£¬¿ÉÖ±½Ó´ÓÄÚ´æÊý¾Ý¿â±íÖÐ²éÑ¯Êý¾Ý¡£ÕâÖÖÉè¼ÆÊÇµäÐÍµÄÒÔ¿Õ¼ä»»È¡Ê±¼ä£¬ÎþÉüÒ»¶¨µÄ´æ´¢¿Õ¼äÒÔ´ïµ½¿ìËÙÏìÓ¦£¬´Ó¶øÌá¸ßÓÃ»§ÌåÑéÖÊÁ¿¡£ÁíÍâ£¬²éÑ¯ÏûÏ¢²»ÐèÒªÔÙ´«µÝµ½¸÷¸ö¾ÖÓò¹ÜÀí·þÎñÆ÷£¬´Ó¶øÆÁ±ÎÁËÍøÂçµÄ²»È·¶¨ÐÔ´øÀ´µÄ²»ÎÈ¶¨ÐÔÄÜËðÊ§¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{euca-describe.eps}
@@ -171,36 +193,37 @@ NettyÊÇÓÉJBOSSÌá¹©µÄÒ»¸öJava¿ªÔ´¿ò¼Ü¡£NettyÌá¹©Òì²½µÄ¡¢ÊÂ¼þÇý¶¯µÄÍøÂçÓ¦ÓÃ³ÌÐò¿ò¼
 \label{fig:euca-describe}
 \end{figure}
 \par
-²éÑ¯Á÷Á¿¿ØÖÆ¼°Æä¹æÔò¿ÉÍ¨¹ýÃüÁîeuca-describe-trafficcontrol½øÐÐ£¬ÈçÍ¼\ref{fig:euca-describe}ËùÊ¾¡£Êµ¼ÊÉÏ£¬²éÑ¯²Ù×÷ÊÇÖ±½ÓÔÚÈ«¾Ö¹ÜÀí·þÎñÆ÷ÉÏ¿ªÕ¹µÄ¡£ÔÚ~SuperNova~Á÷Á¿¿ØÖÆÄ£¿é±à³Ì¼Ü¹¹\ref{fig:tc-biancheng}ÖÐ£¬²éÑ¯ÏûÏ¢ÔÚMule½áÊøºó±ãÖÕÖ¹´«µÝÁË¡£ÓÉÓÚÔÚSuperNovaÏµÍ³µÄÈ«¾Ö¹ÜÀí·þÎñÆ÷ÖÐ£¬´æÔÚÄÚ´æÊý¾Ý¿â±í£¬ÆäÖÐ´æ´¢ÁËÏà¹ØµÄÁ÷Á¿¿ØÖÆ¹æÔò¡£Òò´Ë£¬Á÷Á¿¿ØÖÆ¹æÔòµÄ²éÑ¯ÎÞÐèÏò¾ÖÓò¹ÜÀí·þÎñÆ÷·¢³öÇëÇó¡£ÕâÖÖÉè¼ÆÊÇµäÐÍµÄÒÔ¿Õ¼ä»»È¡Ê±¼ä¡£
-\subsubsection{ÅäÖÃÁ÷Á¿¿ØÖÆ¹æÔò}
-ÅäÖÃÁ÷Á¿¿ØÖÆ¹æÔò¿ÉÍ¨¹ýÃüÁî½øÐÐ~euca-config-trafficcontrol~½øÐÐ£¬¸ÃÃüÁî¹¦ÄÜÇ¿´ó£¬ÓÐÖÚ¶à²ÎÊý¿ÉÅäÖÃÑ¡Ôñ£¬Èç±í\ref{tab:config}ËùÊ¾¡£ÔÚÅäÖÃÁ÷Á¿¹æÔòµÄÊ±ºò£¬Ò»·½Ãæ£¬ÒªÐÞ¸ÄÈ«¾Ö¹ÜÀí·þÎñÆ÷µÄÄÚ´æÊý¾Ý¿â±íÐÅÏ¢ÒÔ±£³ÖÒ»ÖÂÐÔ£»ÁíÒ»·½Ãæ£¬Òª½«ÅäÖÃÏûÏ¢´«µÝµ½¾ÖÓò¹ÜÀí·þÎñÆ÷ÒÔÖ´ÐÐÕæÕýµÄÐÞ¸ÄÅäÖÃ¡£
+\subsubsection{ÅäÖÃ}
+ÅäÖÃÁ÷Á¿¿ØÖÆ¹æÔò¿ÉÍ¨¹ýÃüÁî£ºeuca-config-trafficcontrol~½øÐÐ£¬¸ÃÃüÁî¹¦ÄÜÇ¿´ó£¬ÓÐºÜ¶à²ÎÊý¿É¹©Ñ¡ÔñÒÔ¶ÔÒÑÆô¶¯µÄÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é½øÐÐÎ¢µ÷ºÍÖØÐÂÅäÖÃ£¬Ö÷ÒªµÄ²ÎÊýÈç±í~\ref{tab:config}~ËùÊ¾¡£ÔÚÅäÖÃÁ÷Á¿¹æÔòÊ±£¬Ò»·½Ãæ£¬ÒªÐÞ¸ÄÈ«¾Ö¹ÜÀí·þÎñÆ÷µÄÄÚ´æÊý¾Ý¿â±íÐÅÏ¢ÒÔ¼ÇÂ¼×îÐÂµÄÅäÖÃÐÅÏ¢²¢±£³ÖÏµÍ³µÄÒ»ÖÂÐÔ£»ÁíÒ»·½Ãæ£¬Òª½«ÅäÖÃÏûÏ¢´«µÝµ½¾ÖÓò¹ÜÀí·þÎñÆ÷ÒÔÖ´ÐÐÕæÕýµÄÐÞ¸ÄºÍÖØÅäÖÃ£¬´Ó¶øÊ¹ÐÂµÄÅäÖÃÉúÐ§¡£
 
-\subsubsection{È¡ÏûÁ÷Á¿¿ØÖÆ}
-È¡ÏûÁ÷Á¿¿ØÖÆ¿ÉÒÔÍ¨¹ýÒÔÏÂÁ½ÖÖ·½Ê½£º
+\subsubsection{È¡Ïû}
+È¡ÏûÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¿ÉÒÔÍ¨¹ýÒÔÏÂÁ½ÖÖ·½Ê½£º
 \par\textbf{1£©ÃüÁîÐÐ}\par
-Ö±½ÓÔÚÖÕ¶ËÃüÁîÐÐ¹¤¾ßÊäÈëÃüÁî£ºeuca-stop-trafficcontrol£¬¼´¿ÉÈ¡Ïû²¢Í£Ö¹Á÷Á¿¿ØÖÆ¡£
-\par\textbf{2£©Web·½Ê½}\par
-ÈçÍ¼\ref{fig:euca-stop}ËùÊ¾£¬È¡ÏûWebÒ³ÃæÖÐµÄcheckbox¹´Ñ¡£¬¼´¿ÉÈ¡Ïû²¢Í£Ö¹Á÷Á¿¿ØÖÆ¡£
+Ö±½ÓÔÚÖÕ¶ËÊäÈëÃüÁî£ºeuca-stop-trafficcontrol£¬¼´¿ÉÈ¡Ïû²¢Í£Ö¹ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¡£
+\par\textbf{2£©Web~·½Ê½}\par
+ÈçÍ¼~\ref{fig:euca-stop}~ËùÊ¾£¬ÔÚ~Web~Ò³ÃæÉÏµã»÷²¢È¡Ïû~Traffic Control~¸´Ñ¡¿òµÄ¹´Ñ¡£¬Í¨¹ý¡°±£´æ´ØÅäÖÃ¡±Ê¹ÅäÖÃÉúÐ§£¬¼´¿ÉÈ¡Ïû²¢Í£Ö¹ÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é¡£
 \par
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{euca-stop.eps}
-\caption{È¡ÏûÁ÷Á¿¿ØÖÆ}
+\caption{Web~·½Ê½È¡ÏûÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é}
 \label{fig:euca-stop}
 \end{figure}
+
 \section{ÐéÄâÍøÂçÇ¶ÈëÄ£¿é}
-SuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÉÏµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊÇ»ùÓÚµÚ\ref{chap:vne}ÕÂËùÊöµÄMSO-VNEËã·¨£¬½øÐÐ¹¤³Ì¼ò»¯ºÍÊµÊ©¡£ÏÂÃæ½«ÏêÏ¸ÃèÊöÐéÄâÍøÂçÇ¶ÈëÄ£¿éÔÚSuperNovaÉÏµÄ¹¤³ÌÊµÏÖ¡£
+\label{sec:supernova-vne}
+SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÉÏµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊÇ»ùÓÚ±¾ÎÄµÚ~\ ref{chap:vne}~ÕÂËùÊöµÄ~MSO-VNE~Ëã·¨£¬½øÐÐ¹¤³Ì¼ò»¯²¢±à³Ì¿ª·¢ÊµÊ©µÄ¡£ÏÂÃæ½«ÏêÏ¸ÃèÊöÔÚ~SuperNova~ÉÏµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éµÄ¹¤³ÌÊµÏÖ¡£
 \subsection{¹¤³ÌÉè¼Æ}
 \subsubsection{Ëã·¨¼ò»¯}
-ÔÚµÚ\ref{chap:vne}ÕÂËùÊöµÄMSO-VNEËã·¨ÖÐ£¬ÎÒÃÇ×öÁËÈçÏÂ¼ÙÉè£º
+ÔÚµÚ~\ref{chap:vne}~ÕÂËùÊöµÄ~MSO-VNE~Ëã·¨ÖÐ£¬ÎÒÃÇ×öÁËÈçÏÂ¼ÙÉè£º
 \par 1£©Á´Â·µÄÌØÕ÷ÊÇ¿É²âÁ¿µÄ\par
-\par 2£©InternetÁ´Â·´ø¿íÊÇÎÞÏÞµÄ\par
-È»¶ø£¬ÕâÁ½Ìõ¼ÙÉèÔÚÊµ¼ÊÉú»îÖÐ¶¼ÊÇ²»³ÉÁ¢µÄ¡£Ê×ÏÈ£¬ÍøÂçÊÇ·Ç³£¸´ÔÓµÄ£¬ËüÊÜ¸÷ÖÖ¸÷ÑùµÄÒòËØÓ°Ïì£¬°üÀ¨ÏßÂ·²ÄÖÊ¡¢ÎÂ¶ÈµÈÆøºòÌõ¼þ¡£²»½öÈç´Ë£¬ÈÎºÎÒòËØµÄÎ¢Ð¡±ä»¯¶¼»áÊ¹Á´Â·ÌØÕ÷·¢ÉúÖÊµÄ±ä»¯¡£Òò´Ë£¬ÍøÂçÁ´Â·³äÂúÁË²»È·¶¨ÐÔ£¬Á´Â·ÌØÕ÷ÊÇºÜÄÑ²âÁ¿µÄ£¬ÓÈÆäÊÇÑÓ³Ù¡¢ÑÓ³Ù¶¶¶¯µÈ²ÎÊý¡£ÕýÊÇÓÉÓÚÍøÂçµÄ¸´ÔÓÐÔºÍ²»È·¶¨ÐÔ£¬ÈÎºÎÉæ¼°µ½ÍøÂçÁ´Â·µÄÌØÕ÷µÄ¼ÙÉè¶¼ÊÇ²»·ûºÏÊµ¼ÊµÄ¡£¶ÔÓÚInternet ¶øÑÔ£¬ÆäÅÓ´óµÄ¹æÄ£¸üÊÇ¼ÓÖØÁËÕâÖÖ²»È·¶¨ÐÔºÍ¸´ÔÓÐÔ¡£ËùÒÔ£¬ÉÏÊöÁ½Ìõ¼ÙÉèÔÚÏÖÊµÉú»îÖÐ¶¼ÊÇ²»³ÉÁ¢µÄ¡£
+\par 2£©Internet~Á´Â·´ø¿íÊÇÎÞÏÞµÄ\par
+È»¶ø£¬ÕâÁ½Ìõ¼ÙÉèÔÚÊµ¼ÊÉú»îÖÐ¶¼ÊÇ²»³ÉÁ¢µÄ¡£Ê×ÏÈ£¬ÍøÂçÊÇ·Ç³£¸´ÔÓµÄ£¬ËüÊÜ¸÷ÖÖ¸÷ÑùµÄÒòËØÓ°Ïì£¬°üÀ¨ÏßÂ·²ÄÖÊ¡¢ÎÂ¶ÈµÈÆøºòÌõ¼þ¡£Í¨³££¬ÕâÐ©ÒòËØÖÐ£¬ÈÎºÎÒ»¸öÒòËØµÄÎ¢Ð¡±ä»¯¶¼»áÊ¹ÍøÂçÁ´Â·ÌØÐÔ·¢Éú±¾ÖÊµÄ±ä»¯¡£Òò´Ë£¬ÍøÂçÁ´Â·³äÂúÁË²»È·¶¨ÐÔ£¬Á´Â·ÌØÕ÷ÊÇºÜÄÑ²âÁ¿µÄ£¬ÓÈÆäÊÇÑÓ³Ù¡¢ÑÓ³Ù¶¶¶¯µÈ²ÎÊý¡£ÕýÊÇÓÉÓÚÍøÂçµÄ¸´ÔÓÐÔºÍ²»È·¶¨ÐÔ£¬ÈÎºÎÉæ¼°µ½ÍøÂçÁ´Â·µÄÌØÕ÷µÄ¼ÙÉè¶¼ÊÇ²»·ûºÏÊµ¼ÊµÄ¡£¶ÔÓÚ~Internet~»¥ÁªÍø¶øÑÔ£¬ÆäÅÓ´óµÄ¹æÄ£¸üÊÇ¼ÓÖØÁËÕâÖÖ²»È·¶¨ÐÔºÍ¸´ÔÓÐÔ¡£ËùÒÔ£¬ÉÏÊöÁ½Ìõ¼ÙÉèÔÚÏÖÊµÉú»îÖÐ¶¼ÊÇ²»³ÉÁ¢µÄ¡£
 \par
-¹¤³Ì¿ª·¢ÊµÏÖÓëÀíÂÛËã·¨ÑÐ¾¿²»Í¬£¬Ëü±ØÐëÔÚ×¼È·ÐÔºÍ¿ÉÊµÏÖÐÔÉÏ×÷³öÕÛÖÔ£¬¿ÉÒÔÊÓÊµ¼ÊÇé¿öÎþÉüÒ»·½¶ø¼ÓÇ¿ÁíÒ»·½¡£ÔÚSuperNovaµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÖÐ£¬ÎÒÃÇÎþÉü×¼È·ÐÔÒÔ»ñµÃ½Ï¸ßµÄ¿ÉÊµÏÖÐÔ¡£ÔÚ½øÐÐÊµ¼ÊµÄVNEÆ¥Åä¼ÆËãÊ±£¬ÎÒÃÇÖ»¿¼ÂÇ½ÚµãµÄÊôÐÔÌØÕ÷£¬¶øºöÂÔÁ´Â·µÄÊôÐÔÌØÕ÷Æ¥Åä¡£Ò»·½Ãæ£¬ÕâÖÖ¼ò»¯Ê¹µÃ¹¤³Ì¿ª·¢½ÏÈÝÒ×ÊµÏÖ£»ÁíÒ»·½Ãæ£¬ÕâÖÖ¼ò»¯Ê¹µÃÏµÍ³ÄÜ¿ìËÙÏìÓ¦ÓÃ»§µÄ·þÎñ²¿ÊðÇëÇó¡£
+¹¤³Ì¿ª·¢ÊµÊ©ÓëÀíÂÛËã·¨ÑÐ¾¿²»Í¬£¬¹¤³Ì¿ª·¢ÊµÊ©±ØÐëÔÚ×¼È·ÐÔºÍ¿ÉÊµÏÖÐÔÖ®¼äÕÛÖÔ¿¼ÂÇ£¬¿ÉÒÔÊÓÊµ¼ÊÇé¿öÎþÉüÒ»·½¶ø¼ÓÇ¿ÁíÒ»·½¡£ÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬¶ÔÐéÄâÍøÂçÇ¶ÈëÄ£¿é£¬ÎÒÃÇ¿ÉÎþÉü×¼È·ÐÔÒÔ»ñµÃ½Ï¸ßµÄ¿ÉÊµÏÖÐÔ¡£ÔÚ½øÐÐÊµ¼ÊµÄÐéÄâÍøÂçÇ¶ÈëÆ¥Åä¼ÆËãÊ±£¬ÎÒÃÇÖ»¿¼ÂÇ½ÚµãµÄÊôÐÔÌØÕ÷Æ¥Åä£¬¶øºöÂÔÁ´Â·µÄÊôÐÔÌØÕ÷Æ¥Åä¡£Ò»·½Ãæ£¬ÕâÖÖ¼ò»¯Ê¹µÃ¹¤³Ì¿ª·¢½ÏÈÝÒ×ÊµÏÖ£»ÁíÒ»·½Ãæ£¬ÕâÖÖ¼ò»¯Ê¹µÃÏµÍ³ÄÜ¿ìËÙÏìÓ¦ÓÃ»§µÄ·þÎñ²¿ÊðÇëÇó¡£
 
 \subsubsection{±à³Ì¼ò»¯}
-ÈçÍ¼\ref{fig:supernova-vne-new}ËùÊ¾£¬SuperNovaÖÐµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é½øÐÐÁË±à³Ì¼ò»¯£¬Ö÷ÒªÍ¨¹ý¹¹½¨¿ª·¢¶ÀÁ¢ÓÚSuperNova·þÎñÐéÄâ»¯Æ½Ì¨µÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊµÏÖ¡£¸ÃÄ£¿é½ÓÊÜÓÃ»§µÄÇëÇó£¬Í¨¹ý¿ª·ÅµÄAPI´ÓSuperNova·þÎñÐéÄâ»¯Æ½Ì¨»ñÈ¡¿ÉÓÃµÄ×ÊÔ´ÐÅÏ¢£¬ÔÚÄ£¿éÖÐ½øÐÐVNEÆ¥Åä¼ÆËã£¬Èç¹û³É¹¦Ó³Éä£¬ÔòÊ¹ÓÃ¿ª·ÅAPI½«ÓÃ»§µÄÇëÇó²¿Êðµ½SuperNovaÐéÄâ»¯Æ½Ì¨ÖÐ¡£
+ÈçÍ¼~\ref{fig:supernova-vne-new}~ËùÊ¾£¬ÎÒÃÇ¶Ô~SuperNova~ÖÐµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é½øÐÐÁË±à³Ì¼ò»¯£¬Ö÷ÒªÍ¨¹ý¹¹½¨¿ª·¢¶ÀÁ¢ÓÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊµÏÖ¡£¸ÃÄ£¿é½ÓÊÜÓÃ»§µÄÇëÇó£¬Í¨¹ý¿ª·ÅµÄ±à³Ì½Ó¿Ú~API~´Ó~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨»ñÈ¡¿ÉÓÃµÄ×ÊÔ´ÐÅÏ¢£¬ÔÚÄ£¿éÖÐ½øÐÐÐéÄâÍøÂçÇ¶ÈëÆ¥Åä¼ÆËã£¬Èç¹û³É¹¦Ó³Éä£¬ÔòÊ¹ÓÃ¿ª·ÅµÄ½Ó¿Ú~API~½«ÓÃ»§µÄÇëÇó²¿Êðµ½~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ¡£
 \par
 \begin{figure}[h]
 \centering
@@ -209,11 +232,11 @@ SuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÉÏµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊÇ»ùÓÚµÚ\ref{chap:vne}ÕÂËùÊöµÄMSO-VNE
 \label{fig:supernova-vne-new}
 \end{figure}
 \par
-SuperNovaÖÐÐéÄâÍøÂçÇ¶ÈëÄ£¿éµÄ±à³ÌÊµÏÖ²»Í¬ÓÚÁ÷Á¿¿ØÖÆÄ£¿éµÄ±à³ÌÊµÏÖ£¬¶Ô±ÈÍ¼\ref{fig:supernova-vne-new}ºÍÍ¼\ref{fig:tc-biancheng} Á÷Á¿¿ØÖÆÄ£¿éµÄ±à³Ì¼Ü¹¹£¬ÐéÄâÍøÂçÇ¶ÈëÄ£¿éµÄ±à³ÌÊµÏÖÒª¼òµ¥ÈÝÒ×µÃ¶à£¬Æä¿ª·¢Á÷³ÌÒ²·Ç³£¼ò½àÃ÷ÁË£¬¿ÉÀ©Õ¹ÐÔºÜÇ¿¡£Èç¹ûÎÒÃÇÌá³öÁËÐÂµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬Ö»ÐèÒªÐÞ¸ÄÍ¼\ref{fig:supernova-vne-new}ÖÐµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é£¬¶øÎÞÐè¸Ä¶¯SuperNovaÆ½Ì¨ÖÐµÄÒ»ÐÐ´úÂë¡£
+ÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÐéÄâÍøÂçÇ¶ÈëÄ£¿éµÄ±à³ÌÊµÏÖ²»Í¬ÓÚÁ÷Á¿¿ØÖÆÄ£¿éµÄ±à³ÌÊµÏÖ£¬¶Ô±ÈÍ¼~\ref{fig:supernova-vne-new}~ºÍÍ¼~\ref{fig:tc-biancheng}~£¬ÎÒÃÇ¿ÉÒÔ¿´³ö£¬ÐéÄâÍøÂçÇ¶ÈëÄ£¿éµÄ±à³Ì¼Ü¹¹±ÈÁ÷Á¿¿ØÖÆÄ£¿éµÄ±à³Ì¼Ü¹¹Òª¼òÃ÷µÃ¶à£¬±à³ÌÊµÏÖºÍ¿ª·¢Á÷³ÌÒ²Òª¼ò½àÃ÷ÁËºÜ¶à£¬ÕâÖÖ¼ò½àÃ÷ÁËµÄ±à³Ì¿ª·¢Ê¹µÃÆä¿ÉÀ©Õ¹ÐÔºÜÇ¿¡£Èç¹ûÎÒÃÇÌá³öÁËÐÂµÄÐéÄâÍøÂçÇ¶ÈëËã·¨£¬Ö»ÐèÒªÐÞ¸ÄÍ¼~\ref{fig:supernova-vne-new}~ ÖÐµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é£¬¶øÎÞÐè¸Ä¶¯SuperNovaÆ½Ì¨ÖÐµÄÒ»ÐÐ´úÂë¡£
 \par
-ÓëÁ÷Á¿¿ØÖÆÄ£¿é²»Í¬£¬SuperNovaÖÐµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊÇ¶ÀÁ¢ÓÚSuperNovaÏµÍ³µÄ£¬ËüÍ¨¹ýSuperNova·þÎñÐéÄâ»¯Æ½Ì¨¿ª·ÅµÄAPI½Ó¿Ú´ÓÏµÍ³»ñÈ¡±ØÒªµÄÐÅÏ¢¡¢ÓëÏµÍ³½øÐÐ±ØÒªµÄ½»»¥²¢·´À¡´¦Àí½á¹û¡£ÕâÀïÉæ¼°µ½µÄAPIÖ÷Òª°üÀ¨£º
+ÓëÁ÷Á¿¿ØÖÆÄ£¿é²»Í¬£¬SuperNova~ÖÐµÄÐéÄâÍøÂçÇ¶ÈëÄ£¿éÊÇ¶ÀÁ¢ÓÚ~SuperNova~ÏµÍ³µÄ£¬ËüÍ¨¹ý~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨¿ª·ÅµÄ~API~½Ó¿Ú´ÓÏµÍ³»ñÈ¡±ØÒªµÄÐÅÏ¢¡¢ÓëÏµÍ³½øÐÐ±ØÒªµÄ½»»¥²¢·´À¡´¦Àí½á¹û¡£ÕâÀïÉæ¼°µ½µÄ¿ª·Å~API~½Ó¿ÚÖ÷Òª°üÀ¨£º
 \par\textbf{1£©euca-describe-availability-zones \textit{verbose}}\par
-euca2oolsÃüÁîeuca-describe-availability-zones \textit{verbose}ÓÃÓÚ»ñÈ¡~SuperNova~ÏµÍ³µÄ×ÊÔ´ÐÅÏ¢£¬°üÀ¨cpuµÄ×î´óÖµ£¨max£©£¬cpuµÄ¿ÉÓÃÖµ£¨free£©£¬ramµÄ×î´óÖµ£¨max£©£¬ramµÄ¿ÉÓÃÖµ£¨free£©£¬ÒÔ¼°disk£¬cluster zoneÐÅÏ¢£¬ÈçÍ¼\ref{fig:verbose}ËùÊ¾¡£
+euca2ools~ÃüÁî~euca-describe-availability-zones  \textit{verbose}~ÓÃÓÚ»ñÈ¡~SuperNova~ÏµÍ³µÄ×ÊÔ´ÐÅÏ¢£¬°üÀ¨~cpu~µÄ×î´óÖµ£¨max£©£¬cpu~µÄ¿ÉÓÃÖµ£¨free£©£¬ram~µÄ×î´óÖµ£¨max£©£¬ram~µÄ¿ÉÓÃÖµ£¨free£©£¬ÒÔ¼°~disk£¬cluster zone~µÈÐÅÏ¢£¬ÈçÍ¼~\ref{fig:verbose}~ËùÊ¾¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{verbose.eps}
@@ -221,10 +244,10 @@ euca2oolsÃüÁîeuca-describe-availability-zones \textit{verbose}ÓÃÓÚ»ñÈ¡~SuperNova
 \label{fig:verbose}
 \end{figure}
 \par
-SuperNovaµÄÁ÷Á¿¿ØÖÆÄ£¿é½«¸ÃÃüÁî»ñÈ¡µÄÏµÍ³×ÊÔ´ÐÅÏ¢ºÍÓÃ»§µÄÇëÇó½øÐÐÆ¥Åä¼ÆËã¡£ÈôÏµÍ³ÓÐ·á¸»µÄ×ÊÔ´£¬×ãÒÔÖ§³Å²¿ÊðÓÃ»§µÄÇëÇóºÍÒµÎñ£¬±ãÍ¨¹ýÏÂÒ»¸öAPIÔÚSuperNovaÏµÍ³ÖÐ²¿ÊðÒµÎñ¡£
+SuperNova~µÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é½«¸ÃÃüÁî»ñÈ¡µÄÏµÍ³×ÊÔ´ÐÅÏ¢ºÍÓÃ»§µÄÇëÇó½øÐÐÆ¥Åä¼ÆËã¡£ÈôÏµÍ³ÓÐ·á¸»µÄ×ÊÔ´£¬×ãÒÔÖ§³Å²¿ÊðÓÃ»§µÄÇëÇóºÍÒµÎñ£¬±ãÍ¨¹ýÒÔÏÂ¿ª·ÅµÄ~API~½Ó¿ÚÔÚ~SuperNova~ÏµÍ³ÖÐ²¿ÊðÒµÎñ¡£
 
 \par\textbf{2£©euca-run-instances \textit{param}}\par
-euca2oolsÃüÁîeuca-run-instances \textit{param}ÓÃÓÚ²¿ÊðÒµÎñ¡£ÓÃ»§Ìá³öÐéÄâÍøÂçÇëÇóºó£¬Èç¹ûSuperNovaÏµÍ³ÓÐ·á¸»µÄ×ÊÔ´£¬×ãÒÔÖ§³ÖÓÃ»§µÄÇëÇóÔÚÏµÍ³ÖÐ²¿Êð£¬ÔòÐéÄâÍøÂçÇëÇó»á³É¹¦Ó³Éä£¬¼´ÐéÄâÍøÂçÇëÇóÖÐÃ¿¸öÐéÄâ½ÚµãºÍÐéÄâÁ´Â·¶¼ÄÜÆ¥ÅäÓ³Éäµ½Êµ¼ÊµÄÎïÀí½ÚµãºÍÎïÀíÁ´Â·ÉÏ¡£³É¹¦Ó³Éäºó£¬¿ÉÊ¹ÓÃ~euca-run-instance~½Ó¿Ú½øÐÐÕæÕýµÄÒµÎñ²¿Êð£¬ÒÔ·ÖÅäÊµ¼ÊµÄÎïÀí×ÊÔ´¡£
+euca2ools~ÃüÁî~euca-run-instances \textit{param}~ÓÃÓÚ²¿ÊðÒµÎñ¡£ÓÃ»§Ìá³öÐéÄâÍøÂçÇëÇóºó£¬Èç¹û~SuperNova~ÏµÍ³ÓÐ·á¸»µÄ×ÊÔ´£¬×ãÒÔÖ§³ÖÓÃ»§µÄÇëÇóÔÚÏµÍ³ÖÐ²¿Êð£¬ÔòÐéÄâÍøÂçÇëÇó»á³É¹¦Ó³Éä£¬¼´ÐéÄâÍøÂçÇëÇóÖÐÃ¿¸öÐéÄâ½ÚµãºÍÐéÄâÁ´Â·¶¼ÄÜÆ¥ÅäÓ³Éäµ½Êµ¼ÊµÄÎïÀí½ÚµãºÍÎïÀíÁ´Â·ÉÏ¡£³É¹¦Ó³Éäºó£¬¿ÉÊ¹ÓÃ~euca-run-instance~½Ó¿Ú½øÐÐÕæÕýµÄÒµÎñ²¿Êð£¬ÒÔ·ÖÅäÊµ¼ÊµÄÎïÀí×ÊÔ´¡£
 \subsection{¿ª·¢ÊµÏÖ}
 \begin{figure}[h]
 \centering
@@ -233,18 +256,19 @@ euca2oolsÃüÁîeuca-run-instances \textit{param}ÓÃÓÚ²¿ÊðÒµÎñ¡£ÓÃ»§Ìá³öÐéÄâÍøÂçÇëÇó
 \label{fig:vne-liucheng}
 \end{figure}
 \par
-ÈçÍ¼\ref{fig:vne-liucheng}ËùÊ¾£¬SuperNovaÐéÄâÍøÂçÓ³ÉäµÄ¹Ø¼ü´¦Àí°üÀ¨£º\par
+ÈçÍ¼~\ref{fig:vne-liucheng}~ËùÊ¾£¬SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐÐéÄâÍøÂçÇ¶ÈëÓ³ÉäµÄ¹Ø¼ü´¦Àí²½Öè°üÀ¨£º\par
 1£©µ±ÓÃ»§·¢ÆðÇëÇóÊ±£¬ÐéÄâÍøÂçÓ³Éä¿ªÊ¼£»\par
 2£©ÐéÄâÍøÂçÓ³ÉäÄ£¿éÊ×ÏÈ¶ÔÓÃ»§µÄÇëÇó½øÐÐÔ¤´¦Àí£¬Éú³ÉÏµÍ³¿É·½±ã´¦ÀíµÄ¸ñÊ½£»\par
-3£©ÐéÄâÍøÂçÓ³ÉäÄ£¿é´ÓSuperNovaÏµÍ³»ñÈ¡ÏµÍ³¿ÉÓÃµÄ×ÊÔ´£¬°üÀ¨CPU£¬ÄÚ´æ£¬´ÅÅÌµÈÐÅÏ¢£»\par
+3£©ÐéÄâÍøÂçÓ³ÉäÄ£¿é´Ó~SuperNova~ÏµÍ³»ñÈ¡ÏµÍ³¿ÉÓÃµÄ×ÊÔ´£¬°üÀ¨~CPU~£¬ÄÚ´æ£¬´ÅÅÌµÈÐÅÏ¢£»\par
 4£©½«ÏµÍ³µÄ¿ÉÓÃÐÅÏ¢ºÍÓÃ»§µÄÇëÇó½øÐÐÐéÄâÍøÂçÇ¶ÈëÓ³Éä£¬²¢½«Ó³Éä½á¹û·´À¡¸øÓÃ»§£»\par
 5£©ÈôÏµÍ³ÓÐ×ã¹»µÄ×ÊÔ´Ö§³ÅÓÃ»§µÄÇëÇó£¬Ó³Éä³É¹¦ºó£¬Ê¹ÓÃÏµÍ³¿ª·ÅµÄ²¿ÊðAPI½«ÓÃ»§µÄÇëÇó²¿Êðµ½ÏµÍ³ÖÐ£»\par
 6£©µÚ4£©²½Ó³ÉäÊ§°ÜÒÔ¼°µÚ5£©²½²¿ÊðÍê³É¶¼»á½áÊøÐéÄâÍøÂçÓ³Éä¡£
 \subsection{¹¦ÄÜ½Ó¿Ú}
-SuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÐéÄâÍøÂçÓ³ÉäµÄ²¿Êð½Ó¿ÚAPIÎª£º
+SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÐéÄâÍøÂçÓ³ÉäµÄ²¿Êð½Ó¿Ú~API~Îª£º
 \par
-euca-vne-deploy \textit{params}\par
-¸Ãeuca2oolsÃüÁîÍ¨¹ýµ÷ÓÃBoto¿â½Ó¿ÚÓëEC2½¨Á¢Á¬½Ó£¬½øÐÐÓÃ»§ÈÏÖ¤£¬¸ù¾ÝÓÃ»§µÄÇëÇó£¬½áºÏÏµÍ³¿ÉÓÃµÄ×ÊÔ´½øÐÐVNEÆ¥Åä¼ÆËãºÍÓ³Éä´¦Àí£¬³É¹¦Ó³ÉäµÄÐéÄâÍøÂçÇëÇó»á±»·ÖÅäÊµ¼ÊµÄÎïÀí×ÊÔ´£¬´Ó¶øÎªÖÕ¶ËÓÃ»§Ìá¹©·þÎñ¡£¸ÃÃüÁîµÄ¾ßÌå²ÎÊýÈç±í\ref{tab:deploy-vne}ËùÊ¾¡£
+\textbf{euca-vne-deploy \textit{params}}
+\par
+¸Ã~euca2ools~ÃüÁîÍ¨¹ýµ÷ÓÃ~Boto~¿â½Ó¿ÚÓë~AWS EC2~½¨Á¢Á¬½Ó£¬½øÐÐÓÃ»§ÈÏÖ¤£¬¸ù¾ÝÓÃ»§µÄÇëÇó£¬½áºÏÏµÍ³¿ÉÓÃµÄ×ÊÔ´½øÐÐÐéÄâÍøÂçÇ¶ÈëÆ¥Åä¼ÆËãºÍÓ³Éä´¦Àí£¬³É¹¦Ó³ÉäµÄÐéÄâÍøÂçÇëÇó»á±»·ÖÅäÊµ¼ÊµÄÎïÀí×ÊÔ´£¬´Ó¶øÎªÖÕ¶ËÓÃ»§Ìá¹©·þÎñ¡£¸ÃÃüÁîµÄ¾ßÌå²ÎÊýÈç±í~\ref{tab:deploy-vne}~ËùÊ¾¡£
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|}
@@ -259,27 +283,29 @@ prefer-cluster&p&ÓÃ»§Ï£Íû²¿ÊðµÄ¼¯ÈºÇøÓò\\\hline
 help & h & ÏÔÊ¾°ïÖúÐÅÏ¢\\\hline
 example & \multicolumn{2}{|c|}{euca-vne-deploy -n 1 -l 2 -c 1 -r 128 -d 5 -p 1}\\\hline
 \end{tabular}
-\caption{euca-deploy-vneµÄ²ÎÊýËµÃ÷}
+\caption{euca-deploy-vne~µÄ²ÎÊýËµÃ÷}
 \label{tab:deploy-vne}
 \end{table}
 
 \section{ÔÆ¿ØÖÆÆ÷Ä£¿é}
+\label{sec:supernova-other}
 \subsection{ÔÆ¿ØÖÆÆ÷¼ò½é}
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-quanju.eps}
-\caption{ÔÆ¿ØÖÆÆ÷ÔÚSuperNovaÖÐµÄÎ»ÖÃ}
+\caption{ÔÆ¿ØÖÆÆ÷ÔÚ~SuperNova~ÖÐµÄÎ»ÖÃ}
 \label{fig:supernova-quanju}
 \end{figure}
-ÈçÍ¼\ref{fig:supernova-quanju}ËùÊ¾£¬ÔÆ¿ØÖÆÆ÷Á¥ÊôÓÚSuperNova·þÎñÐéÄâ»¯Æ½Ì¨µÄÈ«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨£¬ÊÇÓÃ»§¶ÔÆä²¿ÊðÔÚSuperNovaÆ½Ì¨ÉÏµÄ·þÎñµÄ¹ÜÀíÈë¿Ú¡£Í¨¹ýÔÆ¿ØÖÆÆ÷£¬ÓÃ»§¿É²éÑ¯ÒÑ²¿ÊðµÄÒµÎñ£¬Ò²¿ÉÒÔ²ûÊöÒµÎñÐèÇó£¬²¢ÇëÇóÏµÍ³Ìá¹©·þÎñ£¬»¹¿ÉÒÔ¹ÜÀíÒÑ²¿ÊðµÄÒµÎñ£¬°üÀ¨ÐéÄâÊµÀý¡¢´æ´¢×é¼þ¡¢°²È«×éµÈµÄ¹ÜÀí¡£
+ÈçÍ¼~\ref{fig:supernova-quanju}~ËùÊ¾£¬ÔÆ¿ØÖÆÆ÷Á¥ÊôÓÚ~SuperNova~ ·þÎñÐéÄâ»¯Æ½Ì¨µÄÈ«¾ÖÈÏÖª¹ÜÀíÆ½Ì¨£¬ÊÇÓÃ»§¶ÔÆä²¿ÊðÔÚ~SuperNova~Æ½Ì¨ÉÏµÄÒµÎñ·þÎñµÄ¹ÜÀíÈë¿Ú¡£Í¨¹ýÔÆ¿ØÖÆÆ÷£¬ÓÃ»§¿É²éÑ¯ÒÑ²¿ÊðµÄÒµÎñ£¬Ò²¿ÉÒÔ²ûÊöÒµÎñÐèÇó£¬²¢ÇëÇóÏµÍ³Ìá¹©·þÎñ£¬»¹¿ÉÒÔ¹ÜÀíÒÑ²¿ÊðµÄÒµÎñ£¬°üÀ¨ÐéÄâÊµÀý¡¢´æ´¢×é¼þ¡¢°²È«×éµÈµÄ¹ÜÀí¡£
 \subsection{¹¦ÄÜÍêÉÆ}
-¹¦ÄÜÍêÉÆ¹¤×÷Ö÷ÒªÊÇÔÚÒÑÓÐµÄEuca2ools¿Í»§¶Ë»ù´¡ÉÏ£¬¶ÔÒÑÓÐµÄ¹ÜÀí²Ù×÷½øÐÐÖØ±àÂë£¬ÌÞ³ýeuca2ools¿âÖÐ¶Ô¿Í»§¶ËÃüÁîµÄ½âÎö²¢×ª»»ÎªWeb ServiceµÄ¹ý³Ì¡£ÕâÑù×öµÄºÃ´¦ÓÐÒÔÏÂÁ½µã£º\par
-1£©¼ò»¯´úÂë´¦ÀíÁ÷³Ì¡£\par
-Ô­À´µÄ´úÂë´¦ÀíÁ÷³ÌÐèÒª¾­¹ýeuca2oolsµÄ½âÎö£¬½«Í¨¹ýÖÕ¶ËÃüÁîÐÐ¹¤¾ßÊäÈëµÄÃüÁî½âÎö²¢×ª»»ÎªWeb ServiceµÄÕâ¸ö¹ý³ÌÊ¡È¥ÁË£¬Ö±½ÓÍ¨¹ýGWT¹¤¾ß¿â¹¹½¨WebÒ³Ãæ£¬´Ó¶øÉú³ÉWeb Service¡£\par
-2£©Ìá¸ßÓÃ»§ÌåÑé\par
-¶ÔÓÚÓÃ»§À´Ëµ£¬×î´óµÄ¸Ä½ø¾ÍÊÇ²»ÔÚÐèÒªÃæ¶Ô·Ç³£²»ÈËÐÔ»¯µÄÖÕ¶ËÆÁÄ»£¬Ò²²»ÓÃÊäÈë·±¸´Ò×´íµÄÃüÁî¡£Í¨¹ýÔÚWebÒ³ÃæÉÏ½øÐÐÖ±¹ÛµÄµãÑ¡²Ù×÷¾Í¿ÉÒÔÍê³ÉÍ¬ÑùµÄ¹¦ÄÜ£¬ÊÇ¶ÔÓÃ»§²Ù×÷µÄÒ»ÖÖÈËÐÔ»¯Éè¼Æ£¬¿ÉºÜºÃµØÌá¸ßÓÃ»§ÌåÑé¡£
+¶Ô~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄ¹¦ÄÜÍêÉÆ¹¤×÷Ö÷ÒªÊÇÔÚÒÑÓÐµÄ~euca2ools~ÃüÁîÐÐ¿Í»§¶Ë¹¤¾ß»ù´¡ÉÏ£¬¶ÔÒÑÓÐµÄ¹ÜÀí²Ù×÷½øÐÐÖØ±àÂë£¬Ê¡È¥¶Ô~euca2ools~¿Í»§¶ËÃüÁîµÄ½âÎö£¬Ö±½Ó²ÉÓÃ~Web Service~¹¤×÷·½Ê½¡£ÕâÑù×öµÄºÃ´¦ÓÐÒÔÏÂÁ½µã£º\par
+1¡¢¼ò»¯´úÂë´¦ÀíÁ÷³Ì¡£\par
+ÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬euca2ools~¿Í»§¶ËÃüÁîµÄ¶ÔÓ¦µÄ´úÂë´úÂë´¦ÀíÁ÷³ÌÈçÏÂ£ºÊ×ÏÈ£¬ÓÃ»§ÔÚÖÕ¶ËÊäÈë~euca2ools~¿Í»§¶ËÃüÁî£»È»ºó£¬euca2ools¶Ô¸ÃÃüÁî½øÐÐ½âÎö£¬²¢×ª»»ÎªÒÔ~Web Service~·½Ê½³ÊÏÖµÄÇëÇóÏûÏ¢£»×îºó£¬½«ÇëÇóÏûÏ¢´«µÝ¸ø~Mule~×é¼þ½øÐÐ½øÒ»²½µÄ´¦Àí¡£ÎÒÃÇ¶ÔÕâ¸ö´¦ÀíÁ÷³ÌµÄ¸Ä½øÊÇÉ¾³ýÆäÖÐµÚ~2~¸ö²½ÖèµÄ½âÎöºÍ×ª»»¹¤×÷£¬¼ò»¯´úÂë´¦ÀíÁ÷³Ì¡£ÎÒÃÇÍ¨¹ý~GWT~¿ò¼Ü£¬Ö±½Ó¹¹½¨~Web~Ò³Ãæ£¬ÓÃ»§Í¨¹ýÔÚ¸Ã~Web~ Ò³ÃæÉÏ¼òµ¥µØµã»÷±ãÒÔ~Web Service~µÄ·½Ê½Éú³ÉÇëÇóÏûÏ¢£¬´Ó¶ø¼ò»¯ÁË´úÂë´¦ÀíÁ÷³Ì¡£
+\par
+2¡¢Ìá¸ßÓÃ»§ÌåÑé\par
+SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨×îÖÕÒªÃæÏòÓÃ»§Ìá¹©·þÎñ£¬Òò´Ë£¬Æ½Ì¨µÄÓÃ»§ÌåÑéÖÊÁ¿ÊÇÖÁ¹ØÖØÒªµÄ¡£ÎÒÃÇÍ¨¹ý¶ÔÔÆ¿ØÖÆÆ÷½øÐÐ¿ÉÊÓ»¯¸Ä½ø£¬Ê¹µÃÓÃ»§²»ÔÙÐèÒªÃæ¶Ô·Ç³£²»ÈËÐÔ»¯µÄÖÕ¶ËÆÁÄ»£¬Ò²²»ÔÙÐèÒªÊäÈë·±¸´Ò×´íµÄÃüÁî¡£¶øÊÇÍ¨¹ýÔÚ~Web~Ò³ÃæÉÏ½øÐÐÖ±¹ÛµÄµãÑ¡²Ù×÷¾Í¿ÉÒÔÍê³ÉÍ¬ÑùµÄ¹¦ÄÜ£¬ÊÇ¶ÔÓÃ»§²Ù×÷µÄÒ»ÖÖÈËÐÔ»¯Éè¼Æ£¬¿ÉºÜºÃµØÌá¸ßÓÃ»§ÌåÑé¡£
 \subsubsection{ÊµÀý¹ÜÀí}
-ÔÚSuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÐéÄâÊµÀýµÄ¹ÜÀí°üÀ¨²éÑ¯ÒÑ¾­´´½¨µÄÐéÄâÊµÀý£¬¶ÔÒÑ´æÔÚµÄÐéÄâÊµÀý½øÐÐÖØÆô¡¢ÖÕÖ¹²Ù×÷£¬ÒÔ¼°ÖØÐÂ´´½¨²¢Æô¶¯ÐÂµÄÊµÀý¡£ÈçÍ¼\ref{fig:describe-instance}ËùÊ¾£¬ÔÚWebÒ³ÃæµÄInstance Ñ¡Ïî¿¨ÏÂµÄ~Available Instances~ÏÔÊ¾µ±Ç°ÓÃ»§Ëù´´½¨µÄÊµÀý£¬ÓÃ»§¿É¶ÔËûÃÇ½øÐÐÏàÓ¦µÄ²Ù×÷£¬°üÀ¨~Terminate~ºÍ~Reboot~¡£
+ÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬ÐéÄâÊµÀýµÄ¹ÜÀí°üÀ¨²éÑ¯ÒÑ¾­´´½¨µÄÐéÄâÊµÀý£¬¶ÔÒÑ´æÔÚµÄÐéÄâÊµÀý½øÐÐÖØÆô¡¢ÖÕÖ¹²Ù×÷£¬ÒÔ¼°ÖØÐÂ´´½¨²¢Æô¶¯ÐÂµÄÊµÀý¡£ÈçÍ¼~\ref{fig:describe-instance}~ËùÊ¾£¬ÔÚ~Web~Ò³ÃæµÄ~Instance~Ñ¡Ïî¿¨ÏÂµÄ~Available Instances~ÏÔÊ¾µ±Ç°ÓÃ»§Ëù´´½¨µÄÊµÀý£¬ÓÃ»§¿É¶ÔËûÃÇ½øÐÐÏàÓ¦µÄ²Ù×÷£¬°üÀ¨~Terminate~ºÍ~Reboot~¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{describe-instance}
@@ -287,7 +313,7 @@ example & \multicolumn{2}{|c|}{euca-vne-deploy -n 1 -l 2 -c 1 -r 128 -d 5 -p 1}\
 \label{fig:describe-instance}
 \end{figure}
 \par
-ÈçÍ¼\ref{fig:run-instance}ËùÊ¾£¬InstanceÑ¡Ïî¿¨ÏÂµÄRun InstanceÔÊÐíÓÃ»§Ö¸¶¨ÏàÓ¦µÄ²ÎÊýÒÔ´´½¨ÓÃ»§Ï£ÍûµÄÐéÄâÊµÀý¡£
+ÈçÍ¼~\ref{fig:run-instance}~ËùÊ¾£¬Instance~Ñ¡Ïî¿¨ÏÂµÄ~Run Instance~ÔÊÐíÓÃ»§Ö¸¶¨ÏàÓ¦µÄ²ÎÊýÒÔ´´½¨ÓÃ»§Ï£ÍûµÄÐéÄâÊµÀý¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{run-instance}
@@ -295,7 +321,7 @@ example & \multicolumn{2}{|c|}{euca-vne-deploy -n 1 -l 2 -c 1 -r 128 -d 5 -p 1}\
 \label{fig:run-instance}
 \end{figure}
 \par
-ÆäÖÐµÄ²ÎÊýº¬ÒåÈç±í\ref{tab:run-instance}ËùÊ¾¡£
+ÆäÖÐµÄ²ÎÊýº¬ÒåÈç±í~\ref{tab:run-instance}~ËùÊ¾¡£
 \begin{table}[h]
 \centering
 \begin{tabular}{c|c}
@@ -316,37 +342,37 @@ imagId & ¾µÏñId\\\hline
 \end{table}
 
 \subsubsection{´æ´¢¹ÜÀí}
-ÔÚSuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬´æ´¢×é¼þ°üÀ¨¾µÏñ£¨Images£©£¬´æ´¢¾í£¨Volume£©ºÍ´æ´¢¾í¿ìÕÕ£¨Snapshot£©¡£Òò´Ë£¬´æ´¢¹ÜÀí¼´ÊÇ¶ÔÏà¹Ø×é¼þµÄ¹ÜÀí¡£¶ÔÓÚ¾µÏñImagesµÄ¹ÜÀí£¬ÆäWeb½çÃæÈçÍ¼\ref{fig:supernova-image} ËùÊ¾¡£StorageÏÂµÄImagesÑ¡Ïî¿¨Õ¹Ê¾ÁË¿ÉÓÃµÄImagesÒÔ¼°Ïà¹ØµÄ²Ù×÷£¬°üÀ¨Disable»òEnable¡£
+ÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬´æ´¢×é¼þ°üÀ¨¾µÏñ£¨Images£©£¬´æ´¢¾í£¨Volume£©ºÍ´æ´¢¾í¿ìÕÕ£¨Snapshot£©¡£Òò´Ë£¬´æ´¢¹ÜÀí¼´ÊÇ¶ÔÏà¹Ø×é¼þµÄ¹ÜÀí¡£¶ÔÓÚ¾µÏñ~Images~µÄ¹ÜÀí£¬Æä~Web~½çÃæÈçÍ¼~\ref{fig:supernova-image}~ËùÊ¾¡£Storage~ÏÂµÄ~Images~Ñ¡Ïî¿¨Õ¹Ê¾ÁË¿ÉÓÃµÄ~Images~ÒÔ¼°Ïà¹ØµÄ²Ù×÷£¬°üÀ¨~Disable~»ò~Enable¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-image.eps}
-\caption{SuperNova·þÎñÐéÄâ»¯Æ½Ì¨µÄImages}
+\caption{SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄ~Images}
 \label{fig:supernova-image}
 \end{figure}
 \par
-ÈçÍ¼\ref{fig:supernova-volume}ËùÊ¾£¬StorageÏÂµÄVolumesÑ¡ÏîÕ¹Ê¾ÁË¿ÉÓÃµÄVolumeºÍÏàÓ¦µÄ¹ÒÔØºÍÐ¶ÔØÇé¿öÒÔ¼°¶ÔÓ¦µÄ²Ù×÷£¬°üÀ¨É¾³ý¡¢Ð¶ÔØ¡¢¹ÒÔØ¡£Í¬Ê±£¬ÓÃ»§¿ÉÒÔÍ¨¹ýÖ¸¶¨Volume µÄ¿Õ¼ä´óÐ¡£¬¿ìÕÕIdºÍ¼¯Èº¹ÜÀíÆ÷ÒÔ´´½¨ÐÂµÄVolume£»Ò²¿ÉÒÔ°Ñ´æÔÚµÄ´æ´¢¾íºÍÐéÄâÊµÀý¹ØÁªÆðÀ´£¬¼´´æ´¢¾íµÄ¹ÒÔØ¡£
+ÈçÍ¼~\ref{fig:supernova-volume}~ËùÊ¾£¬Storage~ÏÂµÄ~Volumes~Ñ¡ÏîÕ¹Ê¾ÁË¿ÉÓÃµÄ~Volume~ºÍÏàÓ¦µÄ¹ÒÔØºÍÐ¶ÔØÇé¿öÒÔ¼°¶ÔÓ¦µÄ²Ù×÷£¬°üÀ¨É¾³ý¡¢Ð¶ÔØ¡¢¹ÒÔØ¡£Í¬Ê±£¬ÓÃ»§¿ÉÒÔÍ¨¹ýÖ¸¶¨~Volume~µÄ¿Õ¼ä´óÐ¡£¬¿ìÕÕ~Id~ºÍ¼¯Èº¹ÜÀíÆ÷ÒÔ´´½¨ÐÂµÄ~Volume£»Ò²¿ÉÒÔ°Ñ´æÔÚµÄ´æ´¢¾íºÍÐéÄâÊµÀý¹ØÁªÆðÀ´£¬¼´´æ´¢¾íµÄ¹ÒÔØ¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-volume.eps}
-\caption{SuperNova·þÎñÐéÄâ»¯Æ½Ì¨µÄVolumes}
+\caption{SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄ~Volumes}
 \label{fig:supernova-volume}
 \end{figure}
 \par
-ÈçÍ¼\ref{fig:supernova-snapshot}ËùÊ¾£¬StorageÏÂµÄSnapshotsÊÇ¶Ô´æ´¢¾íVolume½øÐÐÏàÓ¦µÄ±¸·Ý¿ìÕÕ¡£ÓëSnapshotÏà¹ØµÄ²Ù×÷°üÀ¨´´½¨Ö¸¶¨Volume µÄsnapshotÒÔ¼°É¾³ýÖ¸¶¨µÄsnapshot¡£
+ÈçÍ¼~\ref{fig:supernova-snapshot}~ËùÊ¾£¬Storage~ÏÂµÄ~Snapshots~ ÊÇ¶Ô´æ´¢¾í~Volume~½øÐÐÏàÓ¦µÄ±¸·Ý¿ìÕÕ¡£Óë~Snapshot~Ïà¹ØµÄ²Ù×÷°üÀ¨´´½¨Ö¸¶¨~Volume~µÄ~snapshot~ÒÔ¼°É¾³ýÖ¸¶¨µÄ~snapshot~¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{supernova-snapshot.eps}
-\caption{SuperNova·þÎñÐéÄâ»¯Æ½Ì¨µÄSnapshots}
+\caption{SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄ~Snapshots}
 \label{fig:supernova-snapshot}
 \end{figure}
 \subsubsection{°²È«×é¹ÜÀí}
 Security Groups£¬ÍøÂç°²È«×é£¬Ïà¶ÔÓÚ·À»ðÇ½£¬Ëü¶ÔÁ÷ÈëÊµÀýµÄÁ÷Á¿½øÐÐ¿ØÖÆºÍ¹ÜÀí¡£Ò»¸ö°²È«×é¿ÉÒÔÓÐ¶à¸öÊµÀýÓëÖ®¹ØÁª£¬Í¬Ñù£¬Ò»¸öÊµÀý¿ÉÒÔ¹ØÁªµ½¶à¸ö°²È«×é¡£Í¨¹ý°²È«×éµÄ¹æÔò¿ÉÒÔ¿ØÖÆµ½´ïÊµÀýµÄÈë¾³Á÷Á¿£¬Ö»ÓÐ·ûºÏÊµÀý¹ØÁªµÄ°²È«×éµÄ¹æÔòµÄÈë¾³Á÷Á¿²ÅÄÜ½øÈëµ½ÊµÀýÖÐ£¬ÆäËûµÄÈÎºÎÈë¾³Á÷Á¿¶¼½«±»¶ªÆú¡£°²È«×éµÄ¹æÔò¿ÉÒÔÔÚÈÎºÎÊ±¿Ì¶ÔÆä½øÐÐÐÞ¸Ä£¬ÐÞ¸ÄÖ®ºó£¬ÐÂµÄ°²È«×é¹æÔò½«×Ô¶¯µØÓ¦ÓÃµ½Óë°²È«×éÏà¹ØÁªµÄËùÓÐÊµÀýÖÐ¡£
 \par
-ÔÚSuperNovaÖÐ£¬ÓÐÄ¬ÈÏµÄ°²È«×édefault¡£ÔÚÆô¶¯ÊµÀýÊ±£¬¿ÉÒÔÏÔÊ½µØÎªÊµÀýÖ¸¶¨°²È«×é£¬·ñÔò¸ÃÊµÀý½«¹ØÁªµ½Ä¬ÈÏµÄ°²È«×é¡£Ä¬ÈÏ°²È«×éµÄ³õÊ¼ÉèÖÃÈçÏÂ£º\par
+ÔÚ~SuperNova~ÖÐ£¬ÓÐÄ¬ÈÏµÄ°²È«×é~default¡£ÔÚÆô¶¯ÊµÀýÊ±£¬¿ÉÒÔÏÔÊ½µØÎªÊµÀýÖ¸¶¨°²È«×é£¬·ñÔò¸ÃÊµÀý½«¹ØÁªµ½Ä¬ÈÏµÄ°²È«×é¡£Ä¬ÈÏ°²È«×éµÄ³õÊ¼ÉèÖÃÈçÏÂ£º\par
 1£©²»ÔÊÐíÈë¾³Á÷Á¿£»\par
 2£©ÔÊÐíËùÓÐµÄ³ö¾³Á÷Á¿£»\par
 3£©ÔÊÐí¹ØÁªµ½°²È«×éµÄÊµÀýÖ®¼äÏà»¥Í¨ÐÅ¡£\par
-ÓÃ»§¿ÉÒÔÊ¹ÓÃÈç±í\ref{tab:security}ËùÊ¾µÄeuca2oolsÃüÁîÀ´´´½¨ÐÂµÄ°²È«×é£¬»òÐÞ¸Ä°²È«×éµÄ¹æÔò£¬»òÉ¾³ý°²È«×éµÈ¡£
+ÓÃ»§¿ÉÒÔÊ¹ÓÃÈç±í~\ref{tab:security}~ËùÊ¾µÄ~euca2ools~ÃüÁîÀ´´´½¨ÐÂµÄ°²È«×é£¬»òÐÞ¸Ä°²È«×éµÄ¹æÔò£¬»òÉ¾³ý°²È«×éµÈ¡£
 \begin{table}[h]
 \begin{tabular}{c|c|c}
 \\\hline
@@ -357,16 +383,24 @@ Security Groups£¬ÍøÂç°²È«×é£¬Ïà¶ÔÓÚ·À»ðÇ½£¬Ëü¶ÔÁ÷ÈëÊµÀýµÄÁ÷Á¿½øÐÐ¿ØÖÆºÍ¹ÜÀí¡£Ò»¸
 ÒÆ³ý°²È«×é¹æÔò & ec2-revoke & ´ÓÖ¸¶¨°²È«×éÖÐÒÆ³ýÒ»¸ö»ò¶à¸ö¹æÔò\\\hline
 É¾³ý°²È«×é & ec2-delete-group & É¾³ýºÍÕË»§¹ØÁªµÄ°²È«×é\\\hline
 \end{tabular}
-\caption{°²È«×éÏà¹ØµÄ²Ù×÷ºÍeuca2oolsÃüÁî}
+\caption{°²È«×éÏà¹ØµÄ²Ù×÷ºÍ~euca2ools~ÃüÁî}
 \label{tab:security}
 \end{table}
 \par
-ÔÚSuperNova·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬°²È«×éÏà¹ØµÄWeb½çÃæÈçÍ¼\ref{fig:security} ËùÊ¾¡£ÔÚ~SecurityGroups~Ñ¡Ïî¿¨ÖÐ£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ~ Add a new Group ~´´½¨ÐÂµÄ°²È«×é£¬¶ÔÒÑ¾­´æÔÚµÄ°²È«×é£¬¿ÉÒÔÊ¹ÓÃµã»÷~Authorize~Ìí¼Ó°²È«×é¹æÔò£¬»òÍ¨¹ý~Revoke~ÒÆ³ý°²È«×é¹æÔò£¬»òÍ¨¹ý~Delete~ÍêÈ«É¾³ý°²È«×é¡£
+ÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÖÐ£¬°²È«×éÏà¹ØµÄ~Web~½çÃæÈçÍ¼~\ref{fig:security}~ËùÊ¾¡£ÔÚ~SecurityGroups~Ñ¡Ïî¿¨ÖÐ£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ~Add a new Group~´´½¨ÐÂµÄ°²È«×é£¬¶ÔÒÑ¾­´æÔÚµÄ°²È«×é£¬¿ÉÒÔÊ¹ÓÃµã»÷~Authorize~Ìí¼Ó°²È«×é¹æÔò£¬»òÍ¨¹ý~Revoke~ÒÆ³ý°²È«×é¹æÔò£¬»òÍ¨¹ý~Delete~ÍêÈ«É¾³ý°²È«×é¡£
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{security.eps}
-\caption{SuperNovaÖÐµÄ°²È«×é}
+\caption{SuperNova~ÖÐµÄ°²È«×é}
 \label{fig:security}
 \end{figure}
 
 \section{Ð¡½á}
+\label{sec:supernova-conclude}
+±¾ÕÂÏêÏ¸²ûÊöÁËÔÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨ÉÏ¿ªÕ¹µÄ¹¤³Ì¿ª·¢¹¤×÷£¬Ö÷Òª°üÀ¨Èý´ó²¿·Ö£ºÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éµÄ¹¤³Ì¿ª·¢ÊµÏÖ£¬ÐéÄâÍøÂçÇ¶ÈëÄ£¿éµÄ¹¤³Ì¿ª·¢ÊµÏÖ£¬ÔÆ¿ØÖÆÆ÷Ä£¿éµÄ¹¦ÄÜÍêÉÆ¡£
+\par
+±¾ÕÂÊ×ÏÈÏêÏ¸½éÉÜ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨£¬°üÀ¨ÏµÍ³¼Ü¹¹ºÍ±à³Ì¼Ü¹¹¡£È»ºó£¬±¾ÕÂ¶Ô~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿éµÄ¹¤³Ì¿ª·¢ÊµÏÖ½øÐÐÏê¾¡µÄ²ûÊö£¬°üÀ¨¸ÃÄ£¿éÔÚ~SuperNova~ÖÐµÄÎ»ÖÃ¡¢ÊµÏÖ·½Ê½¡¢±à³ÌÊµÏÖ¼Ü¹¹¡¢¹¦ÄÜ½Ó¿ÚÒÔ¼°Ê¹ÓÃ·½Ê½¡£ÔÚ~SuperNova~ ·þÎñÐéÄâ»¯Æ½Ì¨ÖÐÊµÏÖÒµÎñÁ÷Á¿¸ôÀëºÍ¿ØÖÆÄ£¿é£¬¿ÉÓÐÐ§¸ôÀëÆÁ±Î²»Í¬µÄÒµÎñÁ÷Á¿£¬²¢¸ù¾ÝÒµÎñÊý¾ÝµÄ~QoS~ÌØÕ÷£¬Çø·Ö²»Í¬µÄÊý¾ÝÁ÷Á¿£¬²¢Ìá¹©ÓÐ~QoS~±£ÕÏµÄ·þÎñ¡£ÁíÍâ£¬¶ÔÓÚ¾ßÌåµÄÒµÎñÊý¾Ý£¬ÓÃ»§¿É¸ù¾ÝÆäÊý¾ÝÁ÷Á¿ÌØÕ÷£¬½øÐÐ×Ô¶¨ÒåÅäÖÃ£¬ÒÔÌá¸ß·þÎñÖÊÁ¿£¬´ïµ½¸üºÃµÄ·þÎñÐ§¹û¡£
+\par
+¶ÔÓÚ~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é£¬±¾ÕÂÖ÷Òª´Ó¹¤³ÌÉè¼Æ¡¢¿ª·¢ÊµÏÖºÍ¹¦ÄÜ½Ó¿ÚÕâÈý¸ö·½Ãæ½øÐÐ²ûÊö¡£ÓÉÓÚÐéÄâÍøÂçÇ¶ÈëÎÊÌâÊÇ~NP~ÄÑÎÊÌâ£¬Ê±¼ä¸´ÔÓ¶È·Ç³£¸ß£¬¶ø¹¤³ÌÊµÏÖÐèÒªÔÚ×¼È·ÐÔºÍ¿ÉÊµÏÖÐÔÉÏÑ°ÇóÕÛÖÔÆ½ºâ£¬ÒÔÌá¸ß¹¤³ÌÐ§ÂÊºÍÏµÍ³ÐÔÄÜ£¬½øÒ»²½Ìá¸ßÓÃ»§ÌåÑéÖÊÁ¿¡£Òò´Ë£¬ÎÒÃÇ¶Ô~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÐéÄâÍøÂçÇ¶ÈëÄ£¿é½øÐÐÏàÓ¦µÄ¹¤³Ì¼ò»¯Éè¼Æ£¬ÔÚ¿ª·¢ÊµÏÖÊ±£¬³ä·Ö¿¼ÂÇÁËÊ±¼ä¿Õ¼äÐÔÄÜÒÔ¼°ÏµÍ³À©Õ¹ÐÔ¡£
+\par
+ÁíÍâ£¬±¾ÕÂÎªÌá¸ß~SuperNova~·þÎñÐéÄâ»¯Æ½Ì¨µÄÓÃ»§ÌåÑéÖÊÁ¿£¬¶ÔÈ«¾ÖÈÏÖª¹ÜÀí²ãµÄÔÆ¿ØÖÆÆ÷½øÐÐÏàÓ¦µÄ¹¦ÄÜÍêÉÆºÍ²¹³ä¡£Ö÷Òª°üÀ¨¶Ô²¿·Ö~euca2ools~ÃüÁîµÄ¿ÉÊÓ»¯¸Ä½ø£¬ÈçÊµÀý¹ÜÀí¡¢´æ´¢¹ÜÀí¡¢°²È«×é¹ÜÀíµÈ¡£¶ÔÏµÍ³¶øÑÔ£¬¿ÉÊÓ»¯¸Ä½ø´ó´ó¼ò»¯ÁË´úÂë´¦ÀíÁ÷³Ì£¬Ìá¸ßÁËÏµÍ³µÄÐ§ÂÊºÍÐÔÄÜ¡£¶ÔÓÃ»§¶øÑÔ£¬¿ÉÊÓ»¯µÄ²Ù×÷·½Ê½ÈÃÓÃ»§´Ó·±¸´µÄÖÕ¶ËÃüÁîÐÐÖÐ½â·Å³öÀ´£¬ÏÔÖøÌá¸ßÁËÓÃ»§ÌåÑéÖÊÁ¿¡£
